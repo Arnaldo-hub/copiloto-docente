@@ -9,34 +9,46 @@ app.get("/ping", (req, res) => {
 });
 
 app.post("/copiloto/generar", async (req, res) => {
-  const { nombre, asignatura, tema } = req.body;
+  try {
+    const { nombre, asignatura, tema } = req.body;
 
-  const prompt = `
+    const prompt = `
 Eres el Copiloto Docente.
 Crea una planificación de clase para:
+
 Docente: ${nombre}
 Asignatura: ${asignatura}
 Tema: ${tema}
-Incluye inicio, desarrollo y cierre.
+
+Incluye:
+- Inicio
+- Desarrollo
+- Cierre
+- Evaluación
 `;
 
-  try {
     const response = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
         model: "gpt-4.1",
-        input: prompt
-      })
+        input: prompt,
+      }),
     });
 
     const data = await response.json();
-    res.json({ resultado: data.output_text });
+
+    // 👇 ESTA ES LA FORMA CORRECTA
+    const texto = data.output[0].content[0].text;
+
+    res.json({ resultado: texto });
+
   } catch (error) {
-    res.status(500).json({ error: "Error al generar respuesta" });
+    console.error(error);
+    res.status(500).json({ resultado: "Error al generar la planificación" });
   }
 });
 
