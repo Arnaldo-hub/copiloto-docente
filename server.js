@@ -1,53 +1,44 @@
-const express = require('express');
-const path = require('path');
-const OpenAI = require('openai');
+import express from "express";
+import fetch from "node-fetch";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const BASE = '/copiloto';
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
-
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(__dirname));
 
-// Servir estáticos
-app.use(BASE, express.static(path.join(__dirname, 'public')));
-
-// Página principal
-app.get(BASE, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Generar planificación
-app.post(BASE + '/generar', async (req, res) => {
+app.post("/generar", async (req, res) => {
   try {
-    const { asignatura, curso, unidad, mes } = req.body;
+    const { prompt } = req.body;
 
-    const prompt = `
-Asignatura: ${asignatura}
-Curso: ${curso}
-Unidad: ${unidad}
-Mes: ${mes}
-Genera la planificación mensual completa.
-`;
-
-    const response = await openai.responses.create({
-      model: 'gpt-5.4',
-      input: prompt,
-      max_output_tokens: 2000
+    const response = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: "gpt-5-mini",
+        input: prompt
+      })
     });
 
-    res.send(`
-      <h2>Planificación Generada</h2>
-      <pre>${response.output_text}</pre>
-      <br><a href="/copiloto">Volver</a>
-    `);
+    const data = await response.json();
+    res.json({ resultado: data.output[0].content[0].text });
 
   } catch (error) {
-    res.send("Error: " + error.message);
+    res.status(500).json({ error: error.message });
   }
 });
 
-module.exports = app;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("Servidor iniciado en puerto " + PORT);
+});
