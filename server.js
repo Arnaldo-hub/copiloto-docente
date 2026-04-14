@@ -1,43 +1,46 @@
-import express from "express";
-import fetch from "node-fetch";
+const express = require("express");
+const path = require("path");
+const OpenAI = require("openai");
 
 const app = express();
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
-const PORT = process.env.PORT || 3000;
+// 👉 Servir el index.html correctamente
+app.use(express.static(path.join(__dirname)));
 
+// 👉 Ruta principal (esto quita el "Cannot GET /")
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+// 👉 Ruta que usa el formulario
 app.post("/generar", async (req, res) => {
   try {
-    const { prompt } = req.body;
-
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
-      },
-      body: JSON.stringify({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "system", content: "Eres un experto docente chileno que genera planificaciones pedagógicas detalladas." },
-          { role: "user", content: prompt }
-        ],
-        temperature: 0.7
-      })
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
     });
 
-    const data = await response.json();
+    const { tema, nivel, objetivo } = req.body;
 
-    const texto = data.choices[0].message.content;
+    const prompt = `
+    Crea una aplicación educativa con:
+    Tema: ${tema}
+    Nivel: ${nivel}
+    Objetivo: ${objetivo}
+    `;
 
-    res.json({ resultado: texto });
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [{ role: "user", content: prompt }],
+    });
 
+    res.send(completion.choices[0].message.content);
   } catch (error) {
-    res.json({ resultado: "Error del servidor: " + error.message });
+    console.error(error);
+    res.status(500).send("Error al generar la aplicación");
   }
 });
 
-app.listen(PORT, () => {
-  console.log("Servidor activo en puerto " + PORT);
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log("Servidor iniciado"));
