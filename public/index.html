@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Copiloto Docente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #resultado {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Copiloto Docente</h1>
+
+  <form id="formulario">
+    <label><strong>Escribe tu solicitud pedagógica:</strong></label>
+    <textarea id="prompt" placeholder="Ej: Matemática — 5° básico — Fracciones"></textarea>
+    <button type="submit">Generar planificación</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    const form = document.getElementById("formulario");
+    const resultado = document.getElementById("resultado");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      resultado.innerHTML = "Generando planificación... ⏳";
+
+      const prompt = document.getElementById("prompt").value;
+
+      try {
+        const response = await fetch("/generar", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ prompt })
+        });
+
+        const data = await response.json();
+        resultado.innerText = data.resultado;
+
+      } catch (error) {
+        resultado.innerText = "Error al generar: " + error.message;
+      }
+    });
+  </script>
+
+</body>
+</html>
