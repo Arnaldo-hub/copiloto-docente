@@ -1,46 +1,22 @@
-const express = require("express");
-const path = require("path");
-const OpenAI = require("openai");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-// 👉 Servir el index.html correctamente
-app.use(express.static(path.join(__dirname)));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// 👉 Ruta principal (esto quita el "Cannot GET /")
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+// 👇 ESTO ES LO QUE FALTABA
+app.use(express.static(path.join(__dirname, "public")));
 
-// 👉 Ruta que usa el formulario
-app.post("/generar", async (req, res) => {
-  try {
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
-
-    const { tema, nivel, objetivo } = req.body;
-
-    const prompt = `
-    Crea una aplicación educativa con:
-    Tema: ${tema}
-    Nivel: ${nivel}
-    Objetivo: ${objetivo}
-    `;
-
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [{ role: "user", content: prompt }],
-    });
-
-    res.send(completion.choices[0].message.content);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error al generar la aplicación");
-  }
+// Ruta de prueba
+app.get("/ping", (req, res) => {
+  res.send("Servidor vivo");
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Servidor iniciado"));
+app.listen(PORT, () => {
+  console.log("Servidor iniciado en puerto " + PORT);
+});
