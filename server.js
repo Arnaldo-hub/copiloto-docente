@@ -1,57 +1,60 @@
 import express from "express";
+import OpenAI from "openai";
 
 const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 
-app.get("/ping", (req, res) => {
-  res.send("Servidor vivo");
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 app.post("/copiloto/generar", async (req, res) => {
   try {
-    const { nombre, asignatura, tema } = req.body;
+    const { asignatura, curso, unidad, oa, duracion } = req.body;
 
     const prompt = `
-Eres el Copiloto Docente.
-Crea una planificación de clase para:
+Eres un experto planificador pedagógico chileno.
 
-Docente: ${nombre}
+PROHIBIDO:
+- No saludar
+- No despedirse
+- No hacer preguntas
+- No agregar frases como "Por supuesto", "Aquí tienes", "¿Deseas modificar algo?"
+- No agregar introducciones ni cierres conversacionales
+
+OBLIGATORIO:
+- Entregar directamente la planificación.
+- Formato claro, profesional y ordenado.
+- Usar títulos y subtítulos.
+- Redactar como documento pedagógico formal.
+
+Datos de la clase:
 Asignatura: ${asignatura}
-Tema: ${tema}
-
-Incluye:
-- Inicio
-- Desarrollo
-- Cierre
-- Evaluación
+Curso: ${curso}
+Unidad: ${unidad}
+OA: ${oa}
+Duración: ${duracion} minutos
 `;
 
-    const response = await fetch("https://api.openai.com/v1/responses", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "gpt-4.1",
-        input: prompt,
-      }),
+    const response = await client.responses.create({
+      model: "gpt-5-nano",
+      input: prompt,
     });
 
-    const data = await response.json();
-
-    // 👇 ESTA ES LA FORMA CORRECTA
-    const texto = data.output[0].content[0].text;
+    const texto = response.output_text;
 
     res.json({ resultado: texto });
-
   } catch (error) {
     console.error(error);
-    res.status(500).json({ resultado: "Error al generar la planificación" });
+    res.status(500).json({ resultado: "Error al generar planificación" });
   }
 });
 
-app.listen(3000, () => {
-  console.log("Servidor iniciado en puerto 3000");
+app.get("/ping", (req, res) => {
+  res.send("Servidor vivo");
+});
+
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Servidor iniciado");
 });
