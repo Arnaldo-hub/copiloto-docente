@@ -5,128 +5,128 @@
 <title>Copiloto Docente</title>
 
 <style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
-    margin:0;
-    padding:40px;
-}
-
-.container{
-    max-width:800px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
-h1{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-label{
-    font-weight:bold;
-    display:block;
-    margin-top:15px;
-}
-
-input{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    border-radius:5px;
-    border:1px solid #ccc;
-    font-size:16px;
-}
-
-button{
-    margin-top:25px;
-    width:100%;
-    padding:12px;
-    font-size:18px;
-    border:none;
-    border-radius:5px;
-    background:#2c7be5;
-    color:white;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1a5fd0;
-}
-
-#resultado{
-    margin-top:40px;
-    padding:20px;
-    background:#fafafa;
-    border:1px solid #ddd;
-    border-radius:8px;
-    white-space:pre-wrap;
-    line-height:1.6;
-}
+body{font-family:Arial;background:#f4f6f8;padding:40px}
+.container{max-width:900px;margin:auto;background:white;padding:30px;border-radius:10px;box-shadow:0 0 15px rgba(0,0,0,0.1)}
+label{font-weight:bold;margin-top:15px;display:block}
+input,select{width:100%;padding:10px;margin-top:5px;border-radius:5px;border:1px solid #ccc}
+button{margin-top:25px;width:100%;padding:12px;font-size:18px;border:none;border-radius:5px;background:#2c7be5;color:white;cursor:pointer}
+#oaContainer{margin-top:10px}
+#resultado{margin-top:40px;white-space:pre-wrap}
 </style>
 </head>
-
 <body>
 
 <div class="container">
-    <h1>Planificación de Clase</h1>
+<h1>Planificación de Clase</h1>
 
-    <form id="formulario">
-        <label>Asignatura</label>
-        <input type="text" id="asignatura" required>
+<label>Asignatura</label>
+<select id="asignatura"></select>
 
-        <label>Curso</label>
-        <input type="text" id="curso" required>
+<label>Curso</label>
+<select id="curso"></select>
 
-        <label>Unidad</label>
-        <input type="text" id="unidad" required>
+<label>Unidad</label>
+<select id="unidad"></select>
 
-        <label>OA</label>
-        <input type="text" id="oa" required>
+<label>OA a trabajar</label>
+<div id="oaContainer"></div>
 
-        <label>Duración de la clase (minutos)</label>
-        <input type="number" id="duracion" required>
+<label>Duración (minutos)</label>
+<input type="number" id="duracion" value="60">
 
-        <button type="submit">Generar planificación paso a paso</button>
-    </form>
+<button onclick="generar()">Generar planificación</button>
 
-    <div id="resultado"></div>
+<div id="resultado"></div>
 </div>
 
 <script>
-document.getElementById('formulario').addEventListener('submit', async function(e){
-    e.preventDefault();
+let baseCurricular = {};
 
-    const datos = {
-        asignatura: document.getElementById('asignatura').value,
-        curso: document.getElementById('curso').value,
-        unidad: document.getElementById('unidad').value,
-        oa: document.getElementById('oa').value,
-        duracion: document.getElementById('duracion').value
-    };
+// Cargar JSON oficial
+fetch("base_curricular.json")
+  .then(res => res.json())
+  .then(data => {
+    baseCurricular = data;
+    cargarAsignaturas();
+  });
 
-    const resultadoDiv = document.getElementById('resultado');
-    resultadoDiv.innerHTML = "Generando planificación...";
+function cargarAsignaturas(){
+  const select = document.getElementById('asignatura');
+  select.innerHTML = "<option value=''>Seleccione</option>";
+  Object.keys(baseCurricular).forEach(a=>{
+    select.innerHTML += `<option value="${a}">${a}</option>`;
+  });
+}
 
-    try {
-        const respuesta = await fetch('/copiloto/generar', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(datos)
-        });
+document.getElementById('asignatura').addEventListener('change', cargarCursos);
+document.getElementById('curso').addEventListener('change', cargarUnidades);
+document.getElementById('unidad').addEventListener('change', cargarOA);
 
-        const json = await respuesta.json();
+function cargarCursos(){
+  const asig = asignatura.value;
+  curso.innerHTML = "<option value=''>Seleccione</option>";
+  unidad.innerHTML = "";
+  oaContainer.innerHTML = "";
 
-        resultadoDiv.innerHTML = json.resultado;
+  if(baseCurricular[asig]){
+    Object.keys(baseCurricular[asig]).forEach(c=>{
+      curso.innerHTML += `<option value="${c}">${c}</option>`;
+    });
+  }
+}
 
-    } catch (error) {
-        resultadoDiv.innerHTML = "Error al generar la planificación.";
-        console.error(error);
-    }
-});
+function cargarUnidades(){
+  const asig = asignatura.value;
+  const cur = curso.value;
+  unidad.innerHTML = "<option value=''>Seleccione</option>";
+  oaContainer.innerHTML = "";
+
+  if(baseCurricular[asig] && baseCurricular[asig][cur]){
+    Object.keys(baseCurricular[asig][cur]).forEach(u=>{
+      unidad.innerHTML += `<option value="${u}">${u}</option>`;
+    });
+  }
+}
+
+function cargarOA(){
+  const asig = asignatura.value;
+  const cur = curso.value;
+  const uni = unidad.value;
+  oaContainer.innerHTML = "";
+
+  if(baseCurricular[asig] && baseCurricular[asig][cur]){
+    baseCurricular[asig][cur][uni].forEach(oa=>{
+      oaContainer.innerHTML += `
+        <label>
+          <input type="checkbox" value="${oa}"> ${oa}
+        </label>`;
+    });
+  }
+}
+
+async function generar(){
+  const oas = [...document.querySelectorAll('#oaContainer input:checked')]
+               .map(x=>x.value).join(", ");
+
+  const datos = {
+    asignatura: asignatura.value,
+    curso: curso.value,
+    unidad: unidad.value,
+    oa: oas,
+    duracion: duracion.value
+  };
+
+  resultado.innerHTML="Generando planificación...";
+
+  const res = await fetch('/copiloto/generar',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(datos)
+  });
+
+  const json = await res.json();
+  resultado.innerHTML = json.resultado;
+}
 </script>
 
 </body>
