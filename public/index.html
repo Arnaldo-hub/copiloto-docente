@@ -45,7 +45,7 @@ const curso = document.getElementById('curso');
 const unidad = document.getElementById('unidad');
 const oaDiv = document.getElementById('oaContainer');
 
-fetch('base_curricular.json')
+fetch('/base_curricular.json')
   .then(r=>r.json())
   .then(data=>{
     base = data;
