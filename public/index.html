@@ -8,7 +8,7 @@
 body{font-family:Arial;background:#f4f6f8;padding:40px}
 .container{max-width:900px;margin:auto;background:white;padding:30px;border-radius:10px;box-shadow:0 0 15px rgba(0,0,0,0.1)}
 label{font-weight:bold;margin-top:15px;display:block}
-input,select{width:100%;padding:10px;margin-top:5px;border-radius:5px;border:1px solid #ccc}
+select,input{width:100%;padding:10px;margin-top:5px;border-radius:5px;border:1px solid #ccc}
 button{margin-top:25px;width:100%;padding:12px;font-size:18px;border:none;border-radius:5px;background:#2c7be5;color:white;cursor:pointer}
 #oaContainer{margin-top:10px}
 #resultado{margin-top:40px;white-space:pre-wrap}
@@ -42,7 +42,11 @@ button{margin-top:25px;width:100%;padding:12px;font-size:18px;border:none;border
 <script>
 let baseCurricular = {};
 
-// Cargar JSON oficial
+const asignaturaSelect = document.getElementById('asignatura');
+const cursoSelect = document.getElementById('curso');
+const unidadSelect = document.getElementById('unidad');
+const oaDiv = document.getElementById('oaContainer');
+
 fetch("base_curricular.json")
   .then(res => res.json())
   .then(data => {
@@ -51,69 +55,66 @@ fetch("base_curricular.json")
   });
 
 function cargarAsignaturas(){
-  const select = document.getElementById('asignatura');
-  select.innerHTML = "<option value=''>Seleccione</option>";
+  asignaturaSelect.innerHTML = "<option value=''>Seleccione</option>";
   Object.keys(baseCurricular).forEach(a=>{
-    select.innerHTML += `<option value="${a}">${a}</option>`;
+    asignaturaSelect.innerHTML += `<option value="${a}">${a}</option>`;
   });
 }
 
-document.getElementById('asignatura').addEventListener('change', cargarCursos);
-document.getElementById('curso').addEventListener('change', cargarUnidades);
-document.getElementById('unidad').addEventListener('change', cargarOA);
+asignaturaSelect.addEventListener('change', ()=>{
+  cursoSelect.innerHTML = "<option value=''>Seleccione</option>";
+  unidadSelect.innerHTML = "";
+  oaDiv.innerHTML = "";
 
-function cargarCursos(){
-  const asig = asignatura.value;
-  curso.innerHTML = "<option value=''>Seleccione</option>";
-  unidad.innerHTML = "";
-  oaContainer.innerHTML = "";
-
+  const asig = asignaturaSelect.value;
   if(baseCurricular[asig]){
     Object.keys(baseCurricular[asig]).forEach(c=>{
-      curso.innerHTML += `<option value="${c}">${c}</option>`;
+      cursoSelect.innerHTML += `<option value="${c}">${c}</option>`;
     });
   }
-}
+});
 
-function cargarUnidades(){
-  const asig = asignatura.value;
-  const cur = curso.value;
-  unidad.innerHTML = "<option value=''>Seleccione</option>";
-  oaContainer.innerHTML = "";
+cursoSelect.addEventListener('change', ()=>{
+  unidadSelect.innerHTML = "<option value=''>Seleccione</option>";
+  oaDiv.innerHTML = "";
+
+  const asig = asignaturaSelect.value;
+  const cur = cursoSelect.value;
 
   if(baseCurricular[asig] && baseCurricular[asig][cur]){
     Object.keys(baseCurricular[asig][cur]).forEach(u=>{
-      unidad.innerHTML += `<option value="${u}">${u}</option>`;
+      unidadSelect.innerHTML += `<option value="${u}">${u}</option>`;
     });
   }
-}
+});
 
-function cargarOA(){
-  const asig = asignatura.value;
-  const cur = curso.value;
-  const uni = unidad.value;
-  oaContainer.innerHTML = "";
+unidadSelect.addEventListener('change', ()=>{
+  oaDiv.innerHTML = "";
+
+  const asig = asignaturaSelect.value;
+  const cur = cursoSelect.value;
+  const uni = unidadSelect.value;
 
   if(baseCurricular[asig] && baseCurricular[asig][cur]){
     baseCurricular[asig][cur][uni].forEach(oa=>{
-      oaContainer.innerHTML += `
+      oaDiv.innerHTML += `
         <label>
           <input type="checkbox" value="${oa}"> ${oa}
         </label>`;
     });
   }
-}
+});
 
 async function generar(){
   const oas = [...document.querySelectorAll('#oaContainer input:checked')]
                .map(x=>x.value).join(", ");
 
   const datos = {
-    asignatura: asignatura.value,
-    curso: curso.value,
-    unidad: unidad.value,
+    asignatura: asignaturaSelect.value,
+    curso: cursoSelect.value,
+    unidad: unidadSelect.value,
     oa: oas,
-    duracion: duracion.value
+    duracion: document.getElementById('duracion').value
   };
 
   resultado.innerHTML="Generando planificación...";
@@ -131,4 +132,5 @@ async function generar(){
 
 </body>
 </html>
+
 
