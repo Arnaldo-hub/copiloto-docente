@@ -1,60 +1,121 @@
-import express from "express";
-import OpenAI from "openai";
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Copiloto Docente</title>
 
-const app = express();
-app.use(express.json());
-app.use(express.static("public"));
+<style>
+body{font-family:Arial;background:#f4f6f8;padding:40px}
+.container{max-width:900px;margin:auto;background:white;padding:30px;border-radius:10px;box-shadow:0 0 15px rgba(0,0,0,0.1)}
+label{font-weight:bold;margin-top:15px;display:block}
+input,select{width:100%;padding:10px;margin-top:5px;border-radius:5px;border:1px solid #ccc}
+button{margin-top:25px;width:100%;padding:12px;font-size:18px;border:none;border-radius:5px;background:#2c7be5;color:white;cursor:pointer}
+#oaContainer{margin-top:10px}
+#resultado{margin-top:40px;white-space:pre-wrap}
+</style>
+</head>
+<body>
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+<div class="container">
+<h1>Planificación de Clase</h1>
 
-app.post("/copiloto/generar", async (req, res) => {
-  try {
-    const { asignatura, curso, unidad, oa, duracion } = req.body;
+<label>Asignatura</label>
+<input id="asignatura">
 
-    const prompt = `
-Eres un experto planificador pedagógico chileno.
+<label>Curso</label>
+<input id="curso">
 
-PROHIBIDO:
-- No saludar
-- No despedirse
-- No hacer preguntas
-- No agregar frases como "Por supuesto", "Aquí tienes", "¿Deseas modificar algo?"
-- No agregar introducciones ni cierres conversacionales
+<label>Unidad</label>
+<select id="unidad"></select>
 
-OBLIGATORIO:
-- Entregar directamente la planificación.
-- Formato claro, profesional y ordenado.
-- Usar títulos y subtítulos.
-- Redactar como documento pedagógico formal.
+<label>OA a trabajar</label>
+<div id="oaContainer"></div>
 
-Datos de la clase:
-Asignatura: ${asignatura}
-Curso: ${curso}
-Unidad: ${unidad}
-OA: ${oa}
-Duración: ${duracion} minutos
-`;
+<label>Duración (minutos)</label>
+<input type="number" id="duracion">
 
-    const response = await client.responses.create({
-      model: "gpt-5-nano",
-      input: prompt,
-    });
+<button onclick="generar()">Generar planificación</button>
 
-    const texto = response.output_text;
+<div id="resultado"></div>
+</div>
 
-    res.json({ resultado: texto });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ resultado: "Error al generar planificación" });
+<script>
+// BASE CURRICULAR DEMO (puedes ampliarla luego)
+const baseCurricular = {
+  "Lenguaje y Comunicación": {
+    "4 Básico": {
+      "Unidad 1": ["OA1 Leer comprensivamente", "OA2 Escribir textos", "OA3 Comprender textos orales"],
+      "Unidad 2": ["OA4 Producción escrita", "OA5 Uso de vocabulario"]
+    }
+  },
+  "Matemática": {
+    "4 Básico": {
+      "Unidad 1": ["OA1 Números hasta 10.000", "OA2 Resolución de problemas"],
+      "Unidad 2": ["OA3 Fracciones", "OA4 Representación gráfica"]
+    }
   }
-});
+};
 
-app.get("/ping", (req, res) => {
-  res.send("Servidor vivo");
-});
+document.getElementById('asignatura').addEventListener('blur', cargarUnidades);
+document.getElementById('curso').addEventListener('blur', cargarUnidades);
+document.getElementById('unidad').addEventListener('change', cargarOA);
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Servidor iniciado");
-});
+function cargarUnidades(){
+  const asig = document.getElementById('asignatura').value;
+  const curso = document.getElementById('curso').value;
+  const unidadSelect = document.getElementById('unidad');
+  unidadSelect.innerHTML = "";
+
+  if(baseCurricular[asig] && baseCurricular[asig][curso]){
+    const unidades = Object.keys(baseCurricular[asig][curso]);
+    unidades.forEach(u=>{
+      const opt = document.createElement('option');
+      opt.value = u;
+      opt.textContent = u;
+      unidadSelect.appendChild(opt);
+    });
+    cargarOA();
+  }
+}
+
+function cargarOA(){
+  const asig = document.getElementById('asignatura').value;
+  const curso = document.getElementById('curso').value;
+  const unidad = document.getElementById('unidad').value;
+  const oaDiv = document.getElementById('oaContainer');
+  oaDiv.innerHTML = "";
+
+  if(baseCurricular[asig] && baseCurricular[asig][curso]){
+    const oas = baseCurricular[asig][curso][unidad];
+    oas.forEach(oa=>{
+      oaDiv.innerHTML += `<label><input type="checkbox" value="${oa}"> ${oa}</label>`;
+    });
+  }
+}
+
+async function generar(){
+  const oas = [...document.querySelectorAll('#oaContainer input:checked')].map(x=>x.value).join(", ");
+
+  const datos = {
+    asignatura: document.getElementById('asignatura').value,
+    curso: document.getElementById('curso').value,
+    unidad: document.getElementById('unidad').value,
+    oa: oas,
+    duracion: document.getElementById('duracion').value
+  };
+
+  document.getElementById('resultado').innerHTML="Generando...";
+
+  const res = await fetch('/copiloto/generar',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(datos)
+  });
+
+  const json = await res.json();
+  document.getElementById('resultado').innerHTML=json.resultado;
+}
+</script>
+
+</body>
+</html>
