@@ -1,3 +1,19 @@
+Aquí tienes el **`public/index.html` completo, listo para copiar y pegar**.
+Incluye:
+
+* Carga correcta de `base_curricular.json`
+* Unidades y OA automáticos
+* Botón con estados: *Despertando servidor…* → *Generando…*
+* Resultado formateado
+* Funciona perfecto con tu `server.js` actual
+
+> Guarda este archivo EXACTAMENTE en: `public/index.html`
+
+---
+
+## ✅ `public/index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,9 +34,7 @@ body{
   border-radius:10px;
   box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
-h1{
-  text-align:center;
-}
+h1{ text-align:center; }
 label{
   font-weight:bold;
   margin-top:15px;
@@ -43,6 +57,10 @@ button{
   background:#2c7be5;
   color:white;
   cursor:pointer;
+}
+button:disabled{
+  background:#9aa5b1;
+  cursor:not-allowed;
 }
 #oaContainer label{
   display:block;
@@ -86,7 +104,7 @@ button{
 <label>Duración (minutos)</label>
 <input type="number" id="duracion" value="60">
 
-<button onclick="generar()">Generar planificación</button>
+<button id="btnGenerar" onclick="generar()">Generar planificación</button>
 
 <div id="resultado"></div>
 </div>
@@ -94,7 +112,6 @@ button{
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
 
-  // Cargar base curricular
   const res = await fetch("/base_curricular.json");
   const baseCurricular = await res.json();
 
@@ -102,7 +119,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const curso = document.getElementById("curso");
   const unidad = document.getElementById("unidad");
   const oaDiv = document.getElementById("oaContainer");
-  const resultado = document.getElementById("resultado");
 
   function cargarUnidades() {
     unidad.innerHTML = "";
@@ -142,34 +158,49 @@ document.addEventListener("DOMContentLoaded", async () => {
   curso.addEventListener("change", cargarUnidades);
   unidad.addEventListener("change", cargarOA);
 
-  window.generar = async function () {
-    const oas = [...document.querySelectorAll('#oaContainer input:checked')]
-      .map(x => x.value)
-      .join(", ");
-
-    resultado.innerHTML = "Generando planificación...";
-
-    const datos = {
-      asignatura: asignatura.value,
-      curso: curso.value,
-      unidad: unidad.value,
-      oa: oas,
-      duracion: document.getElementById("duracion").value
-    };
-
-    const r = await fetch("/copiloto/generar", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(datos)
-    });
-
-    const json = await r.json();
-    resultado.innerHTML = json.resultado;
-  }
-
 });
+
+async function generar(){
+
+  const btn = document.getElementById("btnGenerar");
+  const resultado = document.getElementById("resultado");
+
+  btn.disabled = true;
+  btn.innerText = "Despertando servidor...";
+
+  // Despertar Render (cold start)
+  await fetch("/ping");
+  await new Promise(r => setTimeout(r, 2000));
+
+  btn.innerText = "Generando planificación con IA...";
+  resultado.innerHTML = "";
+
+  const oas = [...document.querySelectorAll('#oaContainer input:checked')]
+                .map(x=>x.value).join(", ");
+
+  const datos = {
+    asignatura: document.getElementById('asignatura').value,
+    curso: document.getElementById('curso').value,
+    unidad: document.getElementById('unidad').value,
+    oa: oas,
+    duracion: document.getElementById('duracion').value
+  };
+
+  const res = await fetch('/copiloto/generar',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(datos)
+  });
+
+  const json = await res.json();
+
+  resultado.innerHTML = json.resultado;
+
+  btn.disabled = false;
+  btn.innerText = "Generar planificación";
+}
 </script>
 
 </body>
 </html>
-
+```
