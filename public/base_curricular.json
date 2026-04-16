@@ -1,0 +1,15 @@
+{
+  "Lenguaje y Comunicación": {
+    "1° Básico": {
+      "Unidad 1": ["OA1", "OA2", "..."],
+      "Unidad 2": ["OA3", "OA4", "..."]
+    },
+    "2° Básico": { ... },
+    ...
+  },
+  "Matemática": {
+    "1° Básico": { ... },
+    ...
+  },
+  ...
+}
