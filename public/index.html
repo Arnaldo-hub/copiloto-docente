@@ -3,33 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <title>Copiloto Docente</title>
+
 <style>
-body{font-family:Arial;background:#f4f6f8;padding:40px}
-.container{max-width:900px;margin:auto;background:white;padding:30px;border-radius:10px}
-label{font-weight:bold;margin-top:15px;display:block}
-select,input{width:100%;padding:10px;margin-top:5px}
-button{margin-top:25px;width:100%;padding:12px;font-size:18px}
-#resultado{margin-top:40px;white-space:pre-wrap}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f6f8;
+  padding:40px;
+}
+.container{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+h1{
+  text-align:center;
+}
+label{
+  font-weight:bold;
+  margin-top:15px;
+  display:block;
+}
+select,input{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+button{
+  margin-top:25px;
+  width:100%;
+  padding:12px;
+  font-size:18px;
+  border:none;
+  border-radius:5px;
+  background:#2c7be5;
+  color:white;
+  cursor:pointer;
+}
+#oaContainer label{
+  display:block;
+  margin-top:5px;
+}
+#resultado{
+  margin-top:40px;
+  white-space:pre-wrap;
+  background:#fafafa;
+  padding:20px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
 </style>
 </head>
+
 <body>
 
 <div class="container">
 <h1>Planificación de Clase</h1>
 
 <label>Asignatura</label>
-<select id="asignatura"></select>
+<select id="asignatura">
+  <option value="">Seleccione</option>
+  <option>Lenguaje y Comunicación</option>
+  <option>Matemática</option>
+</select>
 
 <label>Curso</label>
-<select id="curso"></select>
+<select id="curso">
+  <option value="">Seleccione</option>
+  <option>4 Básico</option>
+</select>
 
 <label>Unidad</label>
 <select id="unidad"></select>
 
-<label>OA</label>
+<label>OA a trabajar</label>
 <div id="oaContainer"></div>
 
-<label>Duración</label>
+<label>Duración (minutos)</label>
 <input type="number" id="duracion" value="60">
 
 <button onclick="generar()">Generar planificación</button>
@@ -38,66 +92,84 @@ button{margin-top:25px;width:100%;padding:12px;font-size:18px}
 </div>
 
 <script>
-let base = {};
+document.addEventListener("DOMContentLoaded", async () => {
 
-const asig = document.getElementById('asignatura');
-const curso = document.getElementById('curso');
-const unidad = document.getElementById('unidad');
-const oaDiv = document.getElementById('oaContainer');
+  // Cargar base curricular
+  const res = await fetch("/base_curricular.json");
+  const baseCurricular = await res.json();
 
-fetch('/base_curricular.json')
-  .then(r=>r.json())
-  .then(data=>{
-    base = data;
-    Object.keys(base).forEach(a=>{
-      asig.innerHTML += `<option>${a}</option>`;
+  const asignatura = document.getElementById("asignatura");
+  const curso = document.getElementById("curso");
+  const unidad = document.getElementById("unidad");
+  const oaDiv = document.getElementById("oaContainer");
+  const resultado = document.getElementById("resultado");
+
+  function cargarUnidades() {
+    unidad.innerHTML = "";
+    oaDiv.innerHTML = "";
+
+    const asig = asignatura.value;
+    const cur = curso.value;
+
+    if (baseCurricular[asig] && baseCurricular[asig][cur]) {
+      Object.keys(baseCurricular[asig][cur]).forEach(u => {
+        const opt = document.createElement("option");
+        opt.value = u;
+        opt.textContent = u;
+        unidad.appendChild(opt);
+      });
+      cargarOA();
+    }
+  }
+
+  function cargarOA() {
+    oaDiv.innerHTML = "";
+    const asig = asignatura.value;
+    const cur = curso.value;
+    const un = unidad.value;
+
+    const oas = baseCurricular?.[asig]?.[cur]?.[un] || [];
+    oas.forEach(oa => {
+      oaDiv.innerHTML += `
+        <label>
+          <input type="checkbox" value="${oa}"> ${oa}
+        </label>
+      `;
     });
-  });
+  }
 
-asig.onchange = ()=>{
-  curso.innerHTML="";
-  unidad.innerHTML="";
-  oaDiv.innerHTML="";
-  Object.keys(base[asig.value]).forEach(c=>{
-    curso.innerHTML += `<option>${c}</option>`;
-  });
-};
+  asignatura.addEventListener("change", cargarUnidades);
+  curso.addEventListener("change", cargarUnidades);
+  unidad.addEventListener("change", cargarOA);
 
-curso.onchange = ()=>{
-  unidad.innerHTML="";
-  oaDiv.innerHTML="";
-  Object.keys(base[asig.value][curso.value]).forEach(u=>{
-    unidad.innerHTML += `<option>${u}</option>`;
-  });
-};
+  window.generar = async function () {
+    const oas = [...document.querySelectorAll('#oaContainer input:checked')]
+      .map(x => x.value)
+      .join(", ");
 
-unidad.onchange = ()=>{
-  oaDiv.innerHTML="";
-  base[asig.value][curso.value][unidad.value].forEach(o=>{
-    oaDiv.innerHTML += `<label><input type="checkbox" value="${o}"> ${o}</label>`;
-  });
-};
+    resultado.innerHTML = "Generando planificación...";
 
-async function generar(){
-  const oas = [...document.querySelectorAll('#oaContainer input:checked')]
-              .map(x=>x.value).join(", ");
-
-  const res = await fetch('/copiloto/generar',{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      asignatura: asig.value,
+    const datos = {
+      asignatura: asignatura.value,
       curso: curso.value,
       unidad: unidad.value,
       oa: oas,
-      duracion: document.getElementById('duracion').value
-    })
-  });
+      duracion: document.getElementById("duracion").value
+    };
 
-  const json = await res.json();
-  resultado.innerText = json.resultado;
-}
+    const r = await fetch("/copiloto/generar", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(datos)
+    });
+
+    const json = await r.json();
+    resultado.innerHTML = json.resultado;
+  }
+
+});
 </script>
 
 </body>
 </html>
+
