@@ -1,15 +1,27 @@
 {
   "Lenguaje y Comunicación": {
-    "1° Básico": {
-      "Unidad 1": ["OA1", "OA2", "..."],
-      "Unidad 2": ["OA3", "OA4", "..."]
-    },
-    "2° Básico": { ... },
-    ...
+    "4 Básico": {
+      "Unidad 1": [
+        "OA1 Leer comprensivamente textos literarios y no literarios",
+        "OA2 Escribir textos coherentes",
+        "OA3 Comprender textos orales"
+      ],
+      "Unidad 2": [
+        "OA4 Producción escrita",
+        "OA5 Uso adecuado del vocabulario"
+      ]
+    }
   },
   "Matemática": {
-    "1° Básico": { ... },
-    ...
-  },
-  ...
+    "4 Básico": {
+      "Unidad 1": [
+        "OA1 Números hasta 10.000",
+        "OA2 Resolución de problemas"
+      ],
+      "Unidad 2": [
+        "OA3 Fracciones",
+        "OA4 Representación gráfica de fracciones"
+      ]
+    }
+  }
 }
