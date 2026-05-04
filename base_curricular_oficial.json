@@ -1,0 +1,102 @@
+{
+  "Matemática": {
+
+    "1° Básico": {
+
+      "Unidad 1: Números y Operaciones": {
+
+        "OA 1": {
+          "descripcion": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10.",
+          "indicadores": [
+            "Cuenta hacia adelante hasta 100.",
+            "Cuenta hacia atrás desde un número dado.",
+            "Reconoce secuencias de 2, 5 y 10."
+          ],
+          "habilidades": [
+            "Contar",
+            "Reconocer patrones",
+            "Representar números"
+          ],
+          "actitudes": [
+            "Participa activamente",
+            "Muestra perseverancia"
+          ],
+          "evaluaciones": [
+            "Conteo oral",
+            "Secuencias numéricas",
+            "Uso de material concreto"
+          ]
+        },
+
+        "OA 2": {
+          "descripcion": "Identificar el orden de los elementos de una serie con números ordinales.",
+          "indicadores": [
+            "Reconoce posiciones en una fila.",
+            "Utiliza números ordinales correctamente."
+          ],
+          "habilidades": [
+            "Ordenar",
+            "Identificar"
+          ],
+          "actitudes": [
+            "Respeta turnos",
+            "Participa en actividades grupales"
+          ],
+          "evaluaciones": [
+            "Ordenar objetos",
+            "Identificar posiciones"
+          ]
+        }
+      }
+    },
+
+    "2° Básico": {
+
+      "Unidad 1: Números hasta 1000": {
+
+        "OA 1": {
+          "descripcion": "Leer, escribir y representar números hasta 1000.",
+          "indicadores": [
+            "Lee números hasta 1000.",
+            "Escribe números correctamente.",
+            "Representa números con material concreto."
+          ],
+          "habilidades": [
+            "Leer",
+            "Escribir",
+            "Representar"
+          ],
+          "actitudes": [
+            "Interés por aprender",
+            "Orden en el trabajo"
+          ],
+          "evaluaciones": [
+            "Lectura de números",
+            "Escritura numérica",
+            "Representación con bloques"
+          ]
+        },
+
+        "OA 2": {
+          "descripcion": "Comparar y ordenar números hasta 1000.",
+          "indicadores": [
+            "Compara números usando mayor y menor.",
+            "Ordena secuencias numéricas."
+          ],
+          "habilidades": [
+            "Comparar",
+            "Ordenar"
+          ],
+          "actitudes": [
+            "Precisión en el trabajo",
+            "Participación activa"
+          ],
+          "evaluaciones": [
+            "Ejercicios de comparación",
+            "Ordenamiento de números"
+          ]
+        }
+      }
+    }
+  }
+}

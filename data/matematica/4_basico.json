@@ -1,0 +1,23 @@
+{
+  "Matemática": {
+    "4° Básico": {
+
+      "Unidad 1: Números y operaciones": {
+
+        "OA 1": {
+          "descripcion": "Demostrar comprensión de la adición y sustracción.",
+          "indicadores": [
+            "Resuelve operaciones",
+            "Aplica estrategias"
+          ],
+          "habilidades": ["Calcular", "Resolver problemas"],
+          "actitudes": ["Perseverancia"],
+          "evaluaciones": [
+            "Resolución de problemas"
+          ]
+        }
+
+      }
+    }
+  }
+}

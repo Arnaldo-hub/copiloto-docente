@@ -1,0 +1,24 @@
+{
+  "Matemática": {
+    "3° Básico": {
+
+      "Unidad 1: Números hasta 10.000": {
+
+        "OA 1": {
+          "descripcion": "Leer, escribir y representar números hasta 10.000.",
+          "indicadores": [
+            "Lee números hasta 10.000",
+            "Representa números"
+          ],
+          "habilidades": ["Leer", "Representar"],
+          "actitudes": ["Interés por aprender"],
+          "evaluaciones": [
+            "Lectura numérica",
+            "Representación gráfica"
+          ]
+        }
+
+      }
+    }
+  }
+}

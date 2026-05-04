@@ -1,0 +1,23 @@
+{
+  "Matemática": {
+    "6° Básico": {
+
+      "Unidad 1: Números y operaciones": {
+
+        "OA 1": {
+          "descripcion": "Resolver problemas con operaciones.",
+          "indicadores": [
+            "Resuelve problemas",
+            "Justifica procedimientos"
+          ],
+          "habilidades": ["Resolver problemas"],
+          "actitudes": ["Autonomía"],
+          "evaluaciones": [
+            "Problemas contextualizados"
+          ]
+        }
+
+      }
+    }
+  }
+}

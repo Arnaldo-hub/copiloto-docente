@@ -1,0 +1,30 @@
+{
+  "Matemática": {
+    "1° Básico": {
+      "Unidad 1: Números y Operaciones": {
+        "OA 1": {
+          "descripcion": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10.",
+          "indicadores": [
+            "Cuenta hasta 100",
+            "Reconoce secuencias",
+            "Identifica patrones numéricos"
+          ],
+          "habilidades": [
+            "Contar",
+            "Reconocer patrones",
+            "Representar números"
+          ],
+          "actitudes": [
+            "Participa activamente",
+            "Muestra perseverancia"
+          ],
+          "evaluaciones": [
+            "Conteo oral guiado",
+            "Secuencias numéricas",
+            "Resolución de patrones"
+          ]
+        }
+      }
+    }
+  }
+}

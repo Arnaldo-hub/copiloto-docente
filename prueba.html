@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Prueba JSON</h1>
+<pre id="out"></pre>
+
+<script>
+fetch("base_curricular_oficial.json")
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("out").textContent =
+      JSON.stringify(d, null, 2);
+  })
+  .catch(e => {
+    document.getElementById("out").textContent =
+      "ERROR: " + e;
+  });
+</script>
+</body>
+</html>

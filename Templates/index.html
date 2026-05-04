@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🧠 Copiloto Docente</title>
+</head>
+
+<body>
+
+<h1>🧠 Copiloto Docente</h1>
+
+<label>Asignatura</label><br>
+<select id="asignatura" onchange="cargarCursos()"></select><br><br>
+
+<label>Curso</label><br>
+<select id="curso" onchange="cargarUnidades()"></select><br><br>
+
+<label>Unidad</label><br>
+<select id="unidad" onchange="cargarOA()"></select><br><br>
+
+<label>Selecciona OA</label>
+<div id="oa"></div><br>
+
+<button onclick="generar()">🚀 Generar Planificación</button>
+
+<h3>Resultado:</h3>
+<pre id="resultado"></pre>
+
+<button onclick="descargarPDF()">📄 Descargar PDF</button>
+
+<script>
+
+let BASE = {};
+
+// Cargar base
+fetch("/api/base")
+  .then(res => res.json())
+  .then(data => {
+    BASE = data;
+    cargarAsignaturas();
+  });
+
+// Asignaturas
+function cargarAsignaturas() {
+  const select = document.getElementById("asignatura");
+  select.innerHTML = "";
+
+  for (let asignatura in BASE) {
+    let option = document.createElement("option");
+    option.value = asignatura;
+    option.textContent = asignatura;
+    select.appendChild(option);
+  }
+
+  cargarCursos();
+}
+
+// Cursos
+function cargarCursos() {
+  const asignatura = document.getElementById("asignatura").value;
+  const select = document.getElementById("curso");
+
+  select.innerHTML = "";
+
+  for (let curso in BASE[asignatura]) {
+    let option = document.createElement("option");
+    option.value = curso;
+    option.textContent = curso;
+    select.appendChild(option);
+  }
+
+  cargarUnidades();
+}
+
+// Unidades
+function cargarUnidades() {
+  const asignatura = document.getElementById("asignatura").value;
+  const curso = document.getElementById("curso").value;
+  const select = document.getElementById("unidad");
+
+  select.innerHTML = "";
+
+  for (let unidad in BASE[asignatura][curso]) {
+    let option = document.createElement("option");
+    option.value = unidad;
+    option.textContent = unidad;
+    select.appendChild(option);
+  }
+
+  cargarOA();
+}
+
+// OA
+function cargarOA() {
+  const asignatura = document.getElementById("asignatura").value;
+  const curso = document.getElementById("curso").value;
+  const unidad = document.getElementById("unidad").value;
+
+  const contenedor = document.getElementById("oa");
+  contenedor.innerHTML = "";
+
+  const datos = BASE[asignatura][curso][unidad];
+
+  Object.keys(datos).forEach(clave => {
+    const oa = datos[clave];
+    const descripcion = oa.descripcion || "Sin descripción";
+
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = `${clave}: ${descripcion}`;
+
+    let label = document.createElement("label");
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(" " + checkbox.value));
+
+    let div = document.createElement("div");
+    div.appendChild(label);
+
+    contenedor.appendChild(div);
+  });
+}
+
+// Generar planificación
+function generar() {
+  const asignatura = document.getElementById("asignatura").value;
+  const curso = document.getElementById("curso").value;
+  const unidad = document.getElementById("unidad").value;
+
+  const seleccionados = [];
+  document.querySelectorAll("#oa input:checked").forEach(cb => {
+    seleccionados.push(cb.value);
+  });
+
+  fetch("/api/planificar", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      asignatura,
+      curso,
+      unidad,
+      oa: seleccionados
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("resultado").textContent = data.plan;
+  });
+}
+
+// Descargar PDF
+function descargarPDF() {
+  const contenido = document.getElementById("resultado").textContent;
+
+  fetch("/api/pdf", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      contenido: contenido
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.ok) {
+      alert("PDF generado (revisa tu carpeta del proyecto)");
+    } else {
+      alert("Error al generar PDF");
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>
