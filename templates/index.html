@@ -7,171 +7,144 @@
 
 <body>
 
+<h2>🔐 Login Docente</h2>
+
+<input id="user" placeholder="Usuario"><br>
+<input id="pass" type="password" placeholder="Contraseña"><br>
+
+<button onclick="login()">Ingresar</button>
+<button onclick="registro()">Registrarse</button>
+
+<hr>
+
 <h1>🧠 Copiloto Docente</h1>
 
-<label>Asignatura</label><br>
-<select id="asignatura" onchange="cargarCursos()"></select><br><br>
+<select id="asignatura" onchange="cargarCursos()"></select>
+<select id="curso" onchange="cargarUnidades()"></select>
+<select id="unidad" onchange="cargarOA()"></select>
 
-<label>Curso</label><br>
-<select id="curso" onchange="cargarUnidades()"></select><br><br>
-
-<label>Unidad</label><br>
-<select id="unidad" onchange="cargarOA()"></select><br><br>
-
-<label>Selecciona OA</label>
-<div id="oa"></div><br>
+<div id="oa"></div>
 
 <button onclick="generar()">🚀 Generar Planificación</button>
+<button onclick="verHistorial()">📚 Historial</button>
 
-<h3>Resultado:</h3>
 <pre id="resultado"></pre>
 
-<button onclick="descargarPDF()">📄 Descargar PDF</button>
-
 <script>
-
 let BASE = {};
 
-// Cargar base
 fetch("/api/base")
-  .then(res => res.json())
-  .then(data => {
-    BASE = data;
-    cargarAsignaturas();
-  });
+.then(r => r.json())
+.then(d => {
+  BASE = d;
+  cargarAsignaturas();
+});
 
-// Asignaturas
-function cargarAsignaturas() {
-  const select = document.getElementById("asignatura");
-  select.innerHTML = "";
-
-  for (let asignatura in BASE) {
-    let option = document.createElement("option");
-    option.value = asignatura;
-    option.textContent = asignatura;
-    select.appendChild(option);
+function cargarAsignaturas(){
+  let s = document.getElementById("asignatura");
+  for(let a in BASE){
+    let o = document.createElement("option");
+    o.value=a; o.textContent=a;
+    s.appendChild(o);
   }
-
   cargarCursos();
 }
 
-// Cursos
-function cargarCursos() {
-  const asignatura = document.getElementById("asignatura").value;
-  const select = document.getElementById("curso");
-
-  select.innerHTML = "";
-
-  for (let curso in BASE[asignatura]) {
-    let option = document.createElement("option");
-    option.value = curso;
-    option.textContent = curso;
-    select.appendChild(option);
+function cargarCursos(){
+  let a = asignatura.value;
+  curso.innerHTML="";
+  for(let c in BASE[a]){
+    let o = document.createElement("option");
+    o.value=c; o.textContent=c;
+    curso.appendChild(o);
   }
-
   cargarUnidades();
 }
 
-// Unidades
-function cargarUnidades() {
-  const asignatura = document.getElementById("asignatura").value;
-  const curso = document.getElementById("curso").value;
-  const select = document.getElementById("unidad");
-
-  select.innerHTML = "";
-
-  for (let unidad in BASE[asignatura][curso]) {
-    let option = document.createElement("option");
-    option.value = unidad;
-    option.textContent = unidad;
-    select.appendChild(option);
+function cargarUnidades(){
+  let a=asignatura.value,c=curso.value;
+  unidad.innerHTML="";
+  for(let u in BASE[a][c]){
+    let o=document.createElement("option");
+    o.value=u;o.textContent=u;
+    unidad.appendChild(o);
   }
-
   cargarOA();
 }
 
-// OA
-function cargarOA() {
-  const asignatura = document.getElementById("asignatura").value;
-  const curso = document.getElementById("curso").value;
-  const unidad = document.getElementById("unidad").value;
+function cargarOA(){
+  let a=asignatura.value,c=curso.value,u=unidad.value;
+  let cont=document.getElementById("oa");
+  cont.innerHTML="";
+  let datos=BASE[a][c][u];
 
-  const contenedor = document.getElementById("oa");
-  contenedor.innerHTML = "";
+  Object.keys(datos).forEach(k=>{
+    let cb=document.createElement("input");
+    cb.type="checkbox";
+    cb.value=k+": "+datos[k].descripcion;
 
-  const datos = BASE[asignatura][curso][unidad];
-
-  Object.keys(datos).forEach(clave => {
-    const oa = datos[clave];
-    const descripcion = oa.descripcion || "Sin descripción";
-
-    let checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.value = `${clave}: ${descripcion}`;
-
-    let label = document.createElement("label");
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(" " + checkbox.value));
-
-    let div = document.createElement("div");
-    div.appendChild(label);
-
-    contenedor.appendChild(div);
+    cont.appendChild(cb);
+    cont.appendChild(document.createTextNode(cb.value));
+    cont.appendChild(document.createElement("br"));
   });
 }
 
-// Generar planificación
-function generar() {
-  const asignatura = document.getElementById("asignatura").value;
-  const curso = document.getElementById("curso").value;
-  const unidad = document.getElementById("unidad").value;
+function generar(){
+  let oa=[];
+  document.querySelectorAll("#oa input:checked").forEach(x=>oa.push(x.value));
 
-  const seleccionados = [];
-  document.querySelectorAll("#oa input:checked").forEach(cb => {
-    seleccionados.push(cb.value);
-  });
-
-  fetch("/api/planificar", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      asignatura,
-      curso,
-      unidad,
-      oa: seleccionados
+  fetch("/api/planificar",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      asignatura:asignatura.value,
+      curso:curso.value,
+      unidad:unidad.value,
+      oa:oa
     })
   })
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("resultado").textContent = data.plan;
+  .then(r=>r.json())
+  .then(d=>resultado.textContent=d.plan);
+}
+
+function verHistorial(){
+  fetch("/api/historial")
+  .then(r=>r.json())
+  .then(d=>{
+    let t="HISTORIAL\n\n";
+    d.forEach(p=>{
+      t+=p.asignatura+" "+p.curso+"\n";
+      t+=p.plan.substring(0,200)+"...\n\n";
+    });
+    resultado.textContent=t;
   });
 }
 
-// Descargar PDF
-function descargarPDF() {
-  const contenido = document.getElementById("resultado").textContent;
-
-  fetch("/api/pdf", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      contenido: contenido
+function login(){
+  fetch("/api/login",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      usuario:user.value,
+      password:pass.value
     })
   })
-  .then(res => res.json())
-  .then(data => {
-    if (data.ok) {
-      alert("PDF generado (revisa tu carpeta del proyecto)");
-    } else {
-      alert("Error al generar PDF");
-    }
-  });
+  .then(r=>r.json())
+  .then(d=>alert(d.ok?"Login OK":"Error"));
 }
 
+function registro(){
+  fetch("/api/registro",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      usuario:user.value,
+      password:pass.value
+    })
+  })
+  .then(r=>r.json())
+  .then(d=>alert(d.ok?"Registrado":d.msg));
+}
 </script>
 
 </body>

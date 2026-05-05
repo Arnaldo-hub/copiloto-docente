@@ -1,21 +1,37 @@
 from flask import Flask, render_template, request, jsonify
 import json
-from openai import OpenAI
+import os
+import datetime
 
-# PDF
-from reportlab.platypus import SimpleDocTemplate, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
+from openai import OpenAI
 
 app = Flask(__name__)
 
-# 🔑 PON TU API KEY REAL
-client = OpenAI(api_key="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")
+# =========================
+# OPENAI
+# =========================
+client = OpenAI(api_key=os.environ.get("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
+"))
 
 # =========================
-# CARGA BASE CURRICULAR
+# BASE CURRICULAR
 # =========================
-with open("base_curricular_oficial.json", encoding="utf-8") as f:
-    BASE = json.load(f)
+BASE = {}
+
+try:
+    with open("base_curricular_oficial.json", encoding="utf-8") as f:
+        BASE = json.load(f)
+except Exception as e:
+    print("ERROR JSON:", e)
+
+# =========================
+# USUARIOS
+# =========================
+usuarios_file = "usuarios/usuarios.json"
+
+if not os.path.exists(usuarios_file):
+    with open(usuarios_file, "w") as f:
+        json.dump([], f)
 
 # =========================
 # RUTAS
@@ -31,46 +47,78 @@ def base():
     return jsonify(BASE)
 
 
-# 🔥 GENERAR PLANIFICACIÓN (IA PRO)
+# =========================
+# LOGIN
+# =========================
+
+@app.route("/api/registro", methods=["POST"])
+def registro():
+    data = request.json
+    usuario = data.get("usuario")
+    password = data.get("password")
+
+    with open(usuarios_file, encoding="utf-8") as f:
+        usuarios = json.load(f)
+
+    for u in usuarios:
+        if u["usuario"] == usuario:
+            return jsonify({"ok": False, "msg": "Usuario ya existe"})
+
+    usuarios.append({"usuario": usuario, "password": password})
+
+    with open(usuarios_file, "w", encoding="utf-8") as f:
+        json.dump(usuarios, f, indent=2)
+
+    return jsonify({"ok": True})
+
+
+@app.route("/api/login", methods=["POST"])
+def login():
+    data = request.json
+    usuario = data.get("usuario")
+    password = data.get("password")
+
+    with open(usuarios_file, encoding="utf-8") as f:
+        usuarios = json.load(f)
+
+    for u in usuarios:
+        if u["usuario"] == usuario and u["password"] == password:
+            return jsonify({"ok": True})
+
+    return jsonify({"ok": False})
+
+
+# =========================
+# PLANIFICACI�N IA + GUARDADO
+# =========================
+
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
     try:
         data = request.json
 
-        asignatura = data['asignatura']
-        curso = data['curso']
-        unidad = data['unidad']
-        oa_lista = data['oa']
+        asignatura = data.get("asignatura", "")
+        curso = data.get("curso", "")
+        unidad = data.get("unidad", "")
+        oa_lista = data.get("oa", [])
 
         prompt = f"""
-Actúa como experto en planificación docente del Ministerio de Educación de Chile.
-
-Genera una planificación de clase de alto nivel pedagógico.
+Genera una planificaci�n de clase profesional.
 
 Asignatura: {asignatura}
 Curso: {curso}
 Unidad: {unidad}
 
-Objetivos de Aprendizaje:
+Objetivos:
 {chr(10).join(oa_lista)}
 
-REQUISITOS:
-
-- Definir UN objetivo claro
-- Inicio con activación de conocimientos previos
-- Desarrollo con actividades paso a paso
-- Cierre con metacognición
-- Evaluación con criterios observables
-- Recursos concretos
-
-Formato:
-
-1. Objetivo de la clase
-2. Inicio (10 min)
-3. Desarrollo (25 min)
-4. Cierre (5 min)
-5. Evaluación
-6. Recursos
+Incluye:
+- Objetivo
+- Inicio
+- Desarrollo
+- Cierre
+- Evaluaci�n
+- Recursos
 """
 
         response = client.chat.completions.create(
@@ -79,40 +127,50 @@ Formato:
             temperature=0.3
         )
 
-        return jsonify({
-            "plan": response.choices[0].message.content
-        })
+        plan = response.choices[0].message.content
+
+        # GUARDAR
+        os.makedirs("historial", exist_ok=True)
+
+        nombre = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        ruta = f"historial/plan_{nombre}.json"
+
+        with open(ruta, "w", encoding="utf-8") as f:
+            json.dump({
+                "asignatura": asignatura,
+                "curso": curso,
+                "unidad": unidad,
+                "oa": oa_lista,
+                "plan": plan
+            }, f, ensure_ascii=False, indent=2)
+
+        return jsonify({"plan": plan})
 
     except Exception as e:
-        print("🔥 ERROR IA:", e)
-        return jsonify({"plan": "❌ Error al generar planificación"})
+        print("ERROR IA:", e)
+        return jsonify({"plan": "? Error IA"})
 
 
-# 🔥 GENERAR PDF
-@app.route("/api/pdf", methods=["POST"])
-def generar_pdf():
+# =========================
+# HISTORIAL
+# =========================
+
+@app.route("/api/historial")
+def historial():
     try:
-        data = request.json
-        texto = data["contenido"]
+        archivos = os.listdir("historial")
+        data = []
 
-        file_path = "planificacion.pdf"
+        for archivo in archivos:
+            with open(f"historial/{archivo}", encoding="utf-8") as f:
+                data.append(json.load(f))
 
-        doc = SimpleDocTemplate(file_path)
-        styles = getSampleStyleSheet()
+        return jsonify(data)
 
-        contenido = []
-        for linea in texto.split("\n"):
-            contenido.append(Paragraph(linea, styles["Normal"]))
-
-        doc.build(contenido)
-
-        return jsonify({"ok": True})
-
-    except Exception as e:
-        print("🔥 ERROR PDF:", e)
-        return jsonify({"ok": False})
+    except:
+        return jsonify([])
 
 
 # =========================
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
