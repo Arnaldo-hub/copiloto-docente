@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+
+<body>
+
+<h1>🔐 Login Docente</h1>
+
+<input id="user" placeholder="Usuario"><br>
+<input id="pass" type="password" placeholder="Contraseña"><br>
+
+<button onclick="login()">Ingresar</button>
+<button onclick="registro()">Registrarse</button>
+
+<script>
+
+function login(){
+  fetch("/api/login",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      usuario:user.value,
+      password:pass.value
+    })
+  })
+  .then(r=>r.json())
+  .then(d=>{
+    if(d.ok){
+      window.location.href = "/app";
+    }else{
+      alert("❌ Usuario o contraseña incorrecto");
+    }
+  });
+}
+
+function registro(){
+  fetch("/api/registro",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      usuario:user.value,
+      password:pass.value
+    })
+  })
+  .then(r=>r.json())
+  .then(d=>{
+    if(d.ok){
+      alert("✅ Registrado, ahora inicia sesión");
+    }else{
+      alert(d.msg);
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>
