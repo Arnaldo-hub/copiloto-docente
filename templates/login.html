@@ -1,4 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Docente</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #22c55e;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        .link {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>🔐 Login Docente</h2>
+
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="login()">Ingresar</button>
+    <button onclick="registro()">Registrarse</button>
+
+    <div class="link" onclick="limpiar()">Limpiar</div>
+</div>
+
 <script>
+
 function login() {
     let usuario = document.getElementById("usuario").value;
     let password = document.getElementById("password").value;
@@ -14,8 +86,36 @@ function login() {
             localStorage.setItem("usuario", usuario);
             window.location.href = "/app";
         } else {
-            alert("Error login");
+            alert("❌ Usuario o contraseña incorrectos");
         }
     });
 }
+
+function registro() {
+    let usuario = document.getElementById("usuario").value;
+    let password = document.getElementById("password").value;
+
+    fetch("/api/registro", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({usuario, password})
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.ok) {
+            alert("✅ Usuario creado");
+        } else {
+            alert("❌ Usuario ya existe");
+        }
+    });
+}
+
+function limpiar() {
+    document.getElementById("usuario").value = "";
+    document.getElementById("password").value = "";
+}
+
 </script>
+
+</body>
+</html>
