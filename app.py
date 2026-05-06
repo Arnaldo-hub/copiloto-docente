@@ -8,11 +8,9 @@ from openai import OpenAI
 app = Flask(__name__)
 
 # =========================
-# API KEY (DESDE RENDER)
+# API KEY DESDE RENDER
 # =========================
 api_key = os.getenv("OPENAI_API_KEY")
-
-print("API KEY OK:", True if api_key else False)
 
 client = OpenAI(api_key=api_key)
 
@@ -20,6 +18,7 @@ client = OpenAI(api_key=api_key)
 # BASE CURRICULAR
 # =========================
 BASE = {}
+
 try:
     with open("base_curricular_oficial.json", encoding="utf-8") as f:
         BASE = json.load(f)
@@ -103,7 +102,7 @@ def base():
     return jsonify(BASE)
 
 # =========================
-# IA (FUNCIONANDO BIEN)
+# IA
 # =========================
 
 @app.route("/api/planificar", methods=["POST"])
