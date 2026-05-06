@@ -1,85 +1,92 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, request, jsonify
 import json
 import os
-import datetime
-
 from openai import OpenAI
 
 app = Flask(__name__)
 
 # =========================
-# OPENAI
+# API KEY (DESDE RENDER)
 # =========================
-client = OpenAI(api_key=os.environ.get("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
-"))
+api_key = os.getenv("OPENAI_API_KEY")
+
+print("API KEY OK:", True if api_key else False)
+
+client = OpenAI(api_key=api_key)
 
 # =========================
 # BASE CURRICULAR
 # =========================
 BASE = {}
-
 try:
     with open("base_curricular_oficial.json", encoding="utf-8") as f:
         BASE = json.load(f)
 except Exception as e:
-    print("ERROR JSON:", e)
+    print("ERROR BASE:", e)
 
 # =========================
 # USUARIOS
 # =========================
+os.makedirs("usuarios", exist_ok=True)
 usuarios_file = "usuarios/usuarios.json"
 
 if not os.path.exists(usuarios_file):
-    with open(usuarios_file, "w") as f:
+    with open(usuarios_file, "w", encoding="utf-8") as f:
         json.dump([], f)
 
+def cargar_usuarios():
+    try:
+        with open(usuarios_file, encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return []
+
+def guardar_usuarios(data):
+    with open(usuarios_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
 # =========================
-# RUTAS
+# VISTAS
 # =========================
 
 @app.route("/")
-def home():
-    return render_template("index.html")
+def login_page():
+    return render_template("login.html")
 
-
-@app.route("/api/base")
-def base():
-    return jsonify(BASE)
-
+@app.route("/app")
+def app_page():
+    return render_template("app.html")
 
 # =========================
-# LOGIN
+# LOGIN / REGISTRO
 # =========================
 
 @app.route("/api/registro", methods=["POST"])
 def registro():
-    data = request.json
-    usuario = data.get("usuario")
-    password = data.get("password")
+    data = request.json or {}
+    usuario = data.get("usuario", "")
+    password = data.get("password", "")
 
-    with open(usuarios_file, encoding="utf-8") as f:
-        usuarios = json.load(f)
+    usuarios = cargar_usuarios()
 
     for u in usuarios:
         if u["usuario"] == usuario:
             return jsonify({"ok": False, "msg": "Usuario ya existe"})
 
     usuarios.append({"usuario": usuario, "password": password})
-
-    with open(usuarios_file, "w", encoding="utf-8") as f:
-        json.dump(usuarios, f, indent=2)
+    guardar_usuarios(usuarios)
 
     return jsonify({"ok": True})
 
-
 @app.route("/api/login", methods=["POST"])
 def login():
-    data = request.json
-    usuario = data.get("usuario")
-    password = data.get("password")
+    data = request.json or {}
+    usuario = data.get("usuario", "")
+    password = data.get("password", "")
 
-    with open(usuarios_file, encoding="utf-8") as f:
-        usuarios = json.load(f)
+    usuarios = cargar_usuarios()
 
     for u in usuarios:
         if u["usuario"] == usuario and u["password"] == password:
@@ -87,90 +94,67 @@ def login():
 
     return jsonify({"ok": False})
 
+# =========================
+# BASE
+# =========================
+
+@app.route("/api/base")
+def base():
+    return jsonify(BASE)
 
 # =========================
-# PLANIFICACI”N IA + GUARDADO
+# IA (FUNCIONANDO BIEN)
 # =========================
 
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
     try:
-        data = request.json
+        if not api_key:
+            return jsonify({"plan": "‚ùå Falta OPENAI_API_KEY en Render"})
+
+        data = request.json or {}
 
         asignatura = data.get("asignatura", "")
         curso = data.get("curso", "")
         unidad = data.get("unidad", "")
-        oa_lista = data.get("oa", [])
+        oa = data.get("oa", [])
+
+        if not oa:
+            return jsonify({"plan": "Selecciona al menos un OA"})
 
         prompt = f"""
-Genera una planificaciÛn de clase profesional.
+Genera una planificaci√≥n de clase profesional.
 
 Asignatura: {asignatura}
 Curso: {curso}
 Unidad: {unidad}
 
 Objetivos:
-{chr(10).join(oa_lista)}
+{chr(10).join(oa)}
 
 Incluye:
 - Objetivo
 - Inicio
 - Desarrollo
 - Cierre
-- EvaluaciÛn
+- Evaluaci√≥n
 - Recursos
 """
 
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.3
+        response = client.responses.create(
+            model="gpt-4.1-mini",
+            input=prompt
         )
 
-        plan = response.choices[0].message.content
+        texto = response.output[0].content[0].text
 
-        # GUARDAR
-        os.makedirs("historial", exist_ok=True)
-
-        nombre = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        ruta = f"historial/plan_{nombre}.json"
-
-        with open(ruta, "w", encoding="utf-8") as f:
-            json.dump({
-                "asignatura": asignatura,
-                "curso": curso,
-                "unidad": unidad,
-                "oa": oa_lista,
-                "plan": plan
-            }, f, ensure_ascii=False, indent=2)
-
-        return jsonify({"plan": plan})
+        return jsonify({"plan": texto})
 
     except Exception as e:
         print("ERROR IA:", e)
-        return jsonify({"plan": "? Error IA"})
-
-
-# =========================
-# HISTORIAL
-# =========================
-
-@app.route("/api/historial")
-def historial():
-    try:
-        archivos = os.listdir("historial")
-        data = []
-
-        for archivo in archivos:
-            with open(f"historial/{archivo}", encoding="utf-8") as f:
-                data.append(json.load(f))
-
-        return jsonify(data)
-
-    except:
-        return jsonify([])
-
+        return jsonify({"plan": f"Error IA: {str(e)}"})
 
 # =========================
+
 if __name__ == "__main__":
     app.run()
