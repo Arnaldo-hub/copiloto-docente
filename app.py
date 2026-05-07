@@ -7,6 +7,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 import json
 import os
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -24,6 +25,12 @@ client = OpenAI(api_key=api_key)
 
 with open("base_curricular_oficial.json", encoding="utf-8") as f:
     BASE = json.load(f)
+
+# =========================
+# HISTORIAL
+# =========================
+
+historial = []
 
 # =========================
 # RUTAS HTML
@@ -60,12 +67,6 @@ def login():
     })
 
 # =========================
-# HISTORIAL TEMPORAL
-# =========================
-
-historial = []
-
-# =========================
 # PLANIFICADOR IA
 # =========================
 
@@ -99,7 +100,14 @@ OA:
 
         texto = response.output[0].content[0].text
 
-        historial.append(texto)
+        # =========================
+        # GUARDAR EN HISTORIAL
+        # =========================
+
+        historial.append({
+            "fecha": datetime.now().strftime("%d-%m-%Y %H:%M"),
+            "plan": texto
+        })
 
         return jsonify({
             "plan": texto
@@ -112,7 +120,7 @@ OA:
         })
 
 # =========================
-# HISTORIAL
+# VER HISTORIAL
 # =========================
 
 @app.route("/api/historial", methods=["POST"])
@@ -121,7 +129,7 @@ def ver_historial():
     return jsonify(historial)
 
 # =========================
-# PDF
+# GENERAR PDF
 # =========================
 
 @app.route("/api/pdf", methods=["POST"])
