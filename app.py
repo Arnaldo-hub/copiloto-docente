@@ -11,16 +11,23 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 app = Flask(__name__)
 
+# =========================
 # API KEY
+# =========================
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-# BASE
+# =========================
+# BASE CURRICULAR
+# =========================
 with open("base_curricular_oficial.json", encoding="utf-8") as f:
     BASE = json.load(f)
 
+# =========================
 # USUARIOS
+# =========================
 os.makedirs("usuarios", exist_ok=True)
+
 usuarios_file = "usuarios/usuarios.json"
 
 if not os.path.exists(usuarios_file):
@@ -35,16 +42,22 @@ def guardar_usuarios(data):
     with open(usuarios_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+# =========================
 # VISTAS
+# =========================
+
 @app.route("/")
 def login_page():
     return render_template("login.html")
 
 @app.route("/app")
 def app_page():
-    return render_template("app.html")
+    return render_template("app2.html")
 
+# =========================
 # LOGIN
+# =========================
+
 @app.route("/api/login", methods=["POST"])
 def login():
     data = request.json
@@ -52,11 +65,17 @@ def login():
 
     for u in usuarios:
         if u["usuario"] == data["usuario"] and u["password"] == data["password"]:
-            return jsonify({"ok": True, "usuario": u["usuario"]})
+            return jsonify({
+                "ok": True,
+                "usuario": u["usuario"]
+            })
 
     return jsonify({"ok": False})
 
+# =========================
 # REGISTRO
+# =========================
+
 @app.route("/api/registro", methods=["POST"])
 def registro():
     data = request.json
@@ -73,14 +92,21 @@ def registro():
     })
 
     guardar_usuarios(usuarios)
+
     return jsonify({"ok": True})
 
+# =========================
 # BASE
+# =========================
+
 @app.route("/api/base")
 def base():
     return jsonify(BASE)
 
-# GUARDAR HISTORIAL
+# =========================
+# HISTORIAL
+# =========================
+
 def guardar_plan(usuario, plan):
     usuarios = cargar_usuarios()
 
@@ -93,7 +119,6 @@ def guardar_plan(usuario, plan):
 
     guardar_usuarios(usuarios)
 
-# HISTORIAL
 @app.route("/api/historial", methods=["POST"])
 def historial():
     data = request.json
@@ -107,9 +132,13 @@ def historial():
 
     return jsonify([])
 
+# =========================
 # IA
+# =========================
+
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
+
     data = request.json
     usuario = data.get("usuario", "")
 
@@ -137,15 +166,20 @@ OA:
 
     return jsonify({"plan": texto})
 
-# PDF REAL DESCARGABLE
+# =========================
+# PDF
+# =========================
+
 @app.route("/api/pdf", methods=["POST"])
 def generar_pdf():
+
     data = request.json
     texto = data.get("plan", "")
 
     filename = "planificacion.pdf"
 
     doc = SimpleDocTemplate(filename)
+
     styles = getSampleStyleSheet()
 
     content = []
@@ -158,6 +192,7 @@ def generar_pdf():
 
     return send_file(filename, as_attachment=True)
 
-# RUN
+# =========================
+
 if __name__ == "__main__":
     app.run()
