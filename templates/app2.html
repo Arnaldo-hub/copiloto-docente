@@ -5,38 +5,69 @@
     <title>Copiloto Docente</title>
 
     <style>
-        body {
+
+        body{
             font-family: Arial;
-            background: #0f172a;
-            color: white;
-            padding: 20px;
+            background:#0f172a;
+            color:white;
+            padding:20px;
         }
 
-        select, button {
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
-            border: none;
+        h1{
+            margin-bottom:20px;
         }
 
-        button {
-            background: #22c55e;
-            color: white;
-            cursor: pointer;
+        select{
+            padding:10px;
+            margin:5px;
+            border:none;
+            border-radius:5px;
         }
 
-        button:hover {
-            background: #16a34a;
+        button{
+            padding:12px;
+            margin:5px;
+            border:none;
+            border-radius:5px;
+            background:#22c55e;
+            color:white;
+            cursor:pointer;
+            font-weight:bold;
         }
 
-        #resultado, #historial {
-            background: #1e293b;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            white-space: pre-wrap;
+        button:hover{
+            background:#16a34a;
         }
+
+        .botones{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+        #resultado{
+            background:#1e293b;
+            padding:20px;
+            border-radius:10px;
+            white-space:pre-wrap;
+            margin-top:20px;
+        }
+
+        #historial{
+            background:#1e293b;
+            padding:20px;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        .card{
+            background:#334155;
+            padding:15px;
+            margin-bottom:20px;
+            border-radius:10px;
+        }
+
     </style>
+
 </head>
 
 <body>
@@ -49,16 +80,28 @@
 
 <div id="oa"></div>
 
-<br>
+<div class="botones">
 
-<button onclick="generar()">🚀 Generar</button>
-<button onclick="verHistorial()">📚 Historial</button>
-<button onclick="descargarPDF()">📄 Descargar PDF</button>
+    <button onclick="generar()">
+        🚀 Generar
+    </button>
+
+    <button onclick="verHistorial()">
+        📚 Historial
+    </button>
+
+    <button onclick="descargarPDF()">
+        📄 Descargar PDF
+    </button>
+
+</div>
 
 <h2>📄 Resultado</h2>
+
 <div id="resultado"></div>
 
 <h2>📚 Historial</h2>
+
 <div id="historial"></div>
 
 <script>
@@ -66,186 +109,263 @@
 let BASE = {};
 let usuario = localStorage.getItem("usuario");
 
-// 🔴 seguridad básica
-if (!usuario) {
-    alert("Debes iniciar sesión");
-    window.location.href = "/";
+if(!usuario){
+    window.location.href="/";
 }
 
-// =====================
-// CARGAR BASE
-// =====================
+// =======================
+// BASE
+// =======================
+
 fetch("/api/base")
-.then(res => res.json())
-.then(data => {
-    BASE = data;
+.then(res=>res.json())
+.then(data=>{
+    BASE=data;
     cargarAsignaturas();
 });
 
-// =====================
-function cargarAsignaturas() {
-    let select = document.getElementById("asignatura");
-    select.innerHTML = "";
+// =======================
 
-    for (let a in BASE) {
-        let option = document.createElement("option");
-        option.value = a;
-        option.text = a;
+function cargarAsignaturas(){
+
+    let select=document.getElementById("asignatura");
+
+    select.innerHTML="";
+
+    for(let a in BASE){
+
+        let option=document.createElement("option");
+
+        option.value=a;
+        option.text=a;
+
         select.appendChild(option);
     }
 
     cargarCursos();
 }
 
-// =====================
-function cargarCursos() {
-    let asignatura = document.getElementById("asignatura").value;
-    let select = document.getElementById("curso");
+// =======================
 
-    select.innerHTML = "";
+function cargarCursos(){
 
-    for (let c in BASE[asignatura]) {
-        let option = document.createElement("option");
-        option.value = c;
-        option.text = c;
+    let asignatura=document.getElementById("asignatura").value;
+
+    let select=document.getElementById("curso");
+
+    select.innerHTML="";
+
+    for(let c in BASE[asignatura]){
+
+        let option=document.createElement("option");
+
+        option.value=c;
+        option.text=c;
+
         select.appendChild(option);
     }
 
     cargarUnidades();
 }
 
-// =====================
-function cargarUnidades() {
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-    let select = document.getElementById("unidad");
+// =======================
 
-    select.innerHTML = "";
+function cargarUnidades(){
 
-    for (let u in BASE[asignatura][curso]) {
-        let option = document.createElement("option");
-        option.value = u;
-        option.text = u;
+    let asignatura=document.getElementById("asignatura").value;
+    let curso=document.getElementById("curso").value;
+
+    let select=document.getElementById("unidad");
+
+    select.innerHTML="";
+
+    for(let u in BASE[asignatura][curso]){
+
+        let option=document.createElement("option");
+
+        option.value=u;
+        option.text=u;
+
         select.appendChild(option);
     }
 
     cargarOA();
 }
 
-// =====================
-function cargarOA() {
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-    let unidad = document.getElementById("unidad").value;
+// =======================
 
-    let cont = document.getElementById("oa");
-    cont.innerHTML = "";
+function cargarOA(){
 
-    let oas = BASE[asignatura][curso][unidad];
+    let asignatura=document.getElementById("asignatura").value;
+    let curso=document.getElementById("curso").value;
+    let unidad=document.getElementById("unidad").value;
 
-    for (let key in oas) {
-        let div = document.createElement("div");
+    let cont=document.getElementById("oa");
 
-        div.innerHTML = `
-            <label>
-                <input type="checkbox" value="${oas[key].descripcion}">
-                ${key}: ${oas[key].descripcion}
-            </label>
+    cont.innerHTML="";
+
+    let oas=BASE[asignatura][curso][unidad];
+
+    for(let key in oas){
+
+        let div=document.createElement("div");
+
+        div.innerHTML=`
+        <label>
+            <input type="checkbox" value="${oas[key].descripcion}">
+            ${key}: ${oas[key].descripcion}
+        </label>
         `;
 
         cont.appendChild(div);
     }
+
 }
 
-// =====================
-function generar() {
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-    let unidad = document.getElementById("unidad").value;
+// =======================
 
-    let seleccionados = [];
-    document.querySelectorAll("#oa input:checked").forEach(el => {
+function generar(){
+
+    let asignatura=document.getElementById("asignatura").value;
+    let curso=document.getElementById("curso").value;
+    let unidad=document.getElementById("unidad").value;
+
+    let seleccionados=[];
+
+    document.querySelectorAll("#oa input:checked").forEach(el=>{
         seleccionados.push(el.value);
     });
 
-    fetch("/api/planificar", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
+    fetch("/api/planificar",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
             asignatura,
             curso,
             unidad,
-            oa: seleccionados,
+            oa:seleccionados,
             usuario
         })
     })
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById("resultado").innerText = data.plan;
+    .then(res=>res.json())
+    .then(data=>{
+
+        document.getElementById("resultado").innerText=data.plan;
+
     });
+
 }
 
-// =====================
-function verHistorial() {
-    fetch("/api/historial", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ usuario })
+// =======================
+
+function verHistorial(){
+
+    fetch("/api/historial",{
+
+        method:"POST",
+
+        headers:{
+            "Content-Type":"application/json"
+        },
+
+        body:JSON.stringify({
+            usuario
+        })
+
     })
-    .then(res => res.json())
-    .then(data => {
 
-        let cont = document.getElementById("historial");
-        cont.innerHTML = "";
+    .then(res=>res.json())
 
-        if (data.length === 0) {
-            cont.innerText = "Sin historial aún";
+    .then(data=>{
+
+        let cont=document.getElementById("historial");
+
+        cont.innerHTML="";
+
+        if(data.length===0){
+
+            cont.innerHTML="Sin historial";
+
             return;
         }
 
-        data.reverse().forEach(item => {
-            let div = document.createElement("div");
-            div.style.marginBottom = "20px";
+        data.reverse().forEach(item=>{
 
-            div.innerHTML = `
-                <strong>📅 ${item.fecha}</strong><br><br>
-                ${item.plan.replace(/\n/g, "<br>")}
+            let div=document.createElement("div");
+
+            div.className="card";
+
+            div.innerHTML=`
+                <strong>📅 ${item.fecha}</strong>
                 <hr>
+                ${item.plan.replace(/\n/g,"<br>")}
             `;
 
             cont.appendChild(div);
+
         });
+
     });
+
 }
 
-// =====================
-function descargarPDF() {
-    let plan = document.getElementById("resultado").innerText;
+// =======================
 
-    if (!plan) {
+function descargarPDF(){
+
+    let plan=document.getElementById("resultado").innerText;
+
+    if(!plan){
+
         alert("Primero genera una planificación");
+
         return;
     }
 
-    fetch("/api/pdf", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ plan })
+    fetch("/api/pdf",{
+
+        method:"POST",
+
+        headers:{
+            "Content-Type":"application/json"
+        },
+
+        body:JSON.stringify({
+            plan
+        })
+
     })
-    .then(res => res.blob())
-    .then(blob => {
-        let url = window.URL.createObjectURL(blob);
-        let a = document.createElement("a");
-        a.href = url;
-        a.download = "planificacion.pdf";
+
+    .then(res=>res.blob())
+
+    .then(blob=>{
+
+        let url=window.URL.createObjectURL(blob);
+
+        let a=document.createElement("a");
+
+        a.href=url;
+
+        a.download="planificacion.pdf";
+
         a.click();
+
     });
+
 }
 
-// =====================
-document.getElementById("asignatura").addEventListener("change", cargarCursos);
-document.getElementById("curso").addEventListener("change", cargarUnidades);
-document.getElementById("unidad").addEventListener("change", cargarOA);
+// =======================
+
+document.getElementById("asignatura")
+.addEventListener("change",cargarCursos);
+
+document.getElementById("curso")
+.addEventListener("change",cargarUnidades);
+
+document.getElementById("unidad")
+.addEventListener("change",cargarOA);
 
 </script>
 
