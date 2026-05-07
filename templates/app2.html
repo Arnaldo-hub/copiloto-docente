@@ -228,3 +228,259 @@ button:hover{
 </div>
 
 </div>
+    <script>
+
+let BASE = {}
+
+async function cargarBase(){
+
+    const res = await fetch('/api/base')
+
+    BASE = await res.json()
+
+    const asignatura =
+    document.getElementById('asignatura')
+
+    asignatura.innerHTML = ''
+
+    Object.keys(BASE).forEach(a=>{
+
+        asignatura.innerHTML +=
+        `<option>${a}</option>`
+
+    })
+
+    cargarCursos()
+}
+
+function cargarCursos(){
+
+    const asignatura =
+    document.getElementById('asignatura').value
+
+    const curso =
+    document.getElementById('curso')
+
+    curso.innerHTML = ''
+
+    Object.keys(BASE[asignatura]).forEach(c=>{
+
+        curso.innerHTML +=
+        `<option>${c}</option>`
+
+    })
+
+    cargarUnidades()
+}
+
+function cargarUnidades(){
+
+    const asignatura =
+    document.getElementById('asignatura').value
+
+    const curso =
+    document.getElementById('curso').value
+
+    const unidad =
+    document.getElementById('unidad')
+
+    unidad.innerHTML = ''
+
+    Object.keys(BASE[asignatura][curso]).forEach(u=>{
+
+        unidad.innerHTML +=
+        `<option>${u}</option>`
+
+    })
+
+    cargarOA()
+}
+
+function cargarOA(){
+
+    const asignatura =
+    document.getElementById('asignatura').value
+
+    const curso =
+    document.getElementById('curso').value
+
+    const unidad =
+    document.getElementById('unidad').value
+
+    const oaDiv =
+    document.getElementById('oa')
+
+    oaDiv.innerHTML = ''
+
+    const oas =
+    BASE[asignatura][curso][unidad]
+
+    Object.keys(oas).forEach(oa=>{
+
+        oaDiv.innerHTML += `
+
+        <label style="display:block;margin-bottom:10px;">
+
+            <input
+            type="checkbox"
+            value="${oas[oa].descripcion}">
+
+            ${oa}: ${oas[oa].descripcion}
+
+        </label>
+
+        `
+    })
+}
+
+async function generar(){
+
+    document.getElementById('estado').innerText =
+    '⏳ Generando con IA...'
+
+    const asignatura =
+    document.getElementById('asignatura').value
+
+    const curso =
+    document.getElementById('curso').value
+
+    const unidad =
+    document.getElementById('unidad').value
+
+    const oa = []
+
+    document
+    .querySelectorAll('#oa input:checked')
+    .forEach(c=> oa.push(c.value))
+
+    const modulos = []
+
+    document
+    .querySelectorAll('.card input:checked')
+    .forEach(c=> modulos.push(c.value))
+
+    const res = await fetch('/api/planificar',{
+
+        method:'POST',
+
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+            asignatura,
+            curso,
+            unidad,
+            oa,
+            modulos
+        })
+
+    })
+
+    const data = await res.json()
+
+    document.getElementById('resultado').innerText =
+    data.plan
+
+    document.getElementById('estado').innerText =
+    '✅ Generación completada'
+}
+
+async function verHistorial(){
+
+    const res = await fetch('/api/historial',{
+
+        method:'POST'
+
+    })
+
+    const data = await res.json()
+
+    const historial =
+    document.getElementById('historial')
+
+    historial.innerHTML = ''
+
+    data.reverse().forEach(item=>{
+
+        historial.innerHTML += `
+
+        <div class="card">
+
+            <b>${item.fecha}</b>
+
+            <hr style="margin:10px 0;">
+
+            ${item.plan.substring(0,250)}...
+
+        </div>
+
+        `
+    })
+}
+
+async function descargarPDF(){
+
+    const texto =
+    document.getElementById('resultado').innerText
+
+    const res = await fetch('/api/pdf',{
+
+        method:'POST',
+
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+            plan:texto
+        })
+
+    })
+
+    const blob = await res.blob()
+
+    const url =
+    window.URL.createObjectURL(blob)
+
+    const a =
+    document.createElement('a')
+
+    a.href = url
+
+    a.download = 'planificacion.pdf'
+
+    a.click()
+}
+
+async function preguntarIA(){
+
+    document.getElementById('respuestaIA').innerText =
+    '⏳ Pensando...'
+
+    setTimeout(()=>{
+
+        document.getElementById('respuestaIA').innerText =
+        'Próximamente conectaremos el Chat IA docente.'
+
+    },1000)
+}
+
+document
+.getElementById('asignatura')
+.addEventListener('change', cargarCursos)
+
+document
+.getElementById('curso')
+.addEventListener('change', cargarUnidades)
+
+document
+.getElementById('unidad')
+.addEventListener('change', cargarOA)
+
+cargarBase()
+
+</script>
+
+</body>
+</html>
