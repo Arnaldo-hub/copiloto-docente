@@ -1,402 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Copiloto Docente</title>
-
-<style>
-
-body{
-    font-family:Arial;
-    background:#0f172a;
-    color:white;
-    padding:20px;
+        `
+    })
 }
 
-h1{
-    margin-bottom:20px;
-}
+async function descargarPDF(){
 
-select{
-    padding:10px;
-    margin:5px;
-    border:none;
-    border-radius:5px;
-}
+    const texto =
+    document.getElementById('resultado').innerText
 
-button{
-    padding:12px;
-    margin:5px;
-    border:none;
-    border-radius:5px;
-    background:#22c55e;
-    color:white;
-    cursor:pointer;
-    font-weight:bold;
-}
+    const res = await fetch('/api/pdf',{
 
-button:hover{
-    background:#16a34a;
-}
-
-#resultado{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    margin-top:20px;
-    white-space:pre-wrap;
-}
-
-#historial{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    margin-top:20px;
-}
-
-.card{
-    background:#334155;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:20px;
-}
-
-#estado{
-    margin-top:15px;
-    font-size:18px;
-    color:#facc15;
-    font-weight:bold;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<h1>🧠 Copiloto Docente</h1>
-
-<select id="asignatura"></select>
-<select id="curso"></select>
-<select id="unidad"></select>
-
-<div id="oa"></div>
-
-<br>
-
-<button onclick="generar()">
-🚀 Generar
-</button>
-
-<button onclick="verHistorial()">
-📚 Historial
-</button>
-
-<button onclick="descargarPDF()">
-📄 Descargar PDF
-</button>
-
-<div id="estado"></div>
-
-<h2>📄 Resultado</h2>
-
-<div id="resultado"></div>
-
-<h2>📚 Historial</h2>
-
-<div id="historial"></div>
-
-<script>
-
-let BASE = {};
-
-let usuario = localStorage.getItem("usuario");
-
-// ======================
-// BASE
-// ======================
-
-fetch("/api/base")
-.then(res => res.json())
-.then(data => {
-
-    BASE = data;
-
-    cargarAsignaturas();
-
-});
-
-// ======================
-
-function cargarAsignaturas(){
-
-    let select = document.getElementById("asignatura");
-
-    select.innerHTML = "";
-
-    for(let a in BASE){
-
-        let option = document.createElement("option");
-
-        option.value = a;
-        option.text = a;
-
-        select.appendChild(option);
-
-    }
-
-    cargarCursos();
-
-}
-
-// ======================
-
-function cargarCursos(){
-
-    let asignatura = document.getElementById("asignatura").value;
-
-    let select = document.getElementById("curso");
-
-    select.innerHTML = "";
-
-    for(let c in BASE[asignatura]){
-
-        let option = document.createElement("option");
-
-        option.value = c;
-        option.text = c;
-
-        select.appendChild(option);
-
-    }
-
-    cargarUnidades();
-
-}
-
-// ======================
-
-function cargarUnidades(){
-
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-
-    let select = document.getElementById("unidad");
-
-    select.innerHTML = "";
-
-    for(let u in BASE[asignatura][curso]){
-
-        let option = document.createElement("option");
-
-        option.value = u;
-        option.text = u;
-
-        select.appendChild(option);
-
-    }
-
-    cargarOA();
-
-}
-
-// ======================
-
-function cargarOA(){
-
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-    let unidad = document.getElementById("unidad").value;
-
-    let cont = document.getElementById("oa");
-
-    cont.innerHTML = "";
-
-    let oas = BASE[asignatura][curso][unidad];
-
-    for(let key in oas){
-
-        let div = document.createElement("div");
-
-        div.innerHTML = `
-        <label>
-            <input type="checkbox" value="${oas[key].descripcion}">
-            ${key}: ${oas[key].descripcion}
-        </label>
-        `;
-
-        cont.appendChild(div);
-
-    }
-
-}
-
-// ======================
-// GENERAR IA
-// ======================
-
-function generar(){
-
-    document.getElementById("estado").innerText =
-    "⏳ Generando planificación con IA...";
-
-    document.getElementById("resultado").innerHTML = "";
-
-    let asignatura = document.getElementById("asignatura").value;
-    let curso = document.getElementById("curso").value;
-    let unidad = document.getElementById("unidad").value;
-
-    let seleccionados = [];
-
-    document.querySelectorAll("#oa input:checked")
-    .forEach(el => {
-
-        seleccionados.push(el.value);
-
-    });
-
-    fetch("/api/planificar",{
-
-        method:"POST",
+        method:'POST',
 
         headers:{
-            "Content-Type":"application/json"
+            'Content-Type':'application/json'
         },
 
         body:JSON.stringify({
-            asignatura,
-            curso,
-            unidad,
-            oa:seleccionados,
-            usuario
+            plan:texto
         })
 
     })
 
-    .then(res => res.json())
+    const blob = await res.blob()
 
-    .then(data => {
+    const url = window.URL.createObjectURL(blob)
 
-        document.getElementById("estado").innerText =
-        "✅ Planificación generada";
+    const a = document.createElement('a')
 
-        document.getElementById("resultado").innerText =
-        data.plan;
+    a.href = url
 
-    });
+    a.download = 'planificacion.pdf'
 
+    a.click()
 }
 
-// ======================
-// HISTORIAL
-// ======================
+async function preguntarIA(){
 
-function verHistorial(){
+    document.getElementById('respuestaIA').innerText =
+    '⏳ Pensando...'
 
-    fetch("/api/historial",{
+    setTimeout(()=>{
 
-        method:"POST"
+        document.getElementById('respuestaIA').innerText =
+        'Próximamente conectaremos el Chat IA docente.'
 
-    })
-
-    .then(res => res.json())
-
-    .then(data => {
-
-        let cont = document.getElementById("historial");
-
-        cont.innerHTML = "";
-
-        if(data.length === 0){
-
-            cont.innerHTML = "Sin historial aún";
-
-            return;
-
-        }
-
-        data.reverse().forEach(item => {
-
-            let div = document.createElement("div");
-
-            div.className = "card";
-
-            div.innerHTML = `
-            <strong>📅 ${item.fecha}</strong>
-            <hr>
-            ${item.plan.replace(/\n/g,"<br>")}
-            `;
-
-            cont.appendChild(div);
-
-        });
-
-    });
-
+    },1000)
 }
 
-// ======================
-// PDF
-// ======================
+document.getElementById('asignatura')
+.addEventListener('change', cargarCursos)
 
-function descargarPDF(){
 
-    let plan = document.getElementById("resultado").innerText;
+document.getElementById('curso')
+.addEventListener('change', cargarUnidades)
 
-    if(!plan){
 
-        alert("Primero genera una planificación");
+document.getElementById('unidad')
+.addEventListener('change', cargarOA)
 
-        return;
-
-    }
-
-    fetch("/api/pdf",{
-
-        method:"POST",
-
-        headers:{
-            "Content-Type":"application/json"
-        },
-
-        body:JSON.stringify({
-            plan
-        })
-
-    })
-
-    .then(response => response.blob())
-
-    .then(blob => {
-
-        const url = window.URL.createObjectURL(blob);
-
-        const a = document.createElement("a");
-
-        a.href = url;
-
-        a.download = "planificacion.pdf";
-
-        document.body.appendChild(a);
-
-        a.click();
-
-        a.remove();
-
-    });
-
-}
-
-// ======================
-
-document.getElementById("asignatura")
-.addEventListener("change", cargarCursos);
-
-document.getElementById("curso")
-.addEventListener("change", cargarUnidades);
-
-document.getElementById("unidad")
-.addEventListener("change", cargarOA);
+cargarBase()
 
 </script>
 
