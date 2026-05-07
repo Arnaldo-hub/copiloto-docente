@@ -2,8 +2,35 @@
   "1° Básico": {
     "Unidad 1": {
       "OA 1": {
-        "descripcion": "..."
+        "descripcion": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10."
+      },
+      "OA 2": {
+        "descripcion": "Identificar el orden de los elementos de una serie utilizando números ordinales."
       }
+    },
+
+    "Unidad 2": {
+      "OA 3": {
+        "descripcion": "Leer y representar números naturales hasta 100."
+      },
+
+      "OA 4": {
+        "descripcion": "Comparar y ordenar números del 0 al 100."
+      }
+    }
+  },
+
+  "2° Básico": {
+    "Unidad 1": {
+
+      "OA 1": {
+        "descripcion": "Contar números hasta 1.000."
+      },
+
+      "OA 2": {
+        "descripcion": "Representar números y cantidades hasta 1.000."
+      }
+
     }
   }
 }
