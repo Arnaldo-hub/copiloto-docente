@@ -1,32 +1,25 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 import json
 import os
 from datetime import datetime
 from openai import OpenAI
 
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+
 app = Flask(__name__)
 
-# =========================
-# API KEY DESDE RENDER
-# =========================
+# API KEY
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-# =========================
-# BASE CURRICULAR
-# =========================
-BASE = {}
-try:
-    with open("base_curricular_oficial.json", encoding="utf-8") as f:
-        BASE = json.load(f)
-except Exception as e:
-    print("ERROR BASE:", e)
+# BASE
+with open("base_curricular_oficial.json", encoding="utf-8") as f:
+    BASE = json.load(f)
 
-# =========================
 # USUARIOS
-# =========================
 os.makedirs("usuarios", exist_ok=True)
 usuarios_file = "usuarios/usuarios.json"
 
@@ -35,20 +28,14 @@ if not os.path.exists(usuarios_file):
         json.dump([], f)
 
 def cargar_usuarios():
-    try:
-        with open(usuarios_file, encoding="utf-8") as f:
-            return json.load(f)
-    except:
-        return []
+    with open(usuarios_file, encoding="utf-8") as f:
+        return json.load(f)
 
 def guardar_usuarios(data):
     with open(usuarios_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-# =========================
 # VISTAS
-# =========================
-
 @app.route("/")
 def login_page():
     return render_template("login.html")
@@ -57,57 +44,43 @@ def login_page():
 def app_page():
     return render_template("app.html")
 
-# =========================
-# LOGIN / REGISTRO
-# =========================
-
-@app.route("/api/registro", methods=["POST"])
-def registro():
-    data = request.json or {}
-    usuario = data.get("usuario", "")
-    password = data.get("password", "")
-
+# LOGIN
+@app.route("/api/login", methods=["POST"])
+def login():
+    data = request.json
     usuarios = cargar_usuarios()
 
     for u in usuarios:
-        if u["usuario"] == usuario:
-            return jsonify({"ok": False, "msg": "Usuario ya existe"})
+        if u["usuario"] == data["usuario"] and u["password"] == data["password"]:
+            return jsonify({"ok": True, "usuario": u["usuario"]})
+
+    return jsonify({"ok": False})
+
+# REGISTRO
+@app.route("/api/registro", methods=["POST"])
+def registro():
+    data = request.json
+    usuarios = cargar_usuarios()
+
+    for u in usuarios:
+        if u["usuario"] == data["usuario"]:
+            return jsonify({"ok": False})
 
     usuarios.append({
-        "usuario": usuario,
-        "password": password,
+        "usuario": data["usuario"],
+        "password": data["password"],
         "historial": []
     })
 
     guardar_usuarios(usuarios)
     return jsonify({"ok": True})
 
-@app.route("/api/login", methods=["POST"])
-def login():
-    data = request.json or {}
-    usuario = data.get("usuario", "")
-    password = data.get("password", "")
-
-    usuarios = cargar_usuarios()
-
-    for u in usuarios:
-        if u["usuario"] == usuario and u["password"] == password:
-            return jsonify({"ok": True, "usuario": usuario})
-
-    return jsonify({"ok": False})
-
-# =========================
 # BASE
-# =========================
-
 @app.route("/api/base")
 def base():
     return jsonify(BASE)
 
-# =========================
 # GUARDAR HISTORIAL
-# =========================
-
 def guardar_plan(usuario, plan):
     usuarios = cargar_usuarios()
 
@@ -120,77 +93,71 @@ def guardar_plan(usuario, plan):
 
     guardar_usuarios(usuarios)
 
-# =========================
-# OBTENER HISTORIAL
-# =========================
-
+# HISTORIAL
 @app.route("/api/historial", methods=["POST"])
 def historial():
-    data = request.json or {}
+    data = request.json
     usuario = data.get("usuario")
 
     usuarios = cargar_usuarios()
 
     for u in usuarios:
         if u["usuario"] == usuario:
-            return jsonify(u.get("historial", []))
+            return jsonify(u["historial"])
 
     return jsonify([])
 
-# =========================
-# IA + GUARDADO
-# =========================
-
+# IA
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
-    try:
-        if not api_key:
-            return jsonify({"plan": "❌ Falta OPENAI_API_KEY en Render"})
+    data = request.json
+    usuario = data.get("usuario", "")
 
-        data = request.json or {}
-        usuario = data.get("usuario", "")
-
-        prompt = f"""
+    prompt = f"""
 Eres un docente experto del sistema educativo chileno.
 
-Genera una planificación de clase profesional clara, estructurada y lista para usar en aula.
+Genera una planificación profesional.
 
-Incluye:
-- Objetivo de la clase
-- Inicio (motivación)
-- Desarrollo (actividades detalladas)
-- Cierre
-- Evaluación (formativa y/o sumativa)
-- Recursos
-- Adaptaciones (NEE)
-
-Datos:
-Asignatura: {data.get('asignatura','')}
-Curso: {data.get('curso','')}
-Unidad: {data.get('unidad','')}
+Asignatura: {data['asignatura']}
+Curso: {data['curso']}
+Unidad: {data['unidad']}
 
 OA:
-{chr(10).join(data.get('oa', []))}
+{chr(10).join(data['oa'])}
 """
 
-        response = client.responses.create(
-            model="gpt-4.1-mini",
-            input=prompt
-        )
+    response = client.responses.create(
+        model="gpt-4.1-mini",
+        input=prompt
+    )
 
-        texto = response.output[0].content[0].text
+    texto = response.output[0].content[0].text
 
-        # Guardar en historial
-        if usuario:
-            guardar_plan(usuario, texto)
+    guardar_plan(usuario, texto)
 
-        return jsonify({"plan": texto})
+    return jsonify({"plan": texto})
 
-    except Exception as e:
-        print("ERROR IA:", e)
-        return jsonify({"plan": f"Error IA: {str(e)}"})
+# PDF REAL DESCARGABLE
+@app.route("/api/pdf", methods=["POST"])
+def generar_pdf():
+    data = request.json
+    texto = data.get("plan", "")
 
-# =========================
+    filename = "planificacion.pdf"
 
+    doc = SimpleDocTemplate(filename)
+    styles = getSampleStyleSheet()
+
+    content = []
+
+    for linea in texto.split("\n"):
+        content.append(Paragraph(linea, styles["Normal"]))
+        content.append(Spacer(1, 10))
+
+    doc.build(content)
+
+    return send_file(filename, as_attachment=True)
+
+# RUN
 if __name__ == "__main__":
     app.run()
