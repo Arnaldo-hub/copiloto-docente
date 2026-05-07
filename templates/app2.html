@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Copiloto Docente</title>
+<meta charset="UTF-8">
+<title>Copiloto Docente</title>
 
-    <style>
+<style>
 
-        body{
-            font-family: Arial;
-            background:#0f172a;
-            color:white;
-            padding:20px;
-        }
+body{
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+}
 
-        h1{
-            margin-bottom:20px;
-        }
+select{
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+}
 
-        select{
-            padding:10px;
-            margin:5px;
-            border:none;
-            border-radius:5px;
-        }
+button{
+    padding:12px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
 
-        button{
-            padding:12px;
-            margin:5px;
-            border:none;
-            border-radius:5px;
-            background:#22c55e;
-            color:white;
-            cursor:pointer;
-            font-weight:bold;
-        }
+button:hover{
+    background:#16a34a;
+}
 
-        button:hover{
-            background:#16a34a;
-        }
+#resultado{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    white-space:pre-wrap;
+}
 
-        .botones{
-            margin-top:20px;
-            margin-bottom:20px;
-        }
+#historial{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
 
-        #resultado{
-            background:#1e293b;
-            padding:20px;
-            border-radius:10px;
-            white-space:pre-wrap;
-            margin-top:20px;
-        }
+.card{
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
 
-        #historial{
-            background:#1e293b;
-            padding:20px;
-            border-radius:10px;
-            margin-top:20px;
-        }
-
-        .card{
-            background:#334155;
-            padding:15px;
-            margin-bottom:20px;
-            border-radius:10px;
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -80,21 +71,19 @@
 
 <div id="oa"></div>
 
-<div class="botones">
+<br>
 
-    <button onclick="generar()">
-        🚀 Generar
-    </button>
+<button onclick="generar()">
+🚀 Generar
+</button>
 
-    <button onclick="verHistorial()">
-        📚 Historial
-    </button>
+<button onclick="verHistorial()">
+📚 Historial
+</button>
 
-    <button onclick="descargarPDF()">
-        📄 Descargar PDF
-    </button>
-
-</div>
+<button onclick="descargarPDF()">
+📄 Descargar PDF
+</button>
 
 <h2>📄 Resultado</h2>
 
@@ -109,108 +98,113 @@
 let BASE = {};
 let usuario = localStorage.getItem("usuario");
 
-if(!usuario){
-    window.location.href="/";
-}
-
-// =======================
-// BASE
-// =======================
+// =====================
+// CARGAR BASE
+// =====================
 
 fetch("/api/base")
-.then(res=>res.json())
-.then(data=>{
-    BASE=data;
+.then(res => res.json())
+.then(data => {
+
+    BASE = data;
+
     cargarAsignaturas();
+
 });
 
-// =======================
+// =====================
 
 function cargarAsignaturas(){
 
-    let select=document.getElementById("asignatura");
+    let select = document.getElementById("asignatura");
 
-    select.innerHTML="";
+    select.innerHTML = "";
 
     for(let a in BASE){
 
-        let option=document.createElement("option");
+        let option = document.createElement("option");
 
-        option.value=a;
-        option.text=a;
+        option.value = a;
+        option.text = a;
 
         select.appendChild(option);
+
     }
 
     cargarCursos();
+
 }
 
-// =======================
+// =====================
 
 function cargarCursos(){
 
-    let asignatura=document.getElementById("asignatura").value;
+    let asignatura = document.getElementById("asignatura").value;
 
-    let select=document.getElementById("curso");
+    let select = document.getElementById("curso");
 
-    select.innerHTML="";
+    select.innerHTML = "";
 
     for(let c in BASE[asignatura]){
 
-        let option=document.createElement("option");
+        let option = document.createElement("option");
 
-        option.value=c;
-        option.text=c;
+        option.value = c;
+        option.text = c;
 
         select.appendChild(option);
+
     }
 
     cargarUnidades();
+
 }
 
-// =======================
+// =====================
 
 function cargarUnidades(){
 
-    let asignatura=document.getElementById("asignatura").value;
-    let curso=document.getElementById("curso").value;
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
 
-    let select=document.getElementById("unidad");
+    let select = document.getElementById("unidad");
 
-    select.innerHTML="";
+    select.innerHTML = "";
 
     for(let u in BASE[asignatura][curso]){
 
-        let option=document.createElement("option");
+        let option = document.createElement("option");
 
-        option.value=u;
-        option.text=u;
+        option.value = u;
+        option.text = u;
 
         select.appendChild(option);
+
     }
 
     cargarOA();
+
 }
 
-// =======================
+// =====================
 
 function cargarOA(){
 
-    let asignatura=document.getElementById("asignatura").value;
-    let curso=document.getElementById("curso").value;
-    let unidad=document.getElementById("unidad").value;
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
+    let unidad = document.getElementById("unidad").value;
 
-    let cont=document.getElementById("oa");
+    let cont = document.getElementById("oa");
 
-    cont.innerHTML="";
+    cont.innerHTML = "";
 
-    let oas=BASE[asignatura][curso][unidad];
+    let oas = BASE[asignatura][curso][unidad];
 
     for(let key in oas){
 
-        let div=document.createElement("div");
+        let div = document.createElement("div");
 
-        div.innerHTML=`
+        div.innerHTML = `
         <label>
             <input type="checkbox" value="${oas[key].descripcion}">
             ${key}: ${oas[key].descripcion}
@@ -218,29 +212,36 @@ function cargarOA(){
         `;
 
         cont.appendChild(div);
+
     }
 
 }
 
-// =======================
+// =====================
 
 function generar(){
 
-    let asignatura=document.getElementById("asignatura").value;
-    let curso=document.getElementById("curso").value;
-    let unidad=document.getElementById("unidad").value;
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
+    let unidad = document.getElementById("unidad").value;
 
-    let seleccionados=[];
+    let seleccionados = [];
 
-    document.querySelectorAll("#oa input:checked").forEach(el=>{
+    document.querySelectorAll("#oa input:checked")
+    .forEach(el => {
+
         seleccionados.push(el.value);
+
     });
 
     fetch("/api/planificar",{
+
         method:"POST",
+
         headers:{
             "Content-Type":"application/json"
         },
+
         body:JSON.stringify({
             asignatura,
             curso,
@@ -248,17 +249,20 @@ function generar(){
             oa:seleccionados,
             usuario
         })
-    })
-    .then(res=>res.json())
-    .then(data=>{
 
-        document.getElementById("resultado").innerText=data.plan;
+    })
+
+    .then(res => res.json())
+
+    .then(data => {
+
+        document.getElementById("resultado").innerText = data.plan;
 
     });
 
 }
 
-// =======================
+// =====================
 
 function verHistorial(){
 
@@ -276,31 +280,32 @@ function verHistorial(){
 
     })
 
-    .then(res=>res.json())
+    .then(res => res.json())
 
-    .then(data=>{
+    .then(data => {
 
-        let cont=document.getElementById("historial");
+        let cont = document.getElementById("historial");
 
-        cont.innerHTML="";
+        cont.innerHTML = "";
 
-        if(data.length===0){
+        if(data.length === 0){
 
-            cont.innerHTML="Sin historial";
+            cont.innerHTML = "Sin historial";
 
             return;
+
         }
 
-        data.reverse().forEach(item=>{
+        data.reverse().forEach(item => {
 
-            let div=document.createElement("div");
+            let div = document.createElement("div");
 
-            div.className="card";
+            div.className = "card";
 
-            div.innerHTML=`
-                <strong>📅 ${item.fecha}</strong>
-                <hr>
-                ${item.plan.replace(/\n/g,"<br>")}
+            div.innerHTML = `
+            <strong>📅 ${item.fecha}</strong>
+            <hr>
+            ${item.plan.replace(/\n/g,"<br>")}
             `;
 
             cont.appendChild(div);
@@ -311,17 +316,18 @@ function verHistorial(){
 
 }
 
-// =======================
+// =====================
 
 function descargarPDF(){
 
-    let plan=document.getElementById("resultado").innerText;
+    let plan = document.getElementById("resultado").innerText;
 
     if(!plan){
 
         alert("Primero genera una planificación");
 
         return;
+
     }
 
     fetch("/api/pdf",{
@@ -338,25 +344,29 @@ function descargarPDF(){
 
     })
 
-    .then(res=>res.blob())
+    .then(response => response.blob())
 
-    .then(blob=>{
+    .then(blob => {
 
-        let url=window.URL.createObjectURL(blob);
+        const url = window.URL.createObjectURL(blob);
 
-        let a=document.createElement("a");
+        const a = document.createElement("a");
 
-        a.href=url;
+        a.href = url;
 
-        a.download="planificacion.pdf";
+        a.download = "planificacion.pdf";
+
+        document.body.appendChild(a);
 
         a.click();
+
+        a.remove();
 
     });
 
 }
 
-// =======================
+// =====================
 
 document.getElementById("asignatura")
 .addEventListener("change",cargarCursos);
