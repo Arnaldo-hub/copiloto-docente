@@ -20,11 +20,16 @@ api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 # =========================
-# BASE CURRICULAR
+# BASE CURRICULAR NUEVA
 # =========================
 
-with open("base_curricular_oficial.json", encoding="utf-8") as f:
-    BASE = json.load(f)
+BASE = {}
+
+with open("data/matematica.json", encoding="utf-8") as f:
+
+    matematica = json.load(f)
+
+BASE["Matemática"] = matematica
 
 # =========================
 # HISTORIAL
@@ -78,7 +83,9 @@ def planificar():
         data = request.json
 
         prompt = f"""
-Genera una planificación de clase profesional para Chile.
+Eres un docente experto del sistema educativo chileno.
+
+Genera una planificación de clase profesional.
 
 Asignatura:
 {data['asignatura']}
@@ -89,8 +96,18 @@ Curso:
 Unidad:
 {data['unidad']}
 
-OA:
+Objetivos de Aprendizaje:
 {chr(10).join(data['oa'])}
+
+La planificación debe incluir:
+
+- Objetivo de la clase
+- Inicio
+- Desarrollo
+- Cierre
+- Evaluación
+- Recursos
+- Adaptaciones NEE
 """
 
         response = client.responses.create(
@@ -101,7 +118,7 @@ OA:
         texto = response.output[0].content[0].text
 
         # =========================
-        # GUARDAR EN HISTORIAL
+        # GUARDAR HISTORIAL
         # =========================
 
         historial.append({
@@ -120,7 +137,7 @@ OA:
         })
 
 # =========================
-# VER HISTORIAL
+# HISTORIAL
 # =========================
 
 @app.route("/api/historial", methods=["POST"])
@@ -129,7 +146,7 @@ def ver_historial():
     return jsonify(historial)
 
 # =========================
-# GENERAR PDF
+# PDF
 # =========================
 
 @app.route("/api/pdf", methods=["POST"])
