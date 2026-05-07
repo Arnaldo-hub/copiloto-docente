@@ -52,7 +52,7 @@ def login_page():
 
 @app.route("/app")
 def app_page():
-    return render_template("app2.html")
+    return render_template("panel.html")
 
 # =========================
 # LOGIN
