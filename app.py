@@ -20,16 +20,28 @@ api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 # =========================
-# BASE CURRICULAR NUEVA
+# BASE CURRICULAR AUTOMÁTICA
 # =========================
 
 BASE = {}
 
-with open("data/matematica.json", encoding="utf-8") as f:
+carpeta_data = "data"
 
-    matematica = json.load(f)
+for archivo in os.listdir(carpeta_data):
 
-BASE["Matemática"] = matematica
+    if archivo.endswith(".json"):
+
+        ruta = os.path.join(carpeta_data, archivo)
+
+        with open(ruta, encoding="utf-8") as f:
+
+            datos = json.load(f)
+
+            nombre_asignatura = archivo.replace(".json", "")
+
+            nombre_asignatura = nombre_asignatura.capitalize()
+
+            BASE[nombre_asignatura] = datos
 
 # =========================
 # HISTORIAL
@@ -116,10 +128,6 @@ La planificación debe incluir:
         )
 
         texto = response.output[0].content[0].text
-
-        # =========================
-        # GUARDAR HISTORIAL
-        # =========================
 
         historial.append({
             "fecha": datetime.now().strftime("%d-%m-%Y %H:%M"),
