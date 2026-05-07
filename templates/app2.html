@@ -1,67 +1,102 @@
 <!DOCTYPE html>
-        `
-    })
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Copiloto Docente</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
 }
 
-async function descargarPDF(){
-
-    const texto =
-    document.getElementById('resultado').innerText
-
-    const res = await fetch('/api/pdf',{
-
-        method:'POST',
-
-        headers:{
-            'Content-Type':'application/json'
-        },
-
-        body:JSON.stringify({
-            plan:texto
-        })
-
-    })
-
-    const blob = await res.blob()
-
-    const url = window.URL.createObjectURL(blob)
-
-    const a = document.createElement('a')
-
-    a.href = url
-
-    a.download = 'planificacion.pdf'
-
-    a.click()
+body{
+    background:#07122b;
+    color:white;
 }
 
-async function preguntarIA(){
-
-    document.getElementById('respuestaIA').innerText =
-    '⏳ Pensando...'
-
-    setTimeout(()=>{
-
-        document.getElementById('respuestaIA').innerText =
-        'Próximamente conectaremos el Chat IA docente.'
-
-    },1000)
+.container{
+    display:grid;
+    grid-template-columns:320px 420px 1fr;
+    height:100vh;
 }
 
-document.getElementById('asignatura')
-.addEventListener('change', cargarCursos)
+.panel{
+    border-right:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    overflow:auto;
+}
 
+h1{
+    margin-bottom:20px;
+}
 
-document.getElementById('curso')
-.addEventListener('change', cargarUnidades)
+.card{
+    background:#162544;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
 
+textarea{
+    width:100%;
+    height:160px;
+    border:none;
+    border-radius:10px;
+    padding:12px;
+}
 
-document.getElementById('unidad')
-.addEventListener('change', cargarOA)
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+}
 
-cargarBase()
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+    background:#1fc95c;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
 
-</script>
+button:hover{
+    opacity:0.9;
+}
 
-</body>
-</html>
+#resultado{
+    background:#162544;
+    padding:20px;
+    border-radius:12px;
+    white-space:pre-wrap;
+    line-height:1.6;
+    min-height:500px;
+}
+
+#estado{
+    margin-top:15px;
+    color:#ffd54f;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
