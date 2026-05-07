@@ -29,7 +29,7 @@
             background: #16a34a;
         }
 
-        #resultado {
+        #resultado, #historial {
             background: #1e293b;
             padding: 20px;
             margin-top: 20px;
@@ -55,15 +55,26 @@
 <button onclick="verHistorial()">📚 Historial</button>
 <button onclick="descargarPDF()">📄 Descargar PDF</button>
 
+<h2>📄 Resultado</h2>
 <div id="resultado"></div>
 
+<h2>📚 Historial</h2>
+<div id="historial"></div>
+
 <script>
+
 let BASE = {};
 let usuario = localStorage.getItem("usuario");
 
-// =======================
+// 🔴 seguridad básica
+if (!usuario) {
+    alert("Debes iniciar sesión");
+    window.location.href = "/";
+}
+
+// =====================
 // CARGAR BASE
-// =======================
+// =====================
 fetch("/api/base")
 .then(res => res.json())
 .then(data => {
@@ -71,7 +82,7 @@ fetch("/api/base")
     cargarAsignaturas();
 });
 
-// =======================
+// =====================
 function cargarAsignaturas() {
     let select = document.getElementById("asignatura");
     select.innerHTML = "";
@@ -86,7 +97,7 @@ function cargarAsignaturas() {
     cargarCursos();
 }
 
-// =======================
+// =====================
 function cargarCursos() {
     let asignatura = document.getElementById("asignatura").value;
     let select = document.getElementById("curso");
@@ -103,7 +114,7 @@ function cargarCursos() {
     cargarUnidades();
 }
 
-// =======================
+// =====================
 function cargarUnidades() {
     let asignatura = document.getElementById("asignatura").value;
     let curso = document.getElementById("curso").value;
@@ -121,7 +132,7 @@ function cargarUnidades() {
     cargarOA();
 }
 
-// =======================
+// =====================
 function cargarOA() {
     let asignatura = document.getElementById("asignatura").value;
     let curso = document.getElementById("curso").value;
@@ -146,7 +157,7 @@ function cargarOA() {
     }
 }
 
-// =======================
+// =====================
 function generar() {
     let asignatura = document.getElementById("asignatura").value;
     let curso = document.getElementById("curso").value;
@@ -174,7 +185,7 @@ function generar() {
     });
 }
 
-// =======================
+// =====================
 function verHistorial() {
     fetch("/api/historial", {
         method: "POST",
@@ -183,20 +194,38 @@ function verHistorial() {
     })
     .then(res => res.json())
     .then(data => {
-        let texto = "📚 HISTORIAL\n\n";
+
+        let cont = document.getElementById("historial");
+        cont.innerHTML = "";
+
+        if (data.length === 0) {
+            cont.innerText = "Sin historial aún";
+            return;
+        }
 
         data.reverse().forEach(item => {
-            texto += "📅 " + item.fecha + "\n\n";
-            texto += item.plan + "\n\n-----------------\n\n";
-        });
+            let div = document.createElement("div");
+            div.style.marginBottom = "20px";
 
-        alert(texto);
+            div.innerHTML = `
+                <strong>📅 ${item.fecha}</strong><br><br>
+                ${item.plan.replace(/\n/g, "<br>")}
+                <hr>
+            `;
+
+            cont.appendChild(div);
+        });
     });
 }
 
-// =======================
+// =====================
 function descargarPDF() {
     let plan = document.getElementById("resultado").innerText;
+
+    if (!plan) {
+        alert("Primero genera una planificación");
+        return;
+    }
 
     fetch("/api/pdf", {
         method: "POST",
@@ -213,9 +242,7 @@ function descargarPDF() {
     });
 }
 
-// =======================
-// EVENTOS
-// =======================
+// =====================
 document.getElementById("asignatura").addEventListener("change", cargarCursos);
 document.getElementById("curso").addEventListener("change", cargarUnidades);
 document.getElementById("unidad").addEventListener("change", cargarOA);
