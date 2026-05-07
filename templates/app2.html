@@ -13,6 +13,10 @@ body{
     padding:20px;
 }
 
+h1{
+    margin-bottom:20px;
+}
+
 select{
     padding:10px;
     margin:5px;
@@ -57,6 +61,13 @@ button:hover{
     margin-bottom:20px;
 }
 
+#estado{
+    margin-top:15px;
+    font-size:18px;
+    color:#facc15;
+    font-weight:bold;
+}
+
 </style>
 
 </head>
@@ -85,6 +96,8 @@ button:hover{
 📄 Descargar PDF
 </button>
 
+<div id="estado"></div>
+
 <h2>📄 Resultado</h2>
 
 <div id="resultado"></div>
@@ -96,11 +109,12 @@ button:hover{
 <script>
 
 let BASE = {};
+
 let usuario = localStorage.getItem("usuario");
 
-// =====================
-// CARGAR BASE
-// =====================
+// ======================
+// BASE
+// ======================
 
 fetch("/api/base")
 .then(res => res.json())
@@ -112,7 +126,7 @@ fetch("/api/base")
 
 });
 
-// =====================
+// ======================
 
 function cargarAsignaturas(){
 
@@ -135,7 +149,7 @@ function cargarAsignaturas(){
 
 }
 
-// =====================
+// ======================
 
 function cargarCursos(){
 
@@ -160,7 +174,7 @@ function cargarCursos(){
 
 }
 
-// =====================
+// ======================
 
 function cargarUnidades(){
 
@@ -186,7 +200,7 @@ function cargarUnidades(){
 
 }
 
-// =====================
+// ======================
 
 function cargarOA(){
 
@@ -217,9 +231,16 @@ function cargarOA(){
 
 }
 
-// =====================
+// ======================
+// GENERAR IA
+// ======================
 
 function generar(){
+
+    document.getElementById("estado").innerText =
+    "⏳ Generando planificación con IA...";
+
+    document.getElementById("resultado").innerHTML = "";
 
     let asignatura = document.getElementById("asignatura").value;
     let curso = document.getElementById("curso").value;
@@ -256,27 +277,25 @@ function generar(){
 
     .then(data => {
 
-        document.getElementById("resultado").innerText = data.plan;
+        document.getElementById("estado").innerText =
+        "✅ Planificación generada";
+
+        document.getElementById("resultado").innerText =
+        data.plan;
 
     });
 
 }
 
-// =====================
+// ======================
+// HISTORIAL
+// ======================
 
 function verHistorial(){
 
     fetch("/api/historial",{
 
-        method:"POST",
-
-        headers:{
-            "Content-Type":"application/json"
-        },
-
-        body:JSON.stringify({
-            usuario
-        })
+        method:"POST"
 
     })
 
@@ -290,7 +309,7 @@ function verHistorial(){
 
         if(data.length === 0){
 
-            cont.innerHTML = "Sin historial";
+            cont.innerHTML = "Sin historial aún";
 
             return;
 
@@ -316,7 +335,9 @@ function verHistorial(){
 
 }
 
-// =====================
+// ======================
+// PDF
+// ======================
 
 function descargarPDF(){
 
@@ -366,16 +387,16 @@ function descargarPDF(){
 
 }
 
-// =====================
+// ======================
 
 document.getElementById("asignatura")
-.addEventListener("change",cargarCursos);
+.addEventListener("change", cargarCursos);
 
 document.getElementById("curso")
-.addEventListener("change",cargarUnidades);
+.addEventListener("change", cargarUnidades);
 
 document.getElementById("unidad")
-.addEventListener("change",cargarOA);
+.addEventListener("change", cargarOA);
 
 </script>
 
