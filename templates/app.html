@@ -1,8 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Copiloto Docente</title>
+    <meta charset="UTF-8">
+    <title>Copiloto Docente</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        select, button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        #resultado {
+            background: #1e293b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,95 +49,176 @@
 
 <div id="oa"></div>
 
-<button onclick="generar()">🚀 Generar</button>
+<br>
 
-<pre id="resultado"></pre>
+<button onclick="generar()">🚀 Generar</button>
+<button onclick="verHistorial()">📚 Historial</button>
+<button onclick="descargarPDF()">📄 Descargar PDF</button>
+
+<div id="resultado"></div>
 
 <script>
-
 let BASE = {};
+let usuario = localStorage.getItem("usuario");
 
+// =======================
+// CARGAR BASE
+// =======================
 fetch("/api/base")
-.then(r=>r.json())
-.then(d=>{
-  BASE = d;
-  cargarAsignaturas();
+.then(res => res.json())
+.then(data => {
+    BASE = data;
+    cargarAsignaturas();
 });
 
-function cargarAsignaturas(){
-  for(let a in BASE){
-    let o=document.createElement("option");
-    o.value=a;o.textContent=a;
-    asignatura.appendChild(o);
-  }
-  cargarCursos();
+// =======================
+function cargarAsignaturas() {
+    let select = document.getElementById("asignatura");
+    select.innerHTML = "";
+
+    for (let a in BASE) {
+        let option = document.createElement("option");
+        option.value = a;
+        option.text = a;
+        select.appendChild(option);
+    }
+
+    cargarCursos();
 }
 
-function cargarCursos(){
-  curso.innerHTML="";
-  for(let c in BASE[asignatura.value]){
-    let o=document.createElement("option");
-    o.value=c;o.textContent=c;
-    curso.appendChild(o);
-  }
-  cargarUnidades();
+// =======================
+function cargarCursos() {
+    let asignatura = document.getElementById("asignatura").value;
+    let select = document.getElementById("curso");
+
+    select.innerHTML = "";
+
+    for (let c in BASE[asignatura]) {
+        let option = document.createElement("option");
+        option.value = c;
+        option.text = c;
+        select.appendChild(option);
+    }
+
+    cargarUnidades();
 }
 
-function cargarUnidades(){
-  unidad.innerHTML="";
-  for(let u in BASE[asignatura.value][curso.value]){
-    let o=document.createElement("option");
-    o.value=u;o.textContent=u;
-    unidad.appendChild(o);
-  }
-  cargarOA();
+// =======================
+function cargarUnidades() {
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
+    let select = document.getElementById("unidad");
+
+    select.innerHTML = "";
+
+    for (let u in BASE[asignatura][curso]) {
+        let option = document.createElement("option");
+        option.value = u;
+        option.text = u;
+        select.appendChild(option);
+    }
+
+    cargarOA();
 }
 
-function cargarOA(){
-  oa.innerHTML="";
-  let datos=BASE[asignatura.value][curso.value][unidad.value];
+// =======================
+function cargarOA() {
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
+    let unidad = document.getElementById("unidad").value;
 
-  Object.keys(datos).forEach(k=>{
-    let cb=document.createElement("input");
-    cb.type="checkbox";
-    cb.value=k+": "+datos[k].descripcion;
+    let cont = document.getElementById("oa");
+    cont.innerHTML = "";
 
-    oa.appendChild(cb);
-    oa.appendChild(document.createTextNode(cb.value));
-    oa.appendChild(document.createElement("br"));
-  });
+    let oas = BASE[asignatura][curso][unidad];
+
+    for (let key in oas) {
+        let div = document.createElement("div");
+
+        div.innerHTML = `
+            <label>
+                <input type="checkbox" value="${oas[key].descripcion}">
+                ${key}: ${oas[key].descripcion}
+            </label>
+        `;
+
+        cont.appendChild(div);
+    }
 }
 
-function generar(){
+// =======================
+function generar() {
+    let asignatura = document.getElementById("asignatura").value;
+    let curso = document.getElementById("curso").value;
+    let unidad = document.getElementById("unidad").value;
 
-  let lista=[];
-  document.querySelectorAll("#oa input:checked").forEach(x=>lista.push(x.value));
+    let seleccionados = [];
+    document.querySelectorAll("#oa input:checked").forEach(el => {
+        seleccionados.push(el.value);
+    });
 
-  if(lista.length === 0){
-    alert("Selecciona al menos un OA");
-    return;
-  }
-
-  document.getElementById("resultado").textContent = "Generando...";
-
-  fetch("/api/planificar",{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({
-      asignatura:asignatura.value,
-      curso:curso.value,
-      unidad:unidad.value,
-      oa:lista
+    fetch("/api/planificar", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            asignatura,
+            curso,
+            unidad,
+            oa: seleccionados,
+            usuario
+        })
     })
-  })
-  .then(r=>r.json())
-  .then(d=>{
-    document.getElementById("resultado").textContent = d.plan;
-  })
-  .catch(()=>{
-    alert("Error conectando con servidor");
-  });
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("resultado").innerText = data.plan;
+    });
 }
+
+// =======================
+function verHistorial() {
+    fetch("/api/historial", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ usuario })
+    })
+    .then(res => res.json())
+    .then(data => {
+        let texto = "📚 HISTORIAL\n\n";
+
+        data.reverse().forEach(item => {
+            texto += "📅 " + item.fecha + "\n\n";
+            texto += item.plan + "\n\n-----------------\n\n";
+        });
+
+        alert(texto);
+    });
+}
+
+// =======================
+function descargarPDF() {
+    let plan = document.getElementById("resultado").innerText;
+
+    fetch("/api/pdf", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ plan })
+    })
+    .then(res => res.blob())
+    .then(blob => {
+        let url = window.URL.createObjectURL(blob);
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "planificacion.pdf";
+        a.click();
+    });
+}
+
+// =======================
+// EVENTOS
+// =======================
+document.getElementById("asignatura").addEventListener("change", cargarCursos);
+document.getElementById("curso").addEventListener("change", cargarUnidades);
+document.getElementById("unidad").addEventListener("change", cargarOA);
 
 </script>
 
