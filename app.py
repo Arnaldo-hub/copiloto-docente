@@ -88,16 +88,42 @@ def login():
 # =========================
 
 @app.route("/api/planificar", methods=["POST"])
+@app.route("/api/planificar", methods=["POST"])
 def planificar():
 
     try:
 
         data = request.json
 
+        modulos = data.get("modulos", [])
+
+        bloques = ""
+
+        if "Objetivos" in modulos:
+            bloques += "- Objetivos de aprendizaje\n"
+
+        if "Indicadores" in modulos:
+            bloques += "- Indicadores de evaluación\n"
+
+        if "Habilidades" in modulos:
+            bloques += "- Habilidades\n"
+
+        if "Actitudes" in modulos:
+            bloques += "- Actitudes\n"
+
+        if "Evaluación" in modulos:
+            bloques += "- Evaluación\n"
+
+        if "Adaptaciones NEE" in modulos:
+            bloques += "- Adaptaciones NEE\n"
+
+        if "Recursos" in modulos:
+            bloques += "- Recursos\n"
+
         prompt = f"""
 Eres un docente experto del sistema educativo chileno.
 
-Genera una planificación de clase profesional.
+Genera contenido pedagógico profesional.
 
 Asignatura:
 {data['asignatura']}
@@ -111,39 +137,48 @@ Unidad:
 Objetivos de Aprendizaje:
 {chr(10).join(data['oa'])}
 
-La planificación debe incluir:
+Debes generar SOLAMENTE:
 
-- Objetivo de la clase
-- Inicio
-- Desarrollo
-- Cierre
-- Evaluación
-- Recursos
-- Adaptaciones NEE
+{bloques}
+
+No agregues secciones no solicitadas.
 """
 
         response = client.responses.create(
+
             model="gpt-4.1-mini",
+
             input=prompt
+
         )
 
         texto = response.output[0].content[0].text
 
         historial.append({
-            "fecha": datetime.now().strftime("%d-%m-%Y %H:%M"),
-            "plan": texto
+
+            "fecha":
+            datetime.now().strftime("%d-%m-%Y %H:%M"),
+
+            "plan":
+            texto
+
         })
 
         return jsonify({
-            "plan": texto
+
+            "plan":
+            texto
+
         })
 
     except Exception as e:
 
         return jsonify({
-            "plan": f"ERROR IA: {str(e)}"
-        })
 
+            "plan":
+            f"ERROR IA: {str(e)}"
+
+        })
 # =========================
 # HISTORIAL
 # =========================
