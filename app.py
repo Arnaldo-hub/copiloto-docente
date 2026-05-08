@@ -42,6 +42,53 @@ for archivo in os.listdir(carpeta_data):
             nombre_asignatura = nombre_asignatura.capitalize()
 
             BASE[nombre_asignatura] = datos
+            # =========================
+# CHAT IA DOCENTE
+# =========================
+
+@app.route("/api/chat", methods=["POST"])
+def chat_ia():
+
+    try:
+
+        data = request.json
+
+        pregunta = data.get("pregunta", "")
+
+        prompt = f"""
+Eres un asistente pedagógico experto del sistema educativo chileno.
+
+Ayuda al docente de manera clara, profesional y práctica.
+
+Pregunta del docente:
+{pregunta}
+"""
+
+        response = client.responses.create(
+
+            model="gpt-4.1-mini",
+
+            input=prompt
+
+        )
+
+        texto = response.output[0].content[0].text
+
+        return jsonify({
+
+            "respuesta":
+            texto
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "respuesta":
+            f"ERROR IA: {str(e)}"
+
+        })
 
 # =========================
 # HISTORIAL
