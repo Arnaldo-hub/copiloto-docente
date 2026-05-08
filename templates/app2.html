@@ -455,6 +455,32 @@ async function descargarPDF(){
 
 async function preguntarIA(){
 
+    const pregunta =
+    document.getElementById('preguntaIA').value
+
+    document.getElementById('respuestaIA').innerText =
+    '⏳ Pensando...'
+
+    const res = await fetch('/api/chat',{
+
+        method:'POST',
+
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+            pregunta
+        })
+
+    })
+
+    const data = await res.json()
+
+    document.getElementById('respuestaIA').innerText =
+    data.respuesta
+}
+
     document.getElementById('respuestaIA').innerText =
     '⏳ Pensando...'
 
