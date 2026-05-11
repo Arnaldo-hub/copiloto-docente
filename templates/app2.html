@@ -271,11 +271,11 @@ async function generarImagen(){
             src="${data.imagen}">
             `
 
-        }else{
+      }else{
 
-            imagenDiv.innerHTML =
-            'ERROR generando imagen'
-        }
+    imagenDiv.innerHTML =
+    JSON.stringify(data)
+}
 
     }catch(error){
 
