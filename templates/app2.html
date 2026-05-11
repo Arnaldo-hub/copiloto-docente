@@ -34,10 +34,6 @@ body{
     overflow:auto;
 }
 
-h1{
-    margin-bottom:20px;
-}
-
 .card{
     background:#162544;
     padding:15px;
@@ -74,161 +70,120 @@ button{
     font-weight:bold;
 }
 
-button:hover{
-    opacity:0.9;
-}
-
 #resultado{
     background:#162544;
     padding:20px;
     border-radius:12px;
     white-space:pre-wrap;
-    line-height:1.6;
-    min-height:500px;
+    min-height:400px;
 }
 
-#estado{
+#respuestaIA{
     margin-top:15px;
-    color:#ffd54f;
-    font-weight:bold;
+    white-space:pre-wrap;
 }
 
 </style>
-    
 
 </head>
 
 <body>
 
 <div class="container">
-    <!-- PANEL 1 -->
+
+<!-- PANEL IA -->
 
 <div class="panel">
 
-    <h1>🧠 Chat Docente IA</h1>
+<h1>🧠 Chat Docente IA</h1>
 
-    <div class="card">
+<div class="card">
 
-        <textarea
-        id="preguntaIA"
-        placeholder="Escribe una pregunta pedagógica..."></textarea>
+<textarea
+id="preguntaIA"
+placeholder="Escribe una pregunta pedagógica..."></textarea>
 
-        <button onclick="preguntarIA()">
-            💬 Preguntar
-        </button>
+<button onclick="preguntarIA()">
+💬 Preguntar
+</button>
 
-        <div id="respuestaIA"
-        style="margin-top:15px;"></div>
-
-    </div>
+<div id="respuestaIA"></div>
 
 </div>
-    <!-- PANEL 2 -->
+
+</div>
+
+<!-- PANEL CURRICULAR -->
 
 <div class="panel">
 
-    <h1>📚 Contexto Pedagógico</h1>
+<h1>📚 Contexto Pedagógico</h1>
 
-    <div class="card">
+<div class="card">
 
-        <select id="asignatura"></select>
+<select id="asignatura"></select>
 
-        <select id="curso"></select>
+<select id="curso"></select>
 
-        <select id="unidad"></select>
+<select id="unidad"></select>
 
-        <div id="oa"></div>
-
-    </div>
-
-    <h2 style="margin-bottom:15px;">
-        ⚙ Generación Modular
-    </h2>
-
-    <div class="card">
-
-        <label>
-            <input type="checkbox" value="Objetivos">
-            Objetivos
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Indicadores">
-            Indicadores
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Habilidades">
-            Habilidades
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Actitudes">
-            Actitudes
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Evaluación">
-            Evaluación
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Adaptaciones NEE">
-            Adaptaciones NEE
-        </label>
-
-        <br><br>
-
-        <label>
-            <input type="checkbox" value="Recursos">
-            Recursos
-        </label>
-
-        <button onclick="generar()">
-            🚀 Generar
-        </button>
-
-        <button onclick="verHistorial()">
-            📚 Historial
-        </button>
-
-        <button onclick="descargarPDF()">
-            📄 Descargar PDF
-        </button>
-
-        <div id="estado"></div>
-
-    </div>
+<div id="oa"></div>
 
 </div>
-<!-- PANEL 3 -->
+
+<div class="card">
+
+<label><input type="checkbox" value="Objetivos"> Objetivos</label><br><br>
+
+<label><input type="checkbox" value="Indicadores"> Indicadores</label><br><br>
+
+<label><input type="checkbox" value="Habilidades"> Habilidades</label><br><br>
+
+<label><input type="checkbox" value="Actitudes"> Actitudes</label><br><br>
+
+<label><input type="checkbox" value="Evaluación"> Evaluación</label><br><br>
+
+<label><input type="checkbox" value="Adaptaciones NEE"> Adaptaciones NEE</label><br><br>
+
+<label><input type="checkbox" value="Recursos"> Recursos</label>
+
+<button onclick="generar()">
+🚀 Generar
+</button>
+
+<button onclick="verHistorial()">
+📚 Historial
+</button>
+
+<button onclick="descargarPDF()">
+📄 Descargar PDF
+</button>
+
+<div id="estado"></div>
+
+</div>
+
+</div>
+
+<!-- PANEL RESULTADO -->
 
 <div class="panel">
 
-    <h1>📄 Resultado IA</h1>
+<h1>📄 Resultado IA</h1>
 
-    <div id="resultado"></div>
+<div id="resultado"></div>
 
-    <h2 style="margin-top:25px;">
-        📚 Historial
-    </h2>
+<h2 style="margin-top:20px;">
+📚 Historial
+</h2>
 
-    <div id="historial"></div>
+<div id="historial"></div>
+
+</div>
 
 </div>
 
-</div>
-    <script>
+<script>
 
 let BASE = {}
 
@@ -318,17 +273,12 @@ function cargarOA(){
     Object.keys(oas).forEach(oa=>{
 
         oaDiv.innerHTML += `
-
         <label style="display:block;margin-bottom:10px;">
-
-            <input
-            type="checkbox"
-            value="${oas[oa].descripcion}">
-
-            ${oa}: ${oas[oa].descripcion}
-
+        <input
+        type="checkbox"
+        value="${oas[oa].descripcion}">
+        ${oa}: ${oas[oa].descripcion}
         </label>
-
         `
     })
 }
@@ -389,9 +339,7 @@ async function generar(){
 async function verHistorial(){
 
     const res = await fetch('/api/historial',{
-
         method:'POST'
-
     })
 
     const data = await res.json()
@@ -404,17 +352,10 @@ async function verHistorial(){
     data.reverse().forEach(item=>{
 
         historial.innerHTML += `
-
         <div class="card">
-
-            <b>${item.fecha}</b>
-
-            <hr style="margin:10px 0;">
-
-            ${item.plan.substring(0,250)}...
-
+        <b>${item.fecha}</b><br><br>
+        ${item.plan.substring(0,200)}...
         </div>
-
         `
     })
 }
@@ -440,11 +381,9 @@ async function descargarPDF(){
 
     const blob = await res.blob()
 
-    const url =
-    window.URL.createObjectURL(blob)
+    const url = window.URL.createObjectURL(blob)
 
-    const a =
-    document.createElement('a')
+    const a = document.createElement('a')
 
     a.href = url
 
