@@ -5,8 +5,8 @@ from openai import OpenAI
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 
-import json
 import os
+import json
 from datetime import datetime
 
 app = Flask(__name__)
@@ -42,53 +42,6 @@ for archivo in os.listdir(carpeta_data):
             nombre_asignatura = nombre_asignatura.capitalize()
 
             BASE[nombre_asignatura] = datos
-            # =========================
-# CHAT IA DOCENTE
-# =========================
-
-@app.route("/api/chat", methods=["POST"])
-def chat_ia():
-
-    try:
-
-        data = request.json
-
-        pregunta = data.get("pregunta", "")
-
-        prompt = f"""
-Eres un asistente pedagógico experto del sistema educativo chileno.
-
-Ayuda al docente de manera clara, profesional y práctica.
-
-Pregunta del docente:
-{pregunta}
-"""
-
-        response = client.responses.create(
-
-            model="gpt-4.1-mini",
-
-            input=prompt
-
-        )
-
-        texto = response.output[0].content[0].text
-
-        return jsonify({
-
-            "respuesta":
-            texto
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "respuesta":
-            f"ERROR IA: {str(e)}"
-
-        })
 
 # =========================
 # HISTORIAL
@@ -97,44 +50,21 @@ Pregunta del docente:
 historial = []
 
 # =========================
-# RUTAS HTML
+# RUTAS
 # =========================
 
 @app.route("/")
 def home():
-    return render_template("login.html")
-
-@app.route("/app")
-def app_page():
     return render_template("app2.html")
-
-# =========================
-# API BASE
-# =========================
 
 @app.route("/api/base")
 def base():
     return jsonify(BASE)
 
 # =========================
-# LOGIN SIMPLE
-# =========================
-
-@app.route("/api/login", methods=["POST"])
-def login():
-
-    data = request.json
-
-    return jsonify({
-        "ok": True,
-        "usuario": data["usuario"]
-    })
-
-# =========================
 # PLANIFICADOR IA
 # =========================
 
-@app.route("/api/planificar", methods=["POST"])
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
 
@@ -146,26 +76,8 @@ def planificar():
 
         bloques = ""
 
-        if "Objetivos" in modulos:
-            bloques += "- Objetivos de aprendizaje\n"
-
-        if "Indicadores" in modulos:
-            bloques += "- Indicadores de evaluación\n"
-
-        if "Habilidades" in modulos:
-            bloques += "- Habilidades\n"
-
-        if "Actitudes" in modulos:
-            bloques += "- Actitudes\n"
-
-        if "Evaluación" in modulos:
-            bloques += "- Evaluación\n"
-
-        if "Adaptaciones NEE" in modulos:
-            bloques += "- Adaptaciones NEE\n"
-
-        if "Recursos" in modulos:
-            bloques += "- Recursos\n"
+        for m in modulos:
+            bloques += f"- {m}\n"
 
         prompt = f"""
 Eres un docente experto del sistema educativo chileno.
@@ -184,7 +96,7 @@ Unidad:
 Objetivos de Aprendizaje:
 {chr(10).join(data['oa'])}
 
-Debes generar SOLAMENTE:
+Debes generar solamente:
 
 {bloques}
 
@@ -192,47 +104,72 @@ No agregues secciones no solicitadas.
 """
 
         response = client.responses.create(
-
             model="gpt-4.1-mini",
-
             input=prompt
-
         )
 
         texto = response.output[0].content[0].text
 
         historial.append({
-
-            "fecha":
-            datetime.now().strftime("%d-%m-%Y %H:%M"),
-
-            "plan":
-            texto
-
+            "fecha": datetime.now().strftime("%d-%m-%Y %H:%M"),
+            "plan": texto
         })
 
         return jsonify({
-
-            "plan":
-            texto
-
+            "plan": texto
         })
 
     except Exception as e:
 
         return jsonify({
-
-            "plan":
-            f"ERROR IA: {str(e)}"
-
+            "plan": f"ERROR IA: {str(e)}"
         })
+
+# =========================
+# CHAT IA DOCENTE
+# =========================
+
+@app.route("/api/chat", methods=["POST"])
+def chat_ia():
+
+    try:
+
+        data = request.json
+
+        pregunta = data.get("pregunta", "")
+
+        prompt = f"""
+Eres un asistente pedagógico experto del sistema educativo chileno.
+
+Ayuda al docente de manera clara, profesional y práctica.
+
+Pregunta:
+{pregunta}
+"""
+
+        response = client.responses.create(
+            model="gpt-4.1-mini",
+            input=prompt
+        )
+
+        texto = response.output[0].content[0].text
+
+        return jsonify({
+            "respuesta": texto
+        })
+
+    except Exception as e:
+
+        return jsonify({
+            "respuesta": f"ERROR IA: {str(e)}"
+        })
+
 # =========================
 # HISTORIAL
 # =========================
 
 @app.route("/api/historial", methods=["POST"])
 def ver_historial():
-
     return jsonify(historial)
 
 # =========================
@@ -256,7 +193,7 @@ def generar_pdf():
 
         contenido = []
 
-        for linea in texto.split("\n"):
+        for linea in texto.split("\\n"):
 
             contenido.append(
                 Paragraph(linea, styles["Normal"])
@@ -280,52 +217,6 @@ def generar_pdf():
         })
 
 # =========================
-
-# =========================
-# CHAT IA DOCENTE
-# =========================
-
-@app.route("/api/chat", methods=["POST"])
-def chat_ia():
-
-    try:
-
-        data = request.json
-
-        pregunta = data.get("pregunta", "")
-
-        prompt = f"""
-Eres un asistente pedagógico experto del sistema educativo chileno.
-
-Ayuda al docente de manera clara, profesional y práctica.
-
-Pregunta del docente:
-{pregunta}
-"""
-
-        response = client.responses.create(
-
-            model="gpt-4.1-mini",
-
-            input=prompt
-
-        )
-
-        texto = response.output[0].content[0].text
-
-        return jsonify({
-
-            "respuesta": texto
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "respuesta": f"ERROR IA: {str(e)}"
-
-        })
 
 if __name__ == "__main__":
     app.run(debug=True)
