@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Copiloto Docente</title>
+<title>Copiloto Docente IA</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
-
 body{
-    background:#07122b;
+    margin:0;
+    background:#03133b;
     color:white;
+    font-family:Arial;
 }
 
 .container{
     display:grid;
     grid-template-columns:320px 420px 1fr;
     min-height:100vh;
+}
+
+.panel{
+    padding:20px;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.card{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:none;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+#resultado,
+#historial{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    min-height:200px;
+    overflow:auto;
 }
 
 @media(max-width:1200px){
@@ -40,76 +82,12 @@ body{
     }
 }
 
-img{
-    max-width:100%;
-    border-radius:12px;
-    margin-top:15px;
-}
-
-.panel{
-    border-right:1px solid rgba(255,255,255,0.1);
-    padding:20px;
-    overflow:auto;
-}
-
-.card{
-    background:#162544;
-    padding:15px;
-    border-radius:12px;
-    margin-bottom:20px;
-}
-
-textarea{
-    width:100%;
-    height:160px;
-    border:none;
-    border-radius:10px;
-    padding:12px;
-}
-
-select{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:10px;
-}
-
-button{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    margin-top:10px;
-    background:#1fc95c;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-#resultado{
-    background:#162544;
-    padding:20px;
-    border-radius:12px;
-    white-space:pre-wrap;
-    min-height:400px;
-}
-
-#respuestaIA{
-    margin-top:15px;
-    white-space:pre-wrap;
-}
-
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
-
-<!-- PANEL IA -->
 
 <div class="panel">
 
@@ -119,6 +97,7 @@ button{
 
 <textarea
 id="preguntaIA"
+rows="8"
 placeholder="Escribe una pregunta pedagógica..."></textarea>
 
 <button onclick="preguntarIA()">
@@ -129,19 +108,14 @@ placeholder="Escribe una pregunta pedagógica..."></textarea>
 🎨 Generar Imagen
 </button>
 
-<div id="imagenIA"
-style="margin-top:20px;">
-</div>
+<div id="imagenIA"></div>
 
-    <div id="imagenIA" style="margin-top:20px;"></div>
-
-<div id="respuestaIA"></div>
+<div id="respuestaIA"
+style="margin-top:20px;"></div>
 
 </div>
 
 </div>
-
-<!-- PANEL CURRICULAR -->
 
 <div class="panel">
 
@@ -149,276 +123,64 @@ style="margin-top:20px;">
 
 <div class="card">
 
-<select id="asignatura"></select>
+<select id="asignatura">
+<option>Matemática</option>
+<option>Lenguaje</option>
+<option>Ciencias</option>
+<option>Historia</option>
+</select>
 
-<select id="curso"></select>
+<select id="curso">
+<option>1° Básico</option>
+<option>2° Básico</option>
+<option>3° Básico</option>
+</select>
 
-<select id="unidad"></select>
+<select id="unidad">
+<option>Unidad 1</option>
+<option>Unidad 2</option>
+</select>
 
-<div id="oa"></div>
+<label><input type="checkbox"> Objetivos</label><br><br>
+<label><input type="checkbox"> Indicadores</label><br><br>
+<label><input type="checkbox"> Habilidades</label><br><br>
+<label><input type="checkbox"> Actitudes</label><br><br>
 
-</div>
-
-<div class="card">
-
-<label><input type="checkbox" value="Objetivos"> Objetivos</label><br><br>
-
-<label><input type="checkbox" value="Indicadores"> Indicadores</label><br><br>
-
-<label><input type="checkbox" value="Habilidades"> Habilidades</label><br><br>
-
-<label><input type="checkbox" value="Actitudes"> Actitudes</label><br><br>
-
-<label><input type="checkbox" value="Evaluación"> Evaluación</label><br><br>
-
-<label><input type="checkbox" value="Adaptaciones NEE"> Adaptaciones NEE</label><br><br>
-
-<label><input type="checkbox" value="Recursos"> Recursos</label>
-
-<button onclick="generar()">
+<button>
 🚀 Generar
 </button>
 
-<button onclick="verHistorial()">
+<button>
 📚 Historial
 </button>
 
-<button onclick="descargarPDF()">
+<button>
 📄 Descargar PDF
 </button>
 
-<div id="estado"></div>
-
 </div>
 
 </div>
-
-<!-- PANEL RESULTADO -->
 
 <div class="panel">
 
 <h1>📄 Resultado IA</h1>
 
-<div id="resultado"></div>
+<div id="resultado">
+La planificación generada aparecerá aquí.
+</div>
 
-<h2 style="margin-top:20px;">
-📚 Historial
-</h2>
+<h1 style="margin-top:40px;">📚 Historial</h1>
 
-<div id="historial"></div>
+<div id="historial">
+Sin historial aún.
+</div>
 
 </div>
 
 </div>
 
 <script>
-
-let BASE = {}
-
-async function cargarBase(){
-
-    const res = await fetch('/api/base')
-
-    BASE = await res.json()
-
-    const asignatura =
-    document.getElementById('asignatura')
-
-    asignatura.innerHTML = ''
-
-    Object.keys(BASE).forEach(a=>{
-
-        asignatura.innerHTML +=
-        `<option>${a}</option>`
-
-    })
-
-    cargarCursos()
-}
-
-function cargarCursos(){
-
-    const asignatura =
-    document.getElementById('asignatura').value
-
-    const curso =
-    document.getElementById('curso')
-
-    curso.innerHTML = ''
-
-    Object.keys(BASE[asignatura]).forEach(c=>{
-
-        curso.innerHTML +=
-        `<option>${c}</option>`
-
-    })
-
-    cargarUnidades()
-}
-
-function cargarUnidades(){
-
-    const asignatura =
-    document.getElementById('asignatura').value
-
-    const curso =
-    document.getElementById('curso').value
-
-    const unidad =
-    document.getElementById('unidad')
-
-    unidad.innerHTML = ''
-
-    Object.keys(BASE[asignatura][curso]).forEach(u=>{
-
-        unidad.innerHTML +=
-        `<option>${u}</option>`
-
-    })
-
-    cargarOA()
-}
-
-function cargarOA(){
-
-    const asignatura =
-    document.getElementById('asignatura').value
-
-    const curso =
-    document.getElementById('curso').value
-
-    const unidad =
-    document.getElementById('unidad').value
-
-    const oaDiv =
-    document.getElementById('oa')
-
-    oaDiv.innerHTML = ''
-
-    const oas =
-    BASE[asignatura][curso][unidad]
-
-    Object.keys(oas).forEach(oa=>{
-
-        oaDiv.innerHTML += `
-        <label style="display:block;margin-bottom:10px;">
-        <input
-        type="checkbox"
-        value="${oas[oa].descripcion}">
-        ${oa}: ${oas[oa].descripcion}
-        </label>
-        `
-    })
-}
-
-async function generar(){
-
-    document.getElementById('estado').innerText =
-    '⏳ Generando con IA...'
-
-    const asignatura =
-    document.getElementById('asignatura').value
-
-    const curso =
-    document.getElementById('curso').value
-
-    const unidad =
-    document.getElementById('unidad').value
-
-    const oa = []
-
-    document
-    .querySelectorAll('#oa input:checked')
-    .forEach(c=> oa.push(c.value))
-
-    const modulos = []
-
-    document
-    .querySelectorAll('.card input:checked')
-    .forEach(c=> modulos.push(c.value))
-
-    const res = await fetch('/api/planificar',{
-
-        method:'POST',
-
-        headers:{
-            'Content-Type':'application/json'
-        },
-
-        body:JSON.stringify({
-            asignatura,
-            curso,
-            unidad,
-            oa,
-            modulos
-        })
-
-    })
-
-    const data = await res.json()
-
-    document.getElementById('resultado').innerText =
-    data.plan
-
-    document.getElementById('estado').innerText =
-    '✅ Generación completada'
-}
-
-async function verHistorial(){
-
-    const res = await fetch('/api/historial',{
-        method:'POST'
-    })
-
-    const data = await res.json()
-
-    const historial =
-    document.getElementById('historial')
-
-    historial.innerHTML = ''
-
-    data.reverse().forEach(item=>{
-
-        historial.innerHTML += `
-        <div class="card">
-        <b>${item.fecha}</b><br><br>
-        ${item.plan.substring(0,200)}...
-        </div>
-        `
-    })
-}
-
-async function descargarPDF(){
-
-    const texto =
-    document.getElementById('resultado').innerText
-
-    const res = await fetch('/api/pdf',{
-
-        method:'POST',
-
-        headers:{
-            'Content-Type':'application/json'
-        },
-
-        body:JSON.stringify({
-            plan:texto
-        })
-
-    })
-
-    const blob = await res.blob()
-
-    const url = window.URL.createObjectURL(blob)
-
-    const a = document.createElement('a')
-
-    a.href = url
-
-    a.download = 'planificacion.pdf'
-
-    a.click()
-}
 
 async function preguntarIA(){
 
@@ -442,12 +204,14 @@ async function preguntarIA(){
             },
 
             body:JSON.stringify({
-                pregunta: pregunta
+                pregunta:pregunta
             })
 
         })
 
         const data = await res.json()
+
+        console.log(data)
 
         if(data.respuesta){
 
@@ -462,23 +226,12 @@ async function preguntarIA(){
 
     }catch(error){
 
+        console.log(error)
+
         respuesta.innerText =
         'ERROR conectando IA'
     }
 }
-document
-.getElementById('asignatura')
-.addEventListener('change', cargarCursos)
-
-document
-.getElementById('curso')
-.addEventListener('change', cargarUnidades)
-
-document
-.getElementById('unidad')
-.addEventListener('change', cargarOA)
-
-cargarBase()
 
 async function generarImagen(){
 
@@ -502,19 +255,20 @@ async function generarImagen(){
             },
 
             body:JSON.stringify({
-                prompt
+                prompt:prompt
             })
 
         })
 
         const data = await res.json()
 
+        console.log(data)
+
         if(data.imagen){
 
             imagenDiv.innerHTML = `
-
-            <img src="data:image/png;base64,${data.imagen}">
-
+            <img
+            src="${data.imagen}">
             `
 
         }else{
@@ -525,64 +279,13 @@ async function generarImagen(){
 
     }catch(error){
 
-        imagenDiv.innerHTML =
-        'ERROR conectando IA'
-    }
-}
-
-    async function generarImagen(){
-
-    const prompt =
-    document.getElementById('preguntaIA').value
-
-    const imagenDiv =
-    document.getElementById('imagenIA')
-
-    imagenDiv.innerHTML =
-    '⏳ Generando imagen...'
-
-    try{
-
-        const res = await fetch('/api/imagen',{
-
-            method:'POST',
-
-            headers:{
-                'Content-Type':'application/json'
-            },
-
-            body:JSON.stringify({
-                prompt
-            })
-
-        })
-
-        const data = await res.json()
-
-        if(data.imagen){
-
-           imagenDiv.innerHTML = `
-
-<img
-src="${data.imagen}"
-style="width:100%;
-border-radius:12px;
-margin-top:15px;">
-
-`
-        }else{
-
-            imagenDiv.innerHTML =
-            'ERROR generando imagen'
-        }
-
-    }catch(error){
+        console.log(error)
 
         imagenDiv.innerHTML =
         'ERROR conectando IA'
     }
 }
-    
+
 </script>
 
 </body>
