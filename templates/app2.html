@@ -125,6 +125,14 @@ placeholder="Escribe una pregunta pedagógica..."></textarea>
 💬 Preguntar
 </button>
 
+<button onclick="generarImagen()">
+🎨 Generar Imagen
+</button>
+
+<div id="imagenIA"
+style="margin-top:20px;">
+</div>
+
     <div id="imagenIA" style="margin-top:20px;"></div>
 
 <div id="respuestaIA"></div>
@@ -506,6 +514,60 @@ async function generarImagen(){
             imagenDiv.innerHTML = `
 
             <img src="data:image/png;base64,${data.imagen}">
+
+            `
+
+        }else{
+
+            imagenDiv.innerHTML =
+            'ERROR generando imagen'
+        }
+
+    }catch(error){
+
+        imagenDiv.innerHTML =
+        'ERROR conectando IA'
+    }
+}
+
+    async function generarImagen(){
+
+    const prompt =
+    document.getElementById('preguntaIA').value
+
+    const imagenDiv =
+    document.getElementById('imagenIA')
+
+    imagenDiv.innerHTML =
+    '⏳ Generando imagen...'
+
+    try{
+
+        const res = await fetch('/api/imagen',{
+
+            method:'POST',
+
+            headers:{
+                'Content-Type':'application/json'
+            },
+
+            body:JSON.stringify({
+                prompt
+            })
+
+        })
+
+        const data = await res.json()
+
+        if(data.imagen){
+
+            imagenDiv.innerHTML = `
+
+            <img
+            src="data:image/png;base64,${data.imagen}"
+            style="width:100%;
+            border-radius:12px;
+            margin-top:15px;">
 
             `
 
