@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, jsonify, send_file
+import base64
 from openai import OpenAI
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
@@ -50,6 +51,44 @@ if os.path.exists(carpeta_data):
             except Exception as e:
 
                 print(f"ERROR cargando {archivo}: {e}")
+
+# =========================
+# GENERADOR DE IMÁGENES IA
+# =========================
+
+@app.route("/api/imagen", methods=["POST"])
+def generar_imagen():
+
+    try:
+
+        data = request.json
+
+        prompt = data.get("prompt", "")
+
+        result = client.images.generate(
+
+            model="gpt-image-1",
+
+            prompt=prompt,
+
+            size="1024x1024"
+        )
+
+        imagen_base64 = result.data[0].b64_json
+
+        return jsonify({
+
+            "imagen": imagen_base64
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error": str(e)
+
+        })
 
 # =========================
 # HISTORIAL
