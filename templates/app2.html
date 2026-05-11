@@ -224,13 +224,13 @@ async function preguntarIA(){
             'ERROR obteniendo respuesta IA'
         }
 
-    }catch(error){
+   }catch(error){
 
-        console.log(error)
+    console.log(error)
 
-        respuesta.innerText =
-        'ERROR conectando IA'
-    }
+    imagenDiv.innerHTML =
+    error
+}
 }
 
 async function generarImagen(){
