@@ -561,16 +561,15 @@ async function generarImagen(){
 
         if(data.imagen){
 
-            imagenDiv.innerHTML = `
+           imagenDiv.innerHTML = `
 
-            <img
-            src="data:image/png;base64,${data.imagen}"
-            style="width:100%;
-            border-radius:12px;
-            margin-top:15px;">
+<img
+src="${data.imagen}"
+style="width:100%;
+border-radius:12px;
+margin-top:15px;">
 
-            `
-
+`
         }else{
 
             imagenDiv.innerHTML =
