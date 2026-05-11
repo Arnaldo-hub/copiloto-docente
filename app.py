@@ -72,13 +72,15 @@ def generar_imagen():
             prompt=prompt,
 
             size="1024x1024"
+
         )
 
         imagen_base64 = result.data[0].b64_json
 
         return jsonify({
 
-            "imagen": imagen_base64
+            "imagen":
+            imagen_base64
 
         })
 
@@ -86,7 +88,8 @@ def generar_imagen():
 
         return jsonify({
 
-            "error": str(e)
+            "error":
+            str(e)
 
         })
 
