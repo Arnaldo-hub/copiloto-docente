@@ -25,23 +25,31 @@ client = OpenAI(api_key=api_key)
 
 BASE = {}
 
-carpeta_data = "data"
+carpeta_data = os.path.join(app.root_path, "data")
 
-for archivo in os.listdir(carpeta_data):
+if os.path.exists(carpeta_data):
 
-    if archivo.endswith(".json"):
+    for archivo in os.listdir(carpeta_data):
 
-        ruta = os.path.join(carpeta_data, archivo)
+        if archivo.endswith(".json"):
 
-        with open(ruta, encoding="utf-8") as f:
+            ruta = os.path.join(carpeta_data, archivo)
 
-            datos = json.load(f)
+            try:
 
-            nombre_asignatura = archivo.replace(".json", "")
+                with open(ruta, "r", encoding="utf-8") as f:
 
-            nombre_asignatura = nombre_asignatura.capitalize()
+                    datos = json.load(f)
 
-            BASE[nombre_asignatura] = datos
+                    nombre_asignatura = archivo.replace(".json", "")
+
+                    nombre_asignatura = nombre_asignatura.capitalize()
+
+                    BASE[nombre_asignatura] = datos
+
+            except Exception as e:
+
+                print(f"ERROR cargando {archivo}: {e}")
 
 # =========================
 # HISTORIAL
