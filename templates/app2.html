@@ -25,7 +25,25 @@ body{
 .container{
     display:grid;
     grid-template-columns:320px 420px 1fr;
-    height:100vh;
+    min-height:100vh;
+}
+
+@media(max-width:1200px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .panel{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+}
+
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
 }
 
 .panel{
@@ -106,6 +124,8 @@ placeholder="Escribe una pregunta pedagógica..."></textarea>
 <button onclick="preguntarIA()">
 💬 Preguntar
 </button>
+
+    <div id="imagenIA" style="margin-top:20px;"></div>
 
 <div id="respuestaIA"></div>
 
@@ -452,6 +472,56 @@ document
 
 cargarBase()
 
+async function generarImagen(){
+
+    const prompt =
+    document.getElementById('preguntaIA').value
+
+    const imagenDiv =
+    document.getElementById('imagenIA')
+
+    imagenDiv.innerHTML =
+    '⏳ Generando imagen...'
+
+    try{
+
+        const res = await fetch('/api/imagen',{
+
+            method:'POST',
+
+            headers:{
+                'Content-Type':'application/json'
+            },
+
+            body:JSON.stringify({
+                prompt
+            })
+
+        })
+
+        const data = await res.json()
+
+        if(data.imagen){
+
+            imagenDiv.innerHTML = `
+
+            <img src="data:image/png;base64,${data.imagen}">
+
+            `
+
+        }else{
+
+            imagenDiv.innerHTML =
+            'ERROR generando imagen'
+        }
+
+    }catch(error){
+
+        imagenDiv.innerHTML =
+        'ERROR conectando IA'
+    }
+}
+    
 </script>
 
 </body>
