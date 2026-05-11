@@ -461,24 +461,33 @@ async function preguntarIA(){
     document.getElementById('respuestaIA').innerText =
     '⏳ Pensando...'
 
-    const res = await fetch('/api/chat',{
+    try{
 
-        method:'POST',
+        const res = await fetch('/api/chat',{
 
-        headers:{
-            'Content-Type':'application/json'
-        },
+            method:'POST',
 
-        body:JSON.stringify({
-            pregunta
+            headers:{
+                'Content-Type':'application/json'
+            },
+
+            body:JSON.stringify({
+                pregunta
+            })
+
         })
 
-    })
+        const data = await res.json()
 
-    const data = await res.json()
+        document.getElementById('respuestaIA').innerText =
+        data.respuesta
 
-    document.getElementById('respuestaIA').innerText =
-    data.respuesta
+    }catch(error){
+
+        document.getElementById('respuestaIA').innerText =
+        'ERROR conectando IA'
+
+    }
 }
 
 document
