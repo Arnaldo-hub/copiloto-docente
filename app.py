@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, jsonify, send_file
-import base64
+import requests
 from openai import OpenAI
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
@@ -65,22 +65,48 @@ def generar_imagen():
 
         prompt = data.get("prompt", "")
 
-        result = client.images.generate(
+        headers = {
 
-            model="gpt-image-1",
+            "Authorization":
+            f"Bearer {api_key}",
 
-            prompt=prompt,
+            "Content-Type":
+            "application/json"
+        }
 
-            size="1024x1024"
+        body = {
+
+            "model":
+            "dall-e-3",
+
+            "prompt":
+            prompt,
+
+            "n":
+            1,
+
+            "size":
+            "1024x1024"
+        }
+
+        response = requests.post(
+
+            "https://api.openai.com/v1/images/generations",
+
+            headers=headers,
+
+            json=body
 
         )
 
-        imagen_base64 = result.data[0].b64_json
+        resultado = response.json()
+
+        image_url = resultado["data"][0]["url"]
 
         return jsonify({
 
             "imagen":
-            imagen_base64
+            image_url
 
         })
 
@@ -92,7 +118,6 @@ def generar_imagen():
             str(e)
 
         })
-
 # =========================
 # HISTORIAL
 # =========================
