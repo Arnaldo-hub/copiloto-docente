@@ -1,38 +1,12 @@
 {
   "1° Básico": {
-
     "Unidad 1": {
-
       "OA 1": {
-        "descripcion": "Reconocer que los textos escritos transmiten mensajes y que son escritos por alguien para cumplir un propósito."
+        "descripcion": "Leer palabras y oraciones simples."
       },
-
       "OA 2": {
-        "descripcion": "Leer en voz alta para adquirir fluidez."
+        "descripcion": "Comprender textos breves escuchados y leídos."
       }
-
-    },
-
-    "Unidad 2": {
-
-      "OA 3": {
-        "descripcion": "Comprender textos aplicando estrategias de comprensión lectora."
-      }
-
     }
-
-  },
-
-  "2° Básico": {
-
-    "Unidad 1": {
-
-      "OA 1": {
-        "descripcion": "Leer independientemente y comprender textos breves."
-      }
-
-    }
-
   }
-
 }
