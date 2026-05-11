@@ -204,6 +204,14 @@ Pregunta:
 @app.route("/api/imagen", methods=["POST"])
 def generar_imagen():
 
+    return jsonify({
+
+        "imagen":
+        "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4"
+
+    })
+def generar_imagen():
+
     try:
 
         data = request.json
