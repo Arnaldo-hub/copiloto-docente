@@ -57,9 +57,9 @@ historial = []
 def home():
     return render_template("app2.html")
 
-@app.route("/api/base")
-def base():
-    return jsonify(BASE)
+@app.route("/app")
+def app_page():
+    return render_template("app2.html")
 
 # =========================
 # PLANIFICADOR IA
