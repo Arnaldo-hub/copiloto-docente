@@ -20,7 +20,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 # =========================
-# BASE CURRICULAR AUTOMÁTICA
+# BASE CURRICULAR
 # =========================
 
 BASE = {}
@@ -58,7 +58,7 @@ if os.path.exists(carpeta_data):
 historial = []
 
 # =========================
-# RUTAS
+# RUTAS HTML
 # =========================
 
 @app.route("/")
@@ -68,6 +68,23 @@ def home():
 @app.route("/app")
 def app_page():
     return render_template("app2.html")
+
+# =========================
+# API BASE CURRICULAR
+# =========================
+
+@app.route("/api/base")
+def base_data():
+
+    try:
+
+        return jsonify(BASE)
+
+    except Exception as e:
+
+        return jsonify({
+            "error": str(e)
+        })
 
 # =========================
 # PLANIFICADOR IA
@@ -112,25 +129,39 @@ No agregues secciones no solicitadas.
 """
 
         response = client.responses.create(
+
             model="gpt-4.1-mini",
+
             input=prompt
+
         )
 
         texto = response.output[0].content[0].text
 
         historial.append({
-            "fecha": datetime.now().strftime("%d-%m-%Y %H:%M"),
-            "plan": texto
+
+            "fecha":
+            datetime.now().strftime("%d-%m-%Y %H:%M"),
+
+            "plan":
+            texto
+
         })
 
         return jsonify({
-            "plan": texto
+
+            "plan":
+            texto
+
         })
 
     except Exception as e:
 
         return jsonify({
-            "plan": f"ERROR IA: {str(e)}"
+
+            "plan":
+            f"ERROR IA: {str(e)}"
+
         })
 
 # =========================
@@ -156,20 +187,29 @@ Pregunta:
 """
 
         response = client.responses.create(
+
             model="gpt-4.1-mini",
+
             input=prompt
+
         )
 
         texto = response.output[0].content[0].text
 
         return jsonify({
-            "respuesta": texto
+
+            "respuesta":
+            texto
+
         })
 
     except Exception as e:
 
         return jsonify({
-            "respuesta": f"ERROR IA: {str(e)}"
+
+            "respuesta":
+            f"ERROR IA: {str(e)}"
+
         })
 
 # =========================
@@ -178,6 +218,7 @@ Pregunta:
 
 @app.route("/api/historial", methods=["POST"])
 def ver_historial():
+
     return jsonify(historial)
 
 # =========================
@@ -201,7 +242,7 @@ def generar_pdf():
 
         contenido = []
 
-        for linea in texto.split("\\n"):
+        for linea in texto.split("\n"):
 
             contenido.append(
                 Paragraph(linea, styles["Normal"])
