@@ -397,7 +397,10 @@ async function preguntarIA(){
     const pregunta =
     document.getElementById('preguntaIA').value
 
-    document.getElementById('respuestaIA').innerText =
+    const respuesta =
+    document.getElementById('respuestaIA')
+
+    respuesta.innerText =
     '⏳ Pensando...'
 
     try{
@@ -411,24 +414,30 @@ async function preguntarIA(){
             },
 
             body:JSON.stringify({
-                pregunta
+                pregunta: pregunta
             })
 
         })
 
         const data = await res.json()
 
-        document.getElementById('respuestaIA').innerText =
-        data.respuesta
+        if(data.respuesta){
+
+            respuesta.innerText =
+            data.respuesta
+
+        }else{
+
+            respuesta.innerText =
+            'ERROR obteniendo respuesta IA'
+        }
 
     }catch(error){
 
-        document.getElementById('respuestaIA').innerText =
+        respuesta.innerText =
         'ERROR conectando IA'
-
     }
 }
-
 document
 .getElementById('asignatura')
 .addEventListener('change', cargarCursos)
