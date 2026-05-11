@@ -1,32 +1,44 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, jsonify, send_file
-import requests
 from openai import OpenAI
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Paragraph,
+    Spacer
+)
+
 from reportlab.lib.styles import getSampleStyleSheet
 
 import os
 import json
+import requests
+
 from datetime import datetime
 
 app = Flask(__name__)
 
-# =========================
+# =========================================
 # OPENAI
-# =========================
+# =========================================
 
 api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=api_key)
+client = OpenAI(
+    api_key=api_key
+)
 
-# =========================
+# =========================================
 # BASE CURRICULAR
-# =========================
+# =========================================
 
 BASE = {}
 
-carpeta_data = os.path.join(app.root_path, "data")
+carpeta_data = os.path.join(
+    app.root_path,
+    "data"
+)
 
 if os.path.exists(carpeta_data):
 
@@ -34,27 +46,160 @@ if os.path.exists(carpeta_data):
 
         if archivo.endswith(".json"):
 
-            ruta = os.path.join(carpeta_data, archivo)
+            ruta = os.path.join(
+                carpeta_data,
+                archivo
+            )
 
             try:
 
-                with open(ruta, "r", encoding="utf-8") as f:
+                with open(
+                    ruta,
+                    "r",
+                    encoding="utf-8"
+                ) as f:
 
                     datos = json.load(f)
 
-                    nombre_asignatura = archivo.replace(".json", "")
+                    nombre_asignatura = archivo.replace(
+                        ".json",
+                        ""
+                    )
 
-                    nombre_asignatura = nombre_asignatura.capitalize()
+                    nombre_asignatura = (
+                        nombre_asignatura.capitalize()
+                    )
 
                     BASE[nombre_asignatura] = datos
 
             except Exception as e:
 
-                print(f"ERROR cargando {archivo}: {e}")
+                print(
+                    f"ERROR cargando {archivo}: {e}"
+                )
 
-# =========================
+# =========================================
+# HISTORIAL
+# =========================================
+
+historial = []
+
+# =========================================
+# RUTAS HTML
+# =========================================
+
+@app.route("/")
+def home():
+
+    return render_template(
+        "app2.html"
+    )
+
+@app.route("/app")
+def app_page():
+
+    return render_template(
+        "app2.html"
+    )
+
+# =========================================
+# API BASE CURRICULAR
+# =========================================
+
+@app.route("/api/base")
+def base_data():
+
+    try:
+
+        return jsonify(BASE)
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+# CHAT IA DOCENTE
+# =========================================
+
+@app.route("/api/chat", methods=["POST"])
+def chat_ia():
+
+    try:
+
+        data = request.json
+
+        pregunta = data.get(
+            "pregunta",
+            ""
+        )
+
+        prompt = f"""
+Eres un experto pedagógico chileno.
+
+Ayuda al docente de manera clara,
+práctica y profesional.
+
+Pregunta:
+{pregunta}
+"""
+
+        response = client.chat.completions.create(
+
+            model="gpt-4o-mini",
+
+            messages=[
+
+                {
+                    "role":
+                    "system",
+
+                    "content":
+                    "Eres un experto pedagógico."
+                },
+
+                {
+                    "role":
+                    "user",
+
+                    "content":
+                    prompt
+                }
+
+            ]
+
+        )
+
+        texto = (
+            response
+            .choices[0]
+            .message
+            .content
+        )
+
+        return jsonify({
+
+            "respuesta":
+            texto
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "respuesta":
+            f"ERROR IA: {str(e)}"
+
+        })
+
+# =========================================
 # GENERADOR DE IMÁGENES IA
-# =========================
+# =========================================
 
 @app.route("/api/imagen", methods=["POST"])
 def generar_imagen():
@@ -63,7 +208,10 @@ def generar_imagen():
 
         data = request.json
 
-        prompt = data.get("prompt", "")
+        prompt = data.get(
+            "prompt",
+            ""
+        )
 
         headers = {
 
@@ -101,7 +249,20 @@ def generar_imagen():
 
         resultado = response.json()
 
-        image_url = resultado["data"][0]["url"]
+        print(resultado)
+
+        if "data" not in resultado:
+
+            return jsonify({
+
+                "error":
+                resultado
+
+            })
+
+        image_url = (
+            resultado["data"][0]["url"]
+        )
 
         return jsonify({
 
@@ -118,44 +279,10 @@ def generar_imagen():
             str(e)
 
         })
-# =========================
-# HISTORIAL
-# =========================
 
-historial = []
-
-# =========================
-# RUTAS HTML
-# =========================
-
-@app.route("/")
-def home():
-    return render_template("app2.html")
-
-@app.route("/app")
-def app_page():
-    return render_template("app2.html")
-
-# =========================
-# API BASE CURRICULAR
-# =========================
-
-@app.route("/api/base")
-def base_data():
-
-    try:
-
-        return jsonify(BASE)
-
-    except Exception as e:
-
-        return jsonify({
-            "error": str(e)
-        })
-
-# =========================
+# =========================================
 # PLANIFICADOR IA
-# =========================
+# =========================================
 
 @app.route("/api/planificar", methods=["POST"])
 def planificar():
@@ -164,11 +291,15 @@ def planificar():
 
         data = request.json
 
-        modulos = data.get("modulos", [])
+        modulos = data.get(
+            "modulos",
+            []
+        )
 
         bloques = ""
 
         for m in modulos:
+
             bloques += f"- {m}\n"
 
         prompt = f"""
@@ -195,20 +326,45 @@ Debes generar solamente:
 No agregues secciones no solicitadas.
 """
 
-        response = client.responses.create(
+        response = client.chat.completions.create(
 
-            model="gpt-4.1-mini",
+            model="gpt-4o-mini",
 
-            input=prompt
+            messages=[
+
+                {
+                    "role":
+                    "system",
+
+                    "content":
+                    "Eres un docente experto."
+                },
+
+                {
+                    "role":
+                    "user",
+
+                    "content":
+                    prompt
+                }
+
+            ]
 
         )
 
-        texto = response.output[0].content[0].text
+        texto = (
+            response
+            .choices[0]
+            .message
+            .content
+        )
 
         historial.append({
 
             "fecha":
-            datetime.now().strftime("%d-%m-%Y %H:%M"),
+            datetime.now().strftime(
+                "%d-%m-%Y %H:%M"
+            ),
 
             "plan":
             texto
@@ -231,108 +387,100 @@ No agregues secciones no solicitadas.
 
         })
 
-# =========================
-# CHAT IA DOCENTE
-# =========================
-
-@app.route("/api/chat", methods=["POST"])
-def chat_ia():
-
-    try:
-
-        data = request.json
-
-        pregunta = data.get("pregunta", "")
-
-        prompt = f"""
-Eres un asistente pedagógico experto del sistema educativo chileno.
-
-Ayuda al docente de manera clara, profesional y práctica.
-
-Pregunta:
-{pregunta}
-"""
-
-        response = client.responses.create(
-
-            model="gpt-4.1-mini",
-
-            input=prompt
-
-        )
-
-        texto = response.output[0].content[0].text
-
-        return jsonify({
-
-            "respuesta":
-            texto
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "respuesta":
-            f"ERROR IA: {str(e)}"
-
-        })
-
-# =========================
+# =========================================
 # HISTORIAL
-# =========================
+# =========================================
 
-@app.route("/api/historial", methods=["POST"])
+@app.route(
+    "/api/historial",
+    methods=["POST"]
+)
+
 def ver_historial():
 
-    return jsonify(historial)
+    return jsonify(
+        historial
+    )
 
-# =========================
+# =========================================
 # PDF
-# =========================
+# =========================================
 
-@app.route("/api/pdf", methods=["POST"])
+@app.route(
+    "/api/pdf",
+    methods=["POST"]
+)
+
 def generar_pdf():
 
     try:
 
         data = request.json
 
-        texto = data.get("plan", "")
+        texto = data.get(
+            "plan",
+            ""
+        )
 
-        archivo = "planificacion.pdf"
+        archivo = (
+            "planificacion.pdf"
+        )
 
-        doc = SimpleDocTemplate(archivo)
+        doc = SimpleDocTemplate(
+            archivo
+        )
 
-        styles = getSampleStyleSheet()
+        styles = (
+            getSampleStyleSheet()
+        )
 
         contenido = []
 
         for linea in texto.split("\n"):
 
             contenido.append(
-                Paragraph(linea, styles["Normal"])
+
+                Paragraph(
+                    linea,
+                    styles["Normal"]
+                )
+
             )
 
             contenido.append(
-                Spacer(1, 10)
+
+                Spacer(
+                    1,
+                    10
+                )
+
             )
 
-        doc.build(contenido)
+        doc.build(
+            contenido
+        )
 
         return send_file(
+
             archivo,
+
             as_attachment=True
+
         )
 
     except Exception as e:
 
         return jsonify({
-            "error": str(e)
+
+            "error":
+            str(e)
+
         })
 
-# =========================
+# =========================================
 
 if __name__ == "__main__":
-    app.run(debug=True)
+
+    app.run(
+        debug=True
+    )
