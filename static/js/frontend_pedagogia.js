@@ -1,205 +1,84 @@
-// =========================================
-// CURSOS
-// =========================================
 
 async function cargarCursos(){
 
-    try{
+    const asignatura =
+    document.getElementById('asignatura').value
 
-        const asignatura =
+    const cursoSelect =
+    document.getElementById('curso')
 
-        document.getElementById(
-            'asignatura'
-        ).value
+    cursoSelect.innerHTML = ''
 
-        const cursoSelect =
+    const res = await fetch(`/api/cursos/${asignatura}`)
 
-        document.getElementById(
-            'curso'
-        )
+    const cursos = await res.json()
 
-        cursoSelect.innerHTML = ''
+    cursos.forEach(curso=>{
 
-        const res = await fetch(
+        cursoSelect.innerHTML += `
+        <option>${curso}</option>
+        `
+    })
 
-            `/api/cursos/${asignatura}`
-
-        )
-
-        const cursos = await res.json()
-
-        cursos.forEach(curso => {
-
-            cursoSelect.innerHTML += `
-
-            <option>
-
-            ${curso}
-
-            </option>
-
-            `
-        })
-
-        cargarUnidades()
-
-    }catch(error){
-
-        console.log(error)
-    }
+    cargarUnidades()
 }
-
-// =========================================
-// UNIDADES
-// =========================================
 
 async function cargarUnidades(){
 
-    try{
+    const asignatura =
+    document.getElementById('asignatura').value
 
-        const asignatura =
+    const curso =
+    document.getElementById('curso').value
 
-        document.getElementById(
-            'asignatura'
-        ).value
+    const unidadSelect =
+    document.getElementById('unidad')
 
-        const curso =
+    unidadSelect.innerHTML = ''
 
-        document.getElementById(
-            'curso'
-        ).value
+    const res = await fetch(`/api/unidades/${asignatura}/${curso}`)
 
-        const unidadSelect =
+    const unidades = await res.json()
 
-        document.getElementById(
-            'unidad'
-        )
+    unidades.forEach(unidad=>{
 
-        unidadSelect.innerHTML = ''
+        unidadSelect.innerHTML += `
+        <option>${unidad.nombre}</option>
+        `
+    })
 
-        const res = await fetch(
-
-            `/api/unidades/${asignatura}/${curso}`
-
-        )
-
-        const unidades = await res.json()
-
-        unidades.forEach(unidad => {
-
-            unidadSelect.innerHTML += `
-
-            <option>
-
-            ${unidad.nombre}
-
-            </option>
-
-            `
-        })
-
-        cargarOA()
-
-    }catch(error){
-
-        console.log(error)
-    }
+    cargarOA()
 }
-
-// =========================================
-// OA
-// =========================================
 
 async function cargarOA(){
 
-    try{
+    const asignatura =
+    document.getElementById('asignatura').value
 
-        const asignatura =
+    const curso =
+    document.getElementById('curso').value
 
-        document.getElementById(
-            'asignatura'
-        ).value
+    const unidad =
+    document.getElementById('unidad').value
 
-        const curso =
+    const oaSelect =
+    document.getElementById('oa')
 
-        document.getElementById(
-            'curso'
-        ).value
+    oaSelect.innerHTML = ''
 
-        const unidad =
+    const res = await fetch(`/api/oa/${asignatura}/${curso}/${unidad}`)
 
-        document.getElementById(
-            'unidad'
-        ).value
+    const oa = await res.json()
 
-        const oaSelect =
+    oa.forEach(item=>{
 
-        document.getElementById(
-            'oa'
-        )
-
-        oaSelect.innerHTML = ''
-
-        const res = await fetch(
-
-            `/api/oa/${asignatura}/${curso}/${unidad}`
-
-        )
-
-        const oa = await res.json()
-
-        oa.forEach(item => {
-
-            oaSelect.innerHTML += `
-
-            <option>
-
-            ${item.codigo}
-            -
-            ${item.descripcion}
-
-            </option>
-
-            `
-        })
-
-    }catch(error){
-
-        console.log(error)
-    }
+        oaSelect.innerHTML += `
+        <option>${item.codigo} - ${item.descripcion}</option>
+        `
+    })
 }
 
-// =========================================
-// GENERAR PLANIFICACIÓN
-// =========================================
+window.onload = function(){
 
-async function generarPlanificacion(){
-
-    const resultado =
-
-    document.getElementById(
-        'resultado'
-    )
-
-    resultado.innerHTML =
-    '⏳ Generando planificación...'
-
-    setTimeout(()=>{
-
-        resultado.innerHTML =
-
-        `
-
-        <h2>
-        ✅ Planificación generada
-        </h2>
-
-        <p>
-        El sistema curricular dinámico
-        ya está conectado.
-        </p>
-
-        `
-
-    },1000)
+    cargarCursos()
 }
