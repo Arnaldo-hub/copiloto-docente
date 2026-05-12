@@ -1,68 +1,263 @@
+from flask import Flask
+from flask import render_template
+from flask import request
+from flask import jsonify
 
-from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
-import os
-from curriculum import obtener_cursos, obtener_unidades, obtener_oa
+
+from curriculum import *
+
 from planificador import *
+
+import os
+
+# =========================================
+# APP
+# =========================================
 
 app = Flask(__name__)
 
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key)
+# =========================================
+# OPENAI
+# =========================================
+
+api_key = os.getenv(
+    "OPENAI_API_KEY"
+)
+
+client = OpenAI(
+    api_key=api_key
+)
+
+# =========================================
+# HOME
+# =========================================
 
 @app.route("/")
-def home():
-    return render_template("app2.html")
 
-@app.route("/api/chat", methods=["POST"])
-def chat():
+def home():
+
+    return render_template(
+        "app2.html"
+    )
+
+# =========================================
+# CHAT IA
+# =========================================
+
+@app.route(
+
+    "/api/chat",
+
+    methods=["POST"]
+
+)
+
+def api_chat():
 
     try:
 
         data = request.json
-        pregunta = data.get("pregunta")
+
+        pregunta = data.get(
+            "pregunta"
+        )
 
         response = client.chat.completions.create(
+
             model="gpt-4o-mini",
+
             messages=[
-                {"role":"system","content":"Eres un experto pedagógico chileno."},
-                {"role":"user","content":pregunta}
+
+                {
+                    "role":"system",
+
+                    "content":
+                    "Eres un experto pedagógico chileno."
+                },
+
+                {
+                    "role":"user",
+
+                    "content":
+                    pregunta
+                }
+
             ]
+
+        )
+
+        texto = (
+
+            response
+            .choices[0]
+            .message
+            .content
+
         )
 
         return jsonify({
+
             "respuesta":
-            response.choices[0].message.content
+            texto
+
         })
 
     except Exception as e:
 
         return jsonify({
-            "respuesta":str(e)
+
+            "respuesta":
+            str(e)
+
         })
 
-@app.route("/api/cursos/<asignatura>")
+# =========================================
+# ASIGNATURAS
+# =========================================
+
+@app.route(
+    "/api/asignaturas"
+)
+
+def api_asignaturas():
+
+    try:
+
+        asignaturas = obtener_asignaturas()
+
+        return jsonify({
+
+            "asignaturas":
+            asignaturas
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+# CURSOS
+# =========================================
+
+@app.route(
+    "/api/cursos/<asignatura>"
+)
+
 def api_cursos(asignatura):
 
-    return jsonify(
-        obtener_cursos(asignatura)
-    )
+    try:
 
-@app.route("/api/unidades/<asignatura>/<curso>")
-def api_unidades(asignatura, curso):
+        cursos = obtener_cursos(
+            asignatura
+        )
 
-    return jsonify(
-        obtener_unidades(asignatura, curso)
-    )
+        return jsonify({
 
-@app.route("/api/oa/<asignatura>/<curso>/<unidad>")
-def api_oa(asignatura, curso, unidad):
+            "cursos":
+            cursos
 
-    return jsonify(
-        obtener_oa(asignatura, curso, unidad)
-    )
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
 # =========================================
-# API PLANIFICADOR
+# UNIDADES
+# =========================================
+
+@app.route(
+    "/api/unidades/<asignatura>/<curso>"
+)
+
+def api_unidades(
+
+    asignatura,
+    curso
+
+):
+
+    try:
+
+        unidades = obtener_unidades(
+
+            asignatura,
+            curso
+
+        )
+
+        return jsonify({
+
+            "unidades":
+            unidades
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+# OA
+# =========================================
+
+@app.route(
+    "/api/oa/<asignatura>/<curso>/<int:unidad>"
+)
+
+def api_oa(
+
+    asignatura,
+    curso,
+    unidad
+
+):
+
+    try:
+
+        oa = obtener_oa(
+
+            asignatura,
+            curso,
+            unidad
+
+        )
+
+        return jsonify({
+
+            "oa":
+            oa
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+# PLANIFICADOR IA
 # =========================================
 
 @app.route(
@@ -119,5 +314,19 @@ def api_planificacion():
             str(e)
 
         })
+
+# =========================================
+# RUN
+# =========================================
+
 if __name__ == "__main__":
-    app.run(debug=True)
+
+    app.run(
+
+        debug=True,
+
+        host="0.0.0.0",
+
+        port=5000
+
+    )
