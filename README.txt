@@ -1,1 +1,1 @@
-Paquete curricular profesional para Copiloto Docente.
+Curriculum Master Definitivo compatible con curriculum.py y frontend dinámico.
