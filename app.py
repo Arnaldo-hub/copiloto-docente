@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
 import os
 from curriculum import obtener_cursos, obtener_unidades, obtener_oa
+from planificador import *
 
 app = Flask(__name__)
 
@@ -60,6 +61,63 @@ def api_oa(asignatura, curso, unidad):
     return jsonify(
         obtener_oa(asignatura, curso, unidad)
     )
+# =========================================
+# API PLANIFICADOR
+# =========================================
 
+@app.route(
+
+    "/api/planificacion",
+
+    methods=["POST"]
+
+)
+
+def api_planificacion():
+
+    try:
+
+        data = request.json
+
+        asignatura = data.get(
+            "asignatura"
+        )
+
+        curso = data.get(
+            "curso"
+        )
+
+        unidad = data.get(
+            "unidad"
+        )
+
+        oa = data.get(
+            "oa"
+        )
+
+        resultado = generar_planificacion(
+
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        return jsonify({
+
+            "resultado":
+            resultado
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "resultado":
+            str(e)
+
+        })
 if __name__ == "__main__":
     app.run(debug=True)
