@@ -1,79 +1,225 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Copiloto Docente IA</title>
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Copiloto Docente IA
+</title>
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-background:#03133b;
-color:white;
-font-family:Arial;
+
+    background:#03133b;
+    color:white;
+    font-family:Arial;
 }
+
 .container{
-display:grid;
-grid-template-columns:350px 450px 1fr;
-min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:
+    360px 500px 1fr;
+
+    min-height:100vh;
 }
+
 .panel{
-padding:20px;
-border-right:1px solid rgba(255,255,255,0.1);
+
+    padding:24px;
+
+    border-right:
+    1px solid rgba(255,255,255,.08);
+
+    overflow:auto;
 }
+
 .card{
-background:#1b2b55;
-padding:20px;
-border-radius:16px;
-margin-bottom:20px;
+
+    background:#182952;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 4px 20px rgba(0,0,0,.25);
 }
-select,textarea,button{
-width:100%;
-padding:14px;
-margin-bottom:15px;
-border-radius:12px;
-border:none;
-font-size:16px;
+
+h1{
+
+    font-size:28px;
+
+    margin-bottom:22px;
+
+    font-weight:bold;
 }
+
+textarea{
+
+    width:100%;
+
+    min-height:170px;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:16px;
+
+    resize:vertical;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+}
+
+select{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    margin-bottom:16px;
+
+    font-size:18px;
+
+    background:white;
+
+    color:black;
+}
+
 button{
-background:#22c55e;
-color:white;
-font-weight:bold;
-cursor:pointer;
+
+    width:100%;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:16px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:white;
+
+    cursor:pointer;
+
+    margin-bottom:14px;
+
+    transition:.2s;
 }
-#resultado{
-background:#1b2b55;
-padding:20px;
-border-radius:16px;
-min-height:300px;
+
+button:hover{
+
+    transform:scale(1.01);
 }
-@media(max-width:1200px){
-.container{
-grid-template-columns:1fr;
+
+.btn-green{
+
+    background:#22c55e;
 }
+
+.btn-blue{
+
+    background:#1d74e7;
 }
+
+.btn-purple{
+
+    background:#8b3dff;
+}
+
+.resultado{
+
+    background:#182952;
+
+    border-radius:18px;
+
+    padding:26px;
+
+    min-height:500px;
+
+    overflow:auto;
+
+    line-height:1.7;
+}
+
+.historial{
+
+    margin-top:24px;
+}
+
+@media(max-width:1300px){
+
+    .container{
+
+        grid-template-columns:1fr;
+    }
+
+    .panel{
+
+        border-right:none;
+
+        border-bottom:
+        1px solid rgba(255,255,255,.08);
+    }
+}
+
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
 
+<!-- ================================= -->
+<!-- PANEL IZQUIERDO -->
+<!-- ================================= -->
+
 <div class="panel">
 
-<h1>🧠 Chat IA</h1>
+<h1>
+🧠 Chat Docente IA
+</h1>
 
 <div class="card">
 
 <textarea
 id="preguntaIA"
-rows="8"
-placeholder="Pregunta pedagógica">
+placeholder="Escribe una pregunta pedagógica...">
 </textarea>
 
-<button onclick="preguntarIA()">
+<button
+class="btn-green"
+onclick="preguntarIA()">
+
 💬 Preguntar
+
 </button>
 
 <div id="respuestaIA"></div>
@@ -82,25 +228,21 @@ placeholder="Pregunta pedagógica">
 
 </div>
 
+<!-- ================================= -->
+<!-- PANEL CENTRO -->
+<!-- ================================= -->
+
 <div class="panel">
 
-<h1>📚 Contexto Pedagógico</h1>
+<h1>
+📚 Contexto Pedagógico
+</h1>
 
 <div class="card">
 
 <select
 id="asignatura"
 onchange="cargarCursos()">
-
-<option value="matematica">Matemática</option>
-<option value="lenguaje">Lenguaje y Comunicación</option>
-<option value="ciencias">Ciencias Naturales</option>
-<option value="historia">Historia, Geografía y Ciencias Sociales</option>
-<option value="artesvisuales">Artes Visuales</option>
-<option value="musica">Música</option>
-<option value="tecnologia">Tecnología</option>
-<option value="orientacion">Orientación</option>
-
 </select>
 
 <select
@@ -116,56 +258,187 @@ onchange="cargarOA()">
 <select id="oa">
 </select>
 
-<button>
-🚀 Generar Planificación
+</div>
+
+<div class="card">
+
+<label>
+
+<input type="checkbox">
+
+Objetivos
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Indicadores
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Habilidades
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Actitudes
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Evaluación
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Adaptaciones NEE
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="checkbox">
+
+Recursos
+
+</label>
+
+<br><br>
+
+<button
+class="btn-green"
+onclick="generarPlanificacion()">
+
+🚀 Generar
+
+</button>
+
+<button class="btn-blue">
+
+📚 Historial
+
+</button>
+
+<button class="btn-purple">
+
+📄 Descargar PDF
+
 </button>
 
 </div>
 
 </div>
 
+<!-- ================================= -->
+<!-- PANEL DERECHO -->
+<!-- ================================= -->
+
 <div class="panel">
 
-<h1>📄 Resultado</h1>
+<h1>
+📄 Resultado IA
+</h1>
 
-<div id="resultado">
+<div
+class="resultado"
+id="resultado">
 
 Sistema curricular dinámico conectado.
 
 </div>
 
+<div class="historial">
+
+<h1>
+📚 Historial
+</h1>
+
 </div>
 
 </div>
+
+</div>
+
+<!-- ================================= -->
+<!-- JS CURRICULAR -->
+<!-- ================================= -->
+
+<script src="/static/js/frontend_pedagogia.js"></script>
+
+<!-- ================================= -->
+<!-- JS IA -->
+<!-- ================================= -->
 
 <script>
 
 async function preguntarIA(){
 
     const pregunta =
-    document.getElementById('preguntaIA').value
+
+    document.getElementById(
+        'preguntaIA'
+    ).value
 
     const respuesta =
-    document.getElementById('respuestaIA')
 
-    respuesta.innerHTML = '⏳ Pensando...'
+    document.getElementById(
+        'respuestaIA'
+    )
+
+    respuesta.innerHTML =
+    '⏳ Pensando...'
 
     try{
 
-        const res = await fetch('/api/chat',{
+        const res = await fetch(
 
-            method:'POST',
+            '/api/chat',
 
-            headers:{
-                'Content-Type':'application/json'
-            },
+            {
 
-            body:JSON.stringify({
-                pregunta:pregunta
-            })
-        })
+                method:'POST',
 
-        const data = await res.json()
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+                    pregunta:pregunta
+                })
+            }
+
+        )
+
+        const data =
+        await res.json()
 
         respuesta.innerHTML =
         data.respuesta
@@ -177,9 +450,105 @@ async function preguntarIA(){
     }
 }
 
-</script>
+async function generarPlanificacion(){
 
-<script src="/static/js/frontend_pedagogia.js"></script>
+    const asignatura =
+
+    document.getElementById(
+        'asignatura'
+    ).value
+
+    const curso =
+
+    document.getElementById(
+        'curso'
+    ).value
+
+    const unidad =
+
+    document.getElementById(
+        'unidad'
+    ).value
+
+    const oa =
+
+    document.getElementById(
+        'oa'
+    ).value
+
+    const resultado =
+
+    document.getElementById(
+        'resultado'
+    )
+
+    resultado.innerHTML =
+    '⏳ Generando planificación...'
+
+    try{
+
+        const res = await fetch(
+
+            '/api/planificacion',
+
+            {
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            }
+
+        )
+
+        const data =
+        await res.json()
+
+        resultado.innerHTML =
+
+        `
+        <h2>
+        ✅ Planificación generada
+        </h2>
+
+        <br>
+
+        ${data.resultado
+        .replace(/\n/g,'<br>')}
+        `
+
+    }catch(error){
+
+        resultado.innerHTML =
+        'ERROR generando planificación'
+    }
+}
+
+window.onload = function(){
+
+    cargarAsignaturas()
+}
+
+</script>
 
 </body>
 </html>
