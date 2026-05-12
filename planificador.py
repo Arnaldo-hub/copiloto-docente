@@ -1,10 +1,6 @@
 from openai import OpenAI
 import os
 
-# =========================================
-# OPENAI
-# =========================================
-
 api_key = os.getenv(
     "OPENAI_API_KEY"
 )
@@ -12,10 +8,6 @@ api_key = os.getenv(
 client = OpenAI(
     api_key=api_key
 )
-
-# =========================================
-# GENERAR PLANIFICACIÓN
-# =========================================
 
 def generar_planificacion(
 
@@ -28,50 +20,29 @@ def generar_planificacion(
 
     prompt = f"""
 
-Eres un experto pedagógico chileno.
+Genera una planificación pedagógica chilena.
 
-Genera una planificación docente completa.
-
-ASIGNATURA:
+Asignatura:
 {asignatura}
 
-CURSO:
+Curso:
 {curso}
 
-UNIDAD:
+Unidad:
 {unidad}
 
 OA:
 {oa}
 
-La planificación debe incluir:
+Debe incluir:
 
-1. Objetivo de la clase
-
-2. Inicio
-- motivación
-- activación de conocimientos previos
-
-3. Desarrollo
-- actividades principales
-- trabajo guiado
-- estrategias pedagógicas
-
-4. Cierre
-- reflexión
-- metacognición
-
-5. Evaluación
-- evaluación formativa
-- ticket de salida
-
-6. Adecuaciones NEE
-
-7. Recursos
-
-8. Tiempo estimado
-
-Formato profesional.
+- Objetivo
+- Inicio
+- Desarrollo
+- Cierre
+- Evaluación
+- Adecuaciones NEE
+- Recursos
 """
 
     response = client.chat.completions.create(
@@ -82,14 +53,11 @@ Formato profesional.
 
             {
                 "role":"system",
-
-                "content":
-                "Eres un experto curricular chileno."
+                "content":"Eres experto curricular chileno."
             },
 
             {
                 "role":"user",
-
                 "content":prompt
             }
 
@@ -98,10 +66,12 @@ Formato profesional.
     )
 
     texto = (
+
         response
         .choices[0]
         .message
         .content
+
     )
 
     return texto
