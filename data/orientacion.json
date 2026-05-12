@@ -3,78 +3,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 1° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -84,78 +46,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 2° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -165,78 +89,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 3° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -246,78 +132,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 4° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -327,78 +175,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 5° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -408,78 +218,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 6° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -489,78 +261,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 7° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -570,78 +304,40 @@
     "nombre_asignatura": "Orientación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
+        "proposito": "Desarrollar competencias de Orientación en 8° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Orientación.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }

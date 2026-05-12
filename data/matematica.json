@@ -3,78 +3,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 1° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -84,78 +46,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 2° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -165,78 +89,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 3° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -246,78 +132,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 4° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -327,78 +175,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 5° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -408,78 +218,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 6° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -489,78 +261,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 7° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }
@@ -570,78 +304,40 @@
     "nombre_asignatura": "Matemática",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Contar números naturales y representarlos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Resolver problemas de adición y sustracción."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Comparar y ordenar números."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Geometría",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
+        "proposito": "Desarrollar competencias de Matemática en 8° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Identificar figuras geométricas."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir posiciones y trayectorias."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Matemática.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Resolver problemas geométricos."
           }
         ]
       }

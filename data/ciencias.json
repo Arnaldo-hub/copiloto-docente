@@ -3,78 +3,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 1° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -84,78 +46,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 2° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -165,78 +89,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 3° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -246,78 +132,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 4° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -327,78 +175,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 5° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -408,78 +218,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 6° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -489,78 +261,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 7° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }
@@ -570,78 +304,40 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Aprendizajes Integrados",
+        "nombre": "Unidad 1: Seres Vivos",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "descripcion": "Identificar características de los seres vivos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "descripcion": "Reconocer necesidades básicas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "descripcion": "Observar cambios en el entorno."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Aprendizajes Integrados",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Aprendizajes Integrados",
+        "nombre": "Unidad 2: Entorno Natural",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
+        "proposito": "Desarrollar competencias de Ciencias Naturales en 8° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
+            "codigo": "OA 4",
+            "descripcion": "Explorar propiedades del agua y del aire."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
+            "codigo": "OA 5",
+            "descripcion": "Describir fenómenos naturales."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Aprendizajes Integrados",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Ciencias Naturales.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar estrategias de aprendizaje."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes."
+            "codigo": "OA 6",
+            "descripcion": "Cuidar el medioambiente."
           }
         ]
       }

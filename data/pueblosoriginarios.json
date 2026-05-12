@@ -3,94 +3,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 1° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -100,94 +46,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 2° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -197,94 +89,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 3° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -294,94 +132,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -391,94 +175,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -488,94 +218,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -585,94 +261,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
@@ -682,94 +304,40 @@
     "nombre_asignatura": "Lengua y Cultura de los Pueblos Originarios Ancestrales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Desarrollo Integral",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Desarrollar habilidades fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar conocimientos en actividades prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Participar activamente en experiencias de aprendizaje."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
-        "semestre": "1",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Expresión y Participación",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
+        "proposito": "Desarrollar competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
         "oa": [
           {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
             "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
-          }
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
-        "semestre": "2",
-        "proposito": "Fortalecer competencias de Lengua y Cultura de los Pueblos Originarios Ancestrales en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Expresar ideas y emociones."
           },
           {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "codigo": "OA 5",
+            "descripcion": "Trabajar colaborativamente."
           },
           {
-            "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "codigo": "OA 6",
+            "descripcion": "Reflexionar sobre el aprendizaje."
           }
         ]
       }
