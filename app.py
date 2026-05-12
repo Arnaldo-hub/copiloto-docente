@@ -16,6 +16,7 @@ import json
 import requests
 
 from datetime import datetime
+from pedagogia import *
 
 app = Flask(__name__)
 
@@ -284,6 +285,101 @@ def generar_imagen():
         return jsonify({
 
             "error":
+            str(e)
+
+        })
+
+# =========================================
+# API PEDAGOGÍA
+# =========================================
+
+@app.route("/api/pedagogia", methods=["POST"])
+def api_pedagogia():
+
+    try:
+
+        data = request.json
+
+        tipo = data.get("tipo")
+
+        asignatura = data.get("asignatura")
+
+        curso = data.get("curso")
+
+        unidad = data.get("unidad")
+
+        oa = data.get("oa")
+
+        if tipo == "objetivos":
+
+            resultado = generar_objetivos(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+            )
+
+        elif tipo == "indicadores":
+
+            resultado = generar_indicadores(
+
+                asignatura,
+                curso,
+                oa
+            )
+
+        elif tipo == "habilidades":
+
+            resultado = generar_habilidades(
+
+                asignatura,
+                curso,
+                oa
+            )
+
+        elif tipo == "actitudes":
+
+            resultado = generar_actitudes(
+
+                asignatura,
+                curso
+            )
+
+        elif tipo == "nee":
+
+            resultado = generar_nee(
+
+                asignatura,
+                curso,
+                oa
+            )
+
+        elif tipo == "evaluacion":
+
+            resultado = generar_evaluacion(
+
+                asignatura,
+                curso,
+                oa
+            )
+
+        else:
+
+            resultado = "Tipo pedagógico no válido."
+
+        return jsonify({
+
+            "resultado":
+            resultado
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "resultado":
             str(e)
 
         })
