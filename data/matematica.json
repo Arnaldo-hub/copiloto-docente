@@ -1,50 +1,488 @@
 {
   "1° Básico": {
-    "Unidad 1": {
-      "OA 1": {
-        "descripcion": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10."
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       },
-      "OA 2": {
-        "descripcion": "Identificar el orden de los elementos de una serie utilizando números ordinales."
-      }
-    },
-    "Unidad 2": {
-      "OA 3": {
-        "descripcion": "Leer y representar números naturales hasta 100."
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       },
-      "OA 4": {
-        "descripcion": "Comparar y ordenar números del 0 al 100."
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       }
-    }
+    ]
   },
   "2° Básico": {
-    "Unidad 1": {
-      "OA 1": {
-        "descripcion": "Contar números hasta 1.000."
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       },
-      "OA 2": {
-        "descripcion": "Representar números y cantidades hasta 1.000."
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       }
-    }
+    ]
   },
   "3° Básico": {
-    "Unidad 1": {
-      "OA 1": {
-        "descripcion": "Leer, escribir y ordenar números naturales hasta 10.000."
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       },
-      "OA 2": {
-        "descripcion": "Resolver adiciones y sustracciones utilizando estrategias diversas."
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       }
-    }
+    ]
   },
   "4° Básico": {
-    "Unidad 1": {
-      "OA 1": {
-        "descripcion": "Demostrar comprensión de la multiplicación y división."
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       },
-      "OA 2": {
-        "descripcion": "Resolver problemas rutinarios y no rutinarios."
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
       }
-    }
+    ]
+  },
+  "5° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      }
+    ]
+  },
+  "6° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Desarrollo de competencias",
+        "semestre": "1",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de competencias",
+        "semestre": "2",
+        "proposito": "Fortalecer aprendizajes fundamentales de matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Resolver problemas matemáticos utilizando números naturales."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Representar números y cantidades en distintos formatos."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Aplicar estrategias de cálculo mental."
+          }
+        ]
+      }
+    ]
   }
 }
