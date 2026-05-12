@@ -1,681 +1,517 @@
-# -*- coding: utf-8 -*-
+<!DOCTYPE html>
+<html lang="es">
 
-from flask import Flask, render_template, request, jsonify, send_file
-from openai import OpenAI
+<head>
 
-from reportlab.platypus import (
-    SimpleDocTemplate,
-    Paragraph,
-    Spacer
-)
+<meta charset="UTF-8">
 
-from reportlab.lib.styles import getSampleStyleSheet
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-import os
-import json
-import requests
+<title>
+Copiloto Docente IA
+</title>
 
-from datetime import datetime
-from curriculum import *
+<style>
 
-app = Flask(__name__)
+body{
+    margin:0;
+    background:#03133b;
+    color:white;
+    font-family:Arial;
+}
 
-# =========================================
-# OPENAI
-# =========================================
+.container{
+    display:grid;
+    grid-template-columns:320px 420px 1fr;
+    min-height:100vh;
+}
 
-api_key = os.getenv("OPENAI_API_KEY")
+.panel{
+    padding:20px;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
 
-client = OpenAI(
-    api_key=api_key
-)
+.card{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
 
-# =========================================
-# BASE CURRICULAR
-# =========================================
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:none;
+    margin-bottom:15px;
+    font-size:18px;
+}
 
-BASE = {}
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:15px;
+}
 
-carpeta_data = os.path.join(
-    app.root_path,
-    "data"
-)
+button:hover{
+    opacity:0.9;
+}
 
-if os.path.exists(carpeta_data):
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
 
-    for archivo in os.listdir(carpeta_data):
+#resultado,
+#historial{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    min-height:250px;
+    overflow:auto;
+}
 
-        if archivo.endswith(".json"):
+@media(max-width:1200px){
 
-            ruta = os.path.join(
-                carpeta_data,
-                archivo
-            )
+    .container{
+        grid-template-columns:1fr;
+    }
 
-            try:
+    .panel{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+}
 
-                with open(
-                    ruta,
-                    "r",
-                    encoding="utf-8"
-                ) as f:
+</style>
 
-                    datos = json.load(f)
+</head>
 
-                    nombre_asignatura = archivo.replace(
-                        ".json",
-                        ""
-                    )
+<body>
 
-                    nombre_asignatura = (
-                        nombre_asignatura.capitalize()
-                    )
+<div class="container">
 
-                    BASE[nombre_asignatura] = datos
+<!-- ================================= -->
+<!-- CHAT IA -->
+<!-- ================================= -->
 
-            except Exception as e:
+<div class="panel">
 
-                print(
-                    f"ERROR cargando {archivo}: {e}"
-                )
+<h1>
+🧠 Chat Docente IA
+</h1>
 
-# =========================================
-# HISTORIAL
-# =========================================
+<div class="card">
 
-historial = []
+<textarea
+id="preguntaIA"
+rows="8"
+placeholder="Escribe una pregunta pedagógica...">
+</textarea>
 
-# =========================================
-# RUTAS HTML
-# =========================================
+<button onclick="preguntarIA()">
+💬 Preguntar
+</button>
 
-@app.route("/")
-def home():
+<div id="respuestaIA"
+style="margin-top:20px;">
+</div>
 
-    return render_template(
-        "app2.html"
+</div>
+
+</div>
+
+<!-- ================================= -->
+<!-- CONTEXTO PEDAGÓGICO -->
+<!-- ================================= -->
+
+<div class="panel">
+
+<h1>
+📚 Contexto Pedagógico
+</h1>
+
+<div class="card">
+
+<select id="asignatura"
+onchange="cargarCursos()">
+
+<option value="matematica">
+Matemática
+</option>
+
+<option value="lenguaje">
+Lenguaje y Comunicación
+</option>
+
+<option value="ciencias">
+Ciencias Naturales
+</option>
+
+<option value="historia">
+Historia y Geografía
+</option>
+
+</select>
+
+<select id="curso"
+onchange="cargarUnidades()">
+</select>
+
+<select id="unidad"
+onchange="cargarOA()">
+</select>
+
+<select id="oa">
+</select>
+
+</div>
+
+<!-- ================================= -->
+<!-- MÓDULOS -->
+<!-- ================================= -->
+
+<div class="card">
+
+<label>
+
+<input
+type="checkbox"
+id="check_objetivos">
+
+🎯 Objetivos
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="checkbox"
+id="check_indicadores">
+
+📊 Indicadores
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="checkbox"
+id="check_habilidades">
+
+🧠 Habilidades
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="checkbox"
+id="check_actitudes">
+
+🤝 Actitudes
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="checkbox"
+id="check_nee">
+
+♿ Adaptaciones NEE
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="checkbox"
+id="check_evaluacion">
+
+📝 Evaluaciones
+
+</label>
+
+<br><br>
+
+<button onclick="generarPlanificacion()">
+
+🚀 Generar Planificación
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================================= -->
+<!-- RESULTADO -->
+<!-- ================================= -->
+
+<div class="panel">
+
+<h1>
+📄 Resultado IA
+</h1>
+
+<div id="resultado">
+
+Resultado pedagógico aparecerá aquí.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================================= -->
+<!-- CHAT IA -->
+<!-- ================================= -->
+
+<script>
+
+async function preguntarIA(){
+
+    const pregunta =
+
+    document.getElementById(
+        'preguntaIA'
+    ).value
+
+    const respuesta =
+
+    document.getElementById(
+        'respuestaIA'
     )
 
-@app.route("/app")
-def app_page():
+    respuesta.innerText =
+    '⏳ Pensando...'
 
-    return render_template(
-        "app2.html"
-    )
+    try{
 
-# =========================================
-# API BASE CURRICULAR
-# =========================================
+        const res = await fetch(
 
-@app.route("/api/base")
-def base_data():
+            '/api/chat',
 
-    try:
+            {
 
-        return jsonify(BASE)
+                method:'POST',
 
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-
-# =========================================
-# CHAT IA DOCENTE
-# =========================================
-
-@app.route("/api/chat", methods=["POST"])
-def chat_ia():
-
-    try:
-
-        data = request.json
-
-        pregunta = data.get(
-            "pregunta",
-            ""
-        )
-
-        prompt = f"""
-Eres un experto pedagógico chileno.
-
-Ayuda al docente de manera clara,
-práctica y profesional.
-
-Pregunta:
-{pregunta}
-"""
-
-        response = client.chat.completions.create(
-
-            model="gpt-4o-mini",
-
-            messages=[
-
-                {
-                    "role":
-                    "system",
-
-                    "content":
-                    "Eres un experto pedagógico."
+                headers:{
+                    'Content-Type':
+                    'application/json'
                 },
 
-                {
-                    "role":
-                    "user",
+                body:JSON.stringify({
 
-                    "content":
-                    prompt
-                }
+                    pregunta:
+                    pregunta
 
-            ]
+                })
+
+            }
 
         )
 
-        texto = (
-            response
-            .choices[0]
-            .message
-            .content
-        )
+        const data =
+        await res.json()
 
-        return jsonify({
+        respuesta.innerText =
+        data.respuesta
 
-            "respuesta":
-            texto
+    }catch(error){
 
-        })
+        console.log(error)
 
-    except Exception as e:
+        respuesta.innerText =
+        'ERROR conectando IA'
+    }
+}
 
-        return jsonify({
+// =========================================
+// CURSOS
+// =========================================
 
-            "respuesta":
-            f"ERROR IA: {str(e)}"
+async function cargarCursos(){
 
-        })
+    const asignatura =
 
-# =========================================
-# GENERADOR DE IMÁGENES IA
-# =========================================
+    document.getElementById(
+        'asignatura'
+    ).value
 
-@app.route("/api/imagen", methods=["POST"])
-def generar_imagen():
+    const cursoSelect =
 
-    return jsonify({
+    document.getElementById(
+        'curso'
+    )
 
-        "imagen":
-        "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4"
+    cursoSelect.innerHTML = ''
 
+    const res = await fetch(
+
+        `/api/cursos/${asignatura}`
+
+    )
+
+    const cursos = await res.json()
+
+    cursos.forEach(curso => {
+
+        cursoSelect.innerHTML += `
+
+        <option>
+
+        ${curso}
+
+        </option>
+
+        `
     })
-def generar_imagen():
 
-    try:
+    cargarUnidades()
+}
 
-        data = request.json
+// =========================================
+// UNIDADES
+// =========================================
 
-        prompt = data.get(
-            "prompt",
-            ""
-        )
+async function cargarUnidades(){
 
-        headers = {
+    const asignatura =
 
-            "Authorization":
-            f"Bearer {api_key}",
+    document.getElementById(
+        'asignatura'
+    ).value
 
-            "Content-Type":
-            "application/json"
-        }
+    const curso =
 
-        body = {
+    document.getElementById(
+        'curso'
+    ).value
 
-            "model":
-            "dall-e-3",
+    const unidadSelect =
 
-            "prompt":
-            prompt,
-
-            "n":
-            1,
-
-            "size":
-            "1024x1024"
-        }
-
-        response = requests.post(
-
-            "https://api.openai.com/v1/images/generations",
-
-            headers=headers,
-
-            json=body
-
-        )
-
-        resultado = response.json()
-
-        print(resultado)
-
-        if "data" not in resultado:
-
-            return jsonify({
-
-                "error":
-                resultado
-
-            })
-
-        image_url = (
-            resultado["data"][0]["url"]
-        )
-
-        return jsonify({
-
-            "imagen":
-            image_url
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-# =========================================
-# API CURRICULUM
-# =========================================
-
-@app.route("/api/cursos/<asignatura>")
-def api_cursos(asignatura):
-
-    try:
-
-        cursos = obtener_cursos(
-            asignatura
-        )
-
-        return jsonify(cursos)
-
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-
-# =========================================
-
-@app.route(
-    "/api/unidades/<asignatura>/<curso>"
-)
-
-def api_unidades(
-
-    asignatura,
-    curso
-
-):
-
-    try:
-
-        unidades = obtener_unidades(
-
-            asignatura,
-            curso
-
-        )
-
-        return jsonify(unidades)
-
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-
-# =========================================
-
-@app.route(
-"/api/oa/<asignatura>/<curso>/<unidad>"
-)
-
-def api_oa(
-
-    asignatura,
-    curso,
-    unidad
-
-):
-
-    try:
-
-        oa = obtener_oa(
-
-            asignatura,
-            curso,
-            unidad
-
-        )
-
-        return jsonify(oa)
-
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-
-# =========================================
-# API PEDAGOGÍA
-# =========================================
-
-@app.route("/api/pedagogia", methods=["POST"])
-def api_pedagogia():
-
-    try:
-
-        data = request.json
-
-        tipo = data.get("tipo")
-
-        asignatura = data.get("asignatura")
-
-        curso = data.get("curso")
-
-        unidad = data.get("unidad")
-
-        oa = data.get("oa")
-
-        if tipo == "objetivos":
-
-            resultado = generar_objetivos(
-
-                asignatura,
-                curso,
-                unidad,
-                oa
-            )
-
-        elif tipo == "indicadores":
-
-            resultado = generar_indicadores(
-
-                asignatura,
-                curso,
-                oa
-            )
-
-        elif tipo == "habilidades":
-
-            resultado = generar_habilidades(
-
-                asignatura,
-                curso,
-                oa
-            )
-
-        elif tipo == "actitudes":
-
-            resultado = generar_actitudes(
-
-                asignatura,
-                curso
-            )
-
-        elif tipo == "nee":
-
-            resultado = generar_nee(
-
-                asignatura,
-                curso,
-                oa
-            )
-
-        elif tipo == "evaluacion":
-
-            resultado = generar_evaluacion(
-
-                asignatura,
-                curso,
-                oa
-            )
-
-        else:
-
-            resultado = "Tipo pedagógico no válido."
-
-        return jsonify({
-
-            "resultado":
-            resultado
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "resultado":
-            str(e)
-
-        })
-
-# =========================================
-# PLANIFICADOR IA
-# =========================================
-
-@app.route("/api/planificar", methods=["POST"])
-def planificar():
-
-    try:
-
-        data = request.json
-
-        modulos = data.get(
-            "modulos",
-            []
-        )
-
-        bloques = ""
-
-        for m in modulos:
-
-            bloques += f"- {m}\n"
-
-        prompt = f"""
-Eres un docente experto del sistema educativo chileno.
-
-Genera contenido pedagógico profesional.
-
-Asignatura:
-{data['asignatura']}
-
-Curso:
-{data['curso']}
-
-Unidad:
-{data['unidad']}
-
-Objetivos de Aprendizaje:
-{chr(10).join(data['oa'])}
-
-Debes generar solamente:
-
-{bloques}
-
-No agregues secciones no solicitadas.
-"""
-
-        response = client.chat.completions.create(
-
-            model="gpt-4o-mini",
-
-            messages=[
-
-                {
-                    "role":
-                    "system",
-
-                    "content":
-                    "Eres un docente experto."
-                },
-
-                {
-                    "role":
-                    "user",
-
-                    "content":
-                    prompt
-                }
-
-            ]
-
-        )
-
-        texto = (
-            response
-            .choices[0]
-            .message
-            .content
-        )
-
-        historial.append({
-
-            "fecha":
-            datetime.now().strftime(
-                "%d-%m-%Y %H:%M"
-            ),
-
-            "plan":
-            texto
-
-        })
-
-        return jsonify({
-
-            "plan":
-            texto
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "plan":
-            f"ERROR IA: {str(e)}"
-
-        })
-
-# =========================================
-# HISTORIAL
-# =========================================
-
-@app.route(
-    "/api/historial",
-    methods=["POST"]
-)
-
-def ver_historial():
-
-    return jsonify(
-        historial
+    document.getElementById(
+        'unidad'
     )
 
-# =========================================
-# PDF
-# =========================================
+    unidadSelect.innerHTML = ''
 
-@app.route(
-    "/api/pdf",
-    methods=["POST"]
-)
+    const res = await fetch(
 
-def generar_pdf():
+        `/api/unidades/${asignatura}/${curso}`
 
-    try:
-
-        data = request.json
-
-        texto = data.get(
-            "plan",
-            ""
-        )
-
-        archivo = (
-            "planificacion.pdf"
-        )
-
-        doc = SimpleDocTemplate(
-            archivo
-        )
-
-        styles = (
-            getSampleStyleSheet()
-        )
-
-        contenido = []
-
-        for linea in texto.split("\n"):
-
-            contenido.append(
-
-                Paragraph(
-                    linea,
-                    styles["Normal"]
-                )
-
-            )
-
-            contenido.append(
-
-                Spacer(
-                    1,
-                    10
-                )
-
-            )
-
-        doc.build(
-            contenido
-        )
-
-        return send_file(
-
-            archivo,
-
-            as_attachment=True
-
-        )
-
-    except Exception as e:
-
-        return jsonify({
-
-            "error":
-            str(e)
-
-        })
-
-# =========================================
-
-if __name__ == "__main__":
-
-    app.run(
-        debug=True
     )
+
+    const unidades = await res.json()
+
+    unidades.forEach(unidad => {
+
+        unidadSelect.innerHTML += `
+
+        <option>
+
+        ${unidad.nombre}
+
+        </option>
+
+        `
+    })
+
+    cargarOA()
+}
+
+// =========================================
+// OA
+// =========================================
+
+async function cargarOA(){
+
+    const asignatura =
+
+    document.getElementById(
+        'asignatura'
+    ).value
+
+    const curso =
+
+    document.getElementById(
+        'curso'
+    ).value
+
+    const unidad =
+
+    document.getElementById(
+        'unidad'
+    ).value
+
+    const oaSelect =
+
+    document.getElementById(
+        'oa'
+    )
+
+    oaSelect.innerHTML = ''
+
+    const res = await fetch(
+
+        `/api/oa/${asignatura}/${curso}/${unidad}`
+
+    )
+
+    const oa = await res.json()
+
+    oa.forEach(item => {
+
+        oaSelect.innerHTML += `
+
+        <option>
+
+        ${item.codigo} -
+        ${item.descripcion}
+
+        </option>
+
+        `
+    })
+}
+
+// =========================================
+// INICIO
+// =========================================
+
+cargarCursos()
+
+</script>
+
+<!-- ================================= -->
+<!-- JS PEDAGOGÍA -->
+<!-- ================================= -->
+
+<script src="/static/js/frontend_pedagogia.js"></script>
+
+</body>
+</html>
