@@ -1,11 +1,11 @@
 {
   "1° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 1° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -28,7 +28,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 1° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -51,7 +51,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 1° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -74,7 +74,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 1° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -97,12 +97,12 @@
     ]
   },
   "2° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 2° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -125,7 +125,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 2° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -148,7 +148,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 2° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -171,7 +171,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 2° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -194,12 +194,12 @@
     ]
   },
   "3° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 3° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -222,7 +222,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 3° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -245,7 +245,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 3° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -268,7 +268,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 3° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -291,12 +291,12 @@
     ]
   },
   "4° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 4° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -319,7 +319,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 4° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -342,7 +342,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 4° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -365,7 +365,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 4° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -388,12 +388,12 @@
     ]
   },
   "5° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 5° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -416,7 +416,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 5° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -439,7 +439,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 5° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -462,7 +462,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 5° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -485,12 +485,12 @@
     ]
   },
   "6° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 6° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -513,7 +513,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 6° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -536,7 +536,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 6° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -559,7 +559,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 6° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -582,12 +582,12 @@
     ]
   },
   "7° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 7° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -610,7 +610,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 7° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -633,7 +633,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 7° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -656,7 +656,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 7° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -679,12 +679,12 @@
     ]
   },
   "8° Básico": {
-    "nombre_asignatura": "Matemática",
+    "nombre_asignatura": "Religión Evangélica",
     "unidades": [
       {
         "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 8° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -707,7 +707,7 @@
       {
         "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Matemática en 8° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -730,7 +730,7 @@
       {
         "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 8° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
@@ -753,7 +753,7 @@
       {
         "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Matemática en 8° Básico.",
+        "proposito": "Fortalecer competencias de Religión Evangélica en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",

@@ -3,78 +3,94 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 1° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 1° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 1° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 1° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
@@ -84,78 +100,94 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 2° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 2° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 2° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 2° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
@@ -165,78 +197,94 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 3° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 3° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 3° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 3° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
@@ -246,78 +294,94 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 4° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 4° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 4° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 4° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
@@ -327,78 +391,94 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 5° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 5° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 5° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 5° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
@@ -408,78 +488,288 @@
     "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de competencias",
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 6° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de competencias",
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
         "semestre": "1",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 6° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de competencias",
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 6° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de competencias",
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
         "semestre": "2",
-        "proposito": "Fortalecer aprendizajes fundamentales de historia, geografía y ciencias sociales en 6° Básico.",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer elementos de identidad personal y familiar."
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Comprender hechos y personajes relevantes de Chile."
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Ubicar lugares en mapas simples."
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      }
+    ]
+  },
+  "7° Básico": {
+    "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      }
+    ]
+  },
+  "8° Básico": {
+    "nombre_asignatura": "Historia, Geografía y Ciencias Sociales",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Historia, Geografía y Ciencias Sociales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comunicar aprendizajes y reflexiones."
+          },
+          {
+            "codigo": "OA 4",
+            "descripcion": "Resolver problemas utilizando estrategias diversas."
           }
         ]
       }
