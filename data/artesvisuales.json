@@ -3,94 +3,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -100,94 +84,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -197,94 +165,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -294,94 +246,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -391,94 +327,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -488,94 +408,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -585,94 +489,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
@@ -682,94 +570,78 @@
     "nombre_asignatura": "Artes Visuales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 1: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 2: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 2: Aprendizajes Integrados",
         "semestre": "1",
-        "proposito": "Fortalecer competencias de Artes Visuales en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 3: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 3: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       },
       {
-        "nombre": "Unidad 4: Desarrollo de Aprendizajes",
+        "nombre": "Unidad 4: Aprendizajes Integrados",
         "semestre": "2",
-        "proposito": "Fortalecer competencias de Artes Visuales en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Artes Visuales.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales relacionadas con la asignatura."
+            "descripcion": "Comprender contenidos fundamentales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en situaciones prácticas."
+            "descripcion": "Aplicar estrategias de aprendizaje."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comunicar aprendizajes y reflexiones."
-          },
-          {
-            "codigo": "OA 4",
-            "descripcion": "Resolver problemas utilizando estrategias diversas."
+            "descripcion": "Comunicar aprendizajes."
           }
         ]
       }
