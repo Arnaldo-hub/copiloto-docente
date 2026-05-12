@@ -1,1 +1,413 @@
-<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Copiloto Docente IA</title><style>body{margin:0;background:#03133b;color:white;font-family:Arial}.container{display:grid;grid-template-columns:320px 420px 1fr;min-height:100vh}.panel{padding:20px;border-right:1px solid rgba(255,255,255,0.1)}.card{background:#1b2b55;padding:20px;border-radius:16px;margin-bottom:20px}textarea,select{width:100%;padding:14px;border-radius:12px;border:none;margin-bottom:15px;font-size:18px}button{width:100%;padding:16px;border:none;border-radius:12px;background:#22c55e;color:white;font-size:18px;font-weight:bold;cursor:pointer;margin-bottom:15px}img{max-width:100%;border-radius:12px;margin-top:15px}#resultado,#historial{background:#1b2b55;padding:20px;border-radius:16px;min-height:200px;overflow:auto}@media(max-width:1200px){.container{grid-template-columns:1fr}.panel{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1)}}</style></head><body><div class='container'><div class='panel'><h1>🧠 Chat Docente IA</h1><div class='card'><textarea id='preguntaIA' rows='8' placeholder='Escribe una pregunta pedagógica...'></textarea><button onclick='preguntarIA()'>💬 Preguntar</button><button onclick='generarImagen()'>🎨 Generar Imagen</button><div id='imagenIA'></div><div id='respuestaIA' style='margin-top:20px;'></div></div></div><div class='panel'><h1>📚 Contexto Pedagógico</h1><div class='card'><select id='asignatura'><option>Matemática</option><option>Lenguaje</option><option>Ciencias</option><option>Historia</option></select><select id='curso'><option>1° Básico</option><option>2° Básico</option><option>3° Básico</option></select><select id='unidad'><option>Unidad 1</option><option>Unidad 2</option></select><button>🚀 Generar</button></div></div><div class='panel'><h1>📄 Resultado IA</h1><div id='resultado'>La planificación generada aparecerá aquí.</div></div></div><script>async function preguntarIA(){const pregunta=document.getElementById('preguntaIA').value;const respuesta=document.getElementById('respuestaIA');respuesta.innerText='⏳ Pensando...';try{const res=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pregunta:pregunta})});const data=await res.json();if(data.respuesta){respuesta.innerText=data.respuesta}else{respuesta.innerText='ERROR obteniendo respuesta IA'}}catch(error){respuesta.innerText='ERROR conectando IA'}}async function generarImagen(){const prompt=document.getElementById('preguntaIA').value;const imagenDiv=document.getElementById('imagenIA');imagenDiv.innerHTML='⏳ Generando imagen...';try{const res=await fetch('/api/imagen',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:prompt})});const data=await res.json();if(data.imagen){imagenDiv.innerHTML='<img src="'+data.imagen+'">'}else{imagenDiv.innerHTML=JSON.stringify(data)}}catch(error){imagenDiv.innerHTML='ERROR conectando IA'}}</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Copiloto Docente IA
+</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#03133b;
+    color:white;
+    font-family:Arial;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:320px 420px 1fr;
+    min-height:100vh;
+}
+
+.panel{
+    padding:20px;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.card{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:none;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+#resultado,
+#historial{
+    background:#1b2b55;
+    padding:20px;
+    border-radius:16px;
+    min-height:250px;
+    overflow:auto;
+}
+
+@media(max-width:1200px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .panel{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================================= -->
+    <!-- PANEL CHAT IA -->
+    <!-- ================================= -->
+
+    <div class="panel">
+
+        <h1>
+        🧠 Chat Docente IA
+        </h1>
+
+        <div class="card">
+
+            <textarea
+            id="preguntaIA"
+            rows="8"
+            placeholder="Escribe una pregunta pedagógica...">
+            </textarea>
+
+            <button onclick="preguntarIA()">
+            💬 Preguntar
+            </button>
+
+            <button onclick="generarImagen()">
+            🎨 Generar Imagen
+            </button>
+
+            <div id="imagenIA"></div>
+
+            <div
+            id="respuestaIA"
+            style="margin-top:20px;">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- PANEL CONTEXTO -->
+    <!-- ================================= -->
+
+    <div class="panel">
+
+        <h1>
+        📚 Contexto Pedagógico
+        </h1>
+
+        <div class="card">
+
+            <select id="asignatura">
+
+                <option>
+                Matemática
+                </option>
+
+                <option>
+                Lenguaje
+                </option>
+
+                <option>
+                Ciencias
+                </option>
+
+                <option>
+                Historia
+                </option>
+
+            </select>
+
+            <select id="curso">
+
+                <option>
+                1° Básico
+                </option>
+
+                <option>
+                2° Básico
+                </option>
+
+                <option>
+                3° Básico
+                </option>
+
+            </select>
+
+            <select id="unidad">
+
+                <option>
+                Unidad 1
+                </option>
+
+                <option>
+                Unidad 2
+                </option>
+
+            </select>
+
+            <select id="oa">
+
+                <option>
+                OA 1
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- ================================= -->
+        <!-- PEDAGOGÍA MODULAR -->
+        <!-- ================================= -->
+
+        <div class="card">
+
+            <button onclick="generarPedagogia('objetivos')">
+            🎯 Objetivos
+            </button>
+
+            <button onclick="generarPedagogia('indicadores')">
+            📊 Indicadores
+            </button>
+
+            <button onclick="generarPedagogia('habilidades')">
+            🧠 Habilidades
+            </button>
+
+            <button onclick="generarPedagogia('actitudes')">
+            🤝 Actitudes
+            </button>
+
+            <button onclick="generarPedagogia('nee')">
+            ♿ Adaptaciones NEE
+            </button>
+
+            <button onclick="generarPedagogia('evaluacion')">
+            📝 Evaluaciones
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- PANEL RESULTADOS -->
+    <!-- ================================= -->
+
+    <div class="panel">
+
+        <h1>
+        📄 Resultado IA
+        </h1>
+
+        <div id="resultado">
+
+        Resultado pedagógico aparecerá aquí.
+
+        </div>
+
+        <h1 style="margin-top:40px;">
+        📚 Historial
+        </h1>
+
+        <div id="historial">
+
+        Sin historial aún.
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================= -->
+
+<script>
+
+async function preguntarIA(){
+
+    const pregunta =
+    document.getElementById(
+        'preguntaIA'
+    ).value
+
+    const respuesta =
+    document.getElementById(
+        'respuestaIA'
+    )
+
+    respuesta.innerText =
+    '⏳ Pensando...'
+
+    try{
+
+        const res =
+        await fetch('/api/chat',{
+
+            method:'POST',
+
+            headers:{
+                'Content-Type':
+                'application/json'
+            },
+
+            body:JSON.stringify({
+
+                pregunta:
+                pregunta
+
+            })
+
+        })
+
+        const data =
+        await res.json()
+
+        if(data.respuesta){
+
+            respuesta.innerText =
+            data.respuesta
+
+        }else{
+
+            respuesta.innerText =
+            'ERROR IA'
+        }
+
+    }catch(error){
+
+        console.log(error)
+
+        respuesta.innerText =
+        'ERROR conectando IA'
+    }
+}
+
+async function generarImagen(){
+
+    const prompt =
+    document.getElementById(
+        'preguntaIA'
+    ).value
+
+    const imagenDiv =
+    document.getElementById(
+        'imagenIA'
+    )
+
+    imagenDiv.innerHTML =
+    '⏳ Generando imagen...'
+
+    try{
+
+        const res =
+        await fetch('/api/imagen',{
+
+            method:'POST',
+
+            headers:{
+                'Content-Type':
+                'application/json'
+            },
+
+            body:JSON.stringify({
+
+                prompt:
+                prompt
+
+            })
+
+        })
+
+        const data =
+        await res.json()
+
+        if(data.imagen){
+
+            imagenDiv.innerHTML = `
+
+            <img
+            src="${data.imagen}">
+
+            `
+
+        }else{
+
+            imagenDiv.innerHTML =
+            JSON.stringify(data)
+        }
+
+    }catch(error){
+
+        console.log(error)
+
+        imagenDiv.innerHTML =
+        'ERROR conectando IA'
+    }
+}
+
+</script>
+
+<!-- ================================= -->
+<!-- JS PEDAGOGÍA -->
+<!-- ================================= -->
+
+<script src="/static/js/frontend_pedagogia.js"></script>
+
+</body>
+</html>
