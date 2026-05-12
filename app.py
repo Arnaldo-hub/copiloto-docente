@@ -16,7 +16,7 @@ import json
 import requests
 
 from datetime import datetime
-from pedagogia import *
+from curriculum import *
 
 app = Flask(__name__)
 
@@ -279,6 +279,97 @@ def generar_imagen():
             image_url
 
         })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+# =========================================
+# API CURRICULUM
+# =========================================
+
+@app.route("/api/cursos/<asignatura>")
+def api_cursos(asignatura):
+
+    try:
+
+        cursos = obtener_cursos(
+            asignatura
+        )
+
+        return jsonify(cursos)
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+
+@app.route(
+    "/api/unidades/<asignatura>/<curso>"
+)
+
+def api_unidades(
+
+    asignatura,
+    curso
+
+):
+
+    try:
+
+        unidades = obtener_unidades(
+
+            asignatura,
+            curso
+
+        )
+
+        return jsonify(unidades)
+
+    except Exception as e:
+
+        return jsonify({
+
+            "error":
+            str(e)
+
+        })
+
+# =========================================
+
+@app.route(
+"/api/oa/<asignatura>/<curso>/<unidad>"
+)
+
+def api_oa(
+
+    asignatura,
+    curso,
+    unidad
+
+):
+
+    try:
+
+        oa = obtener_oa(
+
+            asignatura,
+            curso,
+            unidad
+
+        )
+
+        return jsonify(oa)
 
     except Exception as e:
 
