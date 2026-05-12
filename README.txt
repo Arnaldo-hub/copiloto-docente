@@ -1,1 +1,1 @@
-Curriculum Master Definitivo compatible con curriculum.py y frontend dinámico.
+DATA MASTER COMPLETO compatible con Copiloto Docente IA.
