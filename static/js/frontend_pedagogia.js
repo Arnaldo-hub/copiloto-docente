@@ -3,15 +3,19 @@
 // COPILOTO DOCENTE
 // =========================================
 
-async function generarPedagogia(tipo){
+async function generarPlanificacion(){
 
     const resultado =
     document.getElementById('resultado')
 
     resultado.innerHTML =
-    '⏳ Generando contenido pedagógico...'
+    '⏳ Generando planificación...'
 
     try{
+
+        // =====================================
+        // CONTEXTO PEDAGÓGICO
+        // =====================================
 
         const asignatura =
         document.getElementById('asignatura').value
@@ -25,48 +29,386 @@ async function generarPedagogia(tipo){
         const oa =
         document.getElementById('oa').value
 
-        const res = await fetch('/api/pedagogia',{
+        // =====================================
+        // CHECKBOXES
+        // =====================================
 
-            method:'POST',
+        const checks = {
 
-            headers:{
-                'Content-Type':'application/json'
-            },
+            objetivos:
+            document.getElementById(
+                'check_objetivos'
+            ).checked,
 
-            body:JSON.stringify({
+            indicadores:
+            document.getElementById(
+                'check_indicadores'
+            ).checked,
 
-                tipo:tipo,
+            habilidades:
+            document.getElementById(
+                'check_habilidades'
+            ).checked,
 
-                asignatura:asignatura,
+            actitudes:
+            document.getElementById(
+                'check_actitudes'
+            ).checked,
 
-                curso:curso,
+            nee:
+            document.getElementById(
+                'check_nee'
+            ).checked,
 
-                unidad:unidad,
+            evaluacion:
+            document.getElementById(
+                'check_evaluacion'
+            ).checked
 
-                oa:oa
+        }
+
+        // =====================================
+        // RESULTADO FINAL
+        // =====================================
+
+        let contenidoFinal = ''
+
+        // =====================================
+        // OBJETIVOS
+        // =====================================
+
+        if(checks.objetivos){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'objetivos',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
 
             })
 
-        })
+            const data =
+            await res.json()
 
-        const data = await res.json()
+            contenidoFinal += `
 
-        resultado.innerHTML = `
+            <h2>
+            🎯 Objetivos
+            </h2>
 
-        <div style="white-space:pre-wrap;">
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
 
-        ${data.resultado}
+            <hr>
 
-        </div>
+            `
+        }
 
-        `
+        // =====================================
+        // INDICADORES
+        // =====================================
+
+        if(checks.indicadores){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'indicadores',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            })
+
+            const data =
+            await res.json()
+
+            contenidoFinal += `
+
+            <h2>
+            📊 Indicadores
+            </h2>
+
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
+
+            <hr>
+
+            `
+        }
+
+        // =====================================
+        // HABILIDADES
+        // =====================================
+
+        if(checks.habilidades){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'habilidades',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            })
+
+            const data =
+            await res.json()
+
+            contenidoFinal += `
+
+            <h2>
+            🧠 Habilidades
+            </h2>
+
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
+
+            <hr>
+
+            `
+        }
+
+        // =====================================
+        // ACTITUDES
+        // =====================================
+
+        if(checks.actitudes){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'actitudes',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            })
+
+            const data =
+            await res.json()
+
+            contenidoFinal += `
+
+            <h2>
+            🤝 Actitudes
+            </h2>
+
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
+
+            <hr>
+
+            `
+        }
+
+        // =====================================
+        // NEE
+        // =====================================
+
+        if(checks.nee){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'nee',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            })
+
+            const data =
+            await res.json()
+
+            contenidoFinal += `
+
+            <h2>
+            ♿ Adaptaciones NEE
+            </h2>
+
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
+
+            <hr>
+
+            `
+        }
+
+        // =====================================
+        // EVALUACIÓN
+        // =====================================
+
+        if(checks.evaluacion){
+
+            const res =
+            await fetch('/api/pedagogia',{
+
+                method:'POST',
+
+                headers:{
+                    'Content-Type':
+                    'application/json'
+                },
+
+                body:JSON.stringify({
+
+                    tipo:'evaluacion',
+
+                    asignatura:
+                    asignatura,
+
+                    curso:
+                    curso,
+
+                    unidad:
+                    unidad,
+
+                    oa:
+                    oa
+
+                })
+
+            })
+
+            const data =
+            await res.json()
+
+            contenidoFinal += `
+
+            <h2>
+            📝 Evaluaciones
+            </h2>
+
+            <div style="white-space:pre-wrap;">
+            ${data.resultado}
+            </div>
+
+            <hr>
+
+            `
+        }
+
+        // =====================================
+        // MOSTRAR RESULTADO
+        // =====================================
+
+        resultado.innerHTML =
+        contenidoFinal
 
     }catch(error){
 
         console.log(error)
 
         resultado.innerHTML =
-
-        'ERROR generando pedagogía.'
+        'ERROR generando planificación.'
     }
 }
