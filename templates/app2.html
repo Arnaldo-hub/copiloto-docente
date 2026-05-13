@@ -347,6 +347,12 @@ Resultado IA aparecerá aquí.
 
 <script>
 
+let historial = []
+
+// =========================================
+// CHAT IA
+// =========================================
+
 async function preguntarIA(){
 
 const pregunta =
@@ -375,16 +381,12 @@ const res = await fetch(
 method:'POST',
 
 headers:{
-
-'Content-Type':
-'application/json'
-
+'Content-Type':'application/json'
 },
 
 body:JSON.stringify({
 
-pregunta:
-pregunta
+pregunta:pregunta
 
 })
 
@@ -406,6 +408,10 @@ respuesta.innerHTML =
 }
 
 }
+
+// =========================================
+// GENERAR PLANIFICACIÓN
+// =========================================
 
 async function generarPlanificacion(){
 
@@ -429,10 +435,7 @@ const res = await fetch(
 method:'POST',
 
 headers:{
-
-'Content-Type':
-'application/json'
-
+'Content-Type':'application/json'
 },
 
 body:JSON.stringify({
@@ -511,9 +514,19 @@ resultado.innerHTML =
 
 <br>
 
-${data.resultado.replace(/\\n/g,'<br>')}
+${data.resultado.replace(/\n/g,'<br>')}
 
 `
+
+historial.push({
+
+fecha:
+new Date().toLocaleString(),
+
+contenido:
+data.resultado
+
+})
 
 }catch(error){
 
@@ -524,13 +537,64 @@ resultado.innerHTML =
 
 }
 
+// =========================================
+// HISTORIAL
+// =========================================
+
 function mostrarHistorial(){
 
+if(historial.length === 0){
+
 alert(
-'Historial próximamente disponible'
+'No hay historial aún'
 )
 
+return
+
 }
+
+let texto = ''
+
+historial.forEach((h,index)=>{
+
+texto +=
+
+`
+
+${index+1})
+${h.fecha}
+
+${h.contenido}
+
+======================================
+
+`
+
+})
+
+document.getElementById(
+'resultado'
+).innerHTML =
+
+`
+
+<h2>
+📚 Historial
+</h2>
+
+<pre style="white-space:pre-wrap;line-height:1.7;">
+
+${texto}
+
+</pre>
+
+`
+
+}
+
+// =========================================
+// DESCARGAR PDF
+// =========================================
 
 function descargarPDF(){
 
@@ -540,23 +604,27 @@ document.getElementById(
 'resultado'
 ).innerText
 
-const ventana = window.open()
+const blob = new Blob(
 
-ventana.document.write(
+[contenido],
 
-`
-
-<pre style="font-size:16px">
-
-${contenido}
-
-</pre>
-
-`
+{
+type:'text/plain'
+}
 
 )
 
-ventana.print()
+const enlace =
+
+document.createElement('a')
+
+enlace.href =
+URL.createObjectURL(blob)
+
+enlace.download =
+'planificacion.txt'
+
+enlace.click()
 
 }
 
