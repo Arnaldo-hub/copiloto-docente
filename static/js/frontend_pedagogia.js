@@ -1,196 +1,103 @@
-// ======================================
-// CARGAR CURSOS
-// ======================================
-
 async function cargarCursos(){
 
     const asignatura =
+    document.getElementById("asignatura").value
 
-    document.getElementById(
-        "asignatura"
-    ).value
+    const curso =
+    document.getElementById("curso")
 
-    const cursoSelect =
+    curso.innerHTML = ""
 
-    document.getElementById(
-        "curso"
+    const res = await fetch(
+        `/api/cursos/${asignatura}`
     )
 
-    cursoSelect.innerHTML = ""
+    const data = await res.json()
 
-    try{
+    data.cursos.forEach(c => {
 
-        const res = await fetch(
+        curso.innerHTML += `
+        <option value="${c}">
+        ${c}
+        </option>
+        `
 
-            `/api/cursos/${
-                encodeURIComponent(asignatura)
-            }`
+    })
 
-        )
-
-        const data = await res.json()
-
-        data.cursos.forEach(curso => {
-
-            cursoSelect.innerHTML += `
-
-            <option value="${curso}">
-                ${curso}
-            </option>
-
-            `
-
-        })
-
-        cargarUnidades()
-
-    }catch(error){
-
-        console.log(error)
-
-    }
+    cargarUnidades()
 
 }
-
-// ======================================
-// CARGAR UNIDADES
-// ======================================
 
 async function cargarUnidades(){
 
     const asignatura =
-
-    document.getElementById(
-        "asignatura"
-    ).value
+    document.getElementById("asignatura").value
 
     const curso =
+    document.getElementById("curso").value
 
-    document.getElementById(
-        "curso"
-    ).value
+    const unidad =
+    document.getElementById("unidad")
 
-    const unidadSelect =
+    unidad.innerHTML = ""
 
-    document.getElementById(
-        "unidad"
+    const res = await fetch(
+
+        `/api/unidades/${asignatura}/${encodeURIComponent(curso)}`
+
     )
 
-    unidadSelect.innerHTML = ""
+    const data = await res.json()
 
-    try{
+    data.unidades.forEach((u,index)=>{
 
-        const res = await fetch(
+        unidad.innerHTML += `
+        <option value="${index+1}">
+        ${u.nombre}
+        </option>
+        `
 
-            `/api/unidades/${
-                encodeURIComponent(asignatura)
-            }/${
-                encodeURIComponent(curso)
-            }`
+    })
 
-        )
-
-        const data = await res.json()
-
-        data.unidades.forEach(
-
-            (unidad,index) => {
-
-            unidadSelect.innerHTML += `
-
-            <option value="${index+1}">
-                ${unidad.nombre}
-            </option>
-
-            `
-
-        })
-
-        cargarOA()
-
-    }catch(error){
-
-        console.log(error)
-
-    }
+    cargarOA()
 
 }
-
-// ======================================
-// CARGAR OA
-// ======================================
 
 async function cargarOA(){
 
     const asignatura =
-
-    document.getElementById(
-        "asignatura"
-    ).value
+    document.getElementById("asignatura").value
 
     const curso =
-
-    document.getElementById(
-        "curso"
-    ).value
+    document.getElementById("curso").value
 
     const unidad =
+    document.getElementById("unidad").value
 
-    document.getElementById(
-        "unidad"
-    ).value
+    const oa =
+    document.getElementById("oa")
 
-    const oaSelect =
+    oa.innerHTML = ""
 
-    document.getElementById(
-        "oa"
+    const res = await fetch(
+
+        `/api/oa/${asignatura}/${encodeURIComponent(curso)}/${unidad}`
+
     )
 
-    oaSelect.innerHTML = ""
+    const data = await res.json()
 
-    try{
+    data.oa.forEach(o=>{
 
-        const res = await fetch(
+        oa.innerHTML += `
+        <option>
+        ${o.codigo} - ${o.descripcion}
+        </option>
+        `
 
-            `/api/oa/${
-                encodeURIComponent(asignatura)
-            }/${
-                encodeURIComponent(curso)
-            }/${
-                unidad
-            }`
-
-        )
-
-        const data = await res.json()
-
-        data.oa.forEach(oa => {
-
-            oaSelect.innerHTML += `
-
-            <option>
-
-            ${oa.codigo}
-            -
-            ${oa.descripcion}
-
-            </option>
-
-            `
-
-        })
-
-    }catch(error){
-
-        console.log(error)
-
-    }
+    })
 
 }
-
-// ======================================
-// INIT
-// ======================================
 
 window.onload = function(){
 
