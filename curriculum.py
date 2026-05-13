@@ -1,57 +1,24 @@
 import json
 import os
 
-BASE_DIR = os.path.dirname(
-    os.path.abspath(__file__)
-)
-
-DATA_DIR = os.path.join(
-    BASE_DIR,
-    "data"
-)
+DATA_PATH = "data"
 
 def leer_asignatura(asignatura):
+    archivo = asignatura.lower().replace(" ", "") + ".json"
+    ruta = os.path.join(DATA_PATH, archivo)
 
-    ruta = os.path.join(
-        DATA_DIR,
-        f"{asignatura}.json"
-    )
-
-    with open(
-        ruta,
-        "r",
-        encoding="utf-8"
-    ) as archivo:
-
-        return json.load(archivo)
-
-def obtener_cursos(asignatura):
-
-    data = leer_asignatura(asignatura)
-
-    return list(data.keys())
+    with open(ruta, encoding="utf-8") as f:
+        return json.load(f)
 
 def obtener_unidades(asignatura, curso):
+    data = leer_asignatura(asignatura)
+    return data.get(curso, {}).get("unidades", [])
 
+def obtener_oa(asignatura, curso, unidad_nombre):
     data = leer_asignatura(asignatura)
 
-    if curso not in data:
-        return []
+    for unidad in data.get(curso, {}).get("unidades", []):
+        if unidad["nombre"] == unidad_nombre:
+            return unidad.get("oa", [])
 
-    return data[curso]["unidades"]
-
-def obtener_oa(asignatura, curso, unidad):
-
-    data = leer_asignatura(asignatura)
-
-    if curso not in data:
-        return []
-
-    unidades = data[curso]["unidades"]
-
-    indice = int(unidad) - 1
-
-    if indice < 0 or indice >= len(unidades):
-        return []
-
-    return unidades[indice]["oa"]
+    return []
