@@ -1,80 +1,436 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
+
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>AulaMind IA</title>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+AulaMind IA
+</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
 <style>
 
-body{
+*{
     margin:0;
-    background:#03133b;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:
+    #061539;
+
     color:white;
-    font-family:Arial;
-}
 
-.header{
-    background:#0d47a1;
-    padding:15px;
-    text-align:center;
-}
-
-.container{
-    display:grid;
-    grid-template-columns:350px 1fr;
     min-height:100vh;
 }
 
-.panel{
-    padding:20px;
+/* =====================================
+HEADER
+===================================== */
+
+.header{
+
+    height:80px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #1d4ed8,
+        #2563eb
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    box-shadow:
+    0 4px 20px rgba(0,0,0,0.25);
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.logo h1{
+
+    font-size:30px;
+
+    font-weight:700;
+}
+
+.logo p{
+
+    font-size:13px;
+
+    opacity:0.9;
+}
+
+/* =====================================
+LAYOUT
+===================================== */
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:
+    340px
+    1fr;
+
+    min-height:
+    calc(100vh - 80px);
+}
+
+/* =====================================
+SIDEBAR
+===================================== */
+
+.sidebar{
+
+    background:
+    #0d1f4d;
+
+    padding:25px;
+
+    border-right:
+    1px solid rgba(255,255,255,0.08);
+
+    overflow:auto;
 }
 
 .card{
-    background:#1b2b55;
-    padding:20px;
-    border-radius:16px;
+
+    background:
+    #162a63;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.18);
 }
 
-select,
-button{
+.card h2{
+
+    margin-bottom:20px;
+
+    font-size:25px;
+}
+
+/* =====================================
+SELECTS
+===================================== */
+
+select{
+
     width:100%;
-    padding:14px;
+
+    padding:15px;
+
     border:none;
-    border-radius:12px;
+
+    border-radius:14px;
+
     margin-bottom:15px;
+
     font-size:16px;
+
+    background:white;
+
+    color:#111827;
 }
 
-button{
-    background:#22c55e;
+/* =====================================
+CHECKS
+===================================== */
+
+.check-group{
+
+    margin-top:15px;
+}
+
+.check-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:14px;
+
+    font-size:17px;
+}
+
+.check-item input{
+
+    width:18px;
+    height:18px;
+}
+
+/* =====================================
+BUTTON
+===================================== */
+
+.btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #16a34a
+    );
+
     color:white;
-    font-weight:bold;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:15px;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(34,197,94,0.3);
+}
+
+/* =====================================
+CONTENT
+===================================== */
+
+.content{
+
+    padding:30px;
+
+    overflow:auto;
+}
+
+.top-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.sub-title{
+
+    color:#c7d2fe;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+}
+
+/* =====================================
+RESULTADO
+===================================== */
+
+.resultado{
+
+    background:
+    #162a63;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    min-height:600px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.18);
+}
+
+.resultado h2{
+
+    margin-bottom:25px;
+
+    font-size:28px;
 }
 
 #resultado{
-    background:#1b2b55;
-    padding:20px;
-    border-radius:16px;
-    min-height:500px;
+
+    white-space:pre-wrap;
+
+    line-height:1.8;
+
+    font-size:16px;
 }
 
-@media(max-width:900px){
+/* =====================================
+TARJETAS IA
+===================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:20px;
+
+    margin-bottom:30px;
+}
+
+.idea-card{
+
+    background:
+    linear-gradient(
+        180deg,
+        #1e3a8a,
+        #172554
+    );
+
+    border-radius:20px;
+
+    padding:25px;
+
+    min-height:180px;
+
+    transition:0.3s;
+
+    cursor:pointer;
+}
+
+.idea-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.3);
+}
+
+.idea-card h3{
+
+    margin-bottom:15px;
+
+    font-size:20px;
+}
+
+.idea-card p{
+
+    color:#dbeafe;
+
+    line-height:1.6;
+}
+
+/* =====================================
+RESPONSIVE
+===================================== */
+
+@media(max-width:1100px){
 
 .container{
+
+    grid-template-columns:1fr;
+}
+
+.sidebar{
+
+    border-right:none;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+}
+
+@media(max-width:700px){
+
+.header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+}
+
+.logo{
+
+    flex-direction:column;
+}
+
+.top-title{
+
+    font-size:32px;
+}
+
+.cards{
+
     grid-template-columns:1fr;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class='header'>
+<!-- =====================================
+HEADER
+===================================== -->
 
-<h1>🧠 AulaMind IA</h1>
+<div class="header">
+
+<div class="logo">
+
+<div style="font-size:42px;">
+🧠
+</div>
+
+<div>
+
+<h1>
+AulaMind IA
+</h1>
 
 <p>
 Inteligencia artificial al servicio de la educación
@@ -82,57 +438,220 @@ Inteligencia artificial al servicio de la educación
 
 </div>
 
-<div class='container'>
+</div>
 
-<div class='panel'>
+</div>
 
-<div class='card'>
+<!-- =====================================
+CONTAINER
+===================================== -->
 
-<h2>📚 Contexto Pedagógico</h2>
+<div class="container">
 
-<select id='asignatura' onchange='cargarUnidades()'>
-<option>Lenguaje</option>
-<option>Matematica</option>
-<option>Ciencias</option>
-<option>Historia</option>
+<!-- =====================================
+SIDEBAR
+===================================== -->
+
+<div class="sidebar">
+
+<div class="card">
+
+<h2>
+📚 Contexto Pedagógico
+</h2>
+
+<select
+id="asignatura"
+onchange="cargarUnidades()">
+
+<option>
+Lenguaje
+</option>
+
+<option>
+Matematica
+</option>
+
+<option>
+Ciencias
+</option>
+
+<option>
+Historia
+</option>
+
 </select>
 
-<select id='curso' onchange='cargarUnidades()'>
-<option>1° Básico</option>
-<option>2° Básico</option>
-<option>3° Básico</option>
+<select
+id="curso"
+onchange="cargarUnidades()">
+
+<option>
+1° Básico
+</option>
+
+<option>
+2° Básico
+</option>
+
+<option>
+3° Básico
+</option>
+
 </select>
 
-<select id='unidad' onchange='cargarOA()'></select>
+<select
+id="unidad"
+onchange="cargarOA()">
+</select>
 
-<select id='oa'></select>
+<select id="oa">
+</select>
 
-<label><input type='checkbox'> Objetivos</label><br><br>
-<label><input type='checkbox'> Indicadores</label><br><br>
-<label><input type='checkbox'> Habilidades</label><br><br>
-<label><input type='checkbox'> Actitudes</label><br><br>
+<div class="check-group">
 
-<button onclick='generarPlanificacion()'>
+<label class="check-item">
+<input type="checkbox">
+🎯 Objetivos
+</label>
+
+<label class="check-item">
+<input type="checkbox">
+📊 Indicadores
+</label>
+
+<label class="check-item">
+<input type="checkbox">
+🧠 Habilidades
+</label>
+
+<label class="check-item">
+<input type="checkbox">
+🤝 Actitudes
+</label>
+
+<label class="check-item">
+<input type="checkbox">
+♿ Adaptaciones NEE
+</label>
+
+<label class="check-item">
+<input type="checkbox">
+📝 Evaluaciones
+</label>
+
+</div>
+
+<button
+class="btn"
+onclick="generarPlanificacion()">
+
 🚀 Generar Planificación
+
 </button>
 
 </div>
 
 </div>
 
-<div class='panel'>
+<!-- =====================================
+CONTENT
+===================================== -->
 
-<h1>📄 Resultado IA</h1>
+<div class="content">
 
-<div id='resultado'>
-Resultado pedagógico aparecerá aquí.
+<h1 class="top-title">
+
+¿Necesitas apoyo con tus desafíos pedagógicos?
+
+</h1>
+
+<p class="sub-title">
+
+AulaMind IA te ayuda a planificar, crear actividades y generar recursos educativos alineados al currículo chileno.
+
+</p>
+
+<!-- =====================================
+CARDS
+===================================== -->
+
+<div class="cards">
+
+<div class="idea-card">
+
+<h3>
+📖 Comprensión lectora
+</h3>
+
+<p>
+Genera actividades para fortalecer lectura y comprensión textual.
+</p>
+
+</div>
+
+<div class="idea-card">
+
+<h3>
+🧮 Matemática
+</h3>
+
+<p>
+Crea ejercicios contextualizados y adaptados al nivel del estudiante.
+</p>
+
+</div>
+
+<div class="idea-card">
+
+<h3>
+🧪 Ciencias
+</h3>
+
+<p>
+Diseña experiencias científicas y actividades experimentales.
+</p>
+
+</div>
+
+<div class="idea-card">
+
+<h3>
+♿ Inclusión
+</h3>
+
+<p>
+Obtén adaptaciones NEE y estrategias inclusivas automáticamente.
+</p>
+
+</div>
+
+</div>
+
+<!-- =====================================
+RESULTADO
+===================================== -->
+
+<div class="resultado">
+
+<h2>
+📄 Resultado IA
+</h2>
+
+<div id="resultado">
+
+La planificación pedagógica aparecerá aquí.
+
 </div>
 
 </div>
 
 </div>
 
-<script src='/static/js/frontend_pedagogia.js'></script>
+</div>
+
+<script src="/static/js/frontend_pedagogia.js"></script>
 
 </body>
+
 </html>
