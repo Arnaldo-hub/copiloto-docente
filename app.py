@@ -1,20 +1,25 @@
 from flask import Flask, render_template, request, jsonify
 
+from openai import OpenAI
+
 from curriculum import (
     obtener_unidades,
     obtener_oa
 )
 
-from pedagogia import (
+import os
 
-    generar_objetivos,
-    generar_indicadores,
-    generar_habilidades,
-    generar_actitudes,
-    generar_nee,
-    generar_evaluacion
+# =========================================
+# OPENAI
+# =========================================
 
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
 )
+
+# =========================================
+# APP
+# =========================================
 
 app = Flask(__name__)
 
@@ -65,7 +70,7 @@ def api_oa():
     return jsonify(oa)
 
 # =========================================
-# PEDAGOGIA
+# PEDAGOGIA IA REAL
 # =========================================
 
 @app.route("/api/pedagogia", methods=["POST"])
@@ -78,141 +83,103 @@ def api_pedagogia():
     unidad = data.get("unidad")
     oa = data.get("oa")
 
-    resultado = f"""
+    bloques = []
 
-📚 ASIGNATURA:
+    if data.get("objetivos"):
+        bloques.append("objetivos de aprendizaje")
+
+    if data.get("indicadores"):
+        bloques.append("indicadores de evaluación")
+
+    if data.get("habilidades"):
+        bloques.append("habilidades")
+
+    if data.get("actitudes"):
+        bloques.append("actitudes")
+
+    if data.get("nee"):
+        bloques.append("adaptaciones NEE")
+
+    if data.get("evaluacion"):
+        bloques.append("evaluación")
+
+    bloques_texto = ", ".join(bloques)
+
+    prompt = f"""
+
+Eres un experto en educación chilena y planificación curricular.
+
+Genera una planificación pedagógica profesional.
+
+ASIGNATURA:
 {asignatura}
 
-🎓 CURSO:
+CURSO:
 {curso}
 
-📖 UNIDAD:
+UNIDAD:
 {unidad}
 
-🎯 OA:
+OA:
 {oa}
+
+Debes generar:
+
+{bloques_texto}
+
+La respuesta debe:
+
+- ser extensa
+- profesional
+- clara
+- usable por docentes reales
+- alineada al currículum chileno
+- incluir estrategias pedagógicas
+- incluir ejemplos concretos
+- incluir metodologías activas
 
 """
 
-    # =====================================
-    # OBJETIVOS
-    # =====================================
+    try:
 
-    if data.get("objetivos"):
+        respuesta = client.chat.completions.create(
 
-        resultado += "\n\n🎯 OBJETIVOS\n"
+            model="gpt-4.1-mini",
 
-        objetivos = generar_objetivos(
-            asignatura,
-            curso,
-            unidad,
-            oa
+            messages=[
+
+                {
+                    "role": "system",
+                    "content": "Eres un experto pedagógico chileno."
+                },
+
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+
+            ],
+
+            temperature=0.7
+
         )
 
-        for item in objetivos:
+        texto = respuesta.choices[0].message.content
 
-            resultado += f"\n• {item}"
+        return jsonify({
 
-    # =====================================
-    # INDICADORES
-    # =====================================
+            "resultado": texto
 
-    if data.get("indicadores"):
+        })
 
-        resultado += "\n\n📊 INDICADORES\n"
+    except Exception as e:
 
-        indicadores = generar_indicadores(
-            asignatura,
-            curso,
-            unidad,
-            oa
-        )
+        return jsonify({
 
-        for item in indicadores:
+            "resultado":
+            f"ERROR IA:\n\n{str(e)}"
 
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # HABILIDADES
-    # =====================================
-
-    if data.get("habilidades"):
-
-        resultado += "\n\n🧠 HABILIDADES\n"
-
-        habilidades = generar_habilidades(
-            asignatura,
-            curso,
-            unidad,
-            oa
-        )
-
-        for item in habilidades:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # ACTITUDES
-    # =====================================
-
-    if data.get("actitudes"):
-
-        resultado += "\n\n🤝 ACTITUDES\n"
-
-        actitudes = generar_actitudes(
-            asignatura,
-            curso,
-            unidad,
-            oa
-        )
-
-        for item in actitudes:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # NEE
-    # =====================================
-
-    if data.get("nee"):
-
-        resultado += "\n\n♿ ADAPTACIONES NEE\n"
-
-        nee = generar_nee(
-            asignatura,
-            curso,
-            unidad,
-            oa
-        )
-
-        for item in nee:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # EVALUACION
-    # =====================================
-
-    if data.get("evaluacion"):
-
-        resultado += "\n\n📝 EVALUACIÓN\n"
-
-        evaluacion = generar_evaluacion(
-            asignatura,
-            curso,
-            unidad,
-            oa
-        )
-
-        for item in evaluacion:
-
-            resultado += f"\n• {item}"
-
-    return jsonify({
-
-        "resultado": resultado
-
-    })
+        })
 
 # =========================================
 # MAIN
