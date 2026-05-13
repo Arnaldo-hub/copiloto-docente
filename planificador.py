@@ -1,10 +1,6 @@
 from openai import OpenAI
 import os
 
-# =========================================
-# OPENAI
-# =========================================
-
 api_key = os.getenv(
     "OPENAI_API_KEY"
 )
@@ -12,10 +8,6 @@ api_key = os.getenv(
 client = OpenAI(
     api_key=api_key
 )
-
-# =========================================
-# GENERAR PLANIFICACIÓN
-# =========================================
 
 def generar_planificacion(
 
@@ -30,43 +22,27 @@ def generar_planificacion(
     secciones = []
 
     if opciones.get("objetivos"):
-        secciones.append(
-            "Objetivo"
-        )
+        secciones.append("Objetivos")
 
     if opciones.get("indicadores"):
-        secciones.append(
-            "Indicadores"
-        )
+        secciones.append("Indicadores")
 
     if opciones.get("habilidades"):
-        secciones.append(
-            "Habilidades"
-        )
+        secciones.append("Habilidades")
 
     if opciones.get("actitudes"):
-        secciones.append(
-            "Actitudes"
-        )
+        secciones.append("Actitudes")
 
     if opciones.get("evaluacion"):
-        secciones.append(
-            "Evaluación"
-        )
+        secciones.append("Evaluación")
 
     if opciones.get("nee"):
-        secciones.append(
-            "Adecuaciones NEE"
-        )
+        secciones.append("Adecuaciones NEE")
 
     if opciones.get("recursos"):
-        secciones.append(
-            "Recursos"
-        )
+        secciones.append("Recursos")
 
-    estructura = "\n".join(
-        secciones
-    )
+    estructura = "\\n".join(secciones)
 
     prompt = f"""
 
@@ -84,17 +60,9 @@ Unidad:
 OA:
 {oa}
 
-La planificación debe incluir SOLO estas secciones:
+Debe incluir SOLO:
 
 {estructura}
-
-No agregues otras secciones.
-
-Debes generar contenido profesional,
-claro,
-pedagógico,
-detallado
-y aplicable en aula chilena.
 
 """
 
@@ -106,23 +74,19 @@ y aplicable en aula chilena.
 
             {
                 "role":"system",
-
-                "content":
-                "Eres un experto curricular chileno."
+                "content":"Eres un experto curricular chileno."
             },
 
             {
                 "role":"user",
-
-                "content":
-                prompt
+                "content":prompt
             }
 
         ]
 
     )
 
-    texto = (
+    return (
 
         response
         .choices[0]
@@ -130,5 +94,3 @@ y aplicable en aula chilena.
         .content
 
     )
-
-    return texto
