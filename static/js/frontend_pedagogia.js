@@ -136,7 +136,7 @@ async function cargarOA(){
 
     document.getElementById(
         "unidad"
-    ).value
+    ).selectedIndex + 1
 
     const oaSelect =
 
@@ -155,7 +155,7 @@ async function cargarOA(){
             }/${
                 encodeURIComponent(curso)
             }/${
-                encodeURIComponent(unidad)
+                unidad
             }`
 
         )
