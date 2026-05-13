@@ -1,106 +1,142 @@
-async function cargarCursos(){
-
-    const asignatura =
-    document.getElementById("asignatura").value
-
-    const curso =
-    document.getElementById("curso")
-
-    curso.innerHTML = ""
-
-    const res = await fetch(
-        `/api/cursos/${asignatura}`
-    )
-
-    const data = await res.json()
-
-    data.cursos.forEach(c => {
-
-        curso.innerHTML += `
-        <option value="${c}">
-        ${c}
-        </option>
-        `
-
-    })
-
-    cargarUnidades()
-
-}
-
 async function cargarUnidades(){
 
     const asignatura =
-    document.getElementById("asignatura").value
+    document.getElementById('asignatura').value
 
     const curso =
-    document.getElementById("curso").value
+    document.getElementById('curso').value
 
     const unidad =
-    document.getElementById("unidad")
+    document.getElementById('unidad')
 
-    unidad.innerHTML = ""
+    unidad.innerHTML = ''
 
-    const res = await fetch(
+    const res = await fetch('/api/unidades',{
 
-        `/api/unidades/${asignatura}/${encodeURIComponent(curso)}`
+        method:'POST',
 
-    )
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+            asignatura,
+            curso
+        })
+
+    })
 
     const data = await res.json()
 
-    data.unidades.forEach((u,index)=>{
+    data.forEach(item=>{
 
-        unidad.innerHTML += `
-        <option value="${index+1}">
-        ${u.nombre}
-        </option>
-        `
+        const option =
+        document.createElement('option')
+
+        option.value =
+        item.nombre
+
+        option.textContent =
+        item.nombre
+
+        unidad.appendChild(option)
 
     })
 
     cargarOA()
-
 }
 
 async function cargarOA(){
 
     const asignatura =
-    document.getElementById("asignatura").value
+    document.getElementById('asignatura').value
 
     const curso =
-    document.getElementById("curso").value
+    document.getElementById('curso').value
 
     const unidad =
-    document.getElementById("unidad").value
+    document.getElementById('unidad').value
 
     const oa =
-    document.getElementById("oa")
+    document.getElementById('oa')
 
-    oa.innerHTML = ""
+    oa.innerHTML = ''
 
-    const res = await fetch(
+    const res = await fetch('/api/oa',{
 
-        `/api/oa/${asignatura}/${encodeURIComponent(curso)}/${unidad}`
+        method:'POST',
 
-    )
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+            asignatura,
+            curso,
+            unidad
+        })
+
+    })
 
     const data = await res.json()
 
-    data.oa.forEach(o=>{
+    data.forEach(item=>{
 
-        oa.innerHTML += `
-        <option>
-        ${o.codigo} - ${o.descripcion}
-        </option>
-        `
+        const option =
+        document.createElement('option')
+
+        option.value =
+        item.codigo
+
+        option.textContent =
+        item.codigo + ' - ' + item.descripcion
+
+        oa.appendChild(option)
 
     })
 
 }
 
-window.onload = function(){
+async function generarPlanificacion(){
 
-    cargarCursos()
+    const resultado =
+    document.getElementById('resultado')
 
+    resultado.innerHTML =
+    '⏳ Generando planificación...'
+
+    const res = await fetch('/api/pedagogia',{
+
+        method:'POST',
+
+        headers:{
+            'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+
+            asignatura:
+            document.getElementById('asignatura').value,
+
+            curso:
+            document.getElementById('curso').value,
+
+            unidad:
+            document.getElementById('unidad').value,
+
+            oa:
+            document.getElementById('oa').value
+
+        })
+
+    })
+
+    const data = await res.json()
+
+    resultado.innerHTML =
+    `<pre>${data.resultado}</pre>`
+}
+
+window.onload = ()=>{
+    cargarUnidades()
 }
