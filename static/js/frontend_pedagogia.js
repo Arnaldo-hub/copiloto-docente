@@ -1,84 +1,197 @@
+// =========================================
+// CURSOS
+// =========================================
 
 async function cargarCursos(){
 
     const asignatura =
-    document.getElementById('asignatura').value
+
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const cursoSelect =
-    document.getElementById('curso')
 
-    cursoSelect.innerHTML = ''
+    document.getElementById(
+        "curso"
+    )
 
-    const res = await fetch(`/api/cursos/${asignatura}`)
+    cursoSelect.innerHTML = ""
 
-    const cursos = await res.json()
+    try{
 
-    cursos.forEach(curso=>{
+        const res = await fetch(
 
-        cursoSelect.innerHTML += `
-        <option>${curso}</option>
-        `
-    })
+            `/api/cursos/${encodeURIComponent(asignatura)}`
 
-    cargarUnidades()
+        )
+
+        const data = await res.json()
+
+        data.cursos.forEach(curso => {
+
+            cursoSelect.innerHTML += `
+
+            <option value="${curso}">
+                ${curso}
+            </option>
+
+            `
+
+        })
+
+        cargarUnidades()
+
+    }catch(error){
+
+        console.log(error)
+
+    }
+
 }
+
+// =========================================
+// UNIDADES
+// =========================================
 
 async function cargarUnidades(){
 
     const asignatura =
-    document.getElementById('asignatura').value
+
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const curso =
-    document.getElementById('curso').value
+
+    document.getElementById(
+        "curso"
+    ).value
 
     const unidadSelect =
-    document.getElementById('unidad')
 
-    unidadSelect.innerHTML = ''
+    document.getElementById(
+        "unidad"
+    )
 
-    const res = await fetch(`/api/unidades/${asignatura}/${curso}`)
+    unidadSelect.innerHTML = ""
 
-    const unidades = await res.json()
+    try{
 
-    unidades.forEach(unidad=>{
+        const res = await fetch(
 
-        unidadSelect.innerHTML += `
-        <option>${unidad.nombre}</option>
-        `
-    })
+            `/api/unidades/${
+                encodeURIComponent(asignatura)
+            }/${
+                encodeURIComponent(curso)
+            }`
 
-    cargarOA()
+        )
+
+        const data = await res.json()
+
+        data.unidades.forEach(
+
+            (unidad,index) => {
+
+            unidadSelect.innerHTML += `
+
+            <option value="${index+1}">
+                ${unidad.nombre}
+            </option>
+
+            `
+
+        })
+
+        cargarOA()
+
+    }catch(error){
+
+        console.log(error)
+
+    }
+
 }
+
+// =========================================
+// OA
+// =========================================
 
 async function cargarOA(){
 
     const asignatura =
-    document.getElementById('asignatura').value
+
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const curso =
-    document.getElementById('curso').value
+
+    document.getElementById(
+        "curso"
+    ).value
 
     const unidad =
-    document.getElementById('unidad').value
+
+    document.getElementById(
+        "unidad"
+    ).value
 
     const oaSelect =
-    document.getElementById('oa')
 
-    oaSelect.innerHTML = ''
+    document.getElementById(
+        "oa"
+    )
 
-    const res = await fetch(`/api/oa/${asignatura}/${curso}/${unidad}`)
+    oaSelect.innerHTML = ""
 
-    const oa = await res.json()
+    try{
 
-    oa.forEach(item=>{
+        const res = await fetch(
 
-        oaSelect.innerHTML += `
-        <option>${item.codigo} - ${item.descripcion}</option>
-        `
-    })
+            `/api/oa/${
+                encodeURIComponent(asignatura)
+            }/${
+                encodeURIComponent(curso)
+            }/${
+                encodeURIComponent(unidad)
+            }`
+
+        )
+
+        const data = await res.json()
+
+        data.oa.forEach(oa => {
+
+            oaSelect.innerHTML += `
+
+            <option>
+
+            ${oa.codigo}
+            -
+            ${oa.descripcion}
+
+            </option>
+
+            `
+
+        })
+
+    }catch(error){
+
+        console.log(error)
+
+    }
+
 }
+
+// =========================================
+// INIT
+// =========================================
 
 window.onload = function(){
 
     cargarCursos()
+
 }
