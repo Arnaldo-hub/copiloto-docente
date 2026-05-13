@@ -23,7 +23,31 @@ def obtener_unidades(asignatura, curso):
 
     return data[curso]["unidades"]
 
-def obtener_oa(asignatura, curso, unidad_nombre):
+# =========================================
+# OBTENER OA
+# =========================================
+
+def obtener_oa(
+
+    asignatura,
+    curso,
+    unidad
+
+):
+
+    data = leer_asignatura(
+        asignatura
+    )
+
+    unidades = data[curso]["unidades"]
+
+    indice = int(unidad) - 1
+
+    if indice >= 0 and indice < len(unidades):
+
+        return unidades[indice]["oa"]
+
+    return []
 
     data = leer_asignatura(asignatura)
 
