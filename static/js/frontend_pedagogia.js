@@ -1,6 +1,6 @@
-// =========================================
-// CURSOS
-// =========================================
+// ======================================
+// CARGAR CURSOS
+// ======================================
 
 async function cargarCursos(){
 
@@ -22,7 +22,9 @@ async function cargarCursos(){
 
         const res = await fetch(
 
-            `/api/cursos/${encodeURIComponent(asignatura)}`
+            `/api/cursos/${
+                encodeURIComponent(asignatura)
+            }`
 
         )
 
@@ -50,9 +52,9 @@ async function cargarCursos(){
 
 }
 
-// =========================================
-// UNIDADES
-// =========================================
+// ======================================
+// CARGAR UNIDADES
+// ======================================
 
 async function cargarUnidades(){
 
@@ -114,9 +116,9 @@ async function cargarUnidades(){
 
 }
 
-// =========================================
-// OA
-// =========================================
+// ======================================
+// CARGAR OA
+// ======================================
 
 async function cargarOA(){
 
@@ -136,7 +138,7 @@ async function cargarOA(){
 
     document.getElementById(
         "unidad"
-    ).selectedIndex + 1
+    ).value
 
     const oaSelect =
 
@@ -186,9 +188,9 @@ async function cargarOA(){
 
 }
 
-// =========================================
+// ======================================
 // INIT
-// =========================================
+// ======================================
 
 window.onload = function(){
 
