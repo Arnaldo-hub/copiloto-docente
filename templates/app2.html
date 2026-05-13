@@ -1,1 +1,542 @@
-<!DOCTYPE html><html><body><h1>Copiloto Docente IA</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Copiloto Docente IA
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#03133b;
+color:white;
+font-family:Arial;
+overflow:hidden;
+}
+
+.container{
+display:grid;
+grid-template-columns:380px 520px 1fr;
+height:100vh;
+}
+
+.panel{
+padding:24px;
+overflow:auto;
+border-right:1px solid rgba(255,255,255,.08);
+}
+
+.card{
+background:#182952;
+border-radius:18px;
+padding:20px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:28px;
+margin-bottom:24px;
+}
+
+textarea{
+width:100%;
+height:190px;
+border:none;
+border-radius:14px;
+padding:16px;
+font-size:18px;
+resize:none;
+margin-bottom:18px;
+}
+
+select{
+width:100%;
+padding:16px;
+border:none;
+border-radius:14px;
+margin-bottom:16px;
+font-size:18px;
+}
+
+button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:14px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+margin-bottom:14px;
+color:white;
+}
+
+.btn-green{
+background:#22c55e;
+}
+
+.btn-blue{
+background:#1d74e7;
+}
+
+.btn-purple{
+background:#9333ea;
+}
+
+.resultado{
+background:#182952;
+border-radius:18px;
+padding:26px;
+min-height:90vh;
+overflow:auto;
+line-height:1.7;
+white-space:pre-wrap;
+}
+
+.checks label{
+display:block;
+margin-bottom:18px;
+font-size:18px;
+}
+
+.checks input{
+margin-right:10px;
+}
+
+#respuestaIA{
+margin-top:20px;
+line-height:1.6;
+white-space:pre-wrap;
+}
+
+@media(max-width:1300px){
+
+.container{
+grid-template-columns:1fr;
+height:auto;
+}
+
+body{
+overflow:auto;
+}
+
+.panel{
+border-right:none;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================================= -->
+<!-- PANEL IZQUIERDO -->
+<!-- ================================= -->
+
+<div class="panel">
+
+<h1>
+🧠 Chat Docente IA
+</h1>
+
+<div class="card">
+
+<textarea
+id="preguntaIA"
+placeholder="Escribe una pregunta pedagógica...">
+</textarea>
+
+<button
+class="btn-green"
+onclick="preguntarIA()">
+
+💬 Preguntar
+
+</button>
+
+<button
+class="btn-purple">
+
+🎨 Generar Imagen
+
+</button>
+
+<div id="respuestaIA"></div>
+
+</div>
+
+</div>
+
+<!-- ================================= -->
+<!-- PANEL CENTRO -->
+<!-- ================================= -->
+
+<div class="panel">
+
+<h1>
+📚 Contexto Pedagógico
+</h1>
+
+<div class="card">
+
+<select
+id="asignatura"
+onchange="cargarCursos()">
+
+<option value="matematica">
+Matemática
+</option>
+
+<option value="lenguaje">
+Lenguaje y Comunicación
+</option>
+
+<option value="ciencias">
+Ciencias Naturales
+</option>
+
+<option value="historia">
+Historia, Geografía y Ciencias Sociales
+</option>
+
+<option value="artesvisuales">
+Artes Visuales
+</option>
+
+<option value="musica">
+Música
+</option>
+
+<option value="educacionfisica">
+Educación Física y Salud
+</option>
+
+<option value="ingles">
+Inglés
+</option>
+
+<option value="orientacion">
+Orientación
+</option>
+
+<option value="religioncatolica">
+Religión Católica
+</option>
+
+<option value="religionevangelica">
+Religión Evangélica
+</option>
+
+<option value="tecnologia">
+Tecnología
+</option>
+
+</select>
+
+<select
+id="curso"
+onchange="cargarUnidades()">
+</select>
+
+<select
+id="unidad"
+onchange="cargarOA()">
+</select>
+
+<select id="oa">
+</select>
+
+</div>
+
+<div class="card checks">
+
+<label>
+<input type="checkbox" id="objetivos">
+Objetivos
+</label>
+
+<label>
+<input type="checkbox" id="indicadores">
+Indicadores
+</label>
+
+<label>
+<input type="checkbox" id="habilidades">
+Habilidades
+</label>
+
+<label>
+<input type="checkbox" id="actitudes">
+Actitudes
+</label>
+
+<label>
+<input type="checkbox" id="evaluacion">
+Evaluación
+</label>
+
+<label>
+<input type="checkbox" id="nee">
+Adaptaciones NEE
+</label>
+
+<label>
+<input type="checkbox" id="recursos">
+Recursos
+</label>
+
+<button
+class="btn-green"
+onclick="generarPlanificacion()">
+
+🚀 Generar
+
+</button>
+
+<button class="btn-blue">
+
+📚 Historial
+
+</button>
+
+<button class="btn-purple">
+
+📄 Descargar PDF
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================================= -->
+<!-- PANEL DERECHO -->
+<!-- ================================= -->
+
+<div class="panel">
+
+<h1>
+📄 Resultado IA
+</h1>
+
+<div
+class="resultado"
+id="resultado">
+
+La planificación generada aparecerá aquí.
+
+</div>
+
+</div>
+
+</div>
+
+<script src="/static/js/frontend_pedagogia.js"></script>
+
+<script>
+
+async function preguntarIA(){
+
+const pregunta =
+document.getElementById(
+'preguntaIA'
+).value
+
+const respuesta =
+document.getElementById(
+'respuestaIA'
+)
+
+respuesta.innerHTML =
+'⏳ Pensando...'
+
+try{
+
+const res = await fetch(
+
+'/api/chat',
+
+{
+
+method:'POST',
+
+headers:{
+'Content-Type':
+'application/json'
+},
+
+body:JSON.stringify({
+
+pregunta:
+pregunta
+
+})
+
+}
+
+)
+
+const data =
+await res.json()
+
+respuesta.innerHTML =
+data.respuesta
+
+}catch(error){
+
+respuesta.innerHTML =
+'ERROR conectando IA'
+
+}
+
+}
+
+async function generarPlanificacion(){
+
+const asignatura =
+document.getElementById(
+'asignatura'
+).value
+
+const curso =
+document.getElementById(
+'curso'
+).value
+
+const unidad =
+document.getElementById(
+'unidad'
+).value
+
+const oa =
+document.getElementById(
+'oa'
+).value
+
+const resultado =
+document.getElementById(
+'resultado'
+)
+
+resultado.innerHTML =
+'⏳ Generando planificación...'
+
+try{
+
+const res = await fetch(
+
+'/api/planificacion',
+
+{
+
+method:'POST',
+
+headers:{
+'Content-Type':
+'application/json'
+},
+
+body:JSON.stringify({
+
+asignatura:
+asignatura,
+
+curso:
+curso,
+
+unidad:
+unidad,
+
+oa:
+oa,
+
+objetivos:
+document.getElementById(
+'objetivos'
+).checked,
+
+indicadores:
+document.getElementById(
+'indicadores'
+).checked,
+
+habilidades:
+document.getElementById(
+'habilidades'
+).checked,
+
+actitudes:
+document.getElementById(
+'actitudes'
+).checked,
+
+evaluacion:
+document.getElementById(
+'evaluacion'
+).checked,
+
+nee:
+document.getElementById(
+'nee'
+).checked,
+
+recursos:
+document.getElementById(
+'recursos'
+).checked
+
+})
+
+}
+
+)
+
+const data =
+await res.json()
+
+resultado.innerHTML =
+
+`
+
+<h2>
+✅ Planificación generada
+</h2>
+
+<br>
+
+${data.resultado.replace(/\n/g,'<br>')}
+
+`
+
+}catch(error){
+
+resultado.innerHTML =
+'ERROR generando planificación'
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
