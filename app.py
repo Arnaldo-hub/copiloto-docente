@@ -1,127 +1,52 @@
-from flask import Flask
-from flask import render_template
-from flask import request
-from flask import jsonify
-from flask import session
-from flask import redirect
-from flask import url_for
-
-from openai import OpenAI
-
-from curriculum import *
-from planificador import *
+from flask import Flask, render_template, request, jsonify
 
 import os
-import json
+
+from curriculum import (
+
+    obtener_cursos,
+    obtener_unidades,
+    obtener_oa
+
+)
+
+from pedagogia import (
+
+    generar_objetivos,
+    generar_indicadores,
+    generar_habilidades,
+    generar_actitudes,
+    generar_nee,
+    generar_evaluacion
+
+)
+
+# =========================================
+# GENERAR CURRÍCULO AUTOMÁTICAMENTE
+# =========================================
+
+try:
+
+    os.system(
+        "python convertidor_pdf_mineduc.py"
+    )
+
+    print(
+        "✅ Currículo generado automáticamente"
+    )
+
+except Exception as e:
+
+    print(
+        "❌ Error generando currículo:",
+        e
+    )
 
 # =========================================
 # APP
 # =========================================
 
 app = Flask(__name__)
-
-app.secret_key = "copiloto_docente_secret"
-
-# =========================================
-# OPENAI
-# =========================================
-
-api_key = os.getenv(
-    "OPENAI_API_KEY"
-)
-
-client = OpenAI(
-    api_key=api_key
-)
-
-# =========================================
-# USUARIOS
-# =========================================
-
-RUTA_USUARIOS = os.path.join(
-    "usuarios",
-    "usuarios.json"
-)
-
-def leer_usuarios():
-
-    with open(
-        RUTA_USUARIOS,
-        "r",
-        encoding="utf-8"
-    ) as archivo:
-
-        return json.load(archivo)
-
-# =========================================
-# LOGIN
-# =========================================
-
-@app.route("/login")
-def login_page():
-
-    return render_template(
-        "login.html"
-    )
-
-@app.route(
-    "/api/login",
-    methods=["POST"]
-)
-def api_login():
-
-    data = request.json
-
-    usuario = data.get(
-        "usuario"
-    )
-
-    password = data.get(
-        "password"
-    )
-
-    usuarios = leer_usuarios()
-
-    for u in usuarios:
-
-        if (
-
-            u["usuario"] == usuario
-
-            and
-
-            u["password"] == password
-
-        ):
-
-            session["usuario"] = usuario
-
-            session["nombre"] = u["nombre"]
-
-            return jsonify({
-
-                "success":True
-
-            })
-
-    return jsonify({
-
-        "success":False
-
-    })
-
-# =========================================
-# LOGOUT
-# =========================================
-
-@app.route("/logout")
-def logout():
-
-    session.clear()
-
-    return redirect(
-        url_for("login_page")
-    )
 
 # =========================================
 # HOME
@@ -130,85 +55,9 @@ def logout():
 @app.route("/")
 def home():
 
-    if "usuario" not in session:
-
-        return redirect(
-            url_for("login_page")
-        )
-
     return render_template(
-        "app2.html",
-        nombre=session.get("nombre")
+        "app2.html"
     )
-
-# =========================================
-# CHAT IA
-# =========================================
-
-@app.route(
-    "/api/chat",
-    methods=["POST"]
-)
-def api_chat():
-
-    try:
-
-        data = request.json
-
-        pregunta = data.get(
-            "pregunta"
-        )
-
-        response = client.chat.completions.create(
-
-            model="gpt-4o-mini",
-
-            messages=[
-
-                {
-
-                    "role":"system",
-
-                    "content":
-                    "Eres un experto pedagógico chileno."
-
-                },
-
-                {
-
-                    "role":"user",
-
-                    "content":
-                    pregunta
-
-                }
-
-            ]
-
-        )
-
-        texto = (
-
-            response
-            .choices[0]
-            .message
-            .content
-
-        )
-
-        return jsonify({
-
-            "respuesta":texto
-
-        })
-
-    except Exception as e:
-
-        return jsonify({
-
-            "respuesta":str(e)
-
-        })
 
 # =========================================
 # CURSOS
@@ -219,10 +68,13 @@ def api_chat():
 )
 def api_cursos(asignatura):
 
+    cursos = obtener_cursos(
+        asignatura
+    )
+
     return jsonify({
 
-        "cursos":
-        obtener_cursos(asignatura)
+        "cursos": cursos
 
     })
 
@@ -234,18 +86,22 @@ def api_cursos(asignatura):
     "/api/unidades/<asignatura>/<curso>"
 )
 def api_unidades(
+
     asignatura,
     curso
+
 ):
+
+    unidades = obtener_unidades(
+
+        asignatura,
+        curso
+
+    )
 
     return jsonify({
 
-        "unidades":
-
-        obtener_unidades(
-            asignatura,
-            curso
-        )
+        "unidades": unidades
 
     })
 
@@ -254,107 +110,212 @@ def api_unidades(
 # =========================================
 
 @app.route(
-    "/api/oa/<asignatura>/<curso>/<path:unidad>"
+    "/api/oa/<asignatura>/<curso>/<unidad>"
 )
 def api_oa(
+
     asignatura,
     curso,
     unidad
+
 ):
+
+    oa = obtener_oa(
+
+        asignatura,
+        curso,
+        unidad
+
+    )
 
     return jsonify({
 
-        "oa":
-
-        obtener_oa(
-            asignatura,
-            curso,
-            unidad
-        )
+        "oa": oa
 
     })
 
 # =========================================
-# PLANIFICADOR IA
+# PEDAGOGÍA IA
 # =========================================
 
 @app.route(
-    "/api/planificacion",
+    "/api/pedagogia",
     methods=["POST"]
 )
-def api_planificacion():
+def api_pedagogia():
 
-    try:
+    data = request.json
 
-        data = request.json
+    asignatura = data.get(
+        "asignatura"
+    )
 
-        opciones = {
+    curso = data.get(
+        "curso"
+    )
 
-            "objetivos":
-            data.get("objetivos"),
+    unidad = data.get(
+        "unidad"
+    )
 
-            "indicadores":
-            data.get("indicadores"),
+    oa = data.get(
+        "oa"
+    )
 
-            "habilidades":
-            data.get("habilidades"),
+    resultado = f"""
 
-            "actitudes":
-            data.get("actitudes"),
+📚 ASIGNATURA:
+{asignatura}
 
-            "evaluacion":
-            data.get("evaluacion"),
+🎓 CURSO:
+{curso}
 
-            "nee":
-            data.get("nee"),
+📖 UNIDAD:
+{unidad}
 
-            "recursos":
-            data.get("recursos")
+🎯 OA:
+{oa}
 
-        }
+"""
 
-        resultado = generar_planificacion(
+    # =====================================
+    # OBJETIVOS
+    # =====================================
 
-            data.get("asignatura"),
+    if data.get("objetivos"):
 
-            data.get("curso"),
+        resultado += "\n\n🎯 OBJETIVOS\n"
 
-            data.get("unidad"),
+        objetivos = generar_objetivos(
 
-            data.get("oa"),
-
-            opciones
+            asignatura,
+            curso,
+            unidad,
+            oa
 
         )
 
-        return jsonify({
+        for item in objetivos:
 
-            "resultado":
-            resultado
+            resultado += f"\n• {item}"
 
-        })
+    # =====================================
+    # INDICADORES
+    # =====================================
 
-    except Exception as e:
+    if data.get("indicadores"):
 
-        return jsonify({
+        resultado += "\n\n📊 INDICADORES\n"
 
-            "resultado":
-            str(e)
+        indicadores = generar_indicadores(
 
-        })
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        for item in indicadores:
+
+            resultado += f"\n• {item}"
+
+    # =====================================
+    # HABILIDADES
+    # =====================================
+
+    if data.get("habilidades"):
+
+        resultado += "\n\n🧠 HABILIDADES\n"
+
+        habilidades = generar_habilidades(
+
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        for item in habilidades:
+
+            resultado += f"\n• {item}"
+
+    # =====================================
+    # ACTITUDES
+    # =====================================
+
+    if data.get("actitudes"):
+
+        resultado += "\n\n🤝 ACTITUDES\n"
+
+        actitudes = generar_actitudes(
+
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        for item in actitudes:
+
+            resultado += f"\n• {item}"
+
+    # =====================================
+    # NEE
+    # =====================================
+
+    if data.get("nee"):
+
+        resultado += "\n\n♿ ADAPTACIONES NEE\n"
+
+        nee = generar_nee(
+
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        for item in nee:
+
+            resultado += f"\n• {item}"
+
+    # =====================================
+    # EVALUACIÓN
+    # =====================================
+
+    if data.get("evaluacion"):
+
+        resultado += "\n\n📝 EVALUACIÓN\n"
+
+        evaluacion = generar_evaluacion(
+
+            asignatura,
+            curso,
+            unidad,
+            oa
+
+        )
+
+        for item in evaluacion:
+
+            resultado += f"\n• {item}"
+
+    return jsonify({
+
+        "resultado": resultado
+
+    })
 
 # =========================================
-# RUN
+# MAIN
 # =========================================
 
 if __name__ == "__main__":
 
     app.run(
-
-        debug=True,
-
-        host="0.0.0.0",
-
-        port=5000
-
+        debug=True
     )
