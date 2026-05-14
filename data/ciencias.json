@@ -3,41 +3,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 1° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 1° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 1° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 1° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 1° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 1° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 1° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -46,41 +124,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 2° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 2° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 2° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 2° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 2° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 2° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -89,41 +245,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 3° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 3° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 3° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 3° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 3° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 3° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -132,41 +366,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 4° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 4° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 4° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 4° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 4° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 4° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -175,41 +487,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 5° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 5° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 5° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 5° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 5° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 5° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -218,41 +608,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 6° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 6° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 6° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 6° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 6° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 6° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -261,41 +729,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 7° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 7° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 7° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 7° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 7° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 7° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -304,41 +850,119 @@
     "nombre_asignatura": "Ciencias Naturales",
     "unidades": [
       {
-        "nombre": "Unidad 1: Seres Vivos",
+        "nombre": "Unidad 1: Ciencias Naturales 8° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Identificar características de los seres vivos."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 8° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer necesidades básicas."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Observar cambios en el entorno."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Entorno Natural",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Ciencias Naturales en 8° Básico.",
+        "nombre": "Unidad 2: Ciencias Naturales 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Explorar propiedades del agua y del aire."
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 8° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Describir fenómenos naturales."
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Cuidar el medioambiente."
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Ciencias Naturales 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 8° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Ciencias Naturales 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Ciencias Naturales en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Ciencias Naturales para 8° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Ciencias Naturales en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Ciencias Naturales."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]

@@ -3,41 +3,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 1° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 1° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 1° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 1° Básico.",
+        "nombre": "Unidad 2: Tecnología 1° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 1° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 1° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 1° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -46,41 +124,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 2° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 2° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 2° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 2° Básico.",
+        "nombre": "Unidad 2: Tecnología 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 2° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 2° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 2° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -89,41 +245,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 3° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 3° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 3° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 3° Básico.",
+        "nombre": "Unidad 2: Tecnología 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 3° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 3° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 3° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -132,41 +366,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 4° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 4° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 4° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 4° Básico.",
+        "nombre": "Unidad 2: Tecnología 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 4° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 4° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 4° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 4° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -175,41 +487,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 5° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 5° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 5° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 5° Básico.",
+        "nombre": "Unidad 2: Tecnología 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 5° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 5° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 5° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 5° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -218,41 +608,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 6° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 6° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 6° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 6° Básico.",
+        "nombre": "Unidad 2: Tecnología 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 6° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 6° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 6° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 6° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -261,41 +729,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 7° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 7° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 7° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 7° Básico.",
+        "nombre": "Unidad 2: Tecnología 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 7° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 7° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 7° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 7° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
@@ -304,41 +850,119 @@
     "nombre_asignatura": "Tecnología",
     "unidades": [
       {
-        "nombre": "Unidad 1: Desarrollo Integral",
+        "nombre": "Unidad 1: Tecnología 8° Básico",
         "semestre": "1",
-        "proposito": "Desarrollar competencias de Tecnología en 8° Básico.",
+        "proposito": "Desarrollar habilidades de Tecnología en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Desarrollar habilidades fundamentales."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 8° Básico."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar conocimientos en actividades prácticas."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Participar activamente en experiencias de aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Expresión y Participación",
-        "semestre": "2",
-        "proposito": "Desarrollar competencias de Tecnología en 8° Básico.",
+        "nombre": "Unidad 2: Tecnología 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Tecnología en 8° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Expresar ideas y emociones."
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 8° Básico."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Trabajar colaborativamente."
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Reflexionar sobre el aprendizaje."
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
           }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Tecnología 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 8° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Tecnología 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Tecnología en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Tecnología para 8° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Tecnología en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Tecnología."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
         ]
       }
     ]
