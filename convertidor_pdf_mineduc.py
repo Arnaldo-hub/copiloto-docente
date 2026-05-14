@@ -1,13 +1,16 @@
 import fitz
-import json
 import re
-
-PDF = "Bases Curriculares 1° a 6° Básico(1).pdf"
-
-SALIDA = "data/lenguaje.json"
+import json
+import os
 
 # =========================================
-# EXTRAER TEXTO PDF
+# PDF OFICIAL
+# =========================================
+
+PDF = "pdfs/Bases Curriculares 1° a 6° Básico.pdf"
+
+# =========================================
+# EXTRAER TEXTO
 # =========================================
 
 doc = fitz.open(PDF)
@@ -19,60 +22,117 @@ for pagina in doc:
     texto += pagina.get_text()
 
 # =========================================
-# BUSCAR OA LENGUAJE
+# EXTRAER SECCIÓN LENGUAJE
 # =========================================
 
-inicio = texto.find("Lenguaje y Comunicación")
+inicio = texto.find(
+    "Lenguaje y Comunicación"
+)
 
-fin = texto.find("Música")
+fin = texto.find(
+    "Matemática"
+)
 
 contenido = texto[inicio:fin]
 
+# =========================================
+# EXTRAER OA
+# =========================================
+
 patron = r"OA\s+\d+"
 
-matches = list(re.finditer(patron, contenido))
+coincidencias = list(
+    re.finditer(
+        patron,
+        contenido
+    )
+)
 
 oa = []
 
-for i in range(len(matches)):
+for i in range(len(coincidencias)):
 
-    inicio_oa = matches[i].start()
+    inicio_oa = coincidencias[i].start()
 
-    if i + 1 < len(matches):
+    if i + 1 < len(coincidencias):
 
-        fin_oa = matches[i + 1].start()
+        fin_oa = coincidencias[i + 1].start()
 
     else:
 
         fin_oa = len(contenido)
 
-    bloque = contenido[inicio_oa:fin_oa]
+    bloque = contenido[
+        inicio_oa:fin_oa
+    ]
 
-    codigo = re.search(r"OA\s+\d+", bloque)
+    codigo_match = re.search(
+        r"OA\s+\d+",
+        bloque
+    )
 
-    if codigo:
+    if codigo_match:
 
-        codigo_texto = codigo.group()
+        codigo = codigo_match.group()
 
         descripcion = bloque.replace(
-            codigo_texto,
+            codigo,
             ""
-        ).strip()
+        )
 
         descripcion = " ".join(
             descripcion.split()
         )
 
+        descripcion = descripcion[:400]
+
         oa.append({
 
-            "codigo": codigo_texto,
-
+            "codigo": codigo,
             "descripcion": descripcion
 
         })
 
 # =========================================
-# GENERAR JSON
+# GENERAR UNIDADES
+# =========================================
+
+unidades = []
+
+grupo = []
+
+numero = 1
+
+for item in oa:
+
+    grupo.append(item)
+
+    if len(grupo) == 5:
+
+        unidades.append({
+
+            "numero": numero,
+
+            "nombre":
+            f"Unidad {numero}",
+
+            "semestre":
+            1 if numero <= 2 else 2,
+
+            "proposito":
+            "Unidad generada desde Bases Curriculares oficiales MINEDUC.",
+
+            "oa":
+            grupo
+
+        })
+
+        grupo = []
+
+        numero += 1
+
+# =========================================
+# JSON FINAL
 # =========================================
 
 estructura = {
@@ -82,41 +142,21 @@ estructura = {
         "nombre_asignatura":
         "Lenguaje y Comunicación",
 
-        "ejes": [
+        "programa":
+        "MINEDUC",
 
-            "Lectura",
-            "Escritura",
-            "Comunicación Oral"
-
-        ],
-
-        "unidades": [
-
-            {
-
-                "numero": 1,
-
-                "nombre":
-                "Unidad generada automáticamente",
-
-                "semestre": 1,
-
-                "proposito":
-                "Unidad construida desde Bases Curriculares oficiales.",
-
-                "oa": oa[:10]
-
-            }
-
-        ]
+        "unidades":
+        unidades
 
     }
 
 }
 
+os.makedirs("data", exist_ok=True)
+
 with open(
 
-    SALIDA,
+    "data/lenguaje.json",
     "w",
     encoding="utf-8"
 
@@ -131,4 +171,4 @@ with open(
 
     )
 
-print("✅ lenguaje.json generado desde PDF oficial")
+print("✅ lenguaje.json generado correctamente")
