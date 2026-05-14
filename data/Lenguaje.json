@@ -1,6 +1,7 @@
 {
   "1° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa_oficial": "MINEDUC",
     "ejes": [
       "Lectura",
       "Escritura",
@@ -9,174 +10,102 @@
     "unidades": [
       {
         "numero": 1,
-        "nombre": "Unidad 1: Lectura y comprensión de narraciones",
+        "nombre": "Unidad 1: Descubriendo los textos",
         "semestre": 1,
-        "proposito": "Desarrollar la lectura comprensiva de textos narrativos simples mediante estrategias de identificación, comprensión y expresión oral.",
+        "proposito": "Desarrollar el interés por la lectura y la comprensión de textos literarios y no literarios simples.",
         "oa": [
           {
+            "codigo": "OA 1",
+            "descripcion": "Reconocer que los textos escritos transmiten mensajes y que son escritos por alguien para cumplir un propósito."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Reconocer que las palabras son unidades de significado separadas por espacios en el texto escrito."
+          },
+          {
             "codigo": "OA 3",
-            "descripcion": "Identificar sonidos que componen las palabras (conciencia fonológica), reconociendo, separando y combinando sus fonemas y sílabas.",
-            "eje": "Lectura"
+            "descripcion": "Identificar los sonidos que componen las palabras."
           },
           {
             "codigo": "OA 4",
-            "descripcion": "Leer palabras aisladas y en contexto, aplicando correspondencia letra-sonido en diferentes combinaciones.",
-            "eje": "Lectura"
+            "descripcion": "Leer palabras aisladas y en contexto."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Demostrar comprensión de narraciones leídas o escuchadas, identificando personajes, acciones principales y secuencia de hechos.",
-            "eje": "Lectura"
+            "descripcion": "Demostrar comprensión de narraciones leídas o escuchadas."
           }
-        ],
-        "habilidades": [
-          "Comprensión lectora",
-          "Conciencia fonológica",
-          "Expresión oral"
-        ],
-        "actitudes": [
-          "Interés por la lectura",
-          "Participación activa",
-          "Respeto por las opiniones"
-        ],
-        "evaluaciones": [
-          "Lectura guiada",
-          "Preguntas orales",
-          "Ticket de salida"
-        ],
-        "nee": [
-          "Uso de pictogramas",
-          "Apoyo visual",
-          "Lectura compartida"
         ]
       },
       {
         "numero": 2,
-        "nombre": "Unidad 2: Producción de textos simples",
+        "nombre": "Unidad 2: Comprendemos y leemos",
         "semestre": 1,
-        "proposito": "Desarrollar habilidades iniciales de escritura mediante producción guiada de palabras y oraciones simples.",
+        "proposito": "Fortalecer la comprensión lectora mediante lectura guiada y autónoma de textos breves.",
         "oa": [
           {
-            "codigo": "OA 13",
-            "descripcion": "Experimentar con la escritura para comunicar hechos, ideas y sentimientos.",
-            "eje": "Escritura"
+            "codigo": "OA 6",
+            "descripcion": "Leer independientemente y comprender textos no literarios breves."
           },
           {
-            "codigo": "OA 14",
-            "descripcion": "Escribir oraciones completas para transmitir mensajes simples.",
-            "eje": "Escritura"
+            "codigo": "OA 7",
+            "descripcion": "Describir, con sus palabras, información explícita de un texto."
           },
           {
-            "codigo": "OA 15",
-            "descripcion": "Revisar y corregir textos con apoyo del docente.",
-            "eje": "Escritura"
+            "codigo": "OA 8",
+            "descripcion": "Relacionar información del texto con experiencias personales."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Formular opiniones sobre textos escuchados o leídos."
           }
-        ],
-        "habilidades": [
-          "Escritura",
-          "Comunicación escrita",
-          "Ortografía inicial"
-        ],
-        "actitudes": [
-          "Creatividad",
-          "Perseverancia",
-          "Autonomía"
-        ],
-        "evaluaciones": [
-          "Producción escrita",
-          "Dictado",
-          "Lista de cotejo"
-        ],
-        "nee": [
-          "Escritura guiada",
-          "Modelado docente",
-          "Apoyo multisensorial"
         ]
       },
       {
         "numero": 3,
-        "nombre": "Unidad 3: Comunicación oral y escucha activa",
+        "nombre": "Unidad 3: Escribimos para comunicar",
         "semestre": 2,
-        "proposito": "Fortalecer la expresión oral y la comprensión auditiva en diferentes situaciones comunicativas.",
+        "proposito": "Desarrollar habilidades iniciales de escritura para comunicar ideas y experiencias personales.",
         "oa": [
           {
-            "codigo": "OA 21",
-            "descripcion": "Participar activamente en conversaciones grupales respetando turnos de habla.",
-            "eje": "Comunicación Oral"
+            "codigo": "OA 13",
+            "descripcion": "Experimentar con la escritura para comunicar hechos e ideas."
           },
           {
-            "codigo": "OA 22",
-            "descripcion": "Expresarse de manera clara y comprensible frente a sus pares.",
-            "eje": "Comunicación Oral"
+            "codigo": "OA 14",
+            "descripcion": "Escribir oraciones completas para transmitir mensajes."
           },
           {
-            "codigo": "OA 23",
-            "descripcion": "Comprender instrucciones y relatos orales simples.",
-            "eje": "Comunicación Oral"
+            "codigo": "OA 15",
+            "descripcion": "Revisar y corregir textos con apoyo del docente."
+          },
+          {
+            "codigo": "OA 16",
+            "descripcion": "Incorporar vocabulario nuevo en producciones escritas."
           }
-        ],
-        "habilidades": [
-          "Expresión oral",
-          "Escucha activa",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Empatía",
-          "Participación"
-        ],
-        "evaluaciones": [
-          "Disertación breve",
-          "Conversación guiada",
-          "Observación directa"
-        ],
-        "nee": [
-          "Apoyo visual",
-          "Lenguaje simplificado",
-          "Refuerzo auditivo"
         ]
       },
       {
         "numero": 4,
-        "nombre": "Unidad 4: Lectura de textos informativos",
+        "nombre": "Unidad 4: Hablamos y escuchamos",
         "semestre": 2,
-        "proposito": "Comprender textos informativos simples para obtener información explícita.",
+        "proposito": "Desarrollar la comunicación oral mediante conversaciones, relatos y exposiciones simples.",
         "oa": [
           {
-            "codigo": "OA 8",
-            "descripcion": "Leer textos breves para obtener información específica.",
-            "eje": "Lectura"
+            "codigo": "OA 21",
+            "descripcion": "Participar activamente en conversaciones grupales."
           },
           {
-            "codigo": "OA 9",
-            "descripcion": "Relacionar información de textos con experiencias personales.",
-            "eje": "Lectura"
+            "codigo": "OA 22",
+            "descripcion": "Expresarse de manera clara y comprensible."
           },
           {
-            "codigo": "OA 10",
-            "descripcion": "Formular preguntas sobre textos leídos.",
-            "eje": "Lectura"
+            "codigo": "OA 23",
+            "descripcion": "Comprender instrucciones y relatos orales."
+          },
+          {
+            "codigo": "OA 24",
+            "descripcion": "Incorporar nuevas palabras al vocabulario oral."
           }
-        ],
-        "habilidades": [
-          "Comprensión",
-          "Análisis",
-          "Interpretación"
-        ],
-        "actitudes": [
-          "Curiosidad",
-          "Interés",
-          "Participación"
-        ],
-        "evaluaciones": [
-          "Guía de comprensión",
-          "Preguntas escritas",
-          "Trabajo práctico"
-        ],
-        "nee": [
-          "Lectura apoyada",
-          "Pictogramas",
-          "Uso de imágenes"
         ]
       }
     ]
