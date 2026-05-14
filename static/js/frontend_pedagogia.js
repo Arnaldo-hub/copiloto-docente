@@ -1,134 +1,206 @@
-async function cargarCursos(){
+async function cargarCursos() {
 
-    const asignatura =
-    document.getElementById(
-        "asignatura"
-    ).value
+    try {
 
-    const curso =
-    document.getElementById(
-        "curso"
-    )
+        const asignatura =
+        document.getElementById(
+            "asignatura"
+        ).value;
 
-    curso.innerHTML = ""
+        const curso =
+        document.getElementById(
+            "curso"
+        );
 
-    const res = await fetch(
+        curso.innerHTML = "";
 
-        `/api/cursos/${asignatura}`
+        const res = await fetch(
 
-    )
+            `/api/cursos/${encodeURIComponent(asignatura)}`
 
-    const data = await res.json()
+        );
 
-    data.cursos.forEach(c => {
+        const data = await res.json();
 
-        curso.innerHTML += `
+        if (!data.cursos) {
 
-        <option value="${c}">
-        ${c}
-        </option>
+            console.log(
+                "No hay cursos"
+            );
 
-        `
+            return;
+        }
 
-    })
+        data.cursos.forEach(c => {
 
-    cargarUnidades()
+            curso.innerHTML += `
 
-}
+            <option value="${c}">
+            ${c}
+            </option>
 
-async function cargarUnidades(){
+            `;
 
-    const asignatura =
-    document.getElementById(
-        "asignatura"
-    ).value
+        });
 
-    const curso =
-    document.getElementById(
-        "curso"
-    ).value
+        await cargarUnidades();
 
-    const unidad =
-    document.getElementById(
-        "unidad"
-    )
+    } catch (error) {
 
-    unidad.innerHTML = ""
+        console.log(
+            "ERROR cursos:",
+            error
+        );
 
-    const res = await fetch(
-
-        `/api/unidades/${asignatura}/${encodeURIComponent(curso)}`
-
-    )
-
-    const data = await res.json()
-
-    data.unidades.forEach(u=>{
-
-        unidad.innerHTML += `
-
-        <option value="${u.nombre}">
-        ${u.nombre}
-        </option>
-
-        `
-
-    })
-
-    cargarOA()
+    }
 
 }
 
-async function cargarOA(){
+async function cargarUnidades() {
 
-    const asignatura =
-    document.getElementById(
-        "asignatura"
-    ).value
+    try {
 
-    const curso =
-    document.getElementById(
-        "curso"
-    ).value
+        const asignatura =
+        document.getElementById(
+            "asignatura"
+        ).value;
 
-    const unidad =
-    document.getElementById(
-        "unidad"
-    ).value
+        const curso =
+        document.getElementById(
+            "curso"
+        ).value;
 
-    const oa =
-    document.getElementById(
-        "oa"
-    )
+        const unidad =
+        document.getElementById(
+            "unidad"
+        );
 
-    oa.innerHTML = ""
+        unidad.innerHTML = "";
 
-    const res = await fetch(
+        const url =
 
-        `/api/oa/${asignatura}/${encodeURIComponent(curso)}/${encodeURIComponent(unidad)}`
+        `/api/unidades/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}`;
 
-    )
+        console.log(
+            "Cargando unidades:",
+            url
+        );
 
-    const data = await res.json()
+        const res = await fetch(url);
 
-    data.oa.forEach(o=>{
+        const data = await res.json();
 
-        oa.innerHTML += `
+        console.log(
+            "UNIDADES:",
+            data
+        );
 
-        <option>
+        if (!data.unidades) {
 
-        ${o.codigo} - ${o.descripcion}
+            return;
+        }
 
-        </option>
+        data.unidades.forEach(u => {
 
-        `
+            unidad.innerHTML += `
 
-    })
+            <option value="${u.nombre}">
+            ${u.nombre}
+            </option>
+
+            `;
+
+        });
+
+        await cargarOA();
+
+    } catch (error) {
+
+        console.log(
+            "ERROR unidades:",
+            error
+        );
+
+    }
 
 }
 
-window.onload = function(){
+async function cargarOA() {
 
-    cargarCursos()
+    try {
+
+        const asignatura =
+        document.getElementById(
+            "asignatura"
+        ).value;
+
+        const curso =
+        document.getElementById(
+            "curso"
+        ).value;
+
+        const unidad =
+        document.getElementById(
+            "unidad"
+        ).value;
+
+        const oa =
+        document.getElementById(
+            "oa"
+        );
+
+        oa.innerHTML = "";
+
+        const url =
+
+        `/api/oa/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}/${encodeURIComponent(unidad)}`;
+
+        console.log(
+            "Cargando OA:",
+            url
+        );
+
+        const res = await fetch(url);
+
+        const data = await res.json();
+
+        console.log(
+            "OA:",
+            data
+        );
+
+        if (!data.oa) {
+
+            return;
+        }
+
+        data.oa.forEach(o => {
+
+            oa.innerHTML += `
+
+            <option>
+
+            ${o.codigo} - ${o.descripcion}
+
+            </option>
+
+            `;
+
+        });
+
+    } catch (error) {
+
+        console.log(
+            "ERROR OA:",
+            error
+        );
+
+    }
 
 }
+
+window.onload = function () {
+
+    cargarCursos();
+
+};
