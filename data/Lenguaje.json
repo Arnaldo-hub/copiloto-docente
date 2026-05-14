@@ -1,7 +1,7 @@
 {
   "1° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "programa_oficial": "MINEDUC",
+    "programa": "Programa de Estudio MINEDUC",
     "ejes": [
       "Lectura",
       "Escritura",
@@ -10,21 +10,21 @@
     "unidades": [
       {
         "numero": 1,
-        "nombre": "Unidad 1: Descubriendo los textos",
+        "nombre": "Leer y comprender narraciones",
         "semestre": 1,
-        "proposito": "Desarrollar el interés por la lectura y la comprensión de textos literarios y no literarios simples.",
+        "proposito": "Desarrollar habilidades iniciales de lectura y comprensión de textos narrativos simples.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer que los textos escritos transmiten mensajes y que son escritos por alguien para cumplir un propósito."
+            "descripcion": "Reconocer que los textos escritos transmiten mensajes."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Reconocer que las palabras son unidades de significado separadas por espacios en el texto escrito."
+            "descripcion": "Reconocer que las palabras son unidades de significado."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Identificar los sonidos que componen las palabras."
+            "descripcion": "Identificar sonidos que componen las palabras."
           },
           {
             "codigo": "OA 4",
@@ -38,33 +38,29 @@
       },
       {
         "numero": 2,
-        "nombre": "Unidad 2: Comprendemos y leemos",
+        "nombre": "Leer textos informativos",
         "semestre": 1,
-        "proposito": "Fortalecer la comprensión lectora mediante lectura guiada y autónoma de textos breves.",
+        "proposito": "Comprender textos no literarios y extraer información explícita.",
         "oa": [
           {
             "codigo": "OA 6",
-            "descripcion": "Leer independientemente y comprender textos no literarios breves."
+            "descripcion": "Leer independientemente textos no literarios breves."
           },
           {
             "codigo": "OA 7",
-            "descripcion": "Describir, con sus palabras, información explícita de un texto."
+            "descripcion": "Describir información explícita de un texto."
           },
           {
             "codigo": "OA 8",
-            "descripcion": "Relacionar información del texto con experiencias personales."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Formular opiniones sobre textos escuchados o leídos."
+            "descripcion": "Relacionar información con experiencias personales."
           }
         ]
       },
       {
         "numero": 3,
-        "nombre": "Unidad 3: Escribimos para comunicar",
+        "nombre": "Producción escrita inicial",
         "semestre": 2,
-        "proposito": "Desarrollar habilidades iniciales de escritura para comunicar ideas y experiencias personales.",
+        "proposito": "Desarrollar habilidades básicas de escritura para comunicar ideas.",
         "oa": [
           {
             "codigo": "OA 13",
@@ -72,23 +68,19 @@
           },
           {
             "codigo": "OA 14",
-            "descripcion": "Escribir oraciones completas para transmitir mensajes."
+            "descripcion": "Escribir oraciones completas."
           },
           {
             "codigo": "OA 15",
-            "descripcion": "Revisar y corregir textos con apoyo del docente."
-          },
-          {
-            "codigo": "OA 16",
-            "descripcion": "Incorporar vocabulario nuevo en producciones escritas."
+            "descripcion": "Revisar y corregir textos."
           }
         ]
       },
       {
         "numero": 4,
-        "nombre": "Unidad 4: Hablamos y escuchamos",
+        "nombre": "Comunicación oral",
         "semestre": 2,
-        "proposito": "Desarrollar la comunicación oral mediante conversaciones, relatos y exposiciones simples.",
+        "proposito": "Participar activamente en conversaciones y exposiciones orales.",
         "oa": [
           {
             "codigo": "OA 21",
@@ -101,10 +93,6 @@
           {
             "codigo": "OA 23",
             "descripcion": "Comprender instrucciones y relatos orales."
-          },
-          {
-            "codigo": "OA 24",
-            "descripcion": "Incorporar nuevas palabras al vocabulario oral."
           }
         ]
       }
