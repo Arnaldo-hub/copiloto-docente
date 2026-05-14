@@ -1,15 +1,21 @@
 async function cargarCursos(){
 
     const asignatura =
-    document.getElementById("asignatura").value
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const curso =
-    document.getElementById("curso")
+    document.getElementById(
+        "curso"
+    )
 
     curso.innerHTML = ""
 
     const res = await fetch(
+
         `/api/cursos/${asignatura}`
+
     )
 
     const data = await res.json()
@@ -17,9 +23,11 @@ async function cargarCursos(){
     data.cursos.forEach(c => {
 
         curso.innerHTML += `
+
         <option value="${c}">
         ${c}
         </option>
+
         `
 
     })
@@ -31,13 +39,19 @@ async function cargarCursos(){
 async function cargarUnidades(){
 
     const asignatura =
-    document.getElementById("asignatura").value
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const curso =
-    document.getElementById("curso").value
+    document.getElementById(
+        "curso"
+    ).value
 
     const unidad =
-    document.getElementById("unidad")
+    document.getElementById(
+        "unidad"
+    )
 
     unidad.innerHTML = ""
 
@@ -49,12 +63,14 @@ async function cargarUnidades(){
 
     const data = await res.json()
 
-    data.unidades.forEach((u,index)=>{
+    data.unidades.forEach(u=>{
 
         unidad.innerHTML += `
-        <option value="${index+1}">
+
+        <option value="${u.nombre}">
         ${u.nombre}
         </option>
+
         `
 
     })
@@ -66,22 +82,30 @@ async function cargarUnidades(){
 async function cargarOA(){
 
     const asignatura =
-    document.getElementById("asignatura").value
+    document.getElementById(
+        "asignatura"
+    ).value
 
     const curso =
-    document.getElementById("curso").value
+    document.getElementById(
+        "curso"
+    ).value
 
     const unidad =
-    document.getElementById("unidad").value
+    document.getElementById(
+        "unidad"
+    ).value
 
     const oa =
-    document.getElementById("oa")
+    document.getElementById(
+        "oa"
+    )
 
     oa.innerHTML = ""
 
     const res = await fetch(
 
-        `/api/oa/${asignatura}/${encodeURIComponent(curso)}/${unidad}`
+        `/api/oa/${asignatura}/${encodeURIComponent(curso)}/${encodeURIComponent(unidad)}`
 
     )
 
@@ -90,9 +114,13 @@ async function cargarOA(){
     data.oa.forEach(o=>{
 
         oa.innerHTML += `
+
         <option>
+
         ${o.codigo} - ${o.descripcion}
+
         </option>
+
         `
 
     })
