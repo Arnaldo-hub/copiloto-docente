@@ -1,0 +1,970 @@
+{
+  "1° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 1° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 1° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 1° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 1° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 1° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 1° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 1° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 1° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "2° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 2° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 2° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 2° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 2° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 2° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 2° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 2° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 2° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "3° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 3° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 3° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 3° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 3° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 3° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 3° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 3° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 3° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "4° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 4° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 4° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 4° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 4° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 4° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 4° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 4° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 4° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "5° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 5° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 5° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 5° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 5° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 5° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 5° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 5° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 5° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "6° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 6° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 6° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 6° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 6° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 6° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 6° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 6° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 6° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "7° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 7° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 7° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 7° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 7° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 7° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 7° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 7° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 7° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  },
+  "8° Básico": {
+    "nombre_asignatura": "Religion Catolica",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Religion Catolica 8° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 8° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Religion Catolica 8° Básico",
+        "semestre": "1",
+        "proposito": "Fortalecer competencias de Religion Catolica en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 8° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Religion Catolica 8° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 8° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Religion Catolica 8° Básico",
+        "semestre": "2",
+        "proposito": "Fortalecer competencias de Religion Catolica en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Desarrollar habilidades básicas de Religion Catolica en 8° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar conocimientos de Religion Catolica en contextos escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver actividades prácticas relacionadas con Religion Catolica."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Comunicación",
+          "Trabajo colaborativo"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación"
+        ]
+      }
+    ]
+  }
+}
