@@ -1,10 +1,6 @@
 import json
 import os
 
-# =========================================
-# RUTAS
-# =========================================
-
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
 )
@@ -15,7 +11,7 @@ DATA_DIR = os.path.join(
 )
 
 # =========================================
-# LEER ASIGNATURA
+# LEER JSON
 # =========================================
 
 def leer_asignatura(asignatura):
@@ -23,7 +19,6 @@ def leer_asignatura(asignatura):
     ruta = os.path.join(
 
         DATA_DIR,
-
         f"{asignatura}.json"
 
     )
