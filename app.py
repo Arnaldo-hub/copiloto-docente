@@ -1,27 +1,127 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask
+from flask import render_template
+from flask import request
+from flask import jsonify
+from flask import session
+from flask import redirect
+from flask import url_for
 
 from openai import OpenAI
 
-from curriculum import (
-    obtener_unidades,
-    obtener_oa
-)
+from curriculum import *
+from planificador import *
 
 import os
-
-# =========================================
-# OPENAI
-# =========================================
-
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+import json
 
 # =========================================
 # APP
 # =========================================
 
 app = Flask(__name__)
+
+app.secret_key = "copiloto_docente_secret"
+
+# =========================================
+# OPENAI
+# =========================================
+
+api_key = os.getenv(
+    "OPENAI_API_KEY"
+)
+
+client = OpenAI(
+    api_key=api_key
+)
+
+# =========================================
+# USUARIOS
+# =========================================
+
+RUTA_USUARIOS = os.path.join(
+    "usuarios",
+    "usuarios.json"
+)
+
+def leer_usuarios():
+
+    with open(
+        RUTA_USUARIOS,
+        "r",
+        encoding="utf-8"
+    ) as archivo:
+
+        return json.load(archivo)
+
+# =========================================
+# LOGIN
+# =========================================
+
+@app.route("/login")
+def login_page():
+
+    return render_template(
+        "login.html"
+    )
+
+@app.route(
+    "/api/login",
+    methods=["POST"]
+)
+def api_login():
+
+    data = request.json
+
+    usuario = data.get(
+        "usuario"
+    )
+
+    password = data.get(
+        "password"
+    )
+
+    usuarios = leer_usuarios()
+
+    for u in usuarios:
+
+        if (
+
+            u["usuario"] == usuario
+
+            and
+
+            u["password"] == password
+
+        ):
+
+            session["usuario"] = usuario
+
+            session["nombre"] = u["nombre"]
+
+            return jsonify({
+
+                "success":True
+
+            })
+
+    return jsonify({
+
+        "success":False
+
+    })
+
+# =========================================
+# LOGOUT
+# =========================================
+
+@app.route("/logout")
+def logout():
+
+    session.clear()
+
+    return redirect(
+        url_for("login_page")
+    )
 
 # =========================================
 # HOME
@@ -30,145 +130,207 @@ app = Flask(__name__)
 @app.route("/")
 def home():
 
-    return render_template("app2.html")
+    if "usuario" not in session:
+
+        return redirect(
+            url_for("login_page")
+        )
+
+    return render_template(
+        "app2.html",
+        nombre=session.get("nombre")
+    )
+
+# =========================================
+# CHAT IA
+# =========================================
+
+@app.route(
+    "/api/chat",
+    methods=["POST"]
+)
+def api_chat():
+
+    try:
+
+        data = request.json
+
+        pregunta = data.get(
+            "pregunta"
+        )
+
+        response = client.chat.completions.create(
+
+            model="gpt-4o-mini",
+
+            messages=[
+
+                {
+
+                    "role":"system",
+
+                    "content":
+                    "Eres un experto pedagógico chileno."
+
+                },
+
+                {
+
+                    "role":"user",
+
+                    "content":
+                    pregunta
+
+                }
+
+            ]
+
+        )
+
+        texto = (
+
+            response
+            .choices[0]
+            .message
+            .content
+
+        )
+
+        return jsonify({
+
+            "respuesta":texto
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "respuesta":str(e)
+
+        })
+
+# =========================================
+# CURSOS
+# =========================================
+
+@app.route(
+    "/api/cursos/<asignatura>"
+)
+def api_cursos(asignatura):
+
+    return jsonify({
+
+        "cursos":
+        obtener_cursos(asignatura)
+
+    })
 
 # =========================================
 # UNIDADES
 # =========================================
 
-@app.route("/api/unidades", methods=["POST"])
-def api_unidades():
+@app.route(
+    "/api/unidades/<asignatura>/<curso>"
+)
+def api_unidades(
+    asignatura,
+    curso
+):
 
-    data = request.json
+    return jsonify({
 
-    unidades = obtener_unidades(
+        "unidades":
 
-        data["asignatura"],
-        data["curso"]
+        obtener_unidades(
+            asignatura,
+            curso
+        )
 
-    )
-
-    return jsonify(unidades)
+    })
 
 # =========================================
 # OA
 # =========================================
 
-@app.route("/api/oa", methods=["POST"])
-def api_oa():
+@app.route(
+    "/api/oa/<asignatura>/<curso>/<int:unidad>"
+)
+def api_oa(
+    asignatura,
+    curso,
+    unidad
+):
 
-    data = request.json
+    return jsonify({
 
-    oa = obtener_oa(
+        "oa":
 
-        data["asignatura"],
-        data["curso"],
-        data["unidad"]
+        obtener_oa(
+            asignatura,
+            curso,
+            unidad
+        )
 
-    )
-
-    return jsonify(oa)
+    })
 
 # =========================================
-# PEDAGOGIA IA REAL
+# PLANIFICADOR IA
 # =========================================
 
-@app.route("/api/pedagogia", methods=["POST"])
-def api_pedagogia():
-
-    data = request.json
-
-    asignatura = data.get("asignatura")
-    curso = data.get("curso")
-    unidad = data.get("unidad")
-    oa = data.get("oa")
-
-    bloques = []
-
-    if data.get("objetivos"):
-        bloques.append("objetivos de aprendizaje")
-
-    if data.get("indicadores"):
-        bloques.append("indicadores de evaluación")
-
-    if data.get("habilidades"):
-        bloques.append("habilidades")
-
-    if data.get("actitudes"):
-        bloques.append("actitudes")
-
-    if data.get("nee"):
-        bloques.append("adaptaciones NEE")
-
-    if data.get("evaluacion"):
-        bloques.append("evaluación")
-
-    bloques_texto = ", ".join(bloques)
-
-    prompt = f"""
-
-Eres un experto en educación chilena y planificación curricular.
-
-Genera una planificación pedagógica profesional.
-
-ASIGNATURA:
-{asignatura}
-
-CURSO:
-{curso}
-
-UNIDAD:
-{unidad}
-
-OA:
-{oa}
-
-Debes generar:
-
-{bloques_texto}
-
-La respuesta debe:
-
-- ser extensa
-- profesional
-- clara
-- usable por docentes reales
-- alineada al currículum chileno
-- incluir estrategias pedagógicas
-- incluir ejemplos concretos
-- incluir metodologías activas
-
-"""
+@app.route(
+    "/api/planificacion",
+    methods=["POST"]
+)
+def api_planificacion():
 
     try:
 
-        respuesta = client.chat.completions.create(
+        data = request.json
 
-            model="gpt-4.1-mini",
+        opciones = {
 
-            messages=[
+            "objetivos":
+            data.get("objetivos"),
 
-                {
-                    "role": "system",
-                    "content": "Eres un experto pedagógico chileno."
-                },
+            "indicadores":
+            data.get("indicadores"),
 
-                {
-                    "role": "user",
-                    "content": prompt
-                }
+            "habilidades":
+            data.get("habilidades"),
 
-            ],
+            "actitudes":
+            data.get("actitudes"),
 
-            temperature=0.7
+            "evaluacion":
+            data.get("evaluacion"),
+
+            "nee":
+            data.get("nee"),
+
+            "recursos":
+            data.get("recursos")
+
+        }
+
+        resultado = generar_planificacion(
+
+            data.get("asignatura"),
+
+            data.get("curso"),
+
+            data.get("unidad"),
+
+            data.get("oa"),
+
+            opciones
 
         )
 
-        texto = respuesta.choices[0].message.content
-
         return jsonify({
 
-            "resultado": texto
+            "resultado":
+            resultado
 
         })
 
@@ -177,14 +339,22 @@ La respuesta debe:
         return jsonify({
 
             "resultado":
-            f"ERROR IA:\n\n{str(e)}"
+            str(e)
 
         })
 
 # =========================================
-# MAIN
+# RUN
 # =========================================
 
 if __name__ == "__main__":
 
-    app.run(debug=True)
+    app.run(
+
+        debug=True,
+
+        host="0.0.0.0",
+
+        port=5000
+
+    )
