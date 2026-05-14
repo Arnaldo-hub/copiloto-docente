@@ -254,7 +254,7 @@ def api_unidades(
 # =========================================
 
 @app.route(
-    "/api/oa/<asignatura>/<curso>/<int:unidad>"
+    "/api/oa/<asignatura>/<curso>/<path:unidad>"
 )
 def api_oa(
     asignatura,
