@@ -3,119 +3,79 @@
     "nombre_asignatura": "Lenguaje y Comunicación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 1° Básico",
+        "nombre": "Unidad 1: Conciencia Fonológica y Lectura Inicial",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 1° Básico.",
+        "proposito": "Desarrollar habilidades iniciales de lectura, reconocimiento de sonidos y comprensión de textos breves.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 1° Básico."
+            "descripcion": "Reconocer sonidos iniciales y finales en palabras simples."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Leer palabras y oraciones breves con apoyo visual."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Comprender información explícita en textos breves."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 1° Básico",
+        "nombre": "Unidad 2: Comprensión de Lectura",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 1° Básico.",
+        "proposito": "Fortalecer la comprensión lectora mediante cuentos, poemas y textos informativos simples.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 1° Básico."
+            "descripcion": "Responder preguntas sobre personajes y acciones."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Identificar secuencias simples en relatos."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Relacionar imágenes con información textual."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 1° Básico",
+        "nombre": "Unidad 3: Escritura Inicial",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 1° Básico.",
+        "proposito": "Desarrollar habilidades básicas de escritura y producción de textos simples.",
         "oa": [
           {
             "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 1° Básico."
+            "descripcion": "Escribir palabras y oraciones simples."
           },
           {
             "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Utilizar vocabulario cotidiano en producciones escritas."
           },
           {
             "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Revisar y mejorar textos con apoyo docente."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       },
       {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 1° Básico",
+        "nombre": "Unidad 4: Comunicación Oral",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 1° Básico.",
+        "proposito": "Promover la expresión oral y la escucha activa en situaciones escolares.",
         "oa": [
           {
             "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 1° Básico."
+            "descripcion": "Expresarse oralmente frente al curso."
           },
           {
             "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Escuchar instrucciones y responder adecuadamente."
           },
           {
             "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Participar en conversaciones respetando turnos."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       }
     ]
@@ -124,119 +84,22 @@
     "nombre_asignatura": "Lenguaje y Comunicación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 2° Básico",
+        "nombre": "Unidad 1: Lectura Fluida",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 2° Básico.",
+        "proposito": "Desarrollar fluidez lectora y comprensión de textos narrativos.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 2° Básico."
+            "descripcion": "Leer textos breves con fluidez y entonación."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Identificar ideas principales en cuentos."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Relacionar experiencias personales con lecturas."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 2° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 2° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 2° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 2° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 2° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 2° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 2° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 2° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 2° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       }
     ]
@@ -245,726 +108,44 @@
     "nombre_asignatura": "Lenguaje y Comunicación",
     "unidades": [
       {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 3° Básico",
+        "nombre": "Unidad 1: Narraciones y Comprensión",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 3° Básico.",
+        "proposito": "Fortalecer la comprensión y análisis de textos narrativos.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 3° Básico."
+            "descripcion": "Analizar personajes y ambientes en cuentos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
+            "descripcion": "Inferir información implícita en textos."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
+            "descripcion": "Expresar opiniones fundamentadas sobre lecturas."
           }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 3° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 3° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 3° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 3° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 3° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 3° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 3° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 3° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 3° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
         ]
       }
     ]
   },
   "4° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": [
-      {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 4° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 4° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 4° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 4° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 4° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 4° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 4° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 4° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 4° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      }
-    ]
+    "unidades": []
   },
   "5° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": [
-      {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 5° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 5° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 5° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 5° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 5° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 5° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 5° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 5° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 5° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      }
-    ]
+    "unidades": []
   },
   "6° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": [
-      {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 6° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 6° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 6° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 6° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 6° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 6° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 6° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 6° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 6° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      }
-    ]
+    "unidades": []
   },
   "7° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": [
-      {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 7° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 7° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 7° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 7° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 7° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 7° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 7° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 7° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 7° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      }
-    ]
+    "unidades": []
   },
   "8° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": [
-      {
-        "nombre": "Unidad 1: Lenguaje y Comunicación 8° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 8° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 2: Lenguaje y Comunicación 8° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 4",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 8° Básico."
-          },
-          {
-            "codigo": "OA 5",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 6",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 3: Lenguaje y Comunicación 8° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 7",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 8° Básico."
-          },
-          {
-            "codigo": "OA 8",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 9",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
-        "nombre": "Unidad 4: Lenguaje y Comunicación 8° Básico",
-        "semestre": "2",
-        "proposito": "Desarrollar habilidades de Lenguaje y Comunicación en 8° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 10",
-            "descripcion": "Comprender contenidos fundamentales de Lenguaje y Comunicación para 8° Básico."
-          },
-          {
-            "codigo": "OA 11",
-            "descripcion": "Aplicar habilidades y conocimientos de Lenguaje y Comunicación en actividades escolares."
-          },
-          {
-            "codigo": "OA 12",
-            "descripcion": "Resolver desafíos y actividades prácticas de Lenguaje y Comunicación."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      }
-    ]
+    "unidades": []
   }
 }
