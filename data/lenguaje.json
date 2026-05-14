@@ -5,45 +5,45 @@
       {
         "nombre": "Unidad 1: Conciencia Fonológica y Lectura Inicial",
         "semestre": "1",
-        "proposito": "Desarrollar habilidades iniciales de lectura, reconocimiento de sonidos y comprensión de textos breves.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Reconocer sonidos iniciales y finales en palabras simples."
+            "descripcion": "Reconocer sonidos iniciales y finales."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Leer palabras y oraciones breves con apoyo visual."
+            "descripcion": "Leer palabras y oraciones simples."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Comprender información explícita en textos breves."
+            "descripcion": "Comprender textos breves con apoyo visual."
           }
         ]
       },
       {
         "nombre": "Unidad 2: Comprensión de Lectura",
         "semestre": "1",
-        "proposito": "Fortalecer la comprensión lectora mediante cuentos, poemas y textos informativos simples.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 4",
-            "descripcion": "Responder preguntas sobre personajes y acciones."
+            "descripcion": "Identificar personajes y acciones."
           },
           {
             "codigo": "OA 5",
-            "descripcion": "Identificar secuencias simples en relatos."
+            "descripcion": "Responder preguntas explícitas."
           },
           {
             "codigo": "OA 6",
-            "descripcion": "Relacionar imágenes con información textual."
+            "descripcion": "Relacionar imágenes con textos."
           }
         ]
       },
       {
         "nombre": "Unidad 3: Escritura Inicial",
         "semestre": "2",
-        "proposito": "Desarrollar habilidades básicas de escritura y producción de textos simples.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 7",
@@ -51,30 +51,30 @@
           },
           {
             "codigo": "OA 8",
-            "descripcion": "Utilizar vocabulario cotidiano en producciones escritas."
+            "descripcion": "Utilizar vocabulario cotidiano."
           },
           {
             "codigo": "OA 9",
-            "descripcion": "Revisar y mejorar textos con apoyo docente."
+            "descripcion": "Revisar textos con apoyo docente."
           }
         ]
       },
       {
         "nombre": "Unidad 4: Comunicación Oral",
         "semestre": "2",
-        "proposito": "Promover la expresión oral y la escucha activa en situaciones escolares.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 1° Básico.",
         "oa": [
           {
             "codigo": "OA 10",
-            "descripcion": "Expresarse oralmente frente al curso."
+            "descripcion": "Expresarse oralmente."
           },
           {
             "codigo": "OA 11",
-            "descripcion": "Escuchar instrucciones y responder adecuadamente."
+            "descripcion": "Escuchar activamente."
           },
           {
             "codigo": "OA 12",
-            "descripcion": "Participar en conversaciones respetando turnos."
+            "descripcion": "Participar respetando turnos."
           }
         ]
       }
@@ -86,19 +86,76 @@
       {
         "nombre": "Unidad 1: Lectura Fluida",
         "semestre": "1",
-        "proposito": "Desarrollar fluidez lectora y comprensión de textos narrativos.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 2° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Leer textos breves con fluidez y entonación."
+            "descripcion": "Leer textos con mayor fluidez."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Identificar ideas principales en cuentos."
+            "descripcion": "Identificar ideas principales."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Relacionar experiencias personales con lecturas."
+            "descripcion": "Relacionar experiencias con lecturas."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Narraciones y Cuentos",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Analizar secuencias narrativas."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Describir personajes."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas inferenciales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos breves."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Usar conectores simples."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar ortografía básica."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación y Expresión",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas simples."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar instrucciones."
           }
         ]
       }
@@ -110,19 +167,76 @@
       {
         "nombre": "Unidad 1: Narraciones y Comprensión",
         "semestre": "1",
-        "proposito": "Fortalecer la comprensión y análisis de textos narrativos.",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 3° Básico.",
         "oa": [
           {
             "codigo": "OA 1",
-            "descripcion": "Analizar personajes y ambientes en cuentos."
+            "descripcion": "Analizar cuentos y relatos."
           },
           {
             "codigo": "OA 2",
-            "descripcion": "Inferir información implícita en textos."
+            "descripcion": "Inferir información implícita."
           },
           {
             "codigo": "OA 3",
-            "descripcion": "Expresar opiniones fundamentadas sobre lecturas."
+            "descripcion": "Expresar opiniones sobre textos."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Identificar información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar ideas principales."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Extraer datos específicos."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Escritura Creativa",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Crear cuentos breves."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Utilizar descripciones simples."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia textual."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Avanzada",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Presentar exposiciones breves."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones simples."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar críticamente."
           }
         ]
       }
@@ -130,22 +244,407 @@
   },
   "4° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": []
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Lectura y Análisis Nivel 4",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Analizar textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Interpretar información implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Relacionar textos con experiencias."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos Nivel 4",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Extraer información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar fuentes de información."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Identificar ideas centrales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita Nivel 4",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Redactar textos estructurados."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar normas ortográficas."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia y cohesión."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Nivel 4",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas con claridad."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Participar en debates."
+          }
+        ]
+      }
+    ]
   },
   "5° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": []
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Lectura y Análisis Nivel 5",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Analizar textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Interpretar información implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Relacionar textos con experiencias."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos Nivel 5",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Extraer información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar fuentes de información."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Identificar ideas centrales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita Nivel 5",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Redactar textos estructurados."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar normas ortográficas."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia y cohesión."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Nivel 5",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas con claridad."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Participar en debates."
+          }
+        ]
+      }
+    ]
   },
   "6° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": []
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Lectura y Análisis Nivel 6",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Analizar textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Interpretar información implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Relacionar textos con experiencias."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos Nivel 6",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Extraer información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar fuentes de información."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Identificar ideas centrales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita Nivel 6",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Redactar textos estructurados."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar normas ortográficas."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia y cohesión."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Nivel 6",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas con claridad."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Participar en debates."
+          }
+        ]
+      }
+    ]
   },
   "7° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": []
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Lectura y Análisis Nivel 7",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Analizar textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Interpretar información implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Relacionar textos con experiencias."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos Nivel 7",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Extraer información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar fuentes de información."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Identificar ideas centrales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita Nivel 7",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Redactar textos estructurados."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar normas ortográficas."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia y cohesión."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Nivel 7",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas con claridad."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Participar en debates."
+          }
+        ]
+      }
+    ]
   },
   "8° Básico": {
     "nombre_asignatura": "Lenguaje y Comunicación",
-    "unidades": []
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Lectura y Análisis Nivel 8",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Analizar textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Interpretar información implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Relacionar textos con experiencias."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Textos Informativos Nivel 8",
+        "semestre": "1",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Extraer información relevante."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Comparar fuentes de información."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Identificar ideas centrales."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Producción Escrita Nivel 8",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Redactar textos estructurados."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar normas ortográficas."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar coherencia y cohesión."
+          }
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Comunicación Oral Nivel 8",
+        "semestre": "2",
+        "proposito": "Fortalecer habilidades de lectura, escritura y comunicación en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Exponer ideas con claridad."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Argumentar opiniones."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Participar en debates."
+          }
+        ]
+      }
+    ]
   }
 }
