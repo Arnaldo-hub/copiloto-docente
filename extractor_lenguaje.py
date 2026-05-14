@@ -1,76 +1,111 @@
-import json
+import os
 import re
+import json
+import fitz
+# =========================================
+# CONFIGURACIÓN
+# =========================================
 
-PDF_TXT = "lenguaje_mineduc.txt"
+BASE_DIR = os.path.dirname(
+    os.path.abspath(__file__)
+)
 
-SALIDA_JSON = "data/lenguaje.json"
+PDF_DIR = os.path.join(
+    BASE_DIR,
+    "pdfs"
+)
 
-# ==========================================
-# EXTRAER OA
-# ==========================================
+DATA_DIR = os.path.join(
+    BASE_DIR,
+    "data"
+)
 
-def extraer_oa(texto):
+os.makedirs(DATA_DIR, exist_ok=True)
+# =========================================
+# MAPEO ASIGNATURAS
+# =========================================
 
-    patron = r"OA\s+\d+.*?(?=OA\s+\d+|$)"
+ASIGNATURAS = {
 
-    encontrados = re.findall(
-        patron,
-        texto,
-        re.DOTALL
+    "leng": "lenguaje",
+    "mat": "matematica",
+    "HIST": "historia",
+    "EFI": "educacionfisica",
+    "Música": "musica",
+    "tecnol": "tecnologia",
+    "Orientación": "orientacion",
+    "artes": "artesvisuales"
+
+}
+# =========================================
+# EXTRAER TEXTO PDF
+# =========================================
+
+
+def extraer_texto_pdf(ruta_pdf):
+
+    texto = ""
+
+    documento = fitz.open(ruta_pdf)
+
+    for pagina in documento:
+
+        texto += pagina.get_text()
+
+    return texto
+    # =========================================
+
+    patron = r"OA\s+\d+"
+
+    coincidencias = list(
+        re.finditer(patron, texto)
     )
 
-    oa_limpios = []
+    oa = []
 
-    for item in encontrados:
+    for i in range(len(coincidencias)):
 
-        lineas = item.split("\n")
+        inicio = coincidencias[i].start()
 
-        contenido = " ".join(
-            l.strip()
-            for l in lineas
-            if l.strip()
+        if i + 1 < len(coincidencias):
+
+            fin = coincidencias[i + 1].start()
+
+        else:
+
+            fin = len(texto)
+
+        bloque = texto[inicio:fin]
+
+        codigo_match = re.search(
+            r"OA\s+\d+",
+            bloque
         )
 
-        codigo = re.search(
-            r"(OA\s+\d+)",
-            contenido
-        )
+        if codigo_match:
 
-        if codigo:
+            codigo = codigo_match.group()
 
-            codigo_oa = codigo.group(1)
-
-            descripcion = contenido.replace(
-                codigo_oa,
+            descripcion = bloque.replace(
+                codigo,
                 ""
-            ).strip()
+            )
 
-            oa_limpios.append({
+            descripcion = " ".join(
+                descripcion.split()
+            )
 
-                "codigo": codigo_oa,
+            descripcion = descripcion[:500]
+
+            oa.append({
+
+                "codigo": codigo,
                 "descripcion": descripcion
 
             })
 
-    return oa_limpios
-
-# ==========================================
-# GENERAR UNIDADES
-# ==========================================
-
-def generar_unidades(oa):
-
-    unidades = []
-
-    unidad_actual = []
-
-    numero = 1
-
-    for item in oa:
-
-        unidad_actual.append(item)
-
-        if len(unidad_actual) == 3:
+    return oa
+    # =========================================
 
             unidades.append({
 
@@ -80,41 +115,9 @@ def generar_unidades(oa):
 
                 "semestre": 1 if numero <= 2 else 2,
 
-                "proposito": "Unidad construida desde OA oficiales MINEDUC.",
+                "proposito": "Unidad curricular construida automáticamente desde Programa de Estudio MINEDUC.",
 
-                "oa": unidad_actual,
-
-                "habilidades": [
-
-                    "Comprensión",
-                    "Comunicación",
-                    "Pensamiento crítico"
-
-                ],
-
-                "actitudes": [
-
-                    "Participación",
-                    "Respeto",
-                    "Autonomía"
-
-                ],
-
-                "evaluaciones": [
-
-                    "Rúbrica",
-                    "Lista de cotejo",
-                    "Evaluación formativa"
-
-                ],
-
-                "nee": [
-
-                    "Apoyo visual",
-                    "Adecuación curricular",
-                    "Andamiaje"
-
-                ]
+                "oa": unidad_actual
 
             })
 
@@ -122,61 +125,104 @@ def generar_unidades(oa):
 
             numero += 1
 
+    if unidad_actual:
+
+        unidades.append({
+
+            "numero": numero,
+
+            "nombre": f"Unidad {numero}",
+
+            "semestre": 2,
+
+            "proposito": "Unidad curricular construida automáticamente desde Programa de Estudio MINEDUC.",
+
+            "oa": unidad_actual
+
+        })
+
     return unidades
+# =========================================
 
-# ==========================================
-# MAIN
-# ==========================================
+        curso: {
 
-with open(
+            "nombre_asignatura": nombre_json,
 
-    PDF_TXT,
-    "r",
-    encoding="utf-8"
+            "programa": "MINEDUC",
 
-) as archivo:
+            "unidades": generar_unidades(oa)
 
-    texto = archivo.read()
-
-oa = extraer_oa(texto)
-
-estructura = {
-
-    "1° Básico": {
-
-        "nombre_asignatura":
-        "Lenguaje y Comunicación",
-
-        "ejes": [
-
-            "Lectura",
-            "Escritura",
-            "Comunicación Oral"
-
-        ],
-
-        "unidades":
-        generar_unidades(oa)
+        }
 
     }
 
-}
+    ruta_salida = os.path.join(
 
-with open(
-
-    SALIDA_JSON,
-    "w",
-    encoding="utf-8"
-
-) as salida:
-
-    json.dump(
-
-        estructura,
-        salida,
-        ensure_ascii=False,
-        indent=2
+        DATA_DIR,
+        f"{nombre_json}.json"
 
     )
 
-print("✅ lenguaje.json generado correctamente")
+    with open(
+
+        ruta_salida,
+        "w",
+        encoding="utf-8"
+
+    ) as archivo:
+
+        json.dump(
+
+            estructura,
+            archivo,
+            ensure_ascii=False,
+            indent=2
+
+        )
+
+    print(f"✅ Generado: {ruta_salida}")
+# =========================================
+# MAIN
+# =========================================
+
+
+def main():
+
+    archivos = os.listdir(PDF_DIR)
+
+    for archivo in archivos:
+
+        if not archivo.endswith(".pdf"):
+            continue
+
+        ruta = os.path.join(
+            PDF_DIR,
+            archivo
+        )
+
+        texto = extraer_texto_pdf(ruta)
+
+        oa = extraer_oa(texto)
+
+        nombre_json = None
+
+        for clave, valor in ASIGNATURAS.items():
+
+            if clave.lower() in archivo.lower():
+
+                nombre_json = valor
+                break
+
+        if not nombre_json:
+            continue
+
+        generar_json(
+            nombre_json,
+            "1° Básico",
+            oa
+        )
+
+
+if __name__ == "__main__":
+
+    main()
