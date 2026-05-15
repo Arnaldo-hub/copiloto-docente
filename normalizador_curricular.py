@@ -3,7 +3,7 @@ import json
 import os
 
 # =========================================
-# CONFIGURACIÓN
+# CARPETAS
 # =========================================
 
 BASE_DIR = os.path.dirname(
@@ -23,10 +23,31 @@ DATA_DIR = os.path.join(
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # =========================================
-# LIMPIAR TEXTO
+# LIMPIEZA CURRICULAR
 # =========================================
 
 def limpiar_texto(texto):
+
+    basura = [
+
+        "Ministerio de Educación",
+        "Programa de Estudio",
+        "Unidad de Currículum y Evaluación",
+        "www.curriculumnacional.cl",
+        "curriculumnacional.cl",
+        "Gobierno de Chile",
+        "Mineduc",
+        "Bases Curriculares",
+        "Educación Básica"
+
+    ]
+
+    for item in basura:
+
+        texto = texto.replace(
+            item,
+            ""
+        )
 
     # eliminar saltos múltiples
     texto = re.sub(
@@ -37,28 +58,15 @@ def limpiar_texto(texto):
 
     # eliminar espacios múltiples
     texto = re.sub(
-        r"\s+",
+        r"[ \t]+",
         " ",
-        texto
-    )
-
-    # eliminar páginas típicas
-    texto = re.sub(
-        r"Ministerio de Educación.*?",
-        "",
-        texto
-    )
-
-    texto = re.sub(
-        r"Unidad de Currículum y Evaluación.*?",
-        "",
         texto
     )
 
     return texto.strip()
 
 # =========================================
-# EXTRAER OA
+# EXTRAER OA REALES
 # =========================================
 
 def extraer_oa(texto):
@@ -93,81 +101,133 @@ def extraer_oa(texto):
             bloque
         )
 
-        if codigo_match:
+        if not codigo_match:
+            continue
 
-            codigo = codigo_match.group()
+        codigo = codigo_match.group()
 
-            descripcion = bloque.replace(
-                codigo,
-                ""
-            )
+        descripcion = bloque.replace(
+            codigo,
+            ""
+        )
 
-            descripcion = " ".join(
-                descripcion.split()
-            )
+        descripcion = descripcion.strip()
 
-            descripcion = descripcion[:500]
+        # limpiar exceso texto
+        descripcion = re.sub(
+            r"\s+",
+            " ",
+            descripcion
+        )
 
-            oa.append({
+        # cortar basura extrema
+        descripcion = descripcion[:700]
 
-                "codigo": codigo,
-                "descripcion": descripcion
+        # ignorar descripciones vacías
+        if len(descripcion) < 15:
+            continue
 
-            })
+        oa.append({
+
+            "codigo": codigo,
+            "descripcion": descripcion
+
+        })
 
     return oa
 
 # =========================================
-# DETECTAR UNIDADES
+# DETECTAR UNIDADES REALES
 # =========================================
 
 def detectar_unidades(texto):
 
-    patron = r"(Unidad\s+\d+)"
+    patrones = [
+
+        r"Unidad\s+\d+",
+        r"UNIDAD\s+\d+"
+
+    ]
+
+    unidades = []
+
+    numero = 1
+
+    for patron in patrones:
+
+        coincidencias = re.findall(
+            patron,
+            texto
+        )
+
+        for item in coincidencias:
+
+            unidades.append({
+
+                "numero": numero,
+                "nombre": item
+
+            })
+
+            numero += 1
+
+    # evitar duplicados
+    nombres = set()
+
+    unidades_limpias = []
+
+    for unidad in unidades:
+
+        if unidad["nombre"] not in nombres:
+
+            nombres.add(
+                unidad["nombre"]
+            )
+
+            unidades_limpias.append(
+                unidad
+            )
+
+    return unidades_limpias
+
+# =========================================
+# DETECTAR TÍTULOS PEDAGÓGICOS
+# =========================================
+
+def detectar_titulos(texto):
+
+    patron = r"[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ]{5,}"
 
     coincidencias = re.findall(
         patron,
         texto
     )
 
-    unidades = []
-
-    numero = 1
+    titulos = []
 
     for item in coincidencias:
 
-        unidades.append({
+        item = item.strip()
 
-            "numero": numero,
-            "nombre": item
+        if len(item) > 80:
+            continue
 
-        })
+        titulos.append(item)
 
-        numero += 1
-
-    return unidades
+    return list(set(titulos))
 
 # =========================================
-# GENERAR JSON
+# AGRUPAR OA POR UNIDAD
 # =========================================
 
-def generar_json(nombre, oa, unidades):
+def agrupar_oa_unidades(
 
-    estructura = {
+    oa,
+    unidades
 
-        "1° Básico": {
+):
 
-            "nombre_asignatura":
-            nombre,
-
-            "programa":
-            "MINEDUC",
-
-            "unidades": []
-
-        }
-
-    }
+    estructura = []
 
     indice = 0
 
@@ -175,7 +235,7 @@ def generar_json(nombre, oa, unidades):
 
         grupo = oa[indice:indice+5]
 
-        estructura["1° Básico"]["unidades"].append({
+        estructura.append({
 
             "numero":
             unidad["numero"],
@@ -187,7 +247,7 @@ def generar_json(nombre, oa, unidades):
             1 if unidad["numero"] <= 2 else 2,
 
             "proposito":
-            "Unidad generada automáticamente desde Programa MINEDUC.",
+            "Unidad curricular detectada automáticamente desde documentos oficiales MINEDUC.",
 
             "oa":
             grupo
@@ -195,6 +255,40 @@ def generar_json(nombre, oa, unidades):
         })
 
         indice += 5
+
+    return estructura
+
+# =========================================
+# GENERAR JSON
+# =========================================
+
+def generar_json(
+
+    nombre,
+    unidades_finales,
+    titulos
+
+):
+
+    estructura = {
+
+        "1° Básico": {
+
+            "nombre_asignatura":
+            nombre,
+
+            "programa":
+            "MINEDUC",
+
+            "titulos_detectados":
+            titulos,
+
+            "unidades":
+            unidades_finales
+
+        }
+
+    }
 
     ruta = os.path.join(
 
@@ -220,7 +314,9 @@ def generar_json(nombre, oa, unidades):
 
         )
 
-    print(f"✅ JSON generado: {ruta}")
+    print(
+        f"✅ JSON generado: {ruta}"
+    )
 
 # =========================================
 # MAIN
@@ -256,16 +352,25 @@ def main():
 
         unidades = detectar_unidades(texto)
 
+        titulos = detectar_titulos(texto)
+
+        unidades_finales = agrupar_oa_unidades(
+
+            oa,
+            unidades
+
+        )
+
         nombre = archivo.replace(
             ".txt",
             ""
-        )
+        ).lower()
 
         generar_json(
 
             nombre,
-            oa,
-            unidades
+            unidades_finales,
+            titulos
 
         )
 
