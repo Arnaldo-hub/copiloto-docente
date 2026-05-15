@@ -1,4 +1,4 @@
-name: AulaMind Curriculum Pipeline
+name: AulaMind Curriculum Pipeline v2
 
 on:
   workflow_dispatch:
