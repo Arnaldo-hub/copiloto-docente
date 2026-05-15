@@ -11,74 +11,36 @@ jobs:
 
     steps:
 
-      # =====================================
-      # CLONAR REPOSITORIO
-      # =====================================
-
       - name: Checkout repository
-
         uses: actions/checkout@v4
 
-      # =====================================
-      # PYTHON
-      # =====================================
-
       - name: Set up Python
-
         uses: actions/setup-python@v5
-
         with:
-
           python-version: "3.11"
 
-      # =====================================
-      # INSTALAR DEPENDENCIAS
-      # =====================================
-
       - name: Install dependencies
-
         run: |
-
           pip install -r requirements.txt
-
           pip install PyMuPDF
 
-      # =====================================
-      # PDF → TXT
-      # =====================================
-
       - name: Convert PDFs to TXT
-
         run: |
-
           python pdf_a_txt.py
 
-      # =====================================
-      # TXT → JSON
-      # =====================================
-
       - name: Normalize Curriculum
-
         run: |
-
           python normalizador_curricular.py
 
-      # =====================================
-      # COMMIT AUTOMÁTICO
-      # =====================================
-
       - name: Commit generated curriculum
-
         run: |
-
           git config --global user.name "github-actions"
-
           git config --global user.email "actions@github.com"
 
-         git add data/
+          git add data/
 
-git commit -m "🤖 Auto-generate curriculum JSON" || echo "No changes"
+          git commit -m "🤖 Auto-generate curriculum JSON" || echo "No changes"
 
-git pull --rebase origin main
+          git pull --rebase origin main
 
-git push origin main
+          git push origin main
