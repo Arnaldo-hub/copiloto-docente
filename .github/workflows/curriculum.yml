@@ -35,16 +35,13 @@ jobs:
         run: |
           python normalizador_curricular.py
 
-      - name: Commit generated curriculum
-        run: |
+    - name: Commit generated curriculum
+  run: |
+    git config --global user.name "github-actions"
+    git config --global user.email "actions@github.com"
 
-          git config --global user.name "github-actions"
+    git add .
 
-          git config --global user.email "actions@github.com"
+    git commit -m "🤖 Auto curriculum update" || echo "No changes"
 
-          git add data/
-          git add txt/
-
-          git commit -m "🤖 Auto curriculum update" || echo "No changes"
-
-          git push origin main
+    git push origin main
