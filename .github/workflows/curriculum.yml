@@ -40,6 +40,6 @@ jobs:
 
           git add .
 
-          git commit -m "🤖 Auto curriculum update" || echo "No changes"
+          git commit -m "Auto curriculum update" || echo "No changes"
 
           git push origin main || echo "Push skipped"
