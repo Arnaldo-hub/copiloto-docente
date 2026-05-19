@@ -34,7 +34,9 @@ def generar_respuesta(prompt):
 
                 {
                     "role": "system",
+
                     "content": """
+
 Eres un experto pedagógico chileno especialista en:
 
 - Currículum MINEDUC
@@ -46,12 +48,38 @@ Eres un experto pedagógico chileno especialista en:
 - Taxonomía de Bloom
 - Aprendizaje basado en proyectos
 
-Responde siempre en formato profesional docente.
+Responde SIEMPRE usando Markdown profesional.
+
+Usa:
+
+# Títulos
+## Subtítulos
+### Secciones
+
+- bullets
+- listas
+- separación visual
+- tablas cuando sea necesario
+
+Formato visual moderno tipo:
+
+- ChatGPT
+- Notion
+- Copilot
+- MagicSchool AI
+
+El contenido debe verse:
+profesional,
+ordenado,
+limpio,
+y fácil de leer para docentes.
+
 """
                 },
 
                 {
                     "role": "user",
+
                     "content": prompt
                 }
 
@@ -78,8 +106,17 @@ Responde siempre en formato profesional docente.
         )
 
         return """
-Error generando contenido pedagógico.
-Verifica OPENAI_API_KEY.
+
+# ❌ Error IA
+
+No fue posible generar contenido pedagógico.
+
+Verifica:
+
+- OPENAI_API_KEY
+- conexión OpenAI
+- créditos API
+
 """
 
 # =========================================
@@ -96,6 +133,9 @@ def generar_objetivos(
 ):
 
     prompt = f"""
+
+# Generar Objetivos Pedagógicos
+
 Genera:
 
 1. Objetivo general
@@ -113,7 +153,8 @@ Unidad:
 OA:
 {oa}
 
-Formato profesional docente.
+Usa formato profesional docente.
+
 """
 
     return generar_respuesta(
@@ -134,6 +175,9 @@ def generar_indicadores(
 ):
 
     prompt = f"""
+
+# Generar Indicadores
+
 Genera 5 indicadores de evaluación.
 
 Asignatura:
@@ -148,9 +192,12 @@ Unidad:
 OA:
 {oa}
 
-Formato:
-• Indicador 1
-• Indicador 2
+Incluye:
+
+- habilidades
+- desempeño esperado
+- evidencia observable
+
 """
 
     return generar_respuesta(
@@ -171,8 +218,14 @@ def generar_habilidades(
 ):
 
     prompt = f"""
-Genera habilidades cognitivas,
-procedimentales y actitudinales.
+
+# Generar Habilidades
+
+Genera:
+
+- habilidades cognitivas
+- habilidades procedimentales
+- habilidades actitudinales
 
 Asignatura:
 {asignatura}
@@ -185,6 +238,7 @@ Unidad:
 
 OA:
 {oa}
+
 """
 
     return generar_respuesta(
@@ -205,6 +259,9 @@ def generar_actitudes(
 ):
 
     prompt = f"""
+
+# Generar Actitudes
+
 Genera actitudes pedagógicas
 alineadas al OA.
 
@@ -219,6 +276,7 @@ Unidad:
 
 OA:
 {oa}
+
 """
 
     return generar_respuesta(
@@ -239,6 +297,9 @@ def generar_nee(
 ):
 
     prompt = f"""
+
+# Adaptaciones NEE y DUA
+
 Genera adaptaciones curriculares
 y estrategias DUA para:
 
@@ -259,7 +320,13 @@ Unidad:
 OA:
 {oa}
 
-Formato profesional docente.
+Incluye:
+
+- apoyos visuales
+- adecuaciones
+- participación
+- accesibilidad
+
 """
 
     return generar_respuesta(
@@ -280,12 +347,15 @@ def generar_evaluacion(
 ):
 
     prompt = f"""
+
+# Generar Evaluación
+
 Genera:
 
-1. Evaluación diagnóstica
-2. Evaluación formativa
-3. Evaluación sumativa
-4. Rúbrica breve
+## Evaluación diagnóstica
+## Evaluación formativa
+## Evaluación sumativa
+## Rúbrica breve
 
 Asignatura:
 {asignatura}
@@ -298,6 +368,9 @@ Unidad:
 
 OA:
 {oa}
+
+Incluye ejemplos concretos.
+
 """
 
     return generar_respuesta(
@@ -318,17 +391,20 @@ def generar_planificacion(
 ):
 
     prompt = f"""
-Genera una planificación completa.
+
+# Generar Planificación Completa
+
+Genera una planificación profesional.
 
 Debe incluir:
 
-- Inicio
-- Desarrollo
-- Cierre
-- Recursos
-- Estrategias DUA
-- Evaluación
-- Tiempo estimado
+## Inicio
+## Desarrollo
+## Cierre
+## Recursos
+## Estrategias DUA
+## Evaluación
+## Tiempo estimado
 
 Asignatura:
 {asignatura}
@@ -343,6 +419,7 @@ OA:
 {oa}
 
 Formato profesional MINEDUC.
+
 """
 
     return generar_respuesta(
