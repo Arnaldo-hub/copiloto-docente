@@ -1042,16 +1042,28 @@ oa.innerHTML = ''
 
 data.oa.forEach(item=>{
 
+let textoOA = ''
+
+if(typeof item === 'object'){
+
+textoOA = item.texto || item.nombre || JSON.stringify(item)
+
+}else{
+
+textoOA = item
+
+}
+
 oa.innerHTML += `
 
-<option value="${item}">
-${item}
+<option value="${textoOA}">
+${textoOA}
 </option>
 
 `
 
 })
-
+  
 }catch(error){
 
 oa.innerHTML =
