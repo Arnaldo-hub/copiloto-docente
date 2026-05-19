@@ -874,6 +874,203 @@ enlace.click()
 
 }
 
+// =========================================
+// CARGAR CURSOS
+// =========================================
+
+async function cargarCursos(){
+
+const asignatura =
+
+document.getElementById(
+'asignatura'
+).value
+
+const curso =
+
+document.getElementById(
+'curso'
+)
+
+curso.innerHTML =
+'<option>Cargando...</option>'
+
+try{
+
+const res = await fetch(
+
+`/api/cursos/${asignatura}`
+
+)
+
+const data =
+await res.json()
+
+curso.innerHTML = ''
+
+data.cursos.forEach(c=>{
+
+curso.innerHTML += `
+
+<option value="${c}">
+${c}
+</option>
+
+`
+
+})
+
+cargarUnidades()
+
+}catch(error){
+
+curso.innerHTML =
+'<option>Error</option>'
+
+}
+
+}
+
+// =========================================
+// CARGAR UNIDADES
+// =========================================
+
+async function cargarUnidades(){
+
+const asignatura =
+
+document.getElementById(
+'asignatura'
+).value
+
+const curso =
+
+document.getElementById(
+'curso'
+).value
+
+const unidad =
+
+document.getElementById(
+'unidad'
+)
+
+unidad.innerHTML =
+'<option>Cargando...</option>'
+
+try{
+
+const res = await fetch(
+
+`/api/unidades/${asignatura}/${curso}`
+
+)
+
+const data =
+await res.json()
+
+unidad.innerHTML = ''
+
+data.unidades.forEach(u=>{
+
+unidad.innerHTML += `
+
+<option value="${u.nombre}">
+${u.nombre}
+</option>
+
+`
+
+})
+
+cargarOA()
+
+}catch(error){
+
+unidad.innerHTML =
+'<option>Error</option>'
+
+}
+
+}
+
+// =========================================
+// CARGAR OA
+// =========================================
+
+async function cargarOA(){
+
+const asignatura =
+
+document.getElementById(
+'asignatura'
+).value
+
+const curso =
+
+document.getElementById(
+'curso'
+).value
+
+const unidad =
+
+document.getElementById(
+'unidad'
+).value
+
+const oa =
+
+document.getElementById(
+'oa'
+)
+
+oa.innerHTML =
+'<option>Cargando...</option>'
+
+try{
+
+const res = await fetch(
+
+`/api/oa/${asignatura}/${curso}/${unidad}`
+
+)
+
+const data =
+await res.json()
+
+oa.innerHTML = ''
+
+data.oa.forEach(item=>{
+
+oa.innerHTML += `
+
+<option value="${item}">
+${item}
+</option>
+
+`
+
+})
+
+}catch(error){
+
+oa.innerHTML =
+'<option>Error</option>'
+
+}
+
+}
+
+// =========================================
+// INICIAR
+// =========================================
+
+window.onload = function(){
+
+cargarCursos()
+
+}
+  
 </script>
 
 </body>
