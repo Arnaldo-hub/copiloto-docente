@@ -1,5 +1,10 @@
 import json
 import os
+from functools import lru_cache
+
+# =========================================
+# RUTAS
+# =========================================
 
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
@@ -11,27 +16,52 @@ DATA_DIR = os.path.join(
 )
 
 # =========================================
+# VALIDAR ARCHIVO
+# =========================================
+
+def existe_json(asignatura):
+
+    ruta = os.path.join(
+        DATA_DIR,
+        f"{asignatura}.json"
+    )
+
+    return os.path.exists(ruta)
+
+# =========================================
 # LEER JSON
 # =========================================
 
+@lru_cache(maxsize=50)
 def leer_asignatura(asignatura):
 
-    ruta = os.path.join(
+    if not existe_json(asignatura):
 
+        return {}
+
+    ruta = os.path.join(
         DATA_DIR,
         f"{asignatura}.json"
-
     )
 
-    with open(
+    try:
 
-        ruta,
-        "r",
-        encoding="utf-8"
+        with open(
+            ruta,
+            "r",
+            encoding="utf-8"
+        ) as archivo:
 
-    ) as archivo:
+            return json.load(archivo)
 
-        return json.load(archivo)
+    except Exception as e:
+
+        print(
+            f"❌ Error leyendo {asignatura}.json:",
+            e
+        )
+
+        return {}
 
 # =========================================
 # OBTENER CURSOS
@@ -39,7 +69,9 @@ def leer_asignatura(asignatura):
 
 def obtener_cursos(asignatura):
 
-    data = leer_asignatura(asignatura)
+    data = leer_asignatura(
+        asignatura
+    )
 
     return list(data.keys())
 
@@ -47,15 +79,25 @@ def obtener_cursos(asignatura):
 # OBTENER UNIDADES
 # =========================================
 
-def obtener_unidades(asignatura, curso):
+def obtener_unidades(
 
-    data = leer_asignatura(asignatura)
+    asignatura,
+    curso
+
+):
+
+    data = leer_asignatura(
+        asignatura
+    )
 
     if curso not in data:
 
         return []
 
-    return data[curso]["unidades"]
+    return data[curso].get(
+        "unidades",
+        []
+    )
 
 # =========================================
 # OBTENER OA
@@ -69,18 +111,86 @@ def obtener_oa(
 
 ):
 
-    data = leer_asignatura(asignatura)
+    data = leer_asignatura(
+        asignatura
+    )
 
     if curso not in data:
 
         return []
 
-    unidades = data[curso]["unidades"]
+    unidades = data[curso].get(
+        "unidades",
+        []
+    )
 
     for unidad in unidades:
 
-        if unidad["nombre"] == unidad_nombre:
+        if unidad.get(
+            "nombre"
+        ) == unidad_nombre:
 
-            return unidad["oa"]
+            return unidad.get(
+                "oa",
+                []
+            )
 
     return []
+
+# =========================================
+# BUSCADOR IA
+# =========================================
+
+def buscar_oa_global(texto):
+
+    resultados = []
+
+    archivos = os.listdir(
+        DATA_DIR
+    )
+
+    for archivo in archivos:
+
+        if not archivo.endswith(".json"):
+
+            continue
+
+        asignatura = archivo.replace(
+            ".json",
+            ""
+        )
+
+        data = leer_asignatura(
+            asignatura
+        )
+
+        for curso, contenido in data.items():
+
+            unidades = contenido.get(
+                "unidades",
+                []
+            )
+
+            for unidad in unidades:
+
+                oa_lista = unidad.get(
+                    "oa",
+                    []
+                )
+
+                for oa in oa_lista:
+
+                    if texto.lower() in oa.lower():
+
+                        resultados.append({
+
+                            "asignatura": asignatura,
+                            "curso": curso,
+                            "unidad": unidad.get(
+                                "nombre"
+                            ),
+                            "oa": oa
+
+                        })
+
+    return resultados
