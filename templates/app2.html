@@ -1044,15 +1044,26 @@ data.oa.forEach(item=>{
 
 let textoOA = ''
 
+// =====================================
+// SI ES OBJETO JSON
+// =====================================
+
 if(typeof item === 'object'){
 
-textoOA = item.texto || item.nombre || JSON.stringify(item)
+const codigo = item.codigo || ''
+const descripcion = item.descripcion || ''
+
+textoOA = `${codigo} - ${descripcion}`
 
 }else{
 
 textoOA = item
 
 }
+
+// =====================================
+// CREAR OPTION
+// =====================================
 
 oa.innerHTML += `
 
@@ -1063,11 +1074,11 @@ ${textoOA}
 `
 
 })
-  
+
 }catch(error){
 
 oa.innerHTML =
-'<option>Error</option>'
+'<option>Error OA</option>'
 
 }
 
