@@ -1,46 +1,19 @@
 from flask import Flask, render_template, request, jsonify
 
-import os
-
 from curriculum import (
-
     obtener_cursos,
     obtener_unidades,
     obtener_oa
-
 )
 
 from pedagogia import (
-
     generar_objetivos,
     generar_indicadores,
     generar_habilidades,
     generar_actitudes,
     generar_nee,
     generar_evaluacion
-
 )
-
-# =========================================
-# GENERAR CURRÍCULO AUTOMÁTICAMENTE
-# =========================================
-
-try:
-
-    os.system(
-        "python convertidor_pdf_mineduc.py"
-    )
-
-    print(
-        "✅ Currículo generado automáticamente"
-    )
-
-except Exception as e:
-
-    print(
-        "❌ Error generando currículo:",
-        e
-    )
 
 # =========================================
 # APP
