@@ -998,51 +998,63 @@ unidad.innerHTML =
 // CARGAR OA
 // =========================================
 
-async function cargarOA(){
+async function cargarOA() {
 
-const asignatura =
+    const asignatura =
+        document.getElementById("asignatura").value;
 
-document.getElementById(
-'asignatura'
-).value
+    const curso =
+        document.getElementById("curso").value;
 
-const curso =
+    const unidad =
+        document.getElementById("unidad").value;
 
-document.getElementById(
-'curso'
-).value
+    const oaSelect =
+        document.getElementById("oa");
 
-const unidad =
+    oaSelect.innerHTML =
+        "<option>Cargando OA...</option>";
 
-document.getElementById(
-'unidad'
-).value
+    const response = await fetch(
 
-const oa =
+        `/api/oa/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}/${encodeURIComponent(unidad)}`
 
-document.getElementById(
-'oa'
-)
+    );
 
-oa.innerHTML =
-'<option>Cargando...</option>'
+    const data = await response.json();
 
-try{
+    oaSelect.innerHTML = "";
 
-const res = await fetch(
+    data.oa.forEach((item) => {
 
-`/api/oa/${asignatura}/${curso}/${unidad}`
+        const option =
+            document.createElement("option");
 
-)
+        // SI ES OBJETO JSON
+        if (typeof item === "object") {
 
-const data =
-await res.json()
+            option.value =
+                item.descripcion;
 
-oa.innerHTML = ''
+            option.textContent =
+                `${item.codigo} - ${item.descripcion}`;
 
-data.oa.forEach(item=>{
+        }
 
-let textoOA = ''
+        // SI ES TEXTO SIMPLE
+        else {
+
+            option.value = item;
+
+            option.textContent = item;
+
+        }
+
+        oaSelect.appendChild(option);
+
+    });
+
+}
 
 // =====================================
 // SI ES OBJETO JSON
