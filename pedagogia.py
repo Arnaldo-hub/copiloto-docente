@@ -1,6 +1,6 @@
 # =========================================
 # PEDAGOGIA.PY
-# MOTOR PEDAGÓGICO COPILOTO DOCENTE
+# MOTOR IA PEDAGÓGICO PROFESIONAL
 # =========================================
 
 from openai import OpenAI
@@ -10,30 +10,96 @@ import os
 # OPENAI
 # =========================================
 
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv(
+    "OPENAI_API_KEY"
+)
 
 client = OpenAI(
     api_key=api_key
 )
 
 # =========================================
+# GENERADOR IA CENTRAL
+# =========================================
+
+def generar_respuesta(prompt):
+
+    try:
+
+        response = client.chat.completions.create(
+
+            model="gpt-4o-mini",
+
+            messages=[
+
+                {
+                    "role": "system",
+                    "content": """
+Eres un experto pedagógico chileno especialista en:
+
+- Currículum MINEDUC
+- OA
+- DUA
+- NEE
+- Evaluación auténtica
+- Planificación
+- Taxonomía de Bloom
+- Aprendizaje basado en proyectos
+
+Responde siempre en formato profesional docente.
+"""
+                },
+
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+
+            ],
+
+            temperature=0.7
+
+        )
+
+        return (
+
+            response
+            .choices[0]
+            .message
+            .content
+
+        )
+
+    except Exception as e:
+
+        print(
+            "❌ Error OpenAI:",
+            e
+        )
+
+        return """
+Error generando contenido pedagógico.
+Verifica OPENAI_API_KEY.
+"""
+
+# =========================================
 # OBJETIVOS
 # =========================================
 
 def generar_objetivos(
+
     asignatura,
     curso,
     unidad,
     oa
+
 ):
 
     prompt = f"""
-Eres un experto pedagógico chileno.
-
 Genera:
 
 1. Objetivo general
-2. Objetivo específico
+2. 3 objetivos específicos
 
 Asignatura:
 {asignatura}
@@ -50,37 +116,8 @@ OA:
 Formato profesional docente.
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "system",
-
-                "content":
-                "Eres un experto pedagógico."
-            },
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
-    )
-
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+    return generar_respuesta(
+        prompt
     )
 
 # =========================================
@@ -88,14 +125,16 @@ Formato profesional docente.
 # =========================================
 
 def generar_indicadores(
+
     asignatura,
     curso,
+    unidad,
     oa
+
 ):
 
     prompt = f"""
-Genera indicadores de evaluación
-para el siguiente OA.
+Genera 5 indicadores de evaluación.
 
 Asignatura:
 {asignatura}
@@ -103,38 +142,19 @@ Asignatura:
 Curso:
 {curso}
 
+Unidad:
+{unidad}
+
 OA:
 {oa}
 
 Formato:
-- indicador 1
-- indicador 2
-- indicador 3
+• Indicador 1
+• Indicador 2
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
-    )
-
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+    return generar_respuesta(
+        prompt
     )
 
 # =========================================
@@ -142,14 +162,17 @@ Formato:
 # =========================================
 
 def generar_habilidades(
+
     asignatura,
     curso,
+    unidad,
     oa
+
 ):
 
     prompt = f"""
-Genera habilidades pedagógicas
-relacionadas al OA.
+Genera habilidades cognitivas,
+procedimentales y actitudinales.
 
 Asignatura:
 {asignatura}
@@ -157,33 +180,15 @@ Asignatura:
 Curso:
 {curso}
 
+Unidad:
+{unidad}
+
 OA:
 {oa}
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
-    )
-
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+    return generar_respuesta(
+        prompt
     )
 
 # =========================================
@@ -191,44 +196,33 @@ OA:
 # =========================================
 
 def generar_actitudes(
+
     asignatura,
-    curso
+    curso,
+    unidad,
+    oa
+
 ):
 
     prompt = f"""
 Genera actitudes pedagógicas
-para:
+alineadas al OA.
 
 Asignatura:
 {asignatura}
 
 Curso:
 {curso}
+
+Unidad:
+{unidad}
+
+OA:
+{oa}
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
-    )
-
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+    return generar_respuesta(
+        prompt
     )
 
 # =========================================
@@ -236,13 +230,17 @@ Curso:
 # =========================================
 
 def generar_nee(
+
     asignatura,
     curso,
+    unidad,
     oa
+
 ):
 
     prompt = f"""
-Genera adaptaciones NEE para:
+Genera adaptaciones curriculares
+y estrategias DUA para:
 
 - TEA
 - TDAH
@@ -255,43 +253,30 @@ Asignatura:
 Curso:
 {curso}
 
+Unidad:
+{unidad}
+
 OA:
 {oa}
+
+Formato profesional docente.
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
-    )
-
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+    return generar_respuesta(
+        prompt
     )
 
 # =========================================
-# EVALUACIONES
+# EVALUACIÓN
 # =========================================
 
 def generar_evaluacion(
+
     asignatura,
     curso,
+    unidad,
     oa
+
 ):
 
     prompt = f"""
@@ -300,6 +285,7 @@ Genera:
 1. Evaluación diagnóstica
 2. Evaluación formativa
 3. Evaluación sumativa
+4. Rúbrica breve
 
 Asignatura:
 {asignatura}
@@ -307,31 +293,58 @@ Asignatura:
 Curso:
 {curso}
 
+Unidad:
+{unidad}
+
 OA:
 {oa}
 """
 
-    response = client.chat.completions.create(
-
-        model="gpt-4o-mini",
-
-        messages=[
-
-            {
-                "role":
-                "user",
-
-                "content":
-                prompt
-            }
-
-        ]
-
+    return generar_respuesta(
+        prompt
     )
 
-    return (
-        response
-        .choices[0]
-        .message
-        .content
+# =========================================
+# PLANIFICACIÓN IA
+# =========================================
+
+def generar_planificacion(
+
+    asignatura,
+    curso,
+    unidad,
+    oa
+
+):
+
+    prompt = f"""
+Genera una planificación completa.
+
+Debe incluir:
+
+- Inicio
+- Desarrollo
+- Cierre
+- Recursos
+- Estrategias DUA
+- Evaluación
+- Tiempo estimado
+
+Asignatura:
+{asignatura}
+
+Curso:
+{curso}
+
+Unidad:
+{unidad}
+
+OA:
+{oa}
+
+Formato profesional MINEDUC.
+"""
+
+    return generar_respuesta(
+        prompt
     )
