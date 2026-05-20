@@ -19,7 +19,7 @@ Copiloto Docente IA
 </title>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <style>
 
 *{
@@ -963,11 +963,11 @@ resultado.innerHTML = `
 
 </h1>
 
-<p>
+<div class="tarjeta">
 
-No hay historial.
+No hay historial guardado.
 
-</p>
+</div>
 
 `;
 
@@ -975,13 +975,27 @@ return;
 
 }
 
-let html = "<h1>📚 Historial</h1>";
+let html = `
 
-historial.reverse().forEach(item=>{
+<h1>
+
+📚 Historial IA
+
+</h1>
+
+`;
+
+historial.reverse().forEach((item,index)=>{
 
 html += `
 
 <div class="tarjeta">
+
+<h2>
+
+Planificación ${index + 1}
+
+</h2>
 
 ${marked.parse(item)}
 
@@ -998,10 +1012,41 @@ resultado.innerHTML = html;
 /* ================================================= */
 /* PDF */
 /* ================================================= */
-
 function descargarPDF(){
 
-window.print();
+const elemento =
+document.getElementById("resultado");
+
+const opciones = {
+
+margin:0.5,
+
+filename:"planificacion_docente.pdf",
+
+image:{
+type:"jpeg",
+quality:1
+},
+
+html2canvas:{
+scale:2
+},
+
+jsPDF:{
+unit:"in",
+format:"a4",
+orientation:"portrait"
+}
+
+};
+
+html2pdf()
+
+.set(opciones)
+
+.from(elemento)
+
+.save();
 
 }
 
