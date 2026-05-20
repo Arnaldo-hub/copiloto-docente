@@ -37,16 +37,32 @@ def home():
 # CURSOS
 # =========================================
 
-@app.route("/api/cursos/<asignatura>")
+@app.route(
+    "/api/cursos/<asignatura>"
+)
 def api_cursos(asignatura):
 
-    cursos = obtener_cursos(
-        asignatura
-    )
+    try:
 
-    return jsonify({
-        "cursos": cursos
-    })
+        cursos = obtener_cursos(
+            asignatura
+        )
+
+        return jsonify({
+
+            "cursos": cursos
+
+        })
+
+    except Exception as e:
+
+        print("ERROR CURSOS:", e)
+
+        return jsonify({
+
+            "cursos": []
+
+        })
 
 # =========================================
 # UNIDADES
@@ -62,18 +78,30 @@ def api_unidades(
 
 ):
 
-    unidades = obtener_unidades(
+    try:
 
-        asignatura,
-        curso
+        unidades = obtener_unidades(
 
-    )
+            asignatura,
+            curso
 
-    return jsonify({
+        )
 
-        "unidades": unidades
+        return jsonify({
 
-    })
+            "unidades": unidades
+
+        })
+
+    except Exception as e:
+
+        print("ERROR UNIDADES:", e)
+
+        return jsonify({
+
+            "unidades": []
+
+        })
 
 # =========================================
 # OA
@@ -90,19 +118,31 @@ def api_oa(
 
 ):
 
-    oa = obtener_oa(
+    try:
 
-        asignatura,
-        curso,
-        unidad
+        oa = obtener_oa(
 
-    )
+            asignatura,
+            curso,
+            unidad
 
-    return jsonify({
+        )
 
-        "oa": oa
+        return jsonify({
 
-    })
+            "oa": oa
+
+        })
+
+    except Exception as e:
+
+        print("ERROR OA:", e)
+
+        return jsonify({
+
+            "oa": []
+
+        })
 
 # =========================================
 # CHAT IA
@@ -114,22 +154,43 @@ def api_oa(
 )
 def api_chat():
 
-    data = request.json
+    try:
 
-    pregunta = data.get(
-        "pregunta",
-        ""
-    )
+        data = request.json
 
-    respuesta = generar_respuesta(
-        pregunta
-    )
+        pregunta = data.get(
+            "pregunta",
+            ""
+        )
 
-    return jsonify({
+        respuesta = generar_respuesta(
+            pregunta
+        )
 
-        "respuesta": respuesta
+        return jsonify({
 
-    })
+            "respuesta": respuesta
+
+        })
+
+    except Exception as e:
+
+        print("ERROR CHAT:", e)
+
+        return jsonify({
+
+            "respuesta": f"""
+
+# ❌ Error
+
+No fue posible responder.
+
+Detalle:
+{str(e)}
+
+"""
+
+        })
 
 # =========================================
 # PEDAGOGÍA IA
@@ -146,37 +207,43 @@ def api_pedagogia():
         data = request.json
 
         asignatura = data.get(
-            "asignatura"
+            "asignatura",
+            ""
         )
 
         curso = data.get(
-            "curso"
+            "curso",
+            ""
         )
 
         unidad = data.get(
-            "unidad"
+            "unidad",
+            ""
         )
 
         oa = data.get(
-            "oa"
+            "oa",
+            ""
         )
 
         resultado = f"""
 
-# 📚 Planificación Generada
+# ✅ Planificación Generada
 
 ---
 
-## 📘 Asignatura
+## 📚 Contexto Pedagógico
+
+### 📘 Asignatura
 {asignatura}
 
-## 🎓 Curso
+### 🎓 Curso
 {curso}
 
-## 📖 Unidad
+### 📖 Unidad
 {unidad}
 
-## 🎯 OA
+### 🎯 OA
 {oa}
 
 ---
@@ -317,7 +384,7 @@ def api_pedagogia():
 
     except Exception as e:
 
-        print("ERROR:", e)
+        print("ERROR PEDAGOGIA:", e)
 
         return jsonify({
 
@@ -327,7 +394,8 @@ def api_pedagogia():
 
 No fue posible generar la planificación.
 
-### Detalle:
+## Detalle técnico
+
 {str(e)}
 
 """
@@ -341,5 +409,9 @@ No fue posible generar la planificación.
 if __name__ == "__main__":
 
     app.run(
+
+        host="0.0.0.0",
+        port=10000,
         debug=True
+
     )
