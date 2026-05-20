@@ -3,753 +3,831 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>
-Copiloto Docente IA
-</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-background:#03133b;
-color:white;
-font-family:Arial;
-overflow:hidden;
-}
-
-.container{
-display:grid;
-grid-template-columns:280px 380px 1fr;
-height:100vh;
-}
-
-.panel{
-padding:20px;
-overflow:auto;
-border-right:1px solid rgba(255,255,255,.08);
-}
+    <meta charset="UTF-8">
 
-.card{
-background:#182952;
-border-radius:18px;
-padding:18px;
-margin-bottom:18px;
-}
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-h1{
-font-size:20px;
-margin-bottom:20px;
-}
+    <title>
+        Copiloto Docente IA
+    </title>
 
-textarea{
-width:100%;
-height:140px;
-border:none;
-border-radius:14px;
-padding:14px;
-font-size:16px;
-resize:none;
-margin-bottom:16px;
-}
+    <style>
 
-select{
-width:100%;
-padding:14px;
-border:none;
-border-radius:14px;
-margin-bottom:14px;
-font-size:16px;
-}
+        * {
 
-button{
-width:100%;
-padding:14px;
-border:none;
-border-radius:14px;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-margin-bottom:12px;
-color:white;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
-.btn-green{
-background:#22c55e;
-}
+        }
 
-.btn-blue{
-background:#1d74e7;
-}
+        body {
 
-.btn-purple{
-background:#9333ea;
-}
+            background: #03123d;
 
-.resultado{
+            color: white;
 
-background:#182952;
+            font-family: Arial, sans-serif;
 
-border-radius:18px;
+            display: flex;
 
-padding:30px;
+            min-height: 100vh;
 
-min-height:90vh;
+        }
 
-overflow:auto;
+        /* ===================================== */
+        /* PANEL IZQUIERDO */
+        /* ===================================== */
 
-line-height:1.9;
+        .sidebar {
 
-font-size:15px;
+            width: 320px;
 
-color:white;
+            background: #02103a;
 
-box-shadow:0 0 20px rgba(0,0,0,.3);
+            padding: 20px;
 
-}
+            border-right:
+                2px solid rgba(255,255,255,0.1);
 
-/* ================================= */
-/* MARKDOWN IA */
-/* ================================= */
+        }
 
-.resultado h1,
-.resultado h2,
-.resultado h3{
+        .titulo {
 
-color:#00e5ff;
+            font-size: 20px;
 
-margin-top:28px;
+            font-weight: bold;
 
-margin-bottom:16px;
+            margin-bottom: 25px;
 
-font-weight:bold;
+        }
 
-}
+        textarea {
 
-.resultado h4,
-.resultado h5{
+            width: 100%;
 
-color:#7dd3fc;
+            height: 160px;
 
-margin-top:22px;
+            border-radius: 18px;
 
-margin-bottom:12px;
+            border: none;
 
-}
+            padding: 18px;
 
-.resultado p{
+            font-size: 16px;
 
-margin-bottom:16px;
+            margin-bottom: 20px;
 
-}
+            resize: none;
 
-.resultado ul{
+        }
 
-padding-left:28px;
+        button {
 
-margin-bottom:18px;
+            width: 100%;
 
-}
+            border: none;
 
-.resultado li{
+            border-radius: 16px;
 
-margin-bottom:10px;
+            padding: 16px;
 
-}
+            color: white;
 
-.resultado strong{
+            font-size: 18px;
 
-color:#ffffff;
+            font-weight: bold;
 
-}
+            cursor: pointer;
 
-.resultado table{
+            margin-bottom: 16px;
 
-width:100%;
+            transition: 0.3s;
 
-border-collapse:collapse;
+        }
 
-margin-top:20px;
+        button:hover {
 
-margin-bottom:20px;
+            transform: scale(1.02);
 
-}
+        }
 
-.resultado th,
-.resultado td{
+        .btn-preguntar {
 
-border:1px solid rgba(255,255,255,.15);
+            background: #22c55e;
 
-padding:12px;
+        }
 
-}
+        .btn-imagen {
 
-.resultado th{
+            background: linear-gradient(
+                90deg,
+                #a855f7,
+                #9333ea
+            );
 
-background:rgba(0,229,255,.15);
+        }
 
-}
+        /* ===================================== */
+        /* CENTRO */
+        /* ===================================== */
 
-.resultado code{
+        .panel-central {
 
-background:rgba(255,255,255,.08);
+            width: 420px;
 
-padding:4px 8px;
+            padding: 20px;
 
-border-radius:6px;
+        }
 
-}
+        .card {
 
-.checks label{
-display:block;
-margin-bottom:14px;
-font-size:16px;
-}
+            background: rgba(255,255,255,0.08);
 
-.checks input{
-margin-right:10px;
-}
+            border-radius: 22px;
 
-#respuestaIA{
-margin-top:16px;
-line-height:1.6;
-white-space:pre-wrap;
-font-size:14px;
-}
+            padding: 20px;
 
-/* ================================= */
-/* MODAL HISTORIAL */
-/* ================================= */
+            margin-bottom: 22px;
 
-.modal{
+        }
 
-display:none;
+        .card h2 {
 
-position:fixed;
+            margin-bottom: 20px;
 
-top:0;
-left:0;
+            font-size: 18px;
 
-width:100%;
-height:100%;
+        }
 
-background:rgba(0,0,0,.7);
+        select {
 
-justify-content:center;
-align-items:center;
+            width: 100%;
 
-z-index:9999;
+            padding: 14px;
 
-}
+            border-radius: 14px;
 
-.modal-content{
+            border: none;
 
-background:#182952;
+            margin-bottom: 16px;
 
-width:80%;
-max-width:900px;
+            font-size: 16px;
 
-height:80vh;
+        }
 
-overflow:auto;
+        .checks {
 
-border-radius:20px;
+            display: flex;
 
-padding:30px;
+            flex-direction: column;
 
-position:relative;
+            gap: 14px;
 
-}
+            margin-top: 10px;
 
-.close{
+        }
 
-position:absolute;
+        .checks label {
 
-top:15px;
-right:20px;
+            font-size: 17px;
 
-font-size:32px;
+        }
 
-cursor:pointer;
+        .btn-generar {
 
-}
+            background: #22c55e;
 
-#contenidoHistorial{
+        }
 
-white-space:pre-wrap;
+        .btn-historial {
 
-line-height:1.8;
+            background: #2563eb;
 
-margin-top:20px;
+        }
 
-}
+        .btn-pdf {
 
-@media(max-width:1200px){
+            background: linear-gradient(
+                90deg,
+                #9333ea,
+                #a855f7
+            );
 
-.container{
-grid-template-columns:1fr;
-height:auto;
-}
+        }
 
-body{
-overflow:auto;
-}
+        /* ===================================== */
+        /* RESULTADO */
+        /* ===================================== */
 
-.panel{
-border-right:none;
-border-bottom:1px solid rgba(255,255,255,.08);
-}
+        .resultado {
 
-}
+            flex: 1;
 
-</style>
+            padding: 20px;
+
+        }
+
+        .resultado-card {
+
+            background: rgba(255,255,255,0.08);
+
+            border-radius: 22px;
+
+            padding: 30px;
+
+            min-height: 90vh;
+
+            overflow-y: auto;
+
+        }
+
+        .resultado-card h2 {
+
+            margin-bottom: 25px;
+
+            font-size: 28px;
+
+        }
+
+        .resultado-card pre {
+
+            white-space: pre-wrap;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+
+            font-family: Arial;
+
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-<div class="container">
+    <!-- ================================= -->
+    <!-- SIDEBAR -->
+    <!-- ================================= -->
 
-<!-- ================================= -->
-<!-- CHAT IA -->
-<!-- ================================= -->
+    <div class="sidebar">
 
-<div class="panel">
+        <div class="titulo">
 
-<h1>
-🧠 Chat Docente IA
-</h1>
+            🧠 Chat Docente IA
 
-<div class="card">
+        </div>
 
-<textarea
-id="preguntaIA"
-placeholder="Escribe una pregunta pedagógica...">
-</textarea>
+        <textarea
+            placeholder="Escribe una pregunta pedagógica..."
+        ></textarea>
 
-<button
-class="btn-green"
-onclick="preguntarIA()">
+        <button class="btn-preguntar">
 
-💬 Preguntar
+            💬 Preguntar
 
-</button>
+        </button>
 
-<button
-class="btn-purple">
+        <button class="btn-imagen">
 
-🎨 Generar Imagen
+            🎨 Generar Imagen
 
-</button>
+        </button>
 
-<div id="respuestaIA"></div>
+    </div>
 
-</div>
+    <!-- ================================= -->
+    <!-- CONTEXTO PEDAGÓGICO -->
+    <!-- ================================= -->
 
-</div>
+    <div class="panel-central">
 
-<!-- ================================= -->
-<!-- CONTEXTO PEDAGÓGICO -->
-<!-- ================================= -->
+        <div class="card">
 
-<div class="panel">
+            <h2>
 
-<h1>
-📚 Contexto Pedagógico
-</h1>
+                📚 Contexto Pedagógico
 
-<div class="card">
+            </h2>
 
-<select
-id="asignatura"
-onchange="cargarCursos()">
+            <select id="asignatura">
 
-<option value="matematica">
-Matemática
-</option>
+                <option value="lenguaje">
 
-<option value="lenguaje">
-Lenguaje y Comunicación
-</option>
+                    Lenguaje y Comunicación
 
-<option value="ciencias">
-Ciencias Naturales
-</option>
+                </option>
 
-<option value="historia">
-Historia y Geografía
-</option>
+                <option value="matematica">
 
-<option value="ingles">
-Inglés
-</option>
+                    Matemática
 
-<option value="musica">
-Música
-</option>
+                </option>
 
-<option value="tecnologia">
-Tecnología
-</option>
+                <option value="ciencias">
 
-<option value="educacionfisica">
-Educación Física
-</option>
+                    Ciencias
 
-<option value="orientacion">
-Orientación
-</option>
+                </option>
 
-</select>
+                <option value="historia">
 
-<select
-id="curso"
-onchange="cargarUnidades()">
-</select>
+                    Historia
 
-<select
-id="unidad"
-onchange="cargarOA()">
-</select>
+                </option>
 
-<select id="oa">
-</select>
+                <option value="musica">
 
-</div>
+                    Música
 
-<div class="card checks">
+                </option>
 
-<label>
-<input type="checkbox" id="objetivos">
-Objetivos
-</label>
+                <option value="educacionfisica">
 
-<label>
-<input type="checkbox" id="indicadores">
-Indicadores
-</label>
+                    Educación Física
 
-<label>
-<input type="checkbox" id="habilidades">
-Habilidades
-</label>
+                </option>
 
-<label>
-<input type="checkbox" id="actitudes">
-Actitudes
-</label>
+            </select>
 
-<label>
-<input type="checkbox" id="evaluacion">
-Evaluación
-</label>
+            <select id="curso">
 
-<label>
-<input type="checkbox" id="nee">
-Adaptaciones NEE
-</label>
+                <option>
 
-<label>
-<input type="checkbox" id="recursos">
-Recursos
-</label>
+                    Seleccione curso
 
-<button
-class="btn-green"
-onclick="generarPlanificacion()">
+                </option>
 
-🚀 Generar
+            </select>
 
-</button>
+            <select id="unidad">
 
-<button
-class="btn-blue"
-onclick="mostrarHistorial()">
+                <option>
 
-📚 Historial
+                    Seleccione unidad
 
-</button>
+                </option>
 
-<button
-class="btn-purple"
-onclick="descargarPDF()">
+            </select>
 
-📄 Descargar PDF
+            <select id="oa">
 
-</button>
+                <option>
 
-</div>
+                    Seleccione OA
 
-</div>
+                </option>
 
-<!-- ================================= -->
-<!-- RESULTADO IA -->
-<!-- ================================= -->
+            </select>
 
-<div class="panel">
+        </div>
 
-<h1>
-📄 Resultado IA
-</h1>
+        <!-- ================================= -->
+        <!-- OPCIONES -->
+        <!-- ================================= -->
 
-<div
-class="resultado"
-id="resultado">
+        <div class="card">
+
+            <div class="checks">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="objetivos"
+                    >
+                    Objetivos
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="indicadores"
+                    >
+                    Indicadores
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="habilidades"
+                    >
+                    Habilidades
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="actitudes"
+                    >
+                    Actitudes
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="evaluacion"
+                    >
+                    Evaluación
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="nee"
+                    >
+                    Adaptaciones NEE
+                </label>
+
+            </div>
+
+            <br>
+
+            <button
+                id="btnGenerar"
+                class="btn-generar"
+            >
+
+                🚀 Generar
+
+            </button>
+
+            <button class="btn-historial">
+
+                📚 Historial
+
+            </button>
+
+            <button class="btn-pdf">
+
+                📄 Descargar PDF
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- RESULTADO -->
+    <!-- ================================= -->
+
+    <div class="resultado">
+
+        <div
+            class="resultado-card"
+            id="resultado"
+        >
+
+            <h2>
+
+                📄 Resultado IA
+
+            </h2>
+
+            <pre>
 
 Resultado IA aparecerá aquí.
 
-</div>
+            </pre>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<!-- ================================= -->
-<!-- MODAL HISTORIAL -->
-<!-- ================================= -->
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
 
-<div
-class="modal"
-id="modalHistorial">
+    <script>
 
-<div class="modal-content">
+        const asignaturaSelect =
+            document.getElementById("asignatura");
 
-<span
-class="close"
-onclick="cerrarHistorial()">
+        const cursoSelect =
+            document.getElementById("curso");
 
-&times;
+        const unidadSelect =
+            document.getElementById("unidad");
 
-</span>
+        const oaSelect =
+            document.getElementById("oa");
 
-<h1>
-📚 Historial
-</h1>
+        // =====================================
+        // CURSOS
+        // =====================================
 
-<div id="contenidoHistorial"></div>
+        async function cargarCursos() {
 
-</div>
+            const asignatura =
+                asignaturaSelect.value;
 
-</div>
+            const response = await fetch(
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
+                `/api/cursos/${asignatura}`
 
-const asignaturaSelect =
-    document.getElementById("asignatura");
+            );
 
-const cursoSelect =
-    document.getElementById("curso");
+            const data =
+                await response.json();
 
-const unidadSelect =
-    document.getElementById("unidad");
+            cursoSelect.innerHTML = "";
 
-const oaSelect =
-    document.getElementById("oa");
+            data.cursos.forEach((curso) => {
 
+                const option =
+                    document.createElement("option");
 
-// ======================================
-// CARGAR CURSOS
-// ======================================
+                option.value = curso;
 
-async function cargarCursos() {
+                option.textContent = curso;
 
-    const asignatura =
-        asignaturaSelect.value;
+                cursoSelect.appendChild(option);
 
-    cursoSelect.innerHTML =
-        "<option>Cargando...</option>";
+            });
 
-    unidadSelect.innerHTML =
-        "<option>Seleccione unidad</option>";
-
-    oaSelect.innerHTML =
-        "<option>Seleccione OA</option>";
-
-    const response = await fetch(
-
-        `/api/cursos/${encodeURIComponent(asignatura)}`
-
-    );
-
-    const data = await response.json();
-
-    cursoSelect.innerHTML = "";
-
-    data.cursos.forEach((curso) => {
-
-        const option =
-            document.createElement("option");
-
-        option.value = curso;
-
-        option.textContent = curso;
-
-        cursoSelect.appendChild(option);
-
-    });
-
-    cargarUnidades();
-
-}
-
-
-// ======================================
-// CARGAR UNIDADES
-// ======================================
-
-async function cargarUnidades() {
-
-    const asignatura =
-        asignaturaSelect.value;
-
-    const curso =
-        cursoSelect.value;
-
-    unidadSelect.innerHTML =
-        "<option>Cargando...</option>";
-
-    oaSelect.innerHTML =
-        "<option>Seleccione OA</option>";
-
-    const response = await fetch(
-
-        `/api/unidades/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}`
-
-    );
-
-    const data = await response.json();
-
-    unidadSelect.innerHTML = "";
-
-    data.unidades.forEach((unidad) => {
-
-        const option =
-            document.createElement("option");
-
-        option.value =
-            unidad.nombre;
-
-        option.textContent =
-            unidad.nombre;
-
-        unidadSelect.appendChild(option);
-
-    });
-
-    cargarOA();
-
-}
-
-
-// ======================================
-// CARGAR OA
-// ======================================
-
-async function cargarOA() {
-
-    const asignatura =
-        asignaturaSelect.value;
-
-    const curso =
-        cursoSelect.value;
-
-    const unidad =
-        unidadSelect.value;
-
-    oaSelect.innerHTML =
-        "<option>Cargando OA...</option>";
-
-    const response = await fetch(
-
-        `/api/oa/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}/${encodeURIComponent(unidad)}`
-
-    );
-
-    const data = await response.json();
-
-    oaSelect.innerHTML = "";
-
-    data.oa.forEach((item) => {
-
-        const option =
-            document.createElement("option");
-
-        if (typeof item === "object") {
-
-            option.value =
-                item.descripcion;
-
-            option.textContent =
-                `${item.codigo} - ${item.descripcion}`;
+            cargarUnidades();
 
         }
 
-        else {
+        // =====================================
+        // UNIDADES
+        // =====================================
 
-            option.value = item;
+        async function cargarUnidades() {
 
-            option.textContent = item;
+            const asignatura =
+                asignaturaSelect.value;
+
+            const curso =
+                cursoSelect.value;
+
+            const response = await fetch(
+
+                `/api/unidades/${asignatura}/${curso}`
+
+            );
+
+            const data =
+                await response.json();
+
+            unidadSelect.innerHTML = "";
+
+            data.unidades.forEach((unidad) => {
+
+                const option =
+                    document.createElement("option");
+
+                option.value =
+                    unidad.nombre;
+
+                option.textContent =
+                    unidad.nombre;
+
+                unidadSelect.appendChild(option);
+
+            });
+
+            cargarOA();
 
         }
 
-        oaSelect.appendChild(option);
+        // =====================================
+        // OA
+        // =====================================
 
-    });
+        async function cargarOA() {
 
-}
+            const asignatura =
+                asignaturaSelect.value;
 
+            const curso =
+                cursoSelect.value;
 
-// ======================================
-// EVENTOS
-// ======================================
+            const unidad =
+                unidadSelect.value;
 
-asignaturaSelect.addEventListener(
+            const response = await fetch(
 
-    "change",
+                `/api/oa/${asignatura}/${curso}/${unidad}`
 
-    cargarCursos
+            );
 
-);
+            const data =
+                await response.json();
 
-cursoSelect.addEventListener(
+            oaSelect.innerHTML = "";
 
-    "change",
+            data.oa.forEach((item) => {
 
-    cargarUnidades
+                const option =
+                    document.createElement("option");
 
-);
+                if (typeof item === "object") {
 
-unidadSelect.addEventListener(
+                    option.value =
+                        item.descripcion;
 
-    "change",
+                    option.textContent =
+                        `${item.codigo} - ${item.descripcion}`;
 
-    cargarOA
+                }
 
-);
+                else {
 
+                    option.value = item;
 
-// ======================================
-// INICIO
-// ======================================
+                    option.textContent = item;
 
-window.onload = () => {
+                }
 
-    cargarCursos();
+                oaSelect.appendChild(option);
 
-};
+            });
 
-</script>
+        }
+
+        // =====================================
+        // EVENTOS
+        // =====================================
+
+        asignaturaSelect.addEventListener(
+
+            "change",
+
+            cargarCursos
+
+        );
+
+        cursoSelect.addEventListener(
+
+            "change",
+
+            cargarUnidades
+
+        );
+
+        unidadSelect.addEventListener(
+
+            "change",
+
+            cargarOA
+
+        );
+
+        // =====================================
+        // GENERAR
+        // =====================================
+
+        async function generarPlanificacion() {
+
+            const resultado =
+                document.getElementById("resultado");
+
+            resultado.innerHTML = `
+
+                <div class="resultado-card">
+
+                    <h2>
+                        ⏳ Generando...
+                    </h2>
+
+                </div>
+
+            `;
+
+            const body = {
+
+                asignatura:
+                    asignaturaSelect.value,
+
+                curso:
+                    cursoSelect.value,
+
+                unidad:
+                    unidadSelect.value,
+
+                oa:
+                    oaSelect.value,
+
+                objetivos:
+                    document.getElementById("objetivos").checked,
+
+                indicadores:
+                    document.getElementById("indicadores").checked,
+
+                habilidades:
+                    document.getElementById("habilidades").checked,
+
+                actitudes:
+                    document.getElementById("actitudes").checked,
+
+                evaluacion:
+                    document.getElementById("evaluacion").checked,
+
+                nee:
+                    document.getElementById("nee").checked
+
+            };
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        "/api/pedagogia",
+
+                        {
+
+                            method: "POST",
+
+                            headers: {
+
+                                "Content-Type":
+                                    "application/json"
+
+                            },
+
+                            body:
+                                JSON.stringify(body)
+
+                        }
+
+                    );
+
+                const data =
+                    await response.json();
+
+                resultado.innerHTML = `
+
+                    <div class="resultado-card">
+
+                        <h2>
+                            ✅ Planificación Generada
+                        </h2>
+
+                        <pre>
+${data.resultado}
+                        </pre>
+
+                    </div>
+
+                `;
+
+            }
+
+            catch (error) {
+
+                resultado.innerHTML = `
+
+                    <div class="resultado-card">
+
+                        <h2>
+                            ❌ Error
+                        </h2>
+
+                        <p>
+                            No se pudo generar.
+                        </p>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+        // =====================================
+        // BOTÓN
+        // =====================================
+
+        document
+            .getElementById("btnGenerar")
+            .addEventListener(
+
+                "click",
+
+                generarPlanificacion
+
+            );
+
+        // =====================================
+        // INICIO
+        // =====================================
+
+        window.onload = () => {
+
+            cargarCursos();
+
+        };
+
+    </script>
 
 </body>
+
 </html>
