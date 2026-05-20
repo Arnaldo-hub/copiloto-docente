@@ -7,6 +7,7 @@ from curriculum import (
 )
 
 from pedagogia import (
+    generar_respuesta,
     generar_objetivos,
     generar_indicadores,
     generar_habilidades,
@@ -36,9 +37,7 @@ def home():
 # CURSOS
 # =========================================
 
-@app.route(
-    "/api/cursos/<asignatura>"
-)
+@app.route("/api/cursos/<asignatura>")
 def api_cursos(asignatura):
 
     cursos = obtener_cursos(
@@ -46,9 +45,7 @@ def api_cursos(asignatura):
     )
 
     return jsonify({
-
         "cursos": cursos
-
     })
 
 # =========================================
@@ -108,181 +105,6 @@ def api_oa(
     })
 
 # =========================================
-# PEDAGOGÍA IA
-# =========================================
-
-@app.route(
-    "/api/pedagogia",
-    methods=["POST"]
-)
-def api_pedagogia():
-
-    data = request.json
-
-    asignatura = data.get(
-        "asignatura"
-    )
-
-    curso = data.get(
-        "curso"
-    )
-
-    unidad = data.get(
-        "unidad"
-    )
-
-    oa = data.get(
-        "oa"
-    )
-
-    resultado = f"""
-
-📚 ASIGNATURA:
-{asignatura}
-
-🎓 CURSO:
-{curso}
-
-📖 UNIDAD:
-{unidad}
-
-🎯 OA:
-{oa}
-
-"""
-
-    # =====================================
-    # OBJETIVOS
-    # =====================================
-
-    if data.get("objetivos"):
-
-        resultado += "\n\n🎯 OBJETIVOS\n"
-
-        objetivos = generar_objetivos(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in objetivos:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # INDICADORES
-    # =====================================
-
-    if data.get("indicadores"):
-
-        resultado += "\n\n📊 INDICADORES\n"
-
-        indicadores = generar_indicadores(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in indicadores:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # HABILIDADES
-    # =====================================
-
-    if data.get("habilidades"):
-
-        resultado += "\n\n🧠 HABILIDADES\n"
-
-        habilidades = generar_habilidades(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in habilidades:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # ACTITUDES
-    # =====================================
-
-    if data.get("actitudes"):
-
-        resultado += "\n\n🤝 ACTITUDES\n"
-
-        actitudes = generar_actitudes(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in actitudes:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # NEE
-    # =====================================
-
-    if data.get("nee"):
-
-        resultado += "\n\n♿ ADAPTACIONES NEE\n"
-
-        nee = generar_nee(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in nee:
-
-            resultado += f"\n• {item}"
-
-    # =====================================
-    # EVALUACIÓN
-    # =====================================
-
-    if data.get("evaluacion"):
-
-        resultado += "\n\n📝 EVALUACIÓN\n"
-
-        evaluacion = generar_evaluacion(
-
-            asignatura,
-            curso,
-            unidad,
-            oa
-
-        )
-
-        for item in evaluacion:
-
-            resultado += f"\n• {item}"
-
-    return jsonify({
-
-        "resultado": resultado
-
-    })
-# =========================================
 # CHAT IA
 # =========================================
 
@@ -291,10 +113,6 @@ def api_pedagogia():
     methods=["POST"]
 )
 def api_chat():
-
-    from pedagogia import (
-        generar_respuesta
-    )
 
     data = request.json
 
@@ -314,142 +132,207 @@ def api_chat():
     })
 
 # =========================================
-# PLANIFICACIÓN IA
+# PEDAGOGÍA IA
 # =========================================
 
 @app.route(
-    "/api/planificacion",
+    "/api/pedagogia",
     methods=["POST"]
 )
-def api_planificacion():
+def api_pedagogia():
 
-    from pedagogia import (
-        generar_planificacion,
-        generar_objetivos,
-        generar_indicadores,
-        generar_habilidades,
-        generar_actitudes,
-        generar_nee,
-        generar_evaluacion
-    )
+    try:
 
-    data = request.json
+        data = request.json
 
-    asignatura = data.get(
-        "asignatura"
-    )
+        asignatura = data.get(
+            "asignatura"
+        )
 
-    curso = data.get(
-        "curso"
-    )
+        curso = data.get(
+            "curso"
+        )
 
-    unidad = data.get(
-        "unidad"
-    )
+        unidad = data.get(
+            "unidad"
+        )
 
-    oa = data.get(
-        "oa"
-    )
+        oa = data.get(
+            "oa"
+        )
 
-    resultado = f"""
+        resultado = f"""
 
-📚 ASIGNATURA:
+# 📚 Planificación Generada
+
+---
+
+## 📘 Asignatura
 {asignatura}
 
-🎓 CURSO:
+## 🎓 Curso
 {curso}
 
-📖 UNIDAD:
+## 📖 Unidad
 {unidad}
 
-🎯 OA:
+## 🎯 OA
 {oa}
+
+---
 
 """
 
-    if data.get("objetivos"):
+        # =====================================
+        # OBJETIVOS
+        # =====================================
 
-        resultado += "\n\n🎯 OBJETIVOS\n\n"
+        if data.get("objetivos"):
 
-        resultado += generar_objetivos(
+            resultado += """
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+# 🎯 Objetivos
 
-        )
+"""
 
-    if data.get("indicadores"):
+            resultado += generar_objetivos(
 
-        resultado += "\n\n📊 INDICADORES\n\n"
+                asignatura,
+                curso,
+                unidad,
+                oa
 
-        resultado += generar_indicadores(
+            )
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+        # =====================================
+        # INDICADORES
+        # =====================================
 
-        )
+        if data.get("indicadores"):
 
-    if data.get("habilidades"):
+            resultado += """
 
-        resultado += "\n\n🧠 HABILIDADES\n\n"
+# 📊 Indicadores
 
-        resultado += generar_habilidades(
+"""
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+            resultado += generar_indicadores(
 
-        )
+                asignatura,
+                curso,
+                unidad,
+                oa
 
-    if data.get("actitudes"):
+            )
 
-        resultado += "\n\n🤝 ACTITUDES\n\n"
+        # =====================================
+        # HABILIDADES
+        # =====================================
 
-        resultado += generar_actitudes(
+        if data.get("habilidades"):
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+            resultado += """
 
-        )
+# 🧠 Habilidades
 
-    if data.get("nee"):
+"""
 
-        resultado += "\n\n♿ ADAPTACIONES NEE\n\n"
+            resultado += generar_habilidades(
 
-        resultado += generar_nee(
+                asignatura,
+                curso,
+                unidad,
+                oa
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+            )
 
-        )
+        # =====================================
+        # ACTITUDES
+        # =====================================
 
-    if data.get("evaluacion"):
+        if data.get("actitudes"):
 
-        resultado += "\n\n📝 EVALUACIÓN\n\n"
+            resultado += """
 
-        resultado += generar_evaluacion(
+# 🤝 Actitudes
 
-            asignatura,
-            curso,
-            unidad,
-            oa
+"""
 
-        )
+            resultado += generar_actitudes(
 
-    return jsonify({
+                asignatura,
+                curso,
+                unidad,
+                oa
 
-        "resultado": resultado
+            )
 
-    })
+        # =====================================
+        # NEE
+        # =====================================
+
+        if data.get("nee"):
+
+            resultado += """
+
+# ♿ Adaptaciones NEE
+
+"""
+
+            resultado += generar_nee(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # EVALUACIÓN
+        # =====================================
+
+        if data.get("evaluacion"):
+
+            resultado += """
+
+# 📝 Evaluación
+
+"""
+
+            resultado += generar_evaluacion(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        return jsonify({
+
+            "resultado": resultado
+
+        })
+
+    except Exception as e:
+
+        print("ERROR:", e)
+
+        return jsonify({
+
+            "resultado": f"""
+
+# ❌ Error
+
+No fue posible generar la planificación.
+
+### Detalle:
+{str(e)}
+
+"""
+
+        })
 
 # =========================================
 # MAIN
