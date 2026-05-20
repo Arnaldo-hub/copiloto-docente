@@ -85,7 +85,8 @@ y fácil de leer para docentes.
 
             ],
 
-            temperature=0.7
+           temperature=0.3,
+max_tokens=700
 
         )
 
