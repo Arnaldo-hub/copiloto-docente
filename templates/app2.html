@@ -797,30 +797,97 @@ No se pudo generar la planificación.
 /* PREGUNTAR IA */
 /* ================================================= */
 
-function preguntarIA(){
+async function preguntarIA(){
 
 const pregunta =
 document.getElementById("pregunta").value;
+
+if(!pregunta){
+
+alert("Escribe una pregunta.");
+
+return;
+
+}
+
+resultado.innerHTML = `
+
+<div class="loading">
+
+⏳ Consultando IA...
+
+</div>
+
+`;
+
+try{
+
+const response =
+await fetch(
+
+"/api/chat",
+
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+body:JSON.stringify({
+
+pregunta:pregunta
+
+})
+
+}
+
+);
+
+const data =
+await response.json();
 
 resultado.innerHTML = `
 
 <h1>
 
-💬 Consulta Docente
+💬 Respuesta IA
 
 </h1>
 
 <div class="tarjeta">
 
-<p>
-
-${pregunta}
-
-</p>
+${marked.parse(data.respuesta)}
 
 </div>
 
 `;
+
+}
+
+catch(error){
+
+resultado.innerHTML = `
+
+<h1>
+
+❌ Error
+
+</h1>
+
+<p>
+
+No fue posible consultar IA.
+
+</p>
+
+`;
+
+}
 
 }
 
