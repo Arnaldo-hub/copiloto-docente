@@ -1014,39 +1014,74 @@ resultado.innerHTML = html;
 /* ================================================= */
 function descargarPDF(){
 
-const elemento =
-document.getElementById("resultado");
+    const elemento =
+    document.getElementById(
+        "resultado"
+    )
 
-const opciones = {
+    // CLONAR CONTENIDO
+    const copia =
+    elemento.cloneNode(true)
 
-margin:0.5,
+    // CREAR CONTENEDOR TEMPORAL
+    const contenedor =
+    document.createElement("div")
 
-filename:"planificacion_docente.pdf",
+    contenedor.style.background = "white"
+    contenedor.style.color = "black"
+    contenedor.style.padding = "40px"
+    contenedor.style.width = "1000px"
 
-image:{
-type:"jpeg",
-quality:1
-},
+    contenedor.innerHTML = copia.innerHTML
 
-html2canvas:{
-scale:2
-},
+    document.body.appendChild(
+        contenedor
+    )
 
-jsPDF:{
-unit:"in",
-format:"a4",
-orientation:"portrait"
-}
+    const opciones = {
 
-};
+        margin:0.5,
 
-html2pdf()
+        filename:
+        "planificacion_docente.pdf",
 
-.set(opciones)
+        image:{
+            type:"jpeg",
+            quality:1
+        },
 
-.from(elemento)
+        html2canvas:{
+            scale:2,
+            useCORS:true
+        },
 
-.save();
+        jsPDF:{
+            unit:"in",
+            format:"a4",
+            orientation:"portrait"
+        }
+
+    }
+
+    setTimeout(()=>{
+
+        html2pdf()
+
+        .set(opciones)
+
+        .from(contenedor)
+
+        .save()
+
+        .then(()=>{
+
+            document.body.removeChild(
+                contenedor
+            )
+
+        })
+
+    },1000)
 
 }
 
