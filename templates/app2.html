@@ -545,472 +545,127 @@ onclick="cerrarHistorial()">
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 
-let historial = []
+const asignaturaSelect =
+    document.getElementById("asignatura");
 
-// =========================================
-// CHAT IA
-// =========================================
+const cursoSelect =
+    document.getElementById("curso");
 
-async function preguntarIA(){
+const unidadSelect =
+    document.getElementById("unidad");
 
-const pregunta =
+const oaSelect =
+    document.getElementById("oa");
 
-document.getElementById(
-'preguntaIA'
-).value
 
-const respuesta =
-
-document.getElementById(
-'respuestaIA'
-)
-
-respuesta.innerHTML =
-'⏳ Pensando...'
-
-try{
-
-const res = await fetch(
-
-'/api/chat',
-
-{
-
-method:'POST',
-
-headers:{
-'Content-Type':'application/json'
-},
-
-body:JSON.stringify({
-
-pregunta:pregunta
-
-})
-
-}
-
-)
-
-const data =
-await res.json()
-
-respuesta.innerHTML =
-data.respuesta
-
-}catch(error){
-
-respuesta.innerHTML =
-'ERROR IA'
-
-}
-
-}
-
-// =========================================
-// GENERAR PLANIFICACIÓN
-// =========================================
-
-async function generarPlanificacion(){
-
-const resultado =
-
-document.getElementById(
-'resultado'
-)
-
-resultado.innerHTML =
-'⏳ Generando planificación...'
-
-try{
-
-const res = await fetch(
-
-'/api/planificacion',
-
-{
-
-method:'POST',
-
-headers:{
-'Content-Type':'application/json'
-},
-
-body:JSON.stringify({
-
-asignatura:
-document.getElementById(
-'asignatura'
-).value,
-
-curso:
-document.getElementById(
-'curso'
-).value,
-
-unidad:
-document.getElementById(
-'unidad'
-).value,
-
-oa:
-document.getElementById(
-'oa'
-).value,
-
-objetivos:
-document.getElementById(
-'objetivos'
-).checked,
-
-indicadores:
-document.getElementById(
-'indicadores'
-).checked,
-
-habilidades:
-document.getElementById(
-'habilidades'
-).checked,
-
-actitudes:
-document.getElementById(
-'actitudes'
-).checked,
-
-evaluacion:
-document.getElementById(
-'evaluacion'
-).checked,
-
-nee:
-document.getElementById(
-'nee'
-).checked,
-
-recursos:
-document.getElementById(
-'recursos'
-).checked
-
-})
-
-}
-
-)
-
-const data =
-await res.json()
-
-resultado.innerHTML =
-
-`
-
-<h2>
-✅ Planificación generada
-</h2>
-
-<br>
-
-${marked.parse(data.resultado)}
-
-`
-
-historial.push({
-
-fecha:
-new Date().toLocaleString(),
-
-contenido:
-data.resultado
-
-})
-
-}catch(error){
-
-resultado.innerHTML =
-'ERROR generando planificación'
-
-}
-
-}
-
-// =========================================
-// HISTORIAL MODAL
-// =========================================
-
-function mostrarHistorial(){
-
-if(historial.length === 0){
-
-alert(
-'No hay historial aún'
-)
-
-return
-
-}
-
-let texto = ''
-
-historial.forEach((h,index)=>{
-
-texto +=
-
-`
-
-${index+1})
-${h.fecha}
-
-${h.contenido}
-
-=====================================
-
-`
-
-})
-
-document.getElementById(
-'contenidoHistorial'
-).innerHTML =
-
-`
-
-<pre style="white-space:pre-wrap;line-height:1.8;">
-
-${texto}
-
-</pre>
-
-`
-
-document.getElementById(
-'modalHistorial'
-).style.display = 'flex'
-
-}
-
-function cerrarHistorial(){
-
-document.getElementById(
-'modalHistorial'
-).style.display = 'none'
-
-}
-
-// =========================================
-// CERRAR CON ESC
-// =========================================
-
-document.addEventListener(
-
-'keydown',
-
-function(e){
-
-if(e.key === 'Escape'){
-
-cerrarHistorial()
-
-}
-
-}
-
-)
-
-// =========================================
-// CERRAR HACIENDO CLICK AFUERA
-// =========================================
-
-window.onclick = function(event){
-
-const modal =
-
-document.getElementById(
-'modalHistorial'
-)
-
-if(event.target === modal){
-
-cerrarHistorial()
-
-}
-
-}
-
-// =========================================
-// DESCARGAR PDF
-// =========================================
-
-function descargarPDF(){
-
-const contenido =
-
-document.getElementById(
-'resultado'
-).innerText
-
-const blob = new Blob(
-
-[contenido],
-
-{
-type:'text/plain'
-}
-
-)
-
-const enlace =
-
-document.createElement('a')
-
-enlace.href =
-URL.createObjectURL(blob)
-
-enlace.download =
-'planificacion.txt'
-
-enlace.click()
-
-}
-
-// =========================================
+// ======================================
 // CARGAR CURSOS
-// =========================================
+// ======================================
 
-async function cargarCursos(){
+async function cargarCursos() {
 
-const asignatura =
+    const asignatura =
+        asignaturaSelect.value;
 
-document.getElementById(
-'asignatura'
-).value
+    cursoSelect.innerHTML =
+        "<option>Cargando...</option>";
 
-const curso =
+    unidadSelect.innerHTML =
+        "<option>Seleccione unidad</option>";
 
-document.getElementById(
-'curso'
-)
+    oaSelect.innerHTML =
+        "<option>Seleccione OA</option>";
 
-curso.innerHTML =
-'<option>Cargando...</option>'
+    const response = await fetch(
 
-try{
+        `/api/cursos/${encodeURIComponent(asignatura)}`
 
-const res = await fetch(
+    );
 
-`/api/cursos/${asignatura}`
+    const data = await response.json();
 
-)
+    cursoSelect.innerHTML = "";
 
-const data =
-await res.json()
+    data.cursos.forEach((curso) => {
 
-curso.innerHTML = ''
+        const option =
+            document.createElement("option");
 
-data.cursos.forEach(c=>{
+        option.value = curso;
 
-curso.innerHTML += `
+        option.textContent = curso;
 
-<option value="${c}">
-${c}
-</option>
+        cursoSelect.appendChild(option);
 
-`
+    });
 
-})
-
-cargarUnidades()
-
-}catch(error){
-
-curso.innerHTML =
-'<option>Error</option>'
+    cargarUnidades();
 
 }
 
-}
 
-// =========================================
+// ======================================
 // CARGAR UNIDADES
-// =========================================
+// ======================================
 
-async function cargarUnidades(){
+async function cargarUnidades() {
 
-const asignatura =
+    const asignatura =
+        asignaturaSelect.value;
 
-document.getElementById(
-'asignatura'
-).value
+    const curso =
+        cursoSelect.value;
 
-const curso =
+    unidadSelect.innerHTML =
+        "<option>Cargando...</option>";
 
-document.getElementById(
-'curso'
-).value
+    oaSelect.innerHTML =
+        "<option>Seleccione OA</option>";
 
-const unidad =
+    const response = await fetch(
 
-document.getElementById(
-'unidad'
-)
+        `/api/unidades/${encodeURIComponent(asignatura)}/${encodeURIComponent(curso)}`
 
-unidad.innerHTML =
-'<option>Cargando...</option>'
+    );
 
-try{
+    const data = await response.json();
 
-const res = await fetch(
+    unidadSelect.innerHTML = "";
 
-`/api/unidades/${asignatura}/${curso}`
+    data.unidades.forEach((unidad) => {
 
-)
+        const option =
+            document.createElement("option");
 
-const data =
-await res.json()
+        option.value =
+            unidad.nombre;
 
-unidad.innerHTML = ''
+        option.textContent =
+            unidad.nombre;
 
-data.unidades.forEach(u=>{
+        unidadSelect.appendChild(option);
 
-unidad.innerHTML += `
+    });
 
-<option value="${u.nombre}">
-${u.nombre}
-</option>
-
-`
-
-})
-
-cargarOA()
-
-}catch(error){
-
-unidad.innerHTML =
-'<option>Error</option>'
+    cargarOA();
 
 }
 
-}
 
-// =========================================
+// ======================================
 // CARGAR OA
-// =========================================
+// ======================================
 
 async function cargarOA() {
 
     const asignatura =
-        document.getElementById("asignatura").value;
+        asignaturaSelect.value;
 
     const curso =
-        document.getElementById("curso").value;
+        cursoSelect.value;
 
     const unidad =
-        document.getElementById("unidad").value;
-
-    const oaSelect =
-        document.getElementById("oa");
+        unidadSelect.value;
 
     oaSelect.innerHTML =
         "<option>Cargando OA...</option>";
@@ -1030,7 +685,6 @@ async function cargarOA() {
         const option =
             document.createElement("option");
 
-        // SI ES OBJETO JSON
         if (typeof item === "object") {
 
             option.value =
@@ -1041,7 +695,6 @@ async function cargarOA() {
 
         }
 
-        // SI ES TEXTO SIMPLE
         else {
 
             option.value = item;
@@ -1056,56 +709,46 @@ async function cargarOA() {
 
 }
 
-// =====================================
-// SI ES OBJETO JSON
-// =====================================
 
-if(typeof item === 'object'){
+// ======================================
+// EVENTOS
+// ======================================
 
-const codigo = item.codigo || ''
-const descripcion = item.descripcion || ''
+asignaturaSelect.addEventListener(
 
-textoOA = `${codigo} - ${descripcion}`
+    "change",
 
-}else{
+    cargarCursos
 
-textoOA = item
+);
 
-}
+cursoSelect.addEventListener(
 
-// =====================================
-// CREAR OPTION
-// =====================================
+    "change",
 
-oa.innerHTML += `
+    cargarUnidades
 
-<option value="${textoOA}">
-${textoOA}
-</option>
+);
 
-`
+unidadSelect.addEventListener(
 
-})
+    "change",
 
-}catch(error){
+    cargarOA
 
-oa.innerHTML =
-'<option>Error OA</option>'
+);
 
-}
 
-}
+// ======================================
+// INICIO
+// ======================================
 
-// =========================================
-// INICIAR
-// =========================================
+window.onload = () => {
 
-window.onload = function(){
+    cargarCursos();
 
-cargarCursos()
+};
 
-}
-  
 </script>
 
 </body>
