@@ -905,9 +905,15 @@ document.querySelector(
 
 if(!prompt){
 
-alert(
-"Escribe una idea"
-)
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+⚠️ Escribe una descripción.
+
+</div>
+
+`
 
 return
 
@@ -969,11 +975,29 @@ resultado.innerHTML=`
 <div class="tarjeta">
 
 <img
-src="${data.imagen}"
+src="${data.url}"
+
 style="
 width:100%;
+max-width:900px;
 border-radius:20px;
-">
+display:block;
+margin:auto;
+"
+
+onerror="
+
+this.outerHTML=
+
+'<div style=color:red;font-size:22px>
+
+❌ No se pudo cargar la imagen
+
+</div>'
+
+"
+
+>
 
 </div>
 
@@ -986,6 +1010,10 @@ resultado.innerHTML=`
 <div class="tarjeta">
 
 ❌ Error generando imagen
+
+<br><br>
+
+${data.error || ""}
 
 </div>
 
@@ -1008,7 +1036,6 @@ resultado.innerHTML=`
 }
 
 }
-
 /* ================================================= */
 /* HISTORIAL */
 /* ================================================= */
