@@ -7,7 +7,6 @@ from curriculum import (
 )
 
 from pedagogia import (
-from auth import auth
     generar_respuesta,
     generar_objetivos,
     generar_indicadores,
@@ -16,6 +15,8 @@ from auth import auth
     generar_nee,
     generar_evaluacion
 )
+
+from auth import auth
 
 # =========================================
 # APP
