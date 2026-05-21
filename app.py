@@ -7,6 +7,7 @@ from curriculum import (
 )
 
 from pedagogia import (
+from auth import auth
     generar_respuesta,
     generar_objetivos,
     generar_indicadores,
@@ -21,6 +22,7 @@ from pedagogia import (
 # =========================================
 
 app = Flask(__name__)
+app.secret_key = "aulamind_secret_2026"
 
 # =========================================
 # HOME
@@ -406,6 +408,7 @@ No fue posible generar la planificación.
 # MAIN
 # =========================================
 
+app.register_blueprint(auth)
 if __name__ == "__main__":
 
     app.run(
