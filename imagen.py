@@ -15,32 +15,31 @@ def generar_imagen(prompt):
 
             model="gpt-image-1",
 
-            prompt=f"""
-Lámina educativa escolar.
+            prompt=prompt,
 
-Tema:
-{prompt}
+            size="512x512",
+            quality="low"
 
-Estilo:
-colorido
-educativo
-alta calidad
-para estudiantes
-""",
-
-            size="1024x1024"
         )
 
         return {
+
             "ok": True,
-            "url": respuesta.data[0].url
+
+            "url":
+            respuesta.data[0].url
+
         }
 
     except Exception as e:
 
-        print("ERROR IMAGEN:", str(e))
+        print("ERROR:", e)
 
         return {
+
             "ok": False,
-            "error": str(e)
+
+            "error":
+            str(e)
+
         }
