@@ -4,8 +4,9 @@ import requests
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 
+
 API_URL = (
-"https://router.huggingface.co/nebius/v1/images/generations"
+"https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 )
 
 
@@ -15,41 +16,25 @@ def generar_imagen(prompt):
 
         "Authorization":
 
-        f"Bearer {HF_TOKEN}",
-
-        "Content-Type":
-
-        "application/json"
+        f"Bearer {HF_TOKEN}"
 
     }
 
-    body = {
+    payload = {
 
-        "response_format":
-
-        "b64_json",
-
-        "prompt":
+        "inputs":
 
         f"""
-Lámina educativa.
+Crear lámina educativa.
 
 Tema:
 {prompt}
 
-Colorida.
-Profesional.
-Para estudiantes.
+Estilo educativo.
+Infografía.
 Alta calidad.
-""",
-
-        "model":
-
-        "black-forest-labs/FLUX.1-schnell",
-
-        "size":
-
-        "1024x1024"
+Colorida.
+"""
 
     }
 
@@ -59,7 +44,7 @@ Alta calidad.
 
         headers=headers,
 
-        json=body,
+        json=payload,
 
         timeout=240
 
@@ -73,19 +58,11 @@ Alta calidad.
 
     )
 
-    data = r.json()
-
-    print(data)
-
     if r.status_code != 200:
 
-        raise Exception(
+        print(r.text)
 
-            str(data)
-
-        )
-
-    import base64
+        raise Exception()
 
     os.makedirs(
 
@@ -95,30 +72,27 @@ Alta calidad.
 
     )
 
-    archivo = (
+    ruta = (
 
         "static/imagen_generada.png"
 
     )
 
-    img = base64.b64decode(
-
-        data["data"][0]["b64_json"]
-
-    )
-
     with open(
 
-        archivo,
+        ruta,
 
         "wb"
 
     ) as f:
 
-        f.write(img)
+        f.write(
+
+            r.content
+
+        )
 
     return (
 
         "/static/imagen_generada.png"
-
     )
