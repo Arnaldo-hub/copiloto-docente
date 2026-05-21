@@ -416,54 +416,48 @@ app.register_blueprint(auth)
 # GENERAR IMAGEN
 # ====================================
 
-@app.route(
-"/api/imagen",
-methods=["POST"]
-)
+@app.route("/api/imagen", methods=["POST"])
 def api_imagen():
 
     try:
 
-        data = request.json
+        data = request.get_json()
 
         prompt = data.get(
-
             "prompt",
-
             ""
-
         )
 
-        url = generar_imagen(
-
+        r = generar_imagen(
             prompt
-
         )
 
         return jsonify({
 
-            "ok": True,
+            "ok":
+            r["ok"],
 
-            "imagen": url
+            "url":
+            r.get(
+                "url",
+                ""
+            ),
+
+            "error":
+            r.get(
+                "error",
+                ""
+            )
 
         })
 
     except Exception as e:
 
-        print(e)
-
         return jsonify({
 
-            "ok": False
+            "ok": False,
+
+            "error":
+            str(e)
 
         })
-
-if __name__ == "__main__":
-
-    app.run(
-
-        host="0.0.0.0",
-        port=10000,
-        debug=True
-
-    )
