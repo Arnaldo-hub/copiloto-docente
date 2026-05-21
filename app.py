@@ -437,9 +437,9 @@ def api_imagen():
             "ok":
             r["ok"],
 
-            "url":
+            "imagen":
             r.get(
-                "url",
+                "imagen",
                 ""
             ),
 
