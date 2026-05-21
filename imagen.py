@@ -1,19 +1,11 @@
 import os
+import base64
 from openai import OpenAI
-
-
-# ==========================================
-# CLIENTE OPENAI
-# ==========================================
 
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 
-
-# ==========================================
-# GENERAR IMAGEN
-# ==========================================
 
 def generar_imagen(prompt):
 
@@ -23,46 +15,36 @@ def generar_imagen(prompt):
 
             model="gpt-image-1",
 
-            prompt=f"""
-Crear una imagen educativa.
-
-Tema:
-{prompt}
-
-Estilo:
-infografía educativa
-colores atractivos
-para estudiantes
-alta calidad
-""",
+            prompt=prompt,
 
             size="1024x1024",
 
-            quality="medium"
+            quality="low"
 
         )
+
+        # GPT Image devuelve base64
+        imagen_base64 = respuesta.data[0].b64_json
 
         return {
 
             "ok": True,
 
-            "url":
-            respuesta.data[0].url
+            "imagen": (
+                "data:image/png;base64,"
+                + imagen_base64
+            )
 
         }
 
     except Exception as e:
 
-        print(
-            "ERROR IMAGEN:",
-            str(e)
-        )
+        print("ERROR:", str(e))
 
         return {
 
             "ok": False,
 
-            "error":
-            str(e)
+            "error": str(e)
 
         }
