@@ -17,6 +17,7 @@ from pedagogia import (
 )
 
 from auth import auth
+from imagen import generar_imagen
 
 # =========================================
 # APP
@@ -410,6 +411,53 @@ No fue posible generar la planificación.
 # =========================================
 
 app.register_blueprint(auth)
+
+# ====================================
+# GENERAR IMAGEN
+# ====================================
+
+@app.route(
+"/api/imagen",
+methods=["POST"]
+)
+def api_imagen():
+
+    try:
+
+        data = request.json
+
+        prompt = data.get(
+
+            "prompt",
+
+            ""
+
+        )
+
+        url = generar_imagen(
+
+            prompt
+
+        )
+
+        return jsonify({
+
+            "ok": True,
+
+            "imagen": url
+
+        })
+
+    except Exception as e:
+
+        print(e)
+
+        return jsonify({
+
+            "ok": False
+
+        })
+
 if __name__ == "__main__":
 
     app.run(
