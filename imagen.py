@@ -21,11 +21,15 @@ prompt
 
 ):
 
-    r = client.images.generate(
+   r = client.images.generate(
 
-        model="gpt-image-1",
+model="gpt-image-1",
 
-        prompt=f"""
+quality="low",
+
+size="512x512",
+
+prompt=f"""
 
 Crear una lámina educativa.
 
@@ -33,16 +37,13 @@ Tema:
 
 {prompt}
 
-Colorida.
+Estilo escolar.
+Colorido.
 Infografía.
-Para estudiantes.
-Alta calidad.
 
-""",
+"""
 
-        size="1024x1024"
-
-    )
+)
 
     import base64
 
