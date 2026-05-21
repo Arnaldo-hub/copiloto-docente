@@ -2,10 +2,18 @@ import os
 from openai import OpenAI
 
 
+# ==========================================
+# CLIENTE OPENAI
+# ==========================================
+
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 
+
+# ==========================================
+# GENERAR IMAGEN
+# ==========================================
 
 def generar_imagen(prompt):
 
@@ -15,10 +23,22 @@ def generar_imagen(prompt):
 
             model="gpt-image-1",
 
-            prompt=prompt,
+            prompt=f"""
+Crear una imagen educativa.
 
-            size="512x512",
-            quality="low"
+Tema:
+{prompt}
+
+Estilo:
+infografía educativa
+colores atractivos
+para estudiantes
+alta calidad
+""",
+
+            size="1024x1024",
+
+            quality="medium"
 
         )
 
@@ -33,7 +53,10 @@ def generar_imagen(prompt):
 
     except Exception as e:
 
-        print("ERROR:", e)
+        print(
+            "ERROR IMAGEN:",
+            str(e)
+        )
 
         return {
 
