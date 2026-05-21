@@ -3,3 +3,4 @@ openai
 gunicorn
 requests
 PyMuPDF
+openai>=1.70.0
