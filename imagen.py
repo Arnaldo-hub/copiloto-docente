@@ -1,68 +1,56 @@
 import os
-import requests
+from openai import OpenAI
 
 
-HF_TOKEN = os.getenv("HF_TOKEN")
+client = OpenAI(
 
+api_key=
 
-API_URL = (
-"https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+os.getenv(
+
+"OPENAI_API_KEY"
+
+)
+
 )
 
 
-def generar_imagen(prompt):
+def generar_imagen(
 
-    headers = {
+prompt
 
-        "Authorization":
+):
 
-        f"Bearer {HF_TOKEN}"
+    r = client.images.generate(
 
-    }
+        model="gpt-image-1",
 
-    payload = {
+        prompt=f"""
 
-        "inputs":
-
-        f"""
-Crear lámina educativa.
+Crear una lámina educativa.
 
 Tema:
+
 {prompt}
 
-Estilo educativo.
-Infografía.
-Alta calidad.
 Colorida.
-"""
+Infografía.
+Para estudiantes.
+Alta calidad.
 
-    }
+""",
 
-    r = requests.post(
-
-        API_URL,
-
-        headers=headers,
-
-        json=payload,
-
-        timeout=240
+        size="1024x1024"
 
     )
 
-    print(
+    import base64
 
-        "HF",
+    img = base64.b64decode(
 
-        r.status_code
+        r.data[0].b64_json
 
     )
-
-    if r.status_code != 200:
-
-        print(r.text)
-
-        raise Exception()
 
     os.makedirs(
 
@@ -88,7 +76,7 @@ Colorida.
 
         f.write(
 
-            r.content
+            img
 
         )
 
