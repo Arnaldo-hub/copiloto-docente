@@ -1,12 +1,11 @@
 import os
-import time
 import requests
 
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 API_URL = (
-    "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
+"https://router.huggingface.co/nebius/v1/images/generations"
 )
 
 
@@ -26,87 +25,100 @@ def generar_imagen(prompt):
 
     body = {
 
-        "inputs":
+        "response_format":
+
+        "b64_json",
+
+        "prompt":
 
         f"""
-Crear una lámina educativa.
+Lámina educativa.
 
 Tema:
 {prompt}
 
-Estilo:
-infografía educativa.
-colores vivos.
-alta calidad.
-"""
+Colorida.
+Profesional.
+Para estudiantes.
+Alta calidad.
+""",
+
+        "model":
+
+        "black-forest-labs/FLUX.1-schnell",
+
+        "size":
+
+        "1024x1024"
 
     }
 
-    try:
+    r = requests.post(
 
-        r = requests.post(
+        API_URL,
 
-            API_URL,
+        headers=headers,
 
-            headers=headers,
+        json=body,
 
-            json=body,
+        timeout=240
 
-            timeout=240
+    )
 
-        )
+    print(
 
-        print(
-            "HF:",
-            r.status_code
-        )
+        "HF",
 
-        print(
-            r.text[:500]
-        )
+        r.status_code
 
-        if r.status_code != 200:
+    )
 
-            raise Exception(
-                r.text
-            )
+    data = r.json()
 
-        os.makedirs(
+    print(data)
 
-            "static",
+    if r.status_code != 200:
 
-            exist_ok=True
+        raise Exception(
+
+            str(data)
 
         )
 
-        archivo = (
+    import base64
 
-            "static/imagen_generada.png"
+    os.makedirs(
 
-        )
+        "static",
 
-        with open(
+        exist_ok=True
 
-            archivo,
+    )
 
-            "wb"
+    archivo = (
 
-        ) as f:
+        "static/imagen_generada.png"
 
-            f.write(
+    )
 
-                r.content
+    img = base64.b64decode(
 
-            )
+        data["data"][0]["b64_json"]
 
-        return (
+    )
 
-            "/static/imagen_generada.png"
+    with open(
 
-        )
+        archivo,
 
-    except Exception as e:
+        "wb"
 
-        print(e)
+    ) as f:
 
-        raise
+        f.write(img)
+
+    return (
+
+        "/static/imagen_generada.png"
+
+    )
