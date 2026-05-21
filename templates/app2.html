@@ -895,27 +895,117 @@ No fue posible consultar IA.
 /* IMAGEN */
 /* ================================================= */
 
-function generarImagen(){
+async function generarImagen(){
 
-resultado.innerHTML = `
+const prompt =
+
+document.querySelector(
+"textarea"
+).value
+
+if(!prompt){
+
+alert(
+"Escribe una idea"
+)
+
+return
+
+}
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+⏳ Generando imagen...
+
+</div>
+
+`
+
+try{
+
+const res = await fetch(
+
+"/api/imagen",
+
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+
+"application/json"
+
+},
+
+body:
+
+JSON.stringify({
+
+prompt
+
+})
+
+}
+
+)
+
+const data =
+await res.json()
+
+if(data.ok){
+
+resultado.innerHTML=`
 
 <h1>
 
-🎨 Generación de Imagen
+🎨 Imagen Generada
 
 </h1>
 
 <div class="tarjeta">
 
-<p>
-
-Función conectada correctamente.
-
-</p>
+<img
+src="${data.imagen}"
+style="
+width:100%;
+border-radius:20px;
+">
 
 </div>
 
-`;
+`
+
+}else{
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+❌ Error generando imagen
+
+</div>
+
+`
+
+}
+
+}catch(e){
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+❌ Error conexión
+
+</div>
+
+`
+
+}
 
 }
 
