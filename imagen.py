@@ -6,7 +6,7 @@ import requests
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 API_URL = (
-    "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
+    "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
 )
 
 
@@ -16,11 +16,15 @@ def generar_imagen(prompt):
 
         "Authorization":
 
-        f"Bearer {HF_TOKEN}"
+        f"Bearer {HF_TOKEN}",
+
+        "Content-Type":
+
+        "application/json"
 
     }
 
-    payload = {
+    body = {
 
         "inputs":
 
@@ -30,15 +34,15 @@ Crear una lámina educativa.
 Tema:
 {prompt}
 
-Alta calidad.
-Para estudiantes.
-Colorida.
-Infografía.
+Estilo:
+infografía educativa.
+colores vivos.
+alta calidad.
 """
 
     }
 
-    for _ in range(3):
+    try:
 
         r = requests.post(
 
@@ -46,92 +50,63 @@ Infografía.
 
             headers=headers,
 
-            json=payload,
+            json=body,
 
-            timeout=180
-
-        )
-
-        if (
-
-            "image"
-
-            in r.headers.get(
-
-                "content-type",
-
-                ""
-
-            )
-
-        ):
-
-            os.makedirs(
-
-                "static",
-
-                exist_ok=True
-
-            )
-
-            ruta = (
-
-                "static/imagen_generada.png"
-
-            )
-
-            with open(
-
-                ruta,
-
-                "wb"
-
-            ) as f:
-
-                f.write(
-
-                    r.content
-
-                )
-
-            return (
-
-                "/static/imagen_generada.png"
-
-            )
-
-        try:
-
-            error = r.json()
-
-        except:
-
-            error = {}
-
-        if (
-
-            "estimated_time"
-
-            in error
-
-        ):
-
-            time.sleep(
-
-                error["estimated_time"]
-
-            )
-
-            continue
-
-        raise Exception(
-
-            str(error)
+            timeout=240
 
         )
 
-    raise Exception(
+        print(
+            "HF:",
+            r.status_code
+        )
 
-        "No fue posible generar"
+        print(
+            r.text[:500]
+        )
 
-    )
+        if r.status_code != 200:
+
+            raise Exception(
+                r.text
+            )
+
+        os.makedirs(
+
+            "static",
+
+            exist_ok=True
+
+        )
+
+        archivo = (
+
+            "static/imagen_generada.png"
+
+        )
+
+        with open(
+
+            archivo,
+
+            "wb"
+
+        ) as f:
+
+            f.write(
+
+                r.content
+
+            )
+
+        return (
+
+            "/static/imagen_generada.png"
+
+        )
+
+    except Exception as e:
+
+        print(e)
+
+        raise
