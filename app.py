@@ -30,6 +30,10 @@ app.secret_key = "aulamind_secret_2026"
 # HOME
 # =========================================
 
+# =========================================
+# HOME
+# =========================================
+
 @app.route("/")
 def home():
 
@@ -37,36 +41,12 @@ def home():
         "app2.html"
     )
 
-# =========================================
-# CURSOS
-# =========================================
+@app.route("/login")
+def login():
 
-@app.route(
-    "/api/cursos/<asignatura>"
-)
-def api_cursos(asignatura):
-
-    try:
-
-        cursos = obtener_cursos(
-            asignatura
-        )
-
-        return jsonify({
-
-            "cursos": cursos
-
-        })
-
-    except Exception as e:
-
-        print("ERROR CURSOS:", e)
-
-        return jsonify({
-
-            "cursos": []
-
-        })
+    return render_template(
+        "login.html"
+    )
 
 # =========================================
 # UNIDADES
