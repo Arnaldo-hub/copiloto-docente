@@ -975,7 +975,7 @@ resultado.innerHTML=`
 <div class="tarjeta">
 
 <img
-src="${data.url}"
+src="${data.imagen}"
 
 style="
 width:100%;
@@ -1009,7 +1009,33 @@ resultado.innerHTML=`
 
 <div class="tarjeta">
 
-❌ Error gener
+❌ Error generando imagen
+
+<br><br>
+
+${data.error || ""}
+
+</div>
+
+`
+
+}
+
+}catch(e){
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+❌ Error conexión
+
+</div>
+
+`
+
+}
+
+}
 /* ================================================= */
 /* HISTORIAL */
 /* ================================================= */
