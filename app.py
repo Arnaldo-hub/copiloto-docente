@@ -357,40 +357,7 @@ def api_chat():
             pregunta
         )
 
-# =====================================
-# GUARDAR HISTORIAL
-# =====================================
 
-try:
-
-    usuario_id = session.get(
-        "usuario"
-    )
-
-    if usuario_id:
-
-        nuevo = Historial(
-
-            usuario_id=usuario_id,
-
-            pregunta=pregunta,
-
-            respuesta=respuesta
-
-        )
-
-        db.session.add(
-            nuevo
-        )
-
-        db.session.commit()
-
-except Exception as e:
-
-    print(
-        "ERROR HISTORIAL:",
-        e
-    )
 # =========================================
 # PEDAGOGÍA IA
 # =========================================
