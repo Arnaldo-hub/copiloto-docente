@@ -56,7 +56,7 @@ def login():
 # REGISTRO
 # =========================================
 
-from database import db, Usuario
+from database import db, Usuario, Historial
 
 
 @app.route(
@@ -357,6 +357,41 @@ def api_chat():
             pregunta
         )
 
+# =====================================
+# GUARDAR HISTORIAL
+# =====================================
+
+try:
+
+    usuario_id = session.get(
+        "usuario"
+    )
+
+    if usuario_id:
+
+        nuevo = Historial(
+
+            usuario_id=usuario_id,
+
+            pregunta=pregunta,
+
+            respuesta=respuesta
+
+        )
+
+        db.session.add(
+            nuevo
+        )
+
+        db.session.commit()
+
+except Exception as e:
+
+    print(
+        "ERROR HISTORIAL:",
+        e
+    )
+
         return jsonify({
 
             "respuesta": respuesta
@@ -591,6 +626,56 @@ No fue posible generar la planificación.
 """
 
         })
+# =========================================
+# HISTORIAL
+# =========================================
+
+@app.route(
+    "/api/historial"
+)
+def api_historial():
+
+    try:
+
+        usuario = session.get(
+            "usuario"
+        )
+
+        if not usuario:
+
+            return jsonify([])
+
+        historial = Historial.query.filter_by(
+
+            usuario_id=usuario
+
+        ).all()
+
+        datos = []
+
+        for h in historial:
+
+            datos.append({
+
+                "pregunta":
+                h.pregunta,
+
+                "respuesta":
+                h.respuesta
+
+            })
+
+        return jsonify(
+
+            datos[::-1]
+
+        )
+
+    except Exception as e:
+
+        print(e)
+
+        return jsonify([])
 
 # =========================================
 # MAIN
