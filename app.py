@@ -374,7 +374,7 @@ def api_chat():
         return jsonify({
 
             "respuesta":
-            "❌ Error generando respuesta"
+            "❌ Error"
 
         })
 # =========================================
@@ -586,56 +586,7 @@ No fue posible generar la planificación.
 """
 
         })
-# =========================================
-# HISTORIAL
-# =========================================
 
-@app.route(
-    "/api/historial"
-)
-def api_historial():
-
-    try:
-
-        usuario = session.get(
-            "usuario"
-        )
-
-        if not usuario:
-
-            return jsonify([])
-
-        historial = Historial.query.filter_by(
-
-            usuario_id=usuario
-
-        ).all()
-
-        datos = []
-
-        for h in historial:
-
-            datos.append({
-
-                "pregunta":
-                h.pregunta,
-
-                "respuesta":
-                h.respuesta
-
-            })
-
-        return jsonify(
-
-            datos[::-1]
-
-        )
-
-    except Exception as e:
-
-        print(e)
-
-        return jsonify([])
 
 # =========================================
 # MAIN
