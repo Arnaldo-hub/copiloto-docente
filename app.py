@@ -49,6 +49,43 @@ def login():
     )
 
 # =========================================
+# CURSOS
+# =========================================
+
+@app.route(
+    "/api/cursos/<asignatura>"
+)
+def api_cursos(asignatura):
+
+    try:
+
+        cursos = obtener_cursos(
+            asignatura
+        )
+
+        return jsonify({
+
+            "cursos": cursos
+
+        })
+
+    except Exception as e:
+
+        print(
+
+            "ERROR CURSOS:",
+
+            e
+
+        )
+
+        return jsonify({
+
+            "cursos": []
+
+        })
+
+# =========================================
 # UNIDADES
 # =========================================
 
