@@ -391,32 +391,6 @@ except Exception as e:
         "ERROR HISTORIAL:",
         e
     )
-
-        return jsonify({
-
-            "respuesta": respuesta
-
-        })
-
-    except Exception as e:
-
-        print("ERROR CHAT:", e)
-
-        return jsonify({
-
-            "respuesta": f"""
-
-# ❌ Error
-
-No fue posible responder.
-
-Detalle:
-{str(e)}
-
-"""
-
-        })
-
 # =========================================
 # PEDAGOGÍA IA
 # =========================================
