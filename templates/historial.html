@@ -13,7 +13,7 @@ body{
 background:#0f172a;
 color:white;
 font-family:Arial;
-padding:40px;
+padding:30px;
 }
 
 .tarjeta{
@@ -29,33 +29,31 @@ border-radius:15px;
 
 <body>
 
-<h1>
-📚 Historial Docente
-</h1>
+<h1>📚 Historial Docente</h1>
+
+{% if historial %}
 
 {% for h in historial %}
 
 <div class="tarjeta">
 
-<h3>
-Pregunta
-</h3>
+<h3>Pregunta</h3>
 
-<p>
-{{ h.pregunta }}
-</p>
+<p>{{h.pregunta}}</p>
 
-<h3>
-Respuesta
-</h3>
+<h3>Respuesta</h3>
 
-<p>
-{{ h.respuesta }}
-</p>
+<p>{{h.respuesta}}</p>
 
 </div>
 
 {% endfor %}
+
+{% else %}
+
+<h2>No hay historial todavía</h2>
+
+{% endif %}
 
 </body>
 
