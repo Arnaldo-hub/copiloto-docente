@@ -334,6 +334,31 @@ def api_oa(
 
         })
 
+# ==========================
+# HISTORIAL
+# ==========================
+
+@app.route("/historial")
+def historial():
+
+    usuario=session.get("usuario")
+
+    if not usuario:
+
+        return redirect("/login")
+
+    datos=Historial.query.filter_by(
+        usuario_id=usuario
+    ).all()
+
+    return render_template(
+        "historial.html",
+        historial=datos
+    )
+
+
+
+
 # =========================================
 # CHAT IA
 # =========================================
