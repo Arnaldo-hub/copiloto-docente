@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, jsonify
 from database import conectar_db, crear_tablas
 from flask import session
 from database import db, Historial
+from flask import session
+from flask import redirect
+
+from database import Historial
 
 from curriculum import (
     obtener_cursos,
@@ -214,6 +218,42 @@ def api_login():
             "success": False
 
         })
+
+# =========================================
+# HISTORIAL
+# =========================================
+
+@app.route(
+"/historial"
+)
+def historial():
+
+    usuario=session.get(
+        "usuario"
+    )
+
+    if not usuario:
+
+        return redirect(
+            "/login"
+        )
+
+    datos=Historial.query.filter_by(
+
+        usuario_id=usuario
+
+    ).all()
+
+    return render_template(
+
+        "historial.html",
+
+        historial=datos
+
+    )
+
+
+
 
 # =========================================
 # CURSOS
