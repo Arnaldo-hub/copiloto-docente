@@ -26,6 +26,9 @@ from imagen import generar_imagen
 
 app = Flask(__name__)
 app.secret_key = "aulamind_secret_2026"
+conectar_db(app)
+
+crear_tablas(app)
 
 # =========================================
 # HOME
