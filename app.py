@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from database import conectar_db, crear_tablas
+from flask import session
+from database import db, Historial
 
 from curriculum import (
     obtener_cursos,
@@ -29,10 +31,6 @@ app.secret_key = "aulamind_secret_2026"
 conectar_db(app)
 
 crear_tablas(app)
-
-# =========================================
-# HOME
-# =========================================
 
 # =========================================
 # HOME
@@ -334,30 +332,6 @@ def api_oa(
 
         })
 
-# ==========================
-# HISTORIAL
-# ==========================
-
-@app.route("/historial")
-def historial():
-
-    usuario=session.get("usuario")
-
-    if not usuario:
-
-        return redirect("/login")
-
-    datos=Historial.query.filter_by(
-        usuario_id=usuario
-    ).all()
-
-    return render_template(
-        "historial.html",
-        historial=datos
-    )
-
-
-
 
 # =========================================
 # CHAT IA
@@ -382,6 +356,38 @@ def api_chat():
             pregunta
         )
 
+        # GUARDAR HISTORIAL (sin romper el chat)
+        try:
+
+            usuario = session.get(
+                "usuario"
+            )
+
+            if usuario:
+
+                nuevo = Historial(
+
+                    usuario_id=usuario,
+
+                    pregunta=pregunta,
+
+                    respuesta=respuesta
+
+                )
+
+                db.session.add(
+                    nuevo
+                )
+
+                db.session.commit()
+
+        except Exception as e:
+
+            print(
+                "ERROR HISTORIAL:",
+                e
+            )
+
         return jsonify({
 
             "respuesta":
@@ -392,16 +398,21 @@ def api_chat():
     except Exception as e:
 
         print(
+
             "ERROR CHAT:",
+
             e
+
         )
 
         return jsonify({
 
             "respuesta":
+
             "❌ Error"
 
         })
+
 # =========================================
 # PEDAGOGÍA IA
 # =========================================
