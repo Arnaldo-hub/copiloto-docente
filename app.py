@@ -357,7 +357,26 @@ def api_chat():
             pregunta
         )
 
+        return jsonify({
 
+            "respuesta":
+            respuesta
+
+        })
+
+    except Exception as e:
+
+        print(
+            "ERROR CHAT:",
+            e
+        )
+
+        return jsonify({
+
+            "respuesta":
+            "❌ Error generando respuesta"
+
+        })
 # =========================================
 # PEDAGOGÍA IA
 # =========================================
