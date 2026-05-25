@@ -53,6 +53,98 @@ def login():
     )
 
 # =========================================
+# REGISTRO
+# =========================================
+
+from database import db, Usuario
+
+
+@app.route(
+    "/registro"
+)
+def registro():
+
+    return render_template(
+        "registro.html"
+    )
+
+
+@app.route(
+    "/api/registro",
+    methods=["POST"]
+)
+def api_registro():
+
+    try:
+
+        data = request.get_json()
+
+        nombre = data.get(
+            "nombre"
+        )
+
+        email = data.get(
+            "email"
+        )
+
+        password = data.get(
+            "password"
+        )
+
+        existe = Usuario.query.filter_by(
+            email=email
+        ).first()
+
+        if existe:
+
+            return jsonify({
+
+                "ok": False,
+
+                "mensaje":
+                "⚠️ Correo ya registrado"
+
+            })
+
+        usuario = Usuario(
+
+            nombre=nombre,
+
+            email=email,
+
+            password=password
+
+        )
+
+        db.session.add(
+            usuario
+        )
+
+        db.session.commit()
+
+        return jsonify({
+
+            "ok": True,
+
+            "mensaje":
+            "✅ Cuenta creada"
+
+        })
+
+    except Exception as e:
+
+        print(e)
+
+        return jsonify({
+
+            "ok": False,
+
+            "mensaje":
+            "❌ Error creando cuenta"
+
+        })
+
+# =========================================
 # CURSOS
 # =========================================
 
