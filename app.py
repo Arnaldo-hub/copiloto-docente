@@ -145,6 +145,79 @@ def api_registro():
         })
 
 # =========================================
+# LOGIN API
+# =========================================
+
+from flask import session
+
+
+@app.route(
+    "/api/login",
+    methods=["POST"]
+)
+def api_login():
+
+    try:
+
+        data = request.get_json()
+
+        email = data.get(
+            "usuario",
+            ""
+        )
+
+        password = data.get(
+            "password",
+            ""
+        )
+
+        usuario = Usuario.query.filter_by(
+
+            email=email,
+
+            password=password
+
+        ).first()
+
+        if usuario:
+
+            session["usuario"] = usuario.id
+
+            return jsonify({
+
+                "success": True,
+
+                "nombre":
+                usuario.nombre,
+
+                "premium":
+                usuario.premium
+
+            })
+
+        return jsonify({
+
+            "success": False
+
+        })
+
+    except Exception as e:
+
+        print(
+
+            "ERROR LOGIN:",
+
+            e
+
+        )
+
+        return jsonify({
+
+            "success": False
+
+        })
+
+# =========================================
 # CURSOS
 # =========================================
 
