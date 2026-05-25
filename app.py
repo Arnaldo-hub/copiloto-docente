@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request, jsonify
-from database import conectar_db, crear_tablas
-from flask import session
-from database import db, Historial
 from flask import session
 from flask import redirect
 
-from database import Historial
+from database import (
+    conectar_db,
+    crear_tablas,
+    db,
+    Usuario,
+    Historial
+)
 
 from curriculum import (
     obtener_cursos,
