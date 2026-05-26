@@ -1,7 +1,6 @@
 import json
 import os
 
-
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
 )
@@ -11,10 +10,9 @@ DATA_DIR = os.path.join(
     "data"
 )
 
-
-# =====================================
+# =========================================
 # LEER JSON
-# =====================================
+# =========================================
 
 def leer_asignatura(asignatura):
 
@@ -23,141 +21,102 @@ def leer_asignatura(asignatura):
         f"{asignatura}.json"
     )
 
-    if not os.path.exists(ruta):
-
-        return {}
-
     with open(
         ruta,
         "r",
         encoding="utf-8"
     ) as archivo:
 
-        data = json.load(
-            archivo
-        )
+        return json.load(archivo)
 
-    if asignatura in data:
+# =========================================
+# OBTENER CURSOS
+# =========================================
 
-        return data[asignatura]
+def obtener_cursos(asignatura):
 
-    return data
+    data = leer_asignatura(asignatura)
 
+    return list(data.keys())
 
-# =====================================
-# CURSOS
-# =====================================
+# =========================================
+# OBTENER UNIDADES
+# =========================================
 
-def obtener_cursos(
-    asignatura
-):
+def obtener_unidades(asignatura, curso):
 
-    data = leer_asignatura(
-        asignatura
-    )
-
-    return list(
-        data.keys()
-    )
-
-
-# =====================================
-# UNIDADES
-# =====================================
-
-def obtener_unidades(
-
-    asignatura,
-    curso
-
-):
-
-    data = leer_asignatura(
-        asignatura
-    )
+    data = leer_asignatura(asignatura)
 
     if curso not in data:
 
         return []
 
+    unidades = data[curso].get(
+        "unidades",
+        []
+    )
+
     resultado = []
 
-    for unidad in data[curso]:
+    for unidad in unidades:
 
-        resultado.append({
+        if isinstance(unidad, dict):
 
-            "nombre":
-            unidad
+            resultado.append({
 
-        })
+                "nombre":
+                unidad.get(
+                    "nombre",
+                    "Unidad"
+                )
+
+            })
+
+        else:
+
+            resultado.append({
+
+                "nombre":
+                str(unidad)
+
+            })
 
     return resultado
 
-
-# =====================================
-# OA
-# =====================================
+# =========================================
+# OBTENER OA
+# =========================================
 
 def obtener_oa(
 
     asignatura,
     curso,
-    unidad
+    unidad_nombre
 
 ):
 
-    data = leer_asignatura(
-        asignatura
-    )
+    data = leer_asignatura(asignatura)
 
-    try:
-
-        return list(
-
-            data[
-                curso
-            ][
-                unidad
-            ].keys()
-
-        )
-
-    except:
+    if curso not in data:
 
         return []
 
-
-# =====================================
-# DETALLE OA
-# =====================================
-
-def obtener_detalle_oa(
-
-    asignatura,
-    curso,
-    unidad,
-    oa
-
-):
-
-    data = leer_asignatura(
-        asignatura
+    unidades = data[curso].get(
+        "unidades",
+        []
     )
 
-    try:
+    for unidad in unidades:
 
-        return (
+        if isinstance(unidad, dict):
 
-            data[
-                curso
-            ][
-                unidad
-            ][
-                oa
-            ]
+            if unidad.get(
+                "nombre"
+            ) == unidad_nombre:
 
-        )
+                return unidad.get(
+                    "oa",
+                    []
+                )
 
-    except:
-
-        return {}
+    return []
