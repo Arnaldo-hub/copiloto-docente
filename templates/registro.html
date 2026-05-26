@@ -10,46 +10,154 @@ name="viewport"
 content="width=device-width, initial-scale=1">
 
 <title>
-
-Registro
-
+AulaMind | Registro
 </title>
 
 <style>
 
-body{
-background:#03133b;
-font-family:Arial;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#03133b,
+#081d5e,
+#03133b
+);
+
+font-family:Arial;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:30px;
+
+}
+
+.contenedor{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+width:100%;
+
+}
+
+.logo{
+
+width:260px;
+
+max-width:90%;
+
+margin-bottom:30px;
+
+filter:
+drop-shadow(
+0 0 40px
+rgba(
+37,
+99,
+235,
+0.6
+)
+);
+
 }
 
 .card{
-background:#182952;
-padding:40px;
-border-radius:20px;
-width:420px;
+
+background:
+rgba(
+24,
+41,
+82,
+0.96
+);
+
+padding:45px;
+
+border-radius:24px;
+
+width:460px;
+
+max-width:100%;
+
+box-shadow:
+
+0 25px 60px
+rgba(
+0,
+0,
+0,
+0.45
+);
+
 }
 
 h1{
+
 color:white;
+
+font-size:40px;
+
 text-align:center;
+
+margin-bottom:10px;
+
+}
+
+.sub{
+
+color:#cbd5e1;
+
+text-align:center;
+
+margin-bottom:35px;
+
+font-size:18px;
+
 }
 
 input{
 
 width:100%;
-padding:15px;
-margin-bottom:15px;
+
+padding:18px;
+
+margin-bottom:18px;
 
 border:none;
 
-border-radius:10px;
+border-radius:14px;
 
 font-size:18px;
+
+background:white;
+
+}
+
+input:focus{
+
+outline:none;
+
+box-shadow:
+
+0 0 18px
+#2563eb;
 
 }
 
@@ -57,26 +165,63 @@ button{
 
 width:100%;
 
-padding:15px;
+padding:18px;
 
-background:#22c55e;
+background:
+
+linear-gradient(
+90deg,
+#2563eb,
+#9333ea
+);
 
 border:none;
 
 color:white;
 
-font-size:20px;
+font-size:22px;
 
-border-radius:10px;
+font-weight:bold;
+
+border-radius:14px;
 
 cursor:pointer;
 
 }
 
+button:hover{
+
+transform:
+translateY(-2px);
+
+}
+
 #msg{
-color:white;
+
 margin-top:20px;
+
 text-align:center;
+
+font-size:18px;
+
+color:white;
+
+}
+
+.login{
+
+margin-top:25px;
+
+text-align:center;
+
+}
+
+.login a{
+
+color:#60a5fa;
+
+text-decoration:none;
+
 }
 
 </style>
@@ -85,21 +230,38 @@ text-align:center;
 
 <body>
 
+<div class="contenedor">
+
+<img
+
+src="{{ url_for('static', filename='img/logo_aulamind.png') }}"
+
+class="logo"
+
+>
+
 <div class="card">
 
 <h1>
 
-🧠 Crear Cuenta
+Crear Cuenta
 
 </h1>
 
+<div class="sub">
+
+Comienza a transformar la educación con IA
+
+</div>
+
 <input
 id="nombre"
-placeholder="Nombre">
+placeholder="Nombre completo">
 
 <input
 id="email"
-placeholder="Correo">
+type="email"
+placeholder="Correo electrónico">
 
 <input
 id="password"
@@ -115,6 +277,18 @@ Crear cuenta
 
 <div id="msg"></div>
 
+<div class="login">
+
+<a href="/login">
+
+Ya tengo cuenta
+
+</a>
+
+</div>
+
+</div>
+
 </div>
 
 <script>
@@ -122,16 +296,31 @@ Crear cuenta
 async function registrar(){
 
 const nombre=
-document.getElementById("nombre").value
+
+document
+.getElementById(
+"nombre"
+)
+.value
 
 const email=
-document.getElementById("email").value
+
+document
+.getElementById(
+"email"
+)
+.value
 
 const password=
-document.getElementById("password").value
 
+document
+.getElementById(
+"password"
+)
+.value
 
 const r=
+
 await fetch(
 
 "/api/registro",
@@ -164,11 +353,32 @@ password
 const data=
 await r.json()
 
-document.getElementById(
+document
+.getElementById(
 "msg"
-).innerHTML=
+)
+.innerHTML=
 
 data.mensaje
+
+if(
+data.success
+){
+
+setTimeout(
+
+()=>{
+
+window.location=
+"/login"
+
+},
+
+1500
+
+)
+
+}
 
 }
 
