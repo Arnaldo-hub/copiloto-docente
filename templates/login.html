@@ -10,14 +10,26 @@ name="viewport"
 content="width=device-width, initial-scale=1.0">
 
 <title>
-Login
+AulaMind | Login
 </title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
 
-background:#03133b;
+background:
+linear-gradient(
+135deg,
+#03133b,
+#071d57,
+#03133b
+);
 
 font-family:Arial;
 
@@ -27,21 +39,72 @@ justify-content:center;
 
 align-items:center;
 
-height:100vh;
+min-height:100vh;
 
-margin:0;
+padding:30px;
+
+}
+
+.contenedor{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+width:100%;
+
+}
+
+.logo{
+
+width:280px;
+
+max-width:90%;
+
+margin-bottom:30px;
+
+filter:
+drop-shadow(
+0 0 40px
+rgba(
+59,
+130,
+246,
+0.6
+)
+);
 
 }
 
 .card{
 
-background:#182952;
+background:
+rgba(
+24,
+41,
+82,
+0.95
+);
 
-padding:40px;
+padding:45px;
 
-border-radius:20px;
+border-radius:24px;
 
-width:360px;
+width:420px;
+
+max-width:100%;
+
+box-shadow:
+
+0 20px 60px
+rgba(
+0,
+0,
+0,
+0.5
+);
 
 }
 
@@ -49,9 +112,23 @@ h1{
 
 color:white;
 
-margin-bottom:25px;
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.sub{
+
+color:#cbd5e1;
 
 text-align:center;
+
+margin-bottom:35px;
+
+font-size:18px;
 
 }
 
@@ -59,15 +136,28 @@ input{
 
 width:100%;
 
-padding:15px;
+padding:18px;
 
 border:none;
 
-border-radius:12px;
+border-radius:14px;
 
 margin-bottom:18px;
 
 font-size:18px;
+
+background:white;
+
+}
+
+input:focus{
+
+outline:none;
+
+box-shadow:
+
+0 0 18px
+#2563eb;
 
 }
 
@@ -75,31 +165,66 @@ button{
 
 width:100%;
 
-padding:16px;
+padding:18px;
 
 border:none;
 
-border-radius:12px;
+border-radius:14px;
 
-background:#22c55e;
+background:
+
+linear-gradient(
+90deg,
+#2563eb,
+#9333ea
+);
 
 color:white;
 
-font-size:20px;
+font-size:22px;
 
 font-weight:bold;
 
 cursor:pointer;
 
+transition:.25s;
+
+}
+
+button:hover{
+
+transform:
+translateY(
+-2px
+);
+
 }
 
 #error{
 
-color:#ff7b7b;
+color:#ff8f8f;
 
-margin-top:15px;
+margin-top:20px;
 
 text-align:center;
+
+font-size:16px;
+
+}
+
+.registro{
+
+text-align:center;
+
+margin-top:25px;
+
+}
+
+.registro a{
+
+color:#60a5fa;
+
+text-decoration:none;
 
 }
 
@@ -109,20 +234,45 @@ text-align:center;
 
 <body>
 
+<div class="contenedor">
+
+<img
+
+src="{{ url_for('static', filename='img/logo_aulamind.png') }}"
+
+class="logo"
+
+>
+
 <div class="card">
 
 <h1>
-🔐 Login Docente
+Bienvenido
 </h1>
 
-<input
-id="usuario"
-placeholder="Usuario">
+<div class="sub">
+
+Accede a AulaMind
+
+</div>
 
 <input
+
+id="usuario"
+
+placeholder="Correo electrónico"
+
+>
+
+<input
+
 id="password"
+
 type="password"
-placeholder="Contraseña">
+
+placeholder="Contraseña"
+
+>
 
 <button onclick="login()">
 
@@ -132,6 +282,18 @@ Ingresar
 
 <div id="error"></div>
 
+<div class="registro">
+
+<a href="/registro">
+
+Crear cuenta
+
+</a>
+
+</div>
+
+</div>
+
 </div>
 
 <script>
@@ -140,32 +302,38 @@ async function login(){
 
 const usuario =
 
-document.getElementById(
-'usuario'
-).value
+document
+.getElementById(
+"usuario"
+)
+.value
 
 const password =
 
-document.getElementById(
-'password'
-).value
+document
+.getElementById(
+"password"
+)
+.value
 
 const res = await fetch(
 
-'/api/login',
+"/api/login",
 
 {
 
-method:'POST',
+method:"POST",
 
 headers:{
 
-'Content-Type':
-'application/json'
+"Content-Type":
+"application/json"
 
 },
 
-body:JSON.stringify({
+body:
+
+JSON.stringify({
 
 usuario,
 password
@@ -181,15 +349,17 @@ await res.json()
 
 if(data.success){
 
-window.location='/'
+window.location="/"
 
 }else{
 
-document.getElementById(
-'error'
-).innerHTML =
+document
+.getElementById(
+"error"
+)
+.innerHTML=
 
-'Usuario o contraseña incorrectos'
+"Usuario o contraseña incorrectos"
 
 }
 
@@ -198,4 +368,5 @@ document.getElementById(
 </script>
 
 </body>
+
 </html>
