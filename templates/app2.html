@@ -1,7 +1,3 @@
-<!-- ===================================================== -->
-<!-- REEMPLAZA COMPLETAMENTE templates/app2.html POR ESTE -->
-<!-- ===================================================== -->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -1040,91 +1036,6 @@ resultado.innerHTML=`
 /* HISTORIAL */
 /* ================================================= */
 
-function guardarHistorial(texto){
-
-let historial =
-JSON.parse(
-
-localStorage.getItem("historial")
-
-) || [];
-
-historial.push(texto);
-
-localStorage.setItem(
-
-"historial",
-
-JSON.stringify(historial)
-
-);
-
-}
-
-function verHistorial(){
-
-let historial =
-JSON.parse(
-
-localStorage.getItem("historial")
-
-) || [];
-
-if(historial.length === 0){
-
-resultado.innerHTML = `
-
-<h1>
-
-📚 Historial
-
-</h1>
-
-<div class="tarjeta">
-
-No hay historial guardado.
-
-</div>
-
-`;
-
-return;
-
-}
-
-let html = `
-
-<h1>
-
-📚 Historial IA
-
-</h1>
-
-`;
-
-historial.reverse().forEach((item,index)=>{
-
-html += `
-
-<div class="tarjeta">
-
-<h2>
-
-Planificación ${index + 1}
-
-</h2>
-
-${marked.parse(item)}
-
-</div>
-
-`;
-
-});
-
-resultado.innerHTML = html;
-
-}
 
 /* ================================================= */
 /* PDF */
