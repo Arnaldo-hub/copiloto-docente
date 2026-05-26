@@ -489,42 +489,7 @@ def api_pedagogia():
             "oa",
             ""
         )
-# limitar generación para evitar SIGKILL
-
-seleccionados = [
-
-data.get("objetivos"),
-data.get("indicadores"),
-data.get("habilidades"),
-data.get("actitudes"),
-data.get("nee"),
-data.get("evaluacion")
-
-]
-
-if sum(
-bool(x)
-for x in seleccionados
-) > 3:
-
-    return jsonify({
-
-        "resultado": """
-
-# ⚠️ Demasiadas opciones seleccionadas
-
-Selecciona máximo:
-
-- Objetivos
-- Indicadores
-- Habilidades
-
-Luego genera nuevamente.
-
-"""
-
-    })
-        
+       
         resultado = f"""
 
 # ✅ Planificación Generada
