@@ -2,36 +2,48 @@
   "1° Básico": {
     "nombre_asignatura": "Matemática",
     "unidades": [
-      {
-        "nombre": "Unidad 1: Matemática 1° Básico",
-        "semestre": "1",
-        "proposito": "Desarrollar habilidades de Matemática en 1° Básico.",
-        "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Comprender contenidos fundamentales de Matemática para 1° Básico."
-          },
-          {
-            "codigo": "OA 2",
-            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
-          },
-          {
-            "codigo": "OA 3",
-            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
-          }
-        ],
-        "habilidades": [
-          "Pensamiento crítico",
-          "Resolución de problemas",
-          "Comunicación"
-        ],
-        "actitudes": [
-          "Respeto",
-          "Responsabilidad",
-          "Participación activa"
-        ]
-      },
-      {
+     {
+  "nombre": "Unidad 1: Números y Operaciones",
+  "semestre": "1",
+  "proposito": "Desarrollar la comprensión de los números hasta el 20, promoviendo habilidades de conteo, comparación, representación y resolución de problemas en situaciones cotidianas.",
+
+  "oa": [
+
+    {
+      "codigo": "OA 1",
+      "descripcion": "Contar números del 0 al 20 de 1 en 1, de 2 en 2 y hacia atrás desde 20."
+    },
+
+    {
+      "codigo": "OA 2",
+      "descripcion": "Leer y representar números del 0 al 20 en forma concreta, pictórica y simbólica."
+    },
+
+    {
+      "codigo": "OA 3",
+      "descripcion": "Comparar y ordenar números del 0 al 20 utilizando material concreto y representaciones."
+    }
+
+  ],
+
+  "habilidades": [
+
+    "Contar",
+    "Representar",
+    "Comparar",
+    "Resolver problemas",
+    "Comunicar ideas matemáticas"
+
+  ],
+
+  "actitudes": [
+
+    "Demostrar curiosidad e interés por el aprendizaje matemático",
+    "Trabajar de manera ordenada y perseverante",
+    "Participar activamente en actividades grupales"
+
+  ]
+}
         "nombre": "Unidad 2: Matemática 1° Básico",
         "semestre": "1",
         "proposito": "Desarrollar habilidades de Matemática en 1° Básico.",
