@@ -14,7 +14,10 @@ def extraer_texto_pdf(ruta_pdf):
 
     for pagina in pdf:
 
-        texto += pagina.get_text()
+        texto += pagina.get_text(
+    "text",
+    sort=True
+)
 
     return texto
 
