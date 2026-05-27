@@ -7,10 +7,10 @@
 
 <meta
 name="viewport"
-content="width=device-width, initial-scale=1.0">
+content="width=device-width, initial-scale=1">
 
 <title>
-AulaMind | Login
+AulaMind | Registro
 </title>
 
 <style>
@@ -27,7 +27,7 @@ background:
 linear-gradient(
 135deg,
 #03133b,
-#071d57,
+#081d5e,
 #03133b
 );
 
@@ -59,7 +59,7 @@ width:100%;
 
 .logo{
 
-width:280px;
+width:260px;
 
 max-width:90%;
 
@@ -69,9 +69,9 @@ filter:
 drop-shadow(
 0 0 40px
 rgba(
-59,
-130,
-246,
+37,
+99,
+235,
 0.6
 )
 );
@@ -85,25 +85,25 @@ rgba(
 24,
 41,
 82,
-0.95
+0.96
 );
 
 padding:45px;
 
 border-radius:24px;
 
-width:420px;
+width:460px;
 
 max-width:100%;
 
 box-shadow:
 
-0 20px 60px
+0 25px 60px
 rgba(
 0,
 0,
 0,
-0.5
+0.45
 );
 
 }
@@ -112,9 +112,9 @@ h1{
 
 color:white;
 
-text-align:center;
-
 font-size:40px;
+
+text-align:center;
 
 margin-bottom:10px;
 
@@ -138,11 +138,11 @@ width:100%;
 
 padding:18px;
 
+margin-bottom:18px;
+
 border:none;
 
 border-radius:14px;
-
-margin-bottom:18px;
 
 font-size:18px;
 
@@ -167,10 +167,6 @@ width:100%;
 
 padding:18px;
 
-border:none;
-
-border-radius:14px;
-
 background:
 
 linear-gradient(
@@ -179,48 +175,48 @@ linear-gradient(
 #9333ea
 );
 
+border:none;
+
 color:white;
 
 font-size:22px;
 
 font-weight:bold;
 
-cursor:pointer;
+border-radius:14px;
 
-transition:.25s;
+cursor:pointer;
 
 }
 
 button:hover{
 
 transform:
-translateY(
--2px
-);
+translateY(-2px);
 
 }
 
-#error{
-
-color:#ff8f8f;
+#msg{
 
 margin-top:20px;
 
 text-align:center;
 
-font-size:16px;
+font-size:18px;
+
+color:white;
 
 }
 
-.registro{
-
-text-align:center;
+.login{
 
 margin-top:25px;
 
+text-align:center;
+
 }
 
-.registro a{
+.login a{
 
 color:#60a5fa;
 
@@ -247,46 +243,45 @@ class="logo"
 <div class="card">
 
 <h1>
-Bienvenido
+
+Crear Cuenta
+
 </h1>
 
 <div class="sub">
 
-Accede a AulaMind
+Comienza a transformar la educación con IA
 
 </div>
 
 <input
-
-id="usuario"
-
-placeholder="Correo electrónico"
-
->
+id="nombre"
+placeholder="Nombre completo">
 
 <input
+id="email"
+type="email"
+placeholder="Correo electrónico">
 
+<input
 id="password"
-
 type="password"
+placeholder="Contraseña">
 
-placeholder="Contraseña"
+<button
+onclick="registrar()">
 
->
-
-<button onclick="login()">
-
-Ingresar
+Crear cuenta
 
 </button>
 
-<div id="error"></div>
+<div id="msg"></div>
 
-<div class="registro">
+<div class="login">
 
-<a href="/registro">
+<a href="/login">
 
-Crear cuenta
+Ya tengo cuenta
 
 </a>
 
@@ -298,17 +293,25 @@ Crear cuenta
 
 <script>
 
-async function login(){
+async function registrar(){
 
-const usuario =
+const nombre=
 
 document
 .getElementById(
-"usuario"
+"nombre"
 )
 .value
 
-const password =
+const email=
+
+document
+.getElementById(
+"email"
+)
+.value
+
+const password=
 
 document
 .getElementById(
@@ -316,9 +319,11 @@ document
 )
 .value
 
-const res = await fetch(
+const r=
 
-"/api/login",
+await fetch(
+
+"/api/registro",
 
 {
 
@@ -335,7 +340,8 @@ body:
 
 JSON.stringify({
 
-usuario,
+nombre,
+email,
 password
 
 })
@@ -344,22 +350,33 @@ password
 
 )
 
-const data =
-await res.json()
-
-if(data.success){
-
-window.location="/"
-
-}else{
+const data=
+await r.json()
 
 document
 .getElementById(
-"error"
+"msg"
 )
 .innerHTML=
 
-"Usuario o contraseña incorrectos"
+data.mensaje
+
+if(
+data.success
+){
+
+setTimeout(
+
+()=>{
+
+window.location=
+"/login"
+
+},
+
+1500
+
+)
 
 }
 

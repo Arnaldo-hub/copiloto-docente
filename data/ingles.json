@@ -1,0 +1,970 @@
+{
+  "1° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 1° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 1° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 1° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 1° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 1° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 1° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "2° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 2° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 2° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 2° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 2° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "3° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 3° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 3° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 3° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 3° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "4° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 4° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 4° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 4° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 4° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "5° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 5° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 5° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 5° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 5° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "6° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 6° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 6° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 6° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 6° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "7° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 7° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 7° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 7° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 7° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "8° Básico": {
+    "nombre_asignatura": "Inglés",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Inglés 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 8° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Inglés 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Inglés en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 8° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Inglés 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 8° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Inglés 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Inglés en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Inglés para 8° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Inglés en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Inglés."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  }
+}

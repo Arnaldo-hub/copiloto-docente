@@ -1,0 +1,971 @@
+{
+  "1° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Números y Operaciones",
+        "semestre": "1",
+        "proposito": "Desarrollar la comprensión de números hasta el 20, promoviendo habilidades de conteo, representación y resolución de problemas.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Contar números del 0 al 20 de 1 en 1, de 2 en 2 y hacia atrás."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Leer y representar números hasta el 20 en forma concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Comparar y ordenar números del 0 al 20."
+          }
+        ],
+        "habilidades": [
+          "Contar",
+          "Representar",
+          "Comparar",
+          "Resolver problemas"
+        ],
+        "actitudes": [
+          "Participar activamente",
+          "Perseverar en el trabajo matemático",
+          "Comunicar ideas matemáticas"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 1° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 1° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 1° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 1° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 1° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 1° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "2° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 2° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 2° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 2° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 2° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 2° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 2° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 2° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "3° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 3° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 3° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 3° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 3° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 3° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 3° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 3° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "4° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 4° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 4° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 4° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 4° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 4° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 4° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 4° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "5° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 5° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 5° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 5° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 5° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 5° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 5° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 5° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "6° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 6° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 6° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 6° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 6° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 6° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 6° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 6° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "7° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 7° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 7° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 7° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 7° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 7° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 7° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 7° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  },
+  "8° Básico": {
+    "nombre_asignatura": "Matemática",
+    "unidades": [
+      {
+        "nombre": "Unidad 1: Matemática 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 8° Básico."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 2: Matemática 8° Básico",
+        "semestre": "1",
+        "proposito": "Desarrollar habilidades de Matemática en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 8° Básico."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 3: Matemática 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 8° Básico."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      },
+      {
+        "nombre": "Unidad 4: Matemática 8° Básico",
+        "semestre": "2",
+        "proposito": "Desarrollar habilidades de Matemática en 8° Básico.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Comprender contenidos fundamentales de Matemática para 8° Básico."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Aplicar habilidades y conocimientos de Matemática en actividades escolares."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Resolver desafíos y actividades prácticas de Matemática."
+          }
+        ],
+        "habilidades": [
+          "Pensamiento crítico",
+          "Resolución de problemas",
+          "Comunicación"
+        ],
+        "actitudes": [
+          "Respeto",
+          "Responsabilidad",
+          "Participación activa"
+        ]
+      }
+    ]
+  }
+}

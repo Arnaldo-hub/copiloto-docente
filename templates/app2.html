@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+AulaMind | Escritorio
+</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#02113d;
+    color:white;
+    font-family:Arial,sans-serif;
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ================================================= */
+/* SIDEBAR */
+/* ================================================= */
+
+.sidebar{
+
+    width:320px;
+
+    background:#03103a;
+
+    padding:20px;
+
+    border-right:
+    2px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.chat-box{
+
+    width:100%;
+
+    height:180px;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    resize:none;
+
+    font-size:17px;
+
+    margin-bottom:18px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:16px;
+
+    padding:16px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.02);
+
+}
+
+.btn-preguntar{
+
+    background:#22c55e;
+
+}
+
+.btn-imagen{
+
+    background:
+    linear-gradient(
+    90deg,
+    #9333ea,
+    #c026d3
+    );
+
+}
+
+/* ================================================= */
+/* PANEL CENTRO */
+/* ================================================= */
+
+.panel{
+
+    width:420px;
+
+    padding:20px;
+
+}
+
+.card{
+
+    background:
+    rgba(255,255,255,.07);
+
+    border-radius:24px;
+
+    padding:22px;
+
+    margin-bottom:22px;
+
+}
+
+.card-title{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    border:none;
+
+    margin-bottom:16px;
+
+    font-size:18px;
+
+}
+
+.checks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.checks label{
+
+    font-size:20px;
+
+}
+
+.btn-generar{
+
+    background:#22c55e;
+
+}
+
+.btn-historial{
+
+    background:#2563eb;
+
+}
+
+.btn-pdf{
+
+    background:
+    linear-gradient(
+    90deg,
+    #9333ea,
+    #c026d3
+    );
+
+}
+
+/* ================================================= */
+/* RESULTADO */
+/* ================================================= */
+
+.resultado{
+
+    flex:1;
+
+    padding:20px;
+
+}
+
+.resultado-card{
+
+    background:#ffffff;
+color:#000000;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    min-height:92vh;
+
+    overflow-y:auto;
+
+}
+
+.resultado-card h1{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.resultado-card h2{
+
+    font-size:28px;
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+
+    color:#93c5fd;
+
+}
+
+.resultado-card h3{
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    color:#c4b5fd;
+
+}
+
+.resultado-card ul{
+
+    padding-left:28px;
+
+    line-height:1.8;
+
+}
+
+.resultado-card li{
+
+    margin-bottom:12px;
+
+}
+
+.resultado-card p{
+
+    line-height:1.9;
+
+    margin-bottom:16px;
+
+}
+
+.tarjeta{
+
+    background:
+    rgba(255,255,255,.06);
+
+    border-left:
+    5px solid #22c55e;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+}
+
+.loading{
+
+    text-align:center;
+
+    font-size:28px;
+
+    padding-top:80px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- SIDEBAR -->
+<!-- ================================================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+🧠 Chat Docente IA
+
+</div>
+
+<textarea
+    id="pregunta"
+    class="chat-box"
+    placeholder="Escribe una pregunta pedagógica..."
+></textarea>
+
+<button
+    class="btn btn-preguntar"
+    onclick="preguntarIA()"
+>
+
+💬 Preguntar
+
+</button>
+
+<button
+    class="btn btn-imagen"
+    onclick="generarImagen()"
+>
+
+🎨 Generar Imagen
+
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- CONTEXTO -->
+<!-- ================================================= -->
+
+<div class="panel">
+
+<div class="card">
+
+<div class="card-title">
+
+📚 Contexto Pedagógico
+
+</div>
+
+<select id="asignatura">
+
+<option value="lenguaje">
+Lenguaje y Comunicación
+</option>
+
+<option value="matematica">
+Matemática
+</option>
+
+<option value="ciencias">
+Ciencias
+</option>
+
+<option value="historia">
+Historia
+</option>
+
+<option value="musica">
+Música
+</option>
+
+<option value="educacionfisica">
+Educación Física
+</option>
+
+</select>
+
+<select id="curso"></select>
+
+<select id="unidad"></select>
+
+<select id="oa"></select>
+
+</div>
+
+<div class="card">
+
+<div class="checks">
+
+<label>
+<input type="checkbox" id="objetivos">
+Objetivos
+</label>
+
+<label>
+<input type="checkbox" id="indicadores">
+Indicadores
+</label>
+
+<label>
+<input type="checkbox" id="habilidades">
+Habilidades
+</label>
+
+<label>
+<input type="checkbox" id="actitudes">
+Actitudes
+</label>
+
+<label>
+<input type="checkbox" id="evaluacion">
+Evaluación
+</label>
+
+<label>
+<input type="checkbox" id="nee">
+Adaptaciones NEE
+</label>
+
+</div>
+
+<br>
+
+<button
+id="btnGenerar"
+class="btn btn-generar"
+>
+
+🚀 Generar
+
+</button>
+
+<button
+class="btn btn-historial"
+onclick="verHistorial()"
+>
+
+📚 Historial
+
+</button>
+
+<button
+class="btn btn-pdf"
+onclick="descargarPDF()"
+>
+
+📄 Descargar PDF
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- RESULTADO -->
+<!-- ================================================= -->
+
+<div class="resultado">
+
+<div
+    class="resultado-card"
+    id="resultado"
+>
+
+<h1>
+
+📄 Resultado IA
+
+</h1>
+
+<p>
+
+Resultado IA aparecerá aquí.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
+<script>
+
+const asignaturaSelect =
+document.getElementById("asignatura");
+
+const cursoSelect =
+document.getElementById("curso");
+
+const unidadSelect =
+document.getElementById("unidad");
+
+const oaSelect =
+document.getElementById("oa");
+
+const resultado =
+document.getElementById("resultado");
+
+/* ================================================= */
+/* CURSOS */
+/* ================================================= */
+
+async function cargarCursos(){
+
+    const response =
+    await fetch(
+
+        `/api/cursos/${asignaturaSelect.value}`
+
+    );
+
+    const data =
+    await response.json();
+
+    cursoSelect.innerHTML = "";
+
+    data.cursos.forEach(curso=>{
+
+        cursoSelect.innerHTML += `
+
+        <option value="${curso}">
+
+            ${curso}
+
+        </option>
+
+        `;
+
+    });
+
+    cargarUnidades();
+
+}
+
+/* ================================================= */
+/* UNIDADES */
+/* ================================================= */
+
+async function cargarUnidades(){
+
+    const response =
+    await fetch(
+
+`/api/unidades/${asignaturaSelect.value}/${cursoSelect.value}`
+
+    );
+
+    const data =
+    await response.json();
+
+    unidadSelect.innerHTML = "";
+
+    data.unidades.forEach(unidad=>{
+
+        unidadSelect.innerHTML += `
+
+        <option value="${unidad.nombre}">
+
+            ${unidad.nombre}
+
+        </option>
+
+        `;
+
+    });
+
+    cargarOA();
+
+}
+
+/* ================================================= */
+/* OA */
+/* ================================================= */
+
+async function cargarOA(){
+
+    const response =
+    await fetch(
+
+`/api/oa/${asignaturaSelect.value}/${cursoSelect.value}/${unidadSelect.value}`
+
+    );
+
+    const data =
+    await response.json();
+
+    oaSelect.innerHTML = "";
+
+    data.oa.forEach(item=>{
+
+        let texto = "";
+
+        let valor = "";
+
+        if(typeof item === "object"){
+
+            texto =
+            `${item.codigo} - ${item.descripcion}`;
+
+            valor =
+            item.descripcion;
+
+        }
+
+        else{
+
+            texto = item;
+
+            valor = item;
+
+        }
+
+        oaSelect.innerHTML += `
+
+        <option value="${valor}">
+
+            ${texto}
+
+        </option>
+
+        `;
+
+    });
+
+}
+
+/* ================================================= */
+/* GENERAR */
+/* ================================================= */
+
+async function generarPlanificacion(){
+
+resultado.innerHTML = `
+
+<div class="loading">
+
+⏳ Generando planificación IA...
+
+</div>
+
+`;
+
+const body = {
+
+asignatura:
+asignaturaSelect.value,
+
+curso:
+cursoSelect.value,
+
+unidad:
+unidadSelect.value,
+
+oa:
+oaSelect.value,
+
+objetivos:
+document.getElementById("objetivos").checked,
+
+indicadores:
+document.getElementById("indicadores").checked,
+
+habilidades:
+document.getElementById("habilidades").checked,
+
+actitudes:
+document.getElementById("actitudes").checked,
+
+evaluacion:
+document.getElementById("evaluacion").checked,
+
+nee:
+document.getElementById("nee").checked
+
+};
+
+try{
+
+const response =
+await fetch(
+
+"/api/pedagogia",
+
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+body:
+JSON.stringify(body)
+
+}
+
+);
+
+const data =
+await response.json();
+
+const markdown =
+marked.parse(data.resultado);
+
+resultado.innerHTML = `
+
+<h1>
+
+✅ Planificación Generada
+
+</h1>
+
+<div class="tarjeta">
+
+${markdown}
+
+</div>
+
+`;
+
+guardarHistorial(data.resultado);
+
+}
+
+catch(error){
+
+resultado.innerHTML = `
+
+<h1>
+
+❌ Error
+
+</h1>
+
+<p>
+
+No se pudo generar la planificación.
+
+</p>
+
+`;
+
+}
+
+}
+
+/* ================================================= */
+/* PREGUNTAR IA */
+/* ================================================= */
+
+async function preguntarIA(){
+
+const pregunta =
+document.getElementById("pregunta").value;
+
+if(!pregunta){
+
+alert("Escribe una pregunta.");
+
+return;
+
+}
+
+resultado.innerHTML = `
+
+<div class="loading">
+
+⏳ Consultando IA...
+
+</div>
+
+`;
+
+try{
+
+const response =
+await fetch(
+
+"/api/chat",
+
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+body:JSON.stringify({
+
+pregunta:pregunta
+
+})
+
+}
+
+);
+
+const data =
+await response.json();
+
+resultado.innerHTML = `
+
+<h1>
+
+💬 Respuesta IA
+
+</h1>
+
+<div class="tarjeta">
+
+${marked.parse(data.respuesta)}
+
+</div>
+
+`;
+
+}
+
+catch(error){
+
+resultado.innerHTML = `
+
+<h1>
+
+❌ Error
+
+</h1>
+
+<p>
+
+No fue posible consultar IA.
+
+</p>
+
+`;
+
+}
+
+}
+
+/* ================================================= */
+/* IMAGEN */
+/* ================================================= */
+
+async function generarImagen(){
+
+const prompt =
+
+document.querySelector(
+"textarea"
+).value
+
+if(!prompt){
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+⚠️ Escribe una descripción.
+
+</div>
+
+`
+
+return
+
+}
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+⏳ Generando imagen...
+
+</div>
+
+`
+
+try{
+
+const res = await fetch(
+
+"/api/imagen",
+
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+
+"application/json"
+
+},
+
+body:
+
+JSON.stringify({
+
+prompt
+
+})
+
+}
+
+)
+
+const data =
+await res.json()
+
+if(data.ok){
+
+resultado.innerHTML=`
+
+<h1>
+
+🎨 Imagen Generada
+
+</h1>
+
+<div class="tarjeta">
+
+<img
+src="${data.imagen}"
+
+style="
+width:100%;
+max-width:900px;
+border-radius:20px;
+display:block;
+margin:auto;
+"
+
+onerror="
+
+this.outerHTML=
+
+'<div style=color:red;font-size:22px>
+
+❌ No se pudo cargar la imagen
+
+</div>'
+
+"
+
+>
+
+</div>
+
+`
+
+}else{
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+❌ Error generando imagen
+
+<br><br>
+
+${data.error || ""}
+
+</div>
+
+`
+
+}
+
+}catch(e){
+
+resultado.innerHTML=`
+
+<div class="tarjeta">
+
+❌ Error conexión
+
+</div>
+
+`
+
+}
+
+}
+/* ================================================= */
+/* HISTORIAL */
+/* ================================================= */
+
+
+/* ================================================= */
+/* PDF */
+/* ================================================= */
+function descargarPDF(){
+
+    const elemento =
+    document.getElementById(
+        "resultado"
+    )
+
+    // CLONAR CONTENIDO
+    const copia =
+    elemento.cloneNode(true)
+
+    // CREAR CONTENEDOR TEMPORAL
+    const contenedor =
+    document.createElement("div")
+
+    contenedor.style.background = "white"
+    contenedor.style.color = "black"
+    contenedor.style.padding = "40px"
+    contenedor.style.width = "1000px"
+
+    contenedor.innerHTML = copia.innerHTML
+
+    document.body.appendChild(
+        contenedor
+    )
+
+    const opciones = {
+
+        margin:0.5,
+
+        filename:
+        "planificacion_docente.pdf",
+
+        image:{
+            type:"jpeg",
+            quality:1
+        },
+
+        html2canvas:{
+            scale:2,
+            useCORS:true
+        },
+
+        jsPDF:{
+            unit:"in",
+            format:"a4",
+            orientation:"portrait"
+        }
+
+    }
+
+    setTimeout(()=>{
+
+        html2pdf()
+
+        .set(opciones)
+
+        .from(contenedor)
+
+        .save()
+
+        .then(()=>{
+
+            document.body.removeChild(
+                contenedor
+            )
+
+        })
+
+    },1000)
+
+}
+
+/* ================================================= */
+/* EVENTOS */
+/* ================================================= */
+
+document
+.getElementById("btnGenerar")
+.addEventListener(
+
+"click",
+
+generarPlanificacion
+
+);
+
+asignaturaSelect
+.addEventListener(
+
+"change",
+
+cargarCursos
+
+);
+
+cursoSelect
+.addEventListener(
+
+"change",
+
+cargarUnidades
+
+);
+
+unidadSelect
+.addEventListener(
+
+"change",
+
+cargarOA
+
+);
+
+/* ================================================= */
+/* INICIO */
+/* ================================================= */
+
+window.onload = ()=>{
+
+cargarCursos();
+
+};
+
+</script>
+<!-- ===================================== -->
+<!-- MODAL HISTORIAL -->
+<!-- ===================================== -->
+
+<div id="modalHistorial" class="modal">
+
+    <div class="modal-content">
+
+        <span
+        id="cerrarHistorial"
+        class="cerrar"
+        >
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            📚 Historial Pedagógico
+
+        </h2>
+
+        <div id="contenidoHistorial"></div>
+
+    </div>
+
+</div>
+
+<style>
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:9999;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    rgba(0,0,0,.75);
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.modal-content{
+
+    background:#10224d;
+
+    width:85%;
+
+    max-height:85vh;
+
+    overflow:auto;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    color:white;
+
+}
+
+.cerrar{
+
+    float:right;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+}
+
+.historial-card{
+
+    background:#1d3266;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+}
+
+.historial-card h3{
+
+    margin-bottom:15px;
+
+}
+
+</style>
+
+<script>
+
+//////////////////////////////////////////////////
+// GUARDAR HISTORIAL
+//////////////////////////////////////////////////
+
+function guardarHistorial(
+
+    texto
+
+){
+
+    let historial = JSON.parse(
+
+        localStorage.getItem(
+            "historial_ia"
+        ) || "[]"
+
+    )
+
+    historial.push({
+
+        fecha:
+        new Date().toLocaleString(),
+
+        contenido:
+        texto
+
+    })
+
+    localStorage.setItem(
+
+        "historial_ia",
+
+        JSON.stringify(historial)
+
+    )
+
+}
+
+//////////////////////////////////////////////////
+// VER HISTORIAL
+//////////////////////////////////////////////////
+
+function verHistorial(){
+
+    document.getElementById(
+        "modalHistorial"
+    ).style.display = "flex"
+
+    let historial = JSON.parse(
+
+        localStorage.getItem(
+            "historial_ia"
+        ) || "[]"
+
+    )
+
+    let html = ""
+
+    if(historial.length === 0){
+
+        html = `
+
+        <div class="historial-card">
+
+            No hay historial guardado.
+
+        </div>
+
+        `
+
+    }
+
+    historial.reverse().forEach(
+
+        (item,index)=>{
+
+            html += `
+
+            <div class="historial-card">
+
+                <h3>
+
+                    📘 Registro ${index + 1}
+
+                </h3>
+
+                <p style="color:#ccc;">
+
+                    ${item.fecha}
+
+                </p>
+
+                <hr><br>
+
+                ${marked.parse(
+                    item.contenido
+                )}
+
+            </div>
+
+            `
+
+        }
+
+    )
+
+    document.getElementById(
+        "contenidoHistorial"
+    ).innerHTML = html
+
+}
+
+//////////////////////////////////////////////////
+// CERRAR HISTORIAL
+//////////////////////////////////////////////////
+
+document.getElementById(
+    "cerrarHistorial"
+).onclick = ()=>{
+
+    document.getElementById(
+        "modalHistorial"
+    ).style.display = "none"
+
+}
+
+//////////////////////////////////////////////////
+// PDF REAL
+//////////////////////////////////////////////////
+
+function descargarPDF(){
+
+    const elemento =
+    document.getElementById(
+        "resultado"
+    )
+
+    const opciones = {
+
+        margin:0.5,
+
+        filename:
+        "planificacion_docente.pdf",
+
+        image:{
+
+            type:"jpeg",
+            quality:1
+
+        },
+
+        html2canvas:{
+
+            scale:2
+
+        },
+
+        jsPDF:{
+
+            unit:"in",
+
+            format:"a4",
+
+            orientation:"portrait"
+
+        }
+
+    }
+
+    html2pdf()
+
+    .set(opciones)
+
+    .from(elemento)
+
+    .save()
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,176 +1,724 @@
 from flask import Flask, render_template, request, jsonify
-import json
-import os
-import datetime
+from flask import session
+from flask import redirect
 
-from openai import OpenAI
+from database import (
+    conectar_db,
+    crear_tablas,
+    db,
+    Usuario,
+    Historial
+)
+
+from curriculum import (
+    obtener_cursos,
+    obtener_unidades,
+    obtener_oa
+)
+
+from pedagogia import (
+    generar_respuesta,
+    generar_objetivos,
+    generar_indicadores,
+    generar_habilidades,
+    generar_actitudes,
+    generar_nee,
+    generar_evaluacion
+)
+
+from auth import auth
+from imagen import generar_imagen
+
+# =========================================
+# APP
+# =========================================
 
 app = Flask(__name__)
+app.secret_key = "aulamind_secret_2026"
+conectar_db(app)
 
-# =========================
-# OPENAI
-# =========================
-client = OpenAI(api_key=os.environ.get("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
-"))
+crear_tablas(app)
 
-# =========================
-# BASE CURRICULAR
-# =========================
-BASE = {}
-
-try:
-    with open("base_curricular_oficial.json", encoding="utf-8") as f:
-        BASE = json.load(f)
-except Exception as e:
-    print("ERROR JSON:", e)
-
-# =========================
-# USUARIOS
-# =========================
-usuarios_file = "usuarios/usuarios.json"
-
-if not os.path.exists(usuarios_file):
-    with open(usuarios_file, "w") as f:
-        json.dump([], f)
-
-# =========================
-# RUTAS
-# =========================
+# =========================================
+# HOME
+# =========================================
 
 @app.route("/")
 def home():
-    return render_template("index.html")
 
+    return render_template(
+        "app2.html"
+    )
 
-@app.route("/api/base")
-def base():
-    return jsonify(BASE)
-
-
-# =========================
-# LOGIN
-# =========================
-
-@app.route("/api/registro", methods=["POST"])
-def registro():
-    data = request.json
-    usuario = data.get("usuario")
-    password = data.get("password")
-
-    with open(usuarios_file, encoding="utf-8") as f:
-        usuarios = json.load(f)
-
-    for u in usuarios:
-        if u["usuario"] == usuario:
-            return jsonify({"ok": False, "msg": "Usuario ya existe"})
-
-    usuarios.append({"usuario": usuario, "password": password})
-
-    with open(usuarios_file, "w", encoding="utf-8") as f:
-        json.dump(usuarios, f, indent=2)
-
-    return jsonify({"ok": True})
-
-
-@app.route("/api/login", methods=["POST"])
+@app.route("/login")
 def login():
-    data = request.json
-    usuario = data.get("usuario")
-    password = data.get("password")
 
-    with open(usuarios_file, encoding="utf-8") as f:
-        usuarios = json.load(f)
+    return render_template(
+        "login.html"
+    )
 
-    for u in usuarios:
-        if u["usuario"] == usuario and u["password"] == password:
-            return jsonify({"ok": True})
+# =========================================
+# REGISTRO
+# =========================================
 
-    return jsonify({"ok": False})
+from database import db, Usuario, Historial
 
 
-# =========================
-# PLANIFICACI�N IA + GUARDADO
-# =========================
+@app.route(
+    "/registro"
+)
+def registro():
 
-@app.route("/api/planificar", methods=["POST"])
-def planificar():
+    return render_template(
+        "registro.html"
+    )
+
+
+@app.route(
+    "/api/registro",
+    methods=["POST"]
+)
+def api_registro():
+
     try:
-        data = request.json
 
-        asignatura = data.get("asignatura", "")
-        curso = data.get("curso", "")
-        unidad = data.get("unidad", "")
-        oa_lista = data.get("oa", [])
+        data = request.get_json()
 
-        prompt = f"""
-Genera una planificaci�n de clase profesional.
-
-Asignatura: {asignatura}
-Curso: {curso}
-Unidad: {unidad}
-
-Objetivos:
-{chr(10).join(oa_lista)}
-
-Incluye:
-- Objetivo
-- Inicio
-- Desarrollo
-- Cierre
-- Evaluaci�n
-- Recursos
-"""
-
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.3
+        nombre = data.get(
+            "nombre"
         )
 
-        plan = response.choices[0].message.content
+        email = data.get(
+            "email"
+        )
 
-        # GUARDAR
-        os.makedirs("historial", exist_ok=True)
+        password = data.get(
+            "password"
+        )
 
-        nombre = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        ruta = f"historial/plan_{nombre}.json"
+        existe = Usuario.query.filter_by(
+            email=email
+        ).first()
 
-        with open(ruta, "w", encoding="utf-8") as f:
-            json.dump({
-                "asignatura": asignatura,
-                "curso": curso,
-                "unidad": unidad,
-                "oa": oa_lista,
-                "plan": plan
-            }, f, ensure_ascii=False, indent=2)
+        if existe:
 
-        return jsonify({"plan": plan})
+            return jsonify({
+
+                "ok": False,
+
+                "mensaje":
+                "⚠️ Correo ya registrado"
+
+            })
+
+        usuario = Usuario(
+
+            nombre=nombre,
+
+            email=email,
+
+            password=password
+
+        )
+
+        db.session.add(
+            usuario
+        )
+
+        db.session.commit()
+
+        return jsonify({
+
+            "ok": True,
+
+            "mensaje":
+            "✅ Cuenta creada"
+
+        })
 
     except Exception as e:
-        print("ERROR IA:", e)
-        return jsonify({"plan": "? Error IA"})
+
+        print(e)
+
+        return jsonify({
+
+            "ok": False,
+
+            "mensaje":
+            "❌ Error creando cuenta"
+
+        })
+
+# =========================================
+# LOGIN API
+# =========================================
+
+from flask import session
 
 
-# =========================
-# HISTORIAL
-# =========================
+@app.route(
+    "/api/login",
+    methods=["POST"]
+)
+def api_login():
 
-@app.route("/api/historial")
-def historial():
     try:
-        archivos = os.listdir("historial")
-        data = []
 
-        for archivo in archivos:
-            with open(f"historial/{archivo}", encoding="utf-8") as f:
-                data.append(json.load(f))
+        data = request.get_json()
 
-        return jsonify(data)
+        email = data.get(
+            "usuario",
+            ""
+        )
 
-    except:
-        return jsonify([])
+        password = data.get(
+            "password",
+            ""
+        )
+
+        usuario = Usuario.query.filter_by(
+
+            email=email,
+
+            password=password
+
+        ).first()
+
+        if usuario:
+
+            session["usuario"] = usuario.id
+
+            return jsonify({
+
+                "success": True,
+
+                "nombre":
+                usuario.nombre,
+
+                "premium":
+                usuario.premium
+
+            })
+
+        return jsonify({
+
+            "success": False
+
+        })
+
+    except Exception as e:
+
+        print(
+
+            "ERROR LOGIN:",
+
+            e
+
+        )
+
+        return jsonify({
+
+            "success": False
+
+        })
+
+# =========================================
+# HISTORIAL
+# =========================================
+
+@app.route(
+"/historial"
+)
+def historial():
+
+    usuario=session.get(
+        "usuario"
+    )
+
+    if not usuario:
+
+        return redirect(
+            "/login"
+        )
+
+    datos=Historial.query.filter_by(
+
+        usuario_id=usuario
+
+    ).all()
+
+    return render_template(
+
+        "historial.html",
+
+        historial=datos
+
+    )
 
 
-# =========================
-if __name__ == "__main__":
-    app.run()
+
+
+# =========================================
+# CURSOS
+# =========================================
+
+@app.route(
+    "/api/cursos/<asignatura>"
+)
+def api_cursos(asignatura):
+
+    try:
+
+        cursos = obtener_cursos(
+            asignatura
+        )
+
+        return jsonify({
+
+            "cursos": cursos
+
+        })
+
+    except Exception as e:
+
+        print(
+
+            "ERROR CURSOS:",
+
+            e
+
+        )
+
+        return jsonify({
+
+            "cursos": []
+
+        })
+
+# =========================================
+# UNIDADES
+# =========================================
+
+@app.route(
+    "/api/unidades/<asignatura>/<curso>"
+)
+def api_unidades(
+
+    asignatura,
+    curso
+
+):
+
+    try:
+
+        unidades = obtener_unidades(
+
+            asignatura,
+            curso
+
+        )
+
+        return jsonify({
+
+            "unidades": unidades
+
+        })
+
+    except Exception as e:
+
+        print("ERROR UNIDADES:", e)
+
+        return jsonify({
+
+            "unidades": []
+
+        })
+
+# =========================================
+# OA
+# =========================================
+
+@app.route(
+    "/api/oa/<asignatura>/<curso>/<unidad>"
+)
+def api_oa(
+
+    asignatura,
+    curso,
+    unidad
+
+):
+
+    try:
+
+        oa = obtener_oa(
+
+            asignatura,
+            curso,
+            unidad
+
+        )
+
+        return jsonify({
+
+            "oa": oa
+
+        })
+
+    except Exception as e:
+
+        print("ERROR OA:", e)
+
+        return jsonify({
+
+            "oa": []
+
+        })
+
+
+# =========================================
+# CHAT IA
+# =========================================
+
+@app.route(
+    "/api/chat",
+    methods=["POST"]
+)
+def api_chat():
+
+    try:
+
+        data = request.json
+
+        pregunta = data.get(
+            "pregunta",
+            ""
+        )
+
+        respuesta = generar_respuesta(
+            pregunta
+        )
+
+        # GUARDAR HISTORIAL (sin romper el chat)
+        try:
+
+            usuario = session.get(
+                "usuario"
+            )
+
+            if usuario:
+
+                nuevo = Historial(
+
+                    usuario_id=usuario,
+
+                    pregunta=pregunta,
+
+                    respuesta=respuesta
+
+                )
+
+                db.session.add(
+                    nuevo
+                )
+
+                db.session.commit()
+
+        except Exception as e:
+
+            print(
+                "ERROR HISTORIAL:",
+                e
+            )
+
+        return jsonify({
+
+            "respuesta":
+            respuesta
+
+        })
+
+    except Exception as e:
+
+        print(
+
+            "ERROR CHAT:",
+
+            e
+
+        )
+
+        return jsonify({
+
+            "respuesta":
+
+            "❌ Error"
+
+        })
+
+# =========================================
+# PEDAGOGÍA IA
+# =========================================
+
+@app.route(
+    "/api/pedagogia",
+    methods=["POST"]
+)
+def api_pedagogia():
+
+    try:
+
+        data = request.json
+
+        asignatura = data.get(
+            "asignatura",
+            ""
+        )
+
+        curso = data.get(
+            "curso",
+            ""
+        )
+
+        unidad = data.get(
+            "unidad",
+            ""
+        )
+
+        oa = data.get(
+            "oa",
+            ""
+        )
+       
+        resultado = f"""
+
+# ✅ Planificación Generada
+
+---
+
+## 📚 Contexto Pedagógico
+
+### 📘 Asignatura
+{asignatura}
+
+### 🎓 Curso
+{curso}
+
+### 📖 Unidad
+{unidad}
+
+### 🎯 OA
+{oa}
+
+---
+
+"""
+
+        # =====================================
+        # OBJETIVOS
+        # =====================================
+
+        if data.get("objetivos"):
+
+            resultado += """
+
+# 🎯 Objetivos
+
+"""
+
+            resultado += generar_objetivos(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # INDICADORES
+        # =====================================
+
+        if data.get("indicadores"):
+
+            resultado += """
+
+# 📊 Indicadores
+
+"""
+
+            resultado += generar_indicadores(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # HABILIDADES
+        # =====================================
+
+        if data.get("habilidades"):
+
+            resultado += """
+
+# 🧠 Habilidades
+
+"""
+
+            resultado += generar_habilidades(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # ACTITUDES
+        # =====================================
+
+        if data.get("actitudes"):
+
+            resultado += """
+
+# 🤝 Actitudes
+
+"""
+
+            resultado += generar_actitudes(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # NEE
+        # =====================================
+
+        if data.get("nee"):
+
+            resultado += """
+
+# ♿ Adaptaciones NEE
+
+"""
+
+            resultado += generar_nee(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        # =====================================
+        # EVALUACIÓN
+        # =====================================
+
+        if data.get("evaluacion"):
+
+            resultado += """
+
+# 📝 Evaluación
+
+"""
+
+            resultado += generar_evaluacion(
+
+                asignatura,
+                curso,
+                unidad,
+                oa
+
+            )
+
+        return jsonify({
+
+            "resultado": resultado
+
+        })
+
+    except Exception as e:
+
+        print("ERROR PEDAGOGIA:", e)
+
+        return jsonify({
+
+            "resultado": f"""
+
+# ❌ Error
+
+No fue posible generar la planificación.
+
+## Detalle técnico
+
+{str(e)}
+
+"""
+
+        })
+
+
+# =========================================
+# MAIN
+# =========================================
+
+app.register_blueprint(auth)
+
+# ====================================
+# GENERAR IMAGEN
+# ====================================
+
+@app.route("/api/imagen", methods=["POST"])
+def api_imagen():
+
+    try:
+
+        data = request.get_json()
+
+        prompt = data.get(
+            "prompt",
+            ""
+        )
+
+        r = generar_imagen(
+            prompt
+        )
+
+        return jsonify({
+
+            "ok":
+            r["ok"],
+
+            "imagen":
+            r.get(
+                "imagen",
+                ""
+            ),
+
+            "error":
+            r.get(
+                "error",
+                ""
+            )
+
+        })
+
+    except Exception as e:
+
+        return jsonify({
+
+            "ok": False,
+
+            "error":
+            str(e)
+
+        })

@@ -1,0 +1,730 @@
+{
+  "1° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 1° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 1° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 1° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 1° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "2° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 2° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 2° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 2° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 2° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "3° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 3° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 3° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 3° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 3° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "4° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 4° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 4° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 4° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 4° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "5° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 5° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 5° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 5° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 5° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "6° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 6° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 6° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 6° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 6° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "7° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 7° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 7° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 7° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 7° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  },
+  "8° Básico": {
+    "nombre_asignatura": "Lenguaje y Comunicación",
+    "programa": "Programa de Estudio MINEDUC",
+    "ejes": [
+      "Lectura",
+      "Escritura",
+      "Comunicación Oral"
+    ],
+    "unidades": [
+      {
+        "numero": 1,
+        "nombre": "Lectura y comprensión 8° Básico",
+        "semestre": 1,
+        "proposito": "Desarrollar habilidades de lectura y comprensión.",
+        "oa": [
+          {
+            "codigo": "OA 1",
+            "descripcion": "Leer y comprender textos literarios."
+          },
+          {
+            "codigo": "OA 2",
+            "descripcion": "Identificar información explícita e implícita."
+          },
+          {
+            "codigo": "OA 3",
+            "descripcion": "Expresar opiniones sobre lecturas."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Textos informativos 8° Básico",
+        "semestre": 1,
+        "proposito": "Comprender textos informativos y extraer información relevante.",
+        "oa": [
+          {
+            "codigo": "OA 4",
+            "descripcion": "Leer textos no literarios."
+          },
+          {
+            "codigo": "OA 5",
+            "descripcion": "Relacionar información con experiencias."
+          },
+          {
+            "codigo": "OA 6",
+            "descripcion": "Responder preguntas de comprensión."
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Producción escrita 8° Básico",
+        "semestre": 2,
+        "proposito": "Desarrollar escritura creativa y funcional.",
+        "oa": [
+          {
+            "codigo": "OA 7",
+            "descripcion": "Escribir textos coherentes."
+          },
+          {
+            "codigo": "OA 8",
+            "descripcion": "Aplicar vocabulario adecuado."
+          },
+          {
+            "codigo": "OA 9",
+            "descripcion": "Revisar y corregir textos."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Comunicación oral 8° Básico",
+        "semestre": 2,
+        "proposito": "Fortalecer habilidades de comunicación oral.",
+        "oa": [
+          {
+            "codigo": "OA 10",
+            "descripcion": "Participar en conversaciones."
+          },
+          {
+            "codigo": "OA 11",
+            "descripcion": "Presentar exposiciones orales."
+          },
+          {
+            "codigo": "OA 12",
+            "descripcion": "Escuchar activamente."
+          }
+        ]
+      }
+    ]
+  }
+}
