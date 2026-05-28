@@ -75,13 +75,73 @@
   ]
 },
 
+{
+  "codigo": "OA 2",
+  "descripcion": "Leer y representar números hasta el 20 en forma concreta, pictórica y simbólica.",
 
-			
-          {
-            "codigo": "OA 2",
-            "descripcion": "Leer y representar números hasta el 20 en forma concreta, pictórica y simbólica."
-          },
-          {
+  "indicadores": [
+    "Lee números hasta el 20.",
+    "Representa números con dibujos y material concreto.",
+    "Relaciona número y cantidad.",
+    "Escribe números correctamente."
+  ],
+
+  "habilidades": [
+    "Representar",
+    "Leer números",
+    "Escribir números",
+    "Comunicar"
+  ],
+
+  "actitudes": [
+    "Participa activamente.",
+    "Trabaja ordenadamente.",
+    "Comparte estrategias con compañeros."
+  ],
+
+  "evaluacion": [
+    "Lectura numérica oral.",
+    "Representación pictórica.",
+    "Uso de material concreto.",
+    "Escritura de números."
+  ],
+
+  "actividades": {
+
+    "inicio": [
+      "Reconocer números en tarjetas.",
+      "Juego de asociación número-cantidad."
+    ],
+
+    "desarrollo": [
+      "Representar números con bloques.",
+      "Dibujar cantidades.",
+      "Escribir números en guía."
+    ],
+
+    "cierre": [
+      "Retroalimentación grupal.",
+      "Presentar representaciones al curso."
+    ]
+  },
+
+  "progresion_curricular": "Desarrolla la comprensión de representación numérica inicial.",
+
+  "adaptaciones_nee": [
+    "Apoyo visual.",
+    "Material concreto.",
+    "Trabajo guiado."
+  ],
+
+  "recursos": [
+    "Tarjetas numéricas",
+    "Bloques matemáticos",
+    "Guías",
+    "Pizarra"
+  ]
+},
+          
+			{
             "codigo": "OA 3",
             "descripcion": "Comparar y ordenar números del 0 al 20."
           }
