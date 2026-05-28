@@ -16,9 +16,41 @@ DATA_DIR = os.path.join(
 
 def leer_asignatura(asignatura):
 
+    nombre_archivo = asignatura.lower()
+
+    nombre_archivo = nombre_archivo.replace(
+        "á",
+        "a"
+    )
+
+    nombre_archivo = nombre_archivo.replace(
+        "é",
+        "e"
+    )
+
+    nombre_archivo = nombre_archivo.replace(
+        "í",
+        "i"
+    )
+
+    nombre_archivo = nombre_archivo.replace(
+        "ó",
+        "o"
+    )
+
+    nombre_archivo = nombre_archivo.replace(
+        "ú",
+        "u"
+    )
+
+    nombre_archivo = nombre_archivo.replace(
+        " ",
+        ""
+    )
+
     ruta = os.path.join(
         DATA_DIR,
-        f"{asignatura}.json"
+        f"{nombre_archivo}.json"
     )
 
     with open(
