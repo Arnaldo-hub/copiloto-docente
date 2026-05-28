@@ -7,10 +7,76 @@
         "semestre": "1",
         "proposito": "Desarrollar la comprensión de números hasta el 20, promoviendo habilidades de conteo, representación y resolución de problemas.",
         "oa": [
-          {
-            "codigo": "OA 1",
-            "descripcion": "Contar números del 0 al 20 de 1 en 1, de 2 en 2 y hacia atrás."
-          },
+          
+			
+{
+  "codigo": "OA 1",
+  "descripcion": "Contar números del 0 al 20 de 1 en 1, de 2 en 2 y hacia atrás.",
+
+  "indicadores": [
+    "Cuenta números del 0 al 20 en forma ascendente.",
+    "Cuenta números hacia atrás desde 20.",
+    "Reconoce secuencias numéricas simples.",
+    "Cuenta de 2 en 2 utilizando material concreto."
+  ],
+
+  "habilidades": [
+    "Contar",
+    "Representar números",
+    "Resolver problemas",
+    "Comunicar"
+  ],
+
+  "actitudes": [
+    "Participa activamente en actividades matemáticas.",
+    "Persevera frente a desafíos.",
+    "Comunica ideas matemáticas respetando a otros."
+  ],
+
+  "evaluacion": [
+    "Conteo oral",
+    "Secuencias numéricas",
+    "Representación concreta",
+    "Resolución de ejercicios guiados"
+  ],
+
+  "actividades": {
+
+    "inicio": [
+      "Contar objetos de la sala.",
+      "Juego oral de números."
+    ],
+
+    "desarrollo": [
+      "Uso de material concreto para contar.",
+      "Completar secuencias numéricas.",
+      "Conteo grupal y por parejas."
+    ],
+
+    "cierre": [
+      "Retroalimentación oral.",
+      "Resolver desafíos simples de conteo."
+    ]
+  },
+
+  "progresion_curricular": "Base para operaciones básicas y comprensión numérica inicial.",
+
+  "adaptaciones_nee": [
+    "Uso de material manipulativo.",
+    "Apoyo visual.",
+    "Instrucciones segmentadas."
+  ],
+
+  "recursos": [
+    "Bloques matemáticos",
+    "Tarjetas numéricas",
+    "Pizarra",
+    "Material concreto"
+  ]
+},
+
+
+			
           {
             "codigo": "OA 2",
             "descripcion": "Leer y representar números hasta el 20 en forma concreta, pictórica y simbólica."
