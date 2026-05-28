@@ -11,9 +11,12 @@ from database import (
 )
 
 from curriculum import (
+
     obtener_cursos,
     obtener_unidades,
-    obtener_oa
+    obtener_oa,
+    obtener_oa_completo
+
 )
 
 from pedagogia import (
@@ -107,7 +110,7 @@ def api_registro():
                 "ok": False,
 
                 "mensaje":
-                "⚠️ Correo ya registrado"
+                "?? Correo ya registrado"
 
             })
 
@@ -132,7 +135,7 @@ def api_registro():
             "ok": True,
 
             "mensaje":
-            "✅ Cuenta creada"
+            "? Cuenta creada"
 
         })
 
@@ -145,7 +148,7 @@ def api_registro():
             "ok": False,
 
             "mensaje":
-            "❌ Error creando cuenta"
+            "? Error creando cuenta"
 
         })
 
@@ -452,12 +455,12 @@ def api_chat():
 
             "respuesta":
 
-            "❌ Error"
+            "? Error"
 
         })
 
 # =========================================
-# PEDAGOGÍA IA
+# PEDAGOG�A IA
 # =========================================
 
 @app.route(
@@ -489,26 +492,145 @@ def api_pedagogia():
             "oa",
             ""
         )
-       
+		
+		oa_codigo = oa.split(
+            " - "
+        )[0]
+
+        oa_data = obtener_oa_completo(
+
+            asignatura,
+            curso,
+            unidad,
+            oa_codigo
+
+        )
+		
+		indicadores = "\n".join([
+
+            f"- {i}"
+
+            for i in oa_data.get(
+                "indicadores",
+                []
+            )
+
+        ])
+
+        habilidades = "\n".join([
+
+            f"- {h}"
+
+            for h in oa_data.get(
+                "habilidades",
+                []
+            )
+
+        ])
+
+        evaluacion = "\n".join([
+
+            f"- {e}"
+
+            for e in oa_data.get(
+                "evaluacion",
+                []
+            )
+
+        ])
+
+        actitudes = "\n".join([
+
+            f"- {a}"
+
+            for a in oa_data.get(
+                "actitudes",
+                []
+            )
+
+        ])		
+		
         resultado = f"""
 
-# ✅ Planificación Generada
+#  Planificaci�n Generada
 
 ---
 
-## 📚 Contexto Pedagógico
+##  Contexto Pedag�gico
 
-### 📘 Asignatura
+###  Asignatura
 {asignatura}
 
-### 🎓 Curso
+###  Curso
 {curso}
 
-### 📖 Unidad
+###  Unidad
 {unidad}
 
-### 🎯 OA
-{oa}
+###  OA
+{oa_data.get("descripcion", "")}
+
+---
+
+## Indicadores
+
+{indicadores}
+
+---
+
+##  Habilidades
+
+{habilidades}
+
+---
+
+##  Evaluaci�n
+
+{evaluacion}
+
+---
+
+##  Actitudes
+
+{actitudes}
+
+---
+
+##  Habilidades
+
+{chr(10).join([
+f"- {h}"
+for h in oa_data.get(
+    "habilidades",
+    []
+)
+])}
+
+---
+
+## ? Evaluaci�n
+
+{chr(10).join([
+f"- {e}"
+for e in oa_data.get(
+    "evaluacion",
+    []
+)
+])}
+
+---
+
+##  Actitudes
+
+{chr(10).join([
+f"- {a}"
+for a in oa_data.get(
+    "actitudes",
+    []
+)
+])}
+```
+
 
 ---
 
@@ -522,7 +644,7 @@ def api_pedagogia():
 
             resultado += """
 
-# 🎯 Objetivos
+#  Objetivos
 
 """
 
@@ -539,11 +661,12 @@ def api_pedagogia():
         # INDICADORES
         # =====================================
 
+
         if data.get("indicadores"):
 
             resultado += """
 
-# 📊 Indicadores
+#  Indicadores
 
 """
 
@@ -564,7 +687,7 @@ def api_pedagogia():
 
             resultado += """
 
-# 🧠 Habilidades
+#  Habilidades
 
 """
 
@@ -585,7 +708,7 @@ def api_pedagogia():
 
             resultado += """
 
-# 🤝 Actitudes
+#  Actitudes
 
 """
 
@@ -606,7 +729,7 @@ def api_pedagogia():
 
             resultado += """
 
-# ♿ Adaptaciones NEE
+#  Adaptaciones NEE
 
 """
 
@@ -620,14 +743,14 @@ def api_pedagogia():
             )
 
         # =====================================
-        # EVALUACIÓN
+        # EVALUACI�N
         # =====================================
 
         if data.get("evaluacion"):
 
             resultado += """
 
-# 📝 Evaluación
+#  Evaluaci�n
 
 """
 
@@ -654,11 +777,11 @@ def api_pedagogia():
 
             "resultado": f"""
 
-# ❌ Error
+#  Error
 
-No fue posible generar la planificación.
+No fue posible generar la planificaci�n.
 
-## Detalle técnico
+## Detalle t�cnico
 
 {str(e)}
 
@@ -722,3 +845,49 @@ def api_imagen():
             str(e)
 
         })
+
+# =========================================
+# OBTENER OA COMPLETO
+# =========================================
+
+def obtener_oa_completo(
+
+    asignatura,
+    curso,
+    unidad_nombre,
+    oa_codigo
+
+):
+
+    data = leer_asignatura(asignatura)
+
+    if curso not in data:
+
+        return None
+
+    unidades = data[curso].get(
+        "unidades",
+        []
+    )
+
+    for unidad in unidades:
+
+        if unidad.get(
+            "nombre"
+        ) == unidad_nombre:
+
+            oa_lista = unidad.get(
+                "oa",
+                []
+            )
+
+            for oa in oa_lista:
+
+                if oa.get(
+                    "codigo"
+                ) == oa_codigo:
+
+                    return oa
+
+    return None
+
