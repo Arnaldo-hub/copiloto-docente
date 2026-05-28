@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   Bases
                                        Tecnología
   Curriculares
@@ -2421,3 +2422,2882 @@ con los sismos, volcanes y
      assessment framework: Mathematics, reading,
      science, and problem solving knowledge and
        skills. Paris: OECD.
+=======
+Bases   
+Curriculares 
+Primero a   
+Sexto Básico  
+Ministerio de Educación  
+Gobierno de Chile  
+Artes   
+Visuales  
+Ciencias  
+Naturales  
+Educación Física  y Salud  
+Historia, Geografía  y Ciencias Sociales 
+Tecnología  
+Matemática  
+Idioma extranjero  Inglés  
+Lenguaje y   
+Comunicación  
+Música  
+Orientación 
+importante  
+En el presente documento, se utilizan de manera inclusiva términos 
+como  “el docente”, “el estudiante”, “el profesor”, “el alumno”, “el 
+compañero” y sus  respectivos plurales (así como otras palabras 
+equivalentes en el contexto  educativo) para referirse a hombres y 
+mujeres.  
+Esta opción obedece a que no existe acuerdo universal respecto de cómo 
+aludir  conjuntamente a ambos sexos en el idioma español, salvo usando 
+“o/a”, “los/las”  y otras similares, y ese tipo de fórmulas supone una 
+saturación gráfica que puede  dificultar la comprensión de la lectura. 
+Bases   
+Curriculares 
+Primero a   
+Sexto Básico  
+Ministerio de Educación  
+Gobierno de Chile 
+Estimados profesores, profesoras y directivos:  
+Nuestro sistema educacional está iniciando una etapa caracterizada por nuevas instituciones y normativas que buscan garantizar más 
+calidad y equi dad en los aprendizajes de todos los niños y niñas de Chile. Las Bases Curriculares para la Educación Básica 2012, que 
+a continuación presentamos,  contribuyen a satisfacer este anhelo, entregando un currículum claro y enriquecido.   
+Con estas Bases las escuelas reciben una herramienta que les permite desarrollar en sus estudiantes conocimientos, habilidades y 
+actitudes relevan tes y actualizadas, que conforman un bagaje cultural compartido, que vincula a nuestros jóvenes con su identidad 
+cultural y, a la vez, los contacta  con el mundo globalizado de hoy. Son ustedes, los docentes de Educación Básica, quienes tienen un 
+rol protagónico en el desarrollo integral y  pleno de sus alumnos y las Bases Curriculares los ayudarán en el cumplimiento de esta 
+importante misión, ya que su formulación como Objetivos de  Aprendizaje, permite focalizar mejor la acción en el aula.   
+El ciclo de Educación Básica tiene como fin entregar a los estudiantes aprendizajes cognitivos y no cognitivos que conducen a la 
+autonomía necesaria  para participar en la vida de nuestra sociedad. Esto requiere desarrollar las facultades que permiten acceder al 
+conocimiento de forma progresiva mente independiente y proseguir con éxito las etapas educativas posteriores. Estas Bases 
+Curriculares apoyan dicha tarea poniendo un fuerte énfasis  en el desarrollo de las habilidades del lenguaje escrito y hablado y del 
+razonamiento matemático de los estudiantes. Las habilidades de comunica ción, de pensamiento crítico y de investigación se 
+desarrollan, además, en torno a cada una de las disciplinas desde los primeros años. Los estudian tes aprenderán a seleccionar y 
+evaluar información, desarrollando una actitud reflexiva y analítica frente a la profusión informativa que hoy los rodea.   
+En este ciclo educativo se deben desarrollar también las aptitudes necesarias para participar responsable y activamente en una 
+sociedad libre y  democrática. Las Bases se orientan a que los alumnos adquieran un sentido de identidad y pertenencia a la sociedad 
+chilena, y que desarrollen habi lidades de relación y colaboración con los otros, así como actitudes de esfuerzo, perseverancia y amor 
+por el trabajo. Estas bases ayudarán también  a los profesores a crear en sus estudiantes una disposición positiva hacia el saber; a 
+despertar su curiosidad e interés por el mundo que les rodea;  a hacerse preguntas, a buscar información y a ejercitar la creatividad, la 
+iniciativa y la confianza en sí mismos para enfrentar diversas situaciones.   
+Termino agradeciendo la dedicación y el esfuerzo de los profesores y profesoras de Educación Básica del país y los invito a conocer y 
+estudiar estas  Bases para sacar de ellas el mayor provecho. Igualmente agradezco a todos aquellos que participaron en nuestras 
+consultas y aportaron con su valio sa experiencia y opiniones en la construcción de este instrumento. Estoy seguro de que con el 
+esfuerzo del Ministerio, de ustedes y de los alumnos  y sus padres, podremos avanzar en el logro de una educación como se la 
+merecen todos los niños de Chile.  
+ 
+Harald Beyer Burgos  
+Ministro de Educación de Chile 
+Ministerio de Educación de Chile  
+Bases Curriculares Primero a Sexto Básico  
+Decreto Supremo de Educación Nº 433 / 2012 
+Decreto Supremo de Educación Nº 439 / 2012  
+Unidad de Currículum y Evaluación  
+Ministerio de Educación, República de Chile  
+Alameda 1371, Santiago  
+Primera Edición: Diciembre 2018   
+ISBN 978-956-292-743-7 
+Índice 
+Introducción Antecedentes  
+12  
+16  
+Objetivos Generales de la Educación Básica  
+18  
+Bases Curriculares para la Educación Básica  
+28  
+Objetivos de Aprendizaje Transversales  
+32  
+Referencias  
+Artes Visuales Introducción  
+36  
+39  
+Organización curricular  
+45  
+Objetivos de Aprendizaje  
+Ciencias Naturales Introducción  
+70  
+72  
+Organización curricular   
+78  
+Referencias  
+79  
+Bibliografía Consultada  
+83  
+Objetivos de Aprendizaje  
+Educación Física y 
+Salud  
+Historia, Geografía y  
+Ciencias Sociales  
+Introducción  
+Organización curricular Objetivos 
+de Aprendizaje  
+Introducción  
+Organización curricular  
+Bibliografía Consultada Objetivos 
+de Aprendizaje  
+108 110 113  
+138 142 149 151  
+Tecnología Introducción Organización 
+curricular  
+Objetivos de Aprendizaje  
+182 185 189  
+Matemática Introducción Organización 
+curricular  
+Bibliografía consultada  
+Objetivos de Aprendizaje  
+Glosario  
+Idioma extranjero: Inglés Introducción 
+Organización curricular  
+Referencias  
+Bibliografía consultada  
+Objetivos de Aprendizaje  
+Glosario  
+214 217 221 225 255  
+264 270 273 275 277 288  
+Lenguaje y  
+Comunicación  
+Introducción  
+Organización curricular 
+Referencias  
+Bibliografía consultada Objetivos 
+de Aprendizaje  
+292 294 302 304 307  
+Música Introducción Organización curricular  
+Objetivos de Aprendizaje  
+Orientación Introducción Organización 
+curricular  
+Objetivos de Aprendizaje  
+344 346 351  
+376 378 381 
+Introducci
+ón 
+12 Bases Curriculares Ú 1º a 6º Básico Antecedentes  
+La construcción de un currículum nacional debe en 
+frentarse como un proceso continuo y acumulativo, 
+que  recoja de manera sistemática las experiencias 
+anteriores  que el sistema escolar ha internalizado 
+y, a la vez, incor pore la actualización permanente 
+de los conocimientos  disciplinares y las 
+innovaciones que ocurren en materias  
+pedagógicas y de comunicación curricular.  
+Entre 1990 y 1998 se establecen los fundamentos 
+del  currículum nacional de Chile como lo 
+conocemos hoy. Un  aspecto central que se define a 
+partir de ese momento  es la diferenciación entre un 
+instrumento “marco”, que  define en forma abierta los 
+aprendizajes mínimos de cada  nivel, y los 
+Programas de Estudio, que constituyen un  
+ordenamiento temporal de estos aprendizajes en el 
+año.  Se admite así que los aprendizajes mínimos 
+pueden ser  complementados y, por ende, se 
+entrega a los estableci mientos educacionales la 
+libertad de expresar su diversi dad, construyendo 
+propuestas propias que responden a  sus 
+necesidades y a las características de su proyecto 
+edu cativo. Acorde a lo estipulado por la Ley 
+Orgánica Consti tucional de Enseñanza (LOCE), en 
+esos años se definen los  Objetivos Fundamentales 
+(OF) y los Contenidos Mínimos  Obligatorios (CMO) 
+que todos los establecimientos debían  impartir, 
+estableciendo un marco curricular cuyas cate gorías 
+han permeado en forma exitosa la cultura escolar  
+hasta nuestros días. Desde este origen se proyecta 
+una  visión de la educación que posibilita una 
+experiencia edu cativa similar para la totalidad de los 
+alumnos y asegura,  al mismo tiempo, el 
+reconocimiento y la valoración de la  libertad de 
+educación.  
+Este marco curricular fue objeto de sucesivas 
+modifica ciones y perfeccionamientos y tuvo una 
+actualización  mayor (2009) para las asignaturas 
+de Lenguaje y Co municación, Matemática, 
+Historia, Geografía y Ciencias   
+Sociales, Ciencias Naturales e Inglés, pero sin que 
+nin guno de los conceptos que estructuraban el 
+currículum  nacional desde 1996 fuera modificado. 
+Así, se mantienen  los requerimientos, los principios 
+valóricos y las orienta ciones sobre el conocimiento y 
+el aprendizaje -definidos  en el marco de los 
+principios de la Constitución Política,  el 
+ordenamiento jurídico y la Declaración Universal de  
+los Derechos Humanos- que hacen referencia a que 
+“el  reconocimiento de la libertad, igualdad y dignidad 
+de  las personas impone al Estado el deber de 
+garantizar una  educación de alta calidad en todos 
+sus niveles escolares,  que, sin excepciones, 
+contribuya a que cada hombre y  cada mujer se 
+desarrolle como persona libre y socialmen te 
+responsable”1.  
+Sin embargo, los requerimientos de la sociedad 
+crista lizan en una reforma profunda de la 
+institucionalidad  educativa, con una nueva Ley 
+General de Educación en  2009 y la creación de un 
+Sistema Nacional de Asegura miento de la Calidad, 
+implementado a través de nuevos  organismos 
+estatales (Agencia de Calidad y Superinten dencia). 
+De ello surgen nuevas necesidades, a las cuales  la 
+formulación del currículum debe adaptarse y 
+resolver.  
+La nueva institucionalidad generada por el Sistema 
+Na cional de Aseguramiento de la Calidad, 
+establece que se  deben definir estándares de 
+aprendizaje que permitirán  ordenar a los 
+establecimientos educacionales de acuer do al logro 
+de aprendizaje de los alumnos y al grado de  
+cumplimiento de estos estándares, referidos a los 
+objeti vos generales señalados en la ley y sus 
+respectivas Bases  Curriculares. Este nuevo 
+escenario exige mayor claridad  y precisión en la 
+definición de lo que se espera que  aprendan los 
+estudiantes. La Ley General de Educación  ideó el 
+sistema como un todo, pensando en su lógica  
+interna y, en este sentido, previó la necesidad de 
+que el  
+Educación Básica 13 Antecedentes 
+instrumento principal del currículum nacional, que se  
+denomina Bases Curriculares, lograra un mejor 
+grado de  definición de lo que se espera que los 
+alumnos aprendan.  
+Por este motivo, esta Ley establece una nueva 
+fórmula  de prescripción curricular, reemplazando las 
+categorías  anteriores de Objetivos Fundamentales 
+(OF) y Conte nidos Mínimos Obligatorios (CMO), por 
+un concepto  acorde con la necesidad de vincular 
+más estrechamente  la formulación del aprendizaje 
+con su seguimiento y  evaluación. Esta fórmula, 
+llamada en la ley “Objetivos   
+Principios ordenadores  
+El Ministerio de Educación enfrentó el desafío de 
+adap tar las herramientas curriculares vigentes a las 
+nuevas  exigencias, sin romper con la continuidad de 
+las grandes  definiciones curriculares establecidas en 
+1996, que se  reiteraron en las importantes 
+actualizaciones de 2009.  Así, se opta por elaborar 
+primero las Bases Curriculares  para la Educación 
+Básica, obedeciendo a la necesidad de  iniciar 
+gradualmente el tránsito hacia la nueva estructu ra, y 
+entregando un instrumento curricular que responda  
+a la nueva conformación del ciclo y los nuevos 
+objetivos  generales establecidos en la ley.  
+Estas Bases se fundamentan en una visión de 
+currícu lum específico para la edad de los 
+estudiantes en esta  etapa, orientada al desarrollo 
+del pensamiento. Se busca  entregar a los 
+estudiantes aprendizajes que les permi tan adquirir 
+la necesaria autonomía para participar en la  vida de 
+nuestra sociedad, desarrollándose de tal modo  que 
+les sea posible proseguir con éxito las etapas edu 
+cativas posteriores, entre ellas, el pensamiento 
+crítico y   
+de Aprendizaje”, define los propósitos y los logros 
+del  
+proceso y establece cuáles serán los 
+desempeños del  alumno que permitirán verificar el 
+logro del aprendizaje.  
+Por otra parte, la misma LGE establece una nueva 
+es tructura del ciclo escolar: redefine la Educación 
+Básica,  modificando en parte sus objetivos 
+generales, le otorga  una duración de seis años y 
+fija la proporción de tiempo  de libre disposición que 
+los instrumentos curriculares  deben permitir a los 
+establecimientos.  
+creativo y las capacidades de comunicación y 
+reflexión,  permitiéndoles ejercitar su iniciativa y su 
+capacidad de  emprender proyectos2.  
+Como se señaló, por definición se decide que los 
+nuevos  
+instrumentos 
+representarán 
+una 
+continuidad de los prin cipios que han guiado el 
+currículum nacional.  
+Esto se manifiesta en:  
+1. Continuidad de las definiciones centrales Las Bases Curriculares 
+mantienen los principios rectores  de la Constitución 
+Política y la concepción antropológica  y ética que 
+orienta la Declaración Universal de los Dere chos 
+Humanos presente en las grandes tradiciones del  
+país. El derecho a la educación y la libertad de 
+enseñanza  constituyen derechos esenciales, que 
+emanan de la na turaleza del ser humano y que el 
+Estado ha de asegurar y  respetar, en orden a 
+cumplir su fin último de promover el  bien común.  
+14 Bases Curriculares Ú 1º a 6º Básico  
+2. Continuidad en los conceptos  
+curriculares generales  
+ú Se mantiene, como lo establece la Ley General de  
+Educación, el concepto original de dos 
+instrumentos  separados: uno, las Bases 
+Curriculares, que estable cen los aprendizajes 
+comunes requeridos a todos los  estudiantes, y 
+otro, los Planes y Programas de Estudio,  con un 
+carácter más funcional, que organizan en el  
+tiempo estos aprendizajes y cumplen la función de 
+ser  una herramienta de ayuda práctica para los 
+docentes  en su labor.  
+ú Se mantienen los Objetivos Transversales incluidos 
+en  el Marco Curricular 2009, postergándose para la 
+etapa  siguiente solo aquellos que no se adecuan a 
+la edad de  los estudiantes de Educación Básica. La 
+estabilidad de  los Objetivos Transversales se 
+relaciona, por una parte,  con que estos reflejan 
+consensos generales y, por otra,   
+Principales innovaciones  
+Sin perjuicio de lo anterior, las principales 
+innovaciones  que presentan estas Bases con 
+respecto a los instrumen tos anteriores se refieren 
+a:  
+1. Se reemplaza la forma de prescribir el currículum  
+en Objetivos Fundamentales, Contenidos Mínimos  
+Obligatorios y Objetivos Transversales por 
+Objetivos de  Aprendizaje (OA) y Objetivos de 
+Aprendizaje Transver sales (OAT). Los Objetivos 
+de Aprendizaje relacionan en  forma más explícita 
+las habilidades, los conocimientos  y las actitudes 
+y evidencian en forma clara y precisa  cuál es el 
+aprendizaje que el estudiante debe lograr.  Se 
+conforma así un currículum centrado en el apren 
+dizaje, que declara explícitamente cuál es el foco 
+del  quehacer educativo.  
+2. La actualización de 2009 buscó destacar la 
+presen cia y la importancia de las habilidades que 
+deben  aprenderse en cada asignatura. Este 
+enfoque se  profundiza en las Bases Curriculares, 
+que procura   
+con la permanencia de las visiones 
+fundamentales so bre el hombre, la sociedad y el 
+papel de la educación.  
+ú Se mantiene la estructura: las innovaciones de 
+2009  se mantienen en lo que se refiere a los 
+nombres de las  asignaturas y a la organización de 
+los contenidos en  torno a ejes temáticos verticales 
+que se relacionan con  los conocimientos y 
+habilidades principales, que se  desarrollan en 
+cada asignatura.  
+ú Continuidad en los enfoques didácticos de cada 
+asig natura: estos asignan a cada disciplina un 
+valor forma tivo específico y conjugan un conjunto 
+de destrezas  cognitivas, habilidades académicas, 
+procedimientos y  conocimientos generativos. 
+Estos están orientados a  favorecer el desarrollo 
+de los estudiantes y se funda mentan en 
+investigaciones recientes acerca de cómo  ocurre 
+ese desarrollo en las diferentes áreas. 
+una definición más detallada y las operacionaliza 
+en  una progresión más explícita para cada nivel.  
+3. Incorporación y relevancia de las actitudes a 
+lograr.  Las Bases Curriculares promueven un 
+conjunto de ac titudes específicas que se integran 
+a los conocimien tos y las habilidades propios de 
+cada disciplina y que  derivan de los Objetivos de 
+Aprendizaje Transversales  (OAT).  
+4. Aumento del nivel de especificidad de los 
+objetivos,  dado que es necesario clarificar la 
+profundidad del  aprendizaje a lograr e indicar 
+desempeños observa bles. A la vez, se avanza 
+hacia una mejor homogenei dad y unificación de 
+criterios en su redacción y hacia  una 
+comunicación más clara de ellos.  
+5. Cambio de nomenclatura para señalar la 
+organización  de las materias escolares. Se 
+homologa de acuerdo a  la terminología utilizada en 
+la Ley General de Edu  
+Educación Básica Antecedentes 15  
+cación, reemplazando “sectores de aprendizaje” 
+por  “asignaturas” y, en concordancia con los 
+avances de la  actualización de 2009, separa los 
+anteriores sectores  (“Comprensión del medio 
+natural y social”; “Educación  artística”) y los 
+denomina acorde a las disciplinas y  áreas del 
+saber que los conforman. Esto no obsta a  que se 
+busque integración entre distintas dimensio nes 
+del saber. Las Bases Curriculares fueron 
+diseñadas  considerando múltiples oportunidades 
+de integración  entre las asignaturas del ciclo 
+básico.  
+En suma, estas Bases Curriculares son un 
+instrumento  central del currículum escolar de la 
+educación básica  y se elaboran a partir de una 
+adaptación de los instru  
+mentos anteriores, conservando parte de sus 
+elementos  estructurales e incorporando otros 
+nuevos, acordes a las  nuevas necesidades que 
+emanan de la nueva institucio nalidad educacional 
+recientemente creada. 
+16  
+Bases Curriculares Ú 1º a 6º Básico 
+Objetivos Generales de la   
+Educación Básica  
+(LEY GENERAL DE EDUCACIÓN N°20.370)  
+Art. 19.  
+La educación básica es el nivel educacional que se orienta hacia la formación integral de 
+los alum nos, en sus dimensiones física, afectiva, cognitiva, social, cultural, moral y 
+espiritual, desarrollando  sus capacidades de acuerdo a los conocimientos, habilidades y 
+actitudes definidos en las bases  curriculares que se determinen en conformidad a esta ley, 
+y que les permiten continuar el proceso  educativo formal.  
+Art. 29.   
+La educación básica tendrá como objetivos generales, sin que esto implique que cada 
+objetivo sea  necesariamente una asignatura, que los educandos desarrollen los 
+conocimientos, habilidades y  actitudes que les permitan:  
+En el ámbito personal y social  
+a. Desarrollarse en los ámbitos moral, espiritual, intelectual, afectivo y físico de acuerdo a 
+su edad.  b. Desarrollar una autoestima positiva y confianza en sí mismos.   
+c. Actuar de acuerdo con valores y normas de convivencia cívica y pacífica, conocer sus 
+derechos  y responsabilidades, y asumir compromisos consigo mismo y con los otros.   
+d. Reconocer y respetar la diversidad cultural, religiosa y étnica y las diferencias entre las 
+perso nas, así como la igualdad de derechos entre hombres y mujeres, y desarrollar 
+capacidades de  empatía con los otros.   
+e. Trabajar individualmente y en equipo, con esfuerzo, perseverancia, responsabilidad y 
+toleran cia a la frustración.   
+f. Practicar actividad física adecuada a sus intereses y aptitudes.   
+g. Adquirir hábitos de higiene y cuidado del propio cuerpo y salud.  
+En el ámbito del conocimiento y la cultura  
+a. Desarrollar la curiosidad, la iniciativa personal y la creatividad.   
+b. Pensar en forma reflexiva, evaluando y utilizando información y conocimientos, de 
+manera  sistemática y metódica, para la formulación de proyectos y resolución de 
+problemas.   
+c. Comunicarse con eficacia en lengua castellana, lo que implica comprender diversos 
+tipos de tex tos orales y escritos adecuados para la edad y expresarse correctamente 
+en forma escrita y oral.   
+Educación Básica 17 Antecedentes 
+d. Acceder a información y comunicarse usando las tecnologías de la información y la 
+comunica ción en forma reflexiva y eficaz.   
+e. Comprender y expresar mensajes simples en uno o más idiomas extranjeros.   
+f. Comprender y utilizar conceptos y procedimientos matemáticos básicos, relativos a 
+números y  formas geométricas, en la resolución de problemas cotidianos y apreciar el 
+aporte de la mate mática para entender y actuar en el mundo.   
+g. Conocer los hitos y procesos principales de la historia de Chile y su diversidad 
+geográfica, hu mana y sociocultural, así como su cultura e historia local, valorando la 
+pertenencia a la nación  chilena y la participación activa en la vida democrática.   
+h. Conocer y valorar el entorno natural y sus recursos como contexto de desarrollo 
+humano y  tener hábitos de cuidado del medioambiente.   
+i. Aplicar habilidades básicas y actitudes de investigación científica, para conocer y 
+comprender  algunos procesos y fenómenos fundamentales del mundo natural y de 
+aplicaciones tecnológi cas de uso corriente.   
+j. Conocer y apreciar expresiones artísticas de acuerdo a la edad y expresarse a través 
+de la músi ca y las artes visuales.  
+18 Bases Curriculares Ú 1º a 6º Básico  
+Bases Curriculares   
+para la Educación Básica 
+Definición  
+Este documento presenta Bases Curriculares para la  
+Educación Básica. Las Bases Curriculares constitu 
+yen, de acuerdo a la Ley General de Educación (Ley  
+N° 20.370), el documento principal del currículum  
+nacional. Su concepción se enmarca en lo que esta 
+blece nuestra Constitución y en lo que ha sido 
+nuestra  tradición educativa. Por una parte, cumple la 
+misión de  ofrecer una base cultural común para todo 
+el país, me diante Objetivos de Aprendizaje 
+establecidos para cada  curso o nivel. De esta forma, 
+asegura que la totalidad  de los alumnos participe de 
+una experiencia educativa  similar y se conforme un 
+bagaje cultural compartido  que favorece la cohesión 
+y la integración social. A la  vez, se reconoce que 
+esta base curricular admite ser  complementada; por 
+ende, se entrega a los estable cimientos 
+educacionales la libertad de expresar su di versidad, 
+construyendo, a partir de ella, sus propuestas  
+propias de acuerdo a sus necesidades y a las 
+caracterís ticas de su proyecto educativo.  
+Este planteamiento es coherente con la libertad de 
+en señanza consagrada en nuestra Constitución y 
+también  con los principios que inspiran nuestra Ley 
+General de  Educación (LGE). Específicamente, con 
+el principio de  autonomía de los establecimientos 
+educativos –que  permite la definición y el desarrollo 
+de sus proyectos  educativos– y con el principio de 
+diversidad, que postula  promover y respetar tanto la 
+diversidad de procesos y  proyectos educativos 
+institucionales como la diversidad  cultural, religiosa y 
+social de las poblaciones que atiende  el sistema 
+escolar. A partir de estas Bases Curriculares,  los 
+establecimientos pueden desarrollar sus propios pla 
+nes y programas o utilizar aquellos que el Ministerio 
+de  Educación pone a su disposición. Se les 
+garantiza, ade más, el tiempo necesario para ejercer 
+esta libertad, por  cuanto los objetivos planteados en 
+las Bases no utilizan   
+la totalidad del tiempo escolar. De esta forma, se 
+reafir ma el valor de la pluralidad y la flexibilidad de 
+opciones  curriculares, y de los proyectos educativos 
+definidos por  los propios establecimientos.  
+Estas Bases Curriculares continúan y reafirman el 
+sentido  que tiene toda educación, cual es contribuir 
+al desa rrollo completo e integral de todas las 
+personas en sus  dimensiones espiritual, ética, 
+moral, afectiva, intelectual,  artística y física, 
+mediante la transmisión y el cultivo  de valores, 
+conocimientos y destrezas. De este modo,  podrán 
+realizar su potencial y vivir su vida en forma  plena, 
+participando activamente en una sociedad libre,  
+democrática y pluralista, y contribuyendo 
+responsable mente al desarrollo del país. Los 
+objetivos de las Bases se  enmarcan en los Objetivos 
+Generales estipulados por la  Ley General de 
+Educación, tanto para el ámbito perso nal y social 
+como para el ámbito del conocimiento y la  cultura 
+(Art. 29). 
+Educación Básica 19 Bases Curriculares  
+Requerimientos 
+Las Bases Curriculares que se presentan en este 
+docu mento han sido formuladas por el Ministerio 
+de Educa ción para responder a los siguientes 
+requerimientos:  
+1. Requerimientos de la Ley General de Educación:  
+Nueva estructura del ciclo escolar: La nueva Ley 
+Ge neral de Educación (Ley 20.370) establece 
+una nueva  normativa respecto de los 
+instrumentos curriculares  que deben ponerse a 
+disposición del sistema escolar.   
+Esta normativa se refiere, en primer lugar, a una 
+nueva  estructura del ciclo escolar, que redefine la 
+Educa ción Básica y le otorga una duración de seis 
+años. Las  presentes Bases Curriculares obedecen 
+a la necesidad  de iniciar gradualmente el tránsito 
+hacia la nueva  estructura, entregando un 
+instrumento curricular que  responda a la nueva 
+conformación del ciclo.  
+Nuevos Objetivos Generales para la Educación 
+Bá sica: La nueva estructura genera en la ley una 
+modifi cación de los Objetivos Generales para 
+esta etapa. Es tos se plantean como el conjunto 
+de conocimientos,   
+habilidades y actitudes que permitirá a los 
+alumnos  
+avanzar durante el ciclo en el 
+desarrollo de diversos  aspectos, tanto en el 
+ámbito personal y social como  en el ámbito del 
+conocimiento y la cultura.  
+Modificación de las categorías de prescripción  
+curricular: La misma ley reemplaza las 
+categorías  
+anteriores 
+de 
+Objetivos 
+Fundamentales (OF) y Con  
+tenidos Mínimos Obligatorios (CMO) establecidas 
+en  la Ley Orgánica Constitucional de Enseñanza 
+(LOCE)3.  Según la LGE, las Bases Curriculares 
+deben definir, para  cada año o nivel, Objetivos de 
+Aprendizaje (OA) que  conduzcan al logro de los 
+objetivos generales estable cidos en ella. Los OA 
+deben ser relevantes, actuales y   
+coherentes con los objetivos generales. Esta 
+opción  está mejor alineada con la tendencia 
+internacional en  cuanto a la formulación 
+curricular.  
+Exigencia de salvaguardar el tiempo de libre dis 
+posición: La ley establece, además, que estas 
+Bases  deben asegurar una proporción equivalente 
+al 30% del  tiempo de trabajo escolar de libre 
+disposición para los  establecimientos que operen 
+en el régimen de jornada  escolar completa. De 
+este modo, se garantiza la liber tad de los 
+establecimientos para trabajar con progra mas 
+propios y desarrollar proyectos educativos 
+diversos  si así lo prefieren. El conjunto de 
+Objetivos de Apren dizaje establecido para cada 
+curso asegura a todos los  estudiantes una 
+experiencia educativa de calidad y, a la  vez, evita 
+utilizar la totalidad del tiempo escolar, según  lo 
+estipula la ley.  
+2. Actualizar los instrumentos curriculares de acuerdo 
+a  la nueva LGE constituye una oportunidad para 
+en tregar al sistema educacional una herramienta 
+que  recoge consensos recientes respecto de su 
+concepto,  formulación y diseño. El concepto de 
+base curricular  enfatiza, en primer término, su 
+significado de apoyo o  cimiento sobre el cual se 
+construye algo. Estas bases  permiten, mediante 
+la selección y la definición cuida dosa de 
+aprendizajes esenciales, la construcción pau 
+latina de conocimientos y habilidades que 
+permitirán  al alumno comprender mejor su 
+experiencia diaria y el  entorno en que vive y, a la 
+vez, avanzar con seguridad  a las próximas 
+etapas de su vida escolar.  
+El foco de estas bases se sitúa en lo que los 
+estudiantes  deben aprender, en términos de 
+habilidades, actitu des y conocimientos. Define 
+una progresión de los  aprendizajes, que es 
+alcanzable para todos, y a la vez,  admite 
+profundizar y ampliar los aprendizajes a partir   
+20 Bases Curriculares Ú 1º a 6º Básico  
+de la base lograda. De esta manera, se asegura a 
+todos  nuestros alumnos una educación de calidad 
+con igual dad de oportunidades. El presente 
+documento recoge  las tendencias más recientes 
+en materia curricular, en  cuanto a la formulación 
+clara y explícita de los Objetivos   
+de Aprendizaje y de su progresión, y busca 
+entregar al  profesor una guía para focalizar y 
+organizar su quehacer  y para diseñar 
+procedimientos de evaluación o monito reo de los 
+aprendizajes.  
+3. Los nuevos requerimientos de la LGE son también  
+una oportunidad de abordar la exigencia 
+permanente  de actualizar, reorientar y enriquecer 
+el currículum,   
+Principios valóricos  
+Las Bases Curriculares se han construido a partir 
+de los  siguientes principios:  
+1. Consideran, en primer lugar, los principios de la  
+Constitución Política y el ordenamiento jurídico de  
+la nación, y la concepción antropológica y ética 
+que  orienta la Declaración Universal de los 
+Derechos Hu manos, y que está presente en las 
+grandes tradiciones  espirituales del país.  
+2. Los principios aludidos tienen por base la 
+convicción  
+fundamental de que los seres 
+humanos nacen libres  e iguales en dignidad y 
+derechos y que la perfectibi lidad inherente a la 
+naturaleza humana se despliega  en procesos de 
+desarrollo y autoafirmación personal y   
+de búsqueda permanente de trascendencia, los 
+que  otorgan sentido a la existencia personal y 
+colectiva. A  la libertad que hace de cada individuo 
+persona y suje to de derechos y deberes, le es 
+intrínseca la acción de  razonar, discernir y valorar, 
+acciones que son, a su vez,  fundamentos de la 
+conducta moral y responsable.  
+3. En el ejercicio de esa libertad, los individuos se 
+agru pan para alcanzar su pleno desarrollo y 
+perfección. El  Estado debe reconocer y amparar a 
+los grupos inter medios por medio de los cuales la 
+sociedad se organiza  y se estructura, y 
+garantizarles la adecuada autonomía  para cumplir 
+sus propios fines específicos.  
+ajustándolo a los cambios en el conocimiento y en  
+las demandas de la sociedad. En los últimos años 
+se  ha manifestado, por medio de diversas 
+instancias,  una necesidad de profundizar en el 
+currículum las  oportunidades de formación en 
+temas de convivencia  escolar, ciudadanía, 
+autocuidado y salud, todos los  cuales se abordan 
+en estas bases. 
+4. La finalidad del Estado es promover el bien 
+común,  para lo cual debe contribuir a crear las 
+condiciones  sociales que permitan, a todos y a 
+cada uno de los  integrantes de la comunidad 
+nacional, su mayor reali zación espiritual y 
+material posible.  
+5. El derecho a la educación y la libertad de 
+enseñanza  constituyen derechos esenciales, que 
+emanan de la  naturaleza del hombre y que el 
+Estado ha de asegu rar y respetar, en orden a 
+cumplir su fin último de  promover el bien común.  
+6. La educación debe ofrecer a todos los niños y 
+jóvenes  la posibilidad de desarrollarse como per- 
+sonas libres,  con conciencia de su propia 
+dignidad y como sujetos  de derechos. 
+Asimismo,tiene que contribuir a forjar en  ellos el 
+carácter moral regido por el amor, la solida ridad, 
+la tolerancia, la verdad, la justicia, la belleza, el  
+sentido de nacionalidad y el afán de 
+trascendencia  personal.  
+Educación Básica 21 Bases Curriculares  
+Orientaciones sobre   
+el aprendizaje 
+La construcción de estas bases se fundamenta 
+en los  siguientes criterios y orientaciones:  
+1. La finalidad de toda educación es ofrecer al 
+estudiante  la posibilidad de desarrollar todas sus 
+capacidades de  forma integral y de acuerdo a su 
+edad. Esto implica  aprendizajes en los ámbitos de 
+lo moral, lo espiritual,  lo intelectual, lo afectivo y lo 
+físico. Por ello, la selec ción de objetivos 
+comprende tanto los conocimientos  como las 
+habilidades y las actitudes que necesitan  adquirir 
+los alumnos y las alumnas para desenvolverse  en 
+distintos ámbitos de su vida.  
+2. La Educación Básica tiene como objetivo entregar 
+a  los estudiantes aprendizajes que les permitan 
+adquirir  paulatinamente la necesaria autonomía 
+para participar  en la vida de nuestra sociedad. 
+Estos aprendizajes per tenecen tanto al dominio 
+cognitivo como al dominio de  los valores, las 
+actitudes y los hábitos.  
+3. En el ámbito cognitivo, esta autonomía requiere que  
+los estudiantes comiencen a construir una 
+compren sión del mundo y a desarrollar las 
+facultades que les  permitan acceder al 
+conocimiento en forma progre sivamente 
+autónoma y proseguir con éxito las etapas  
+educativas posteriores. Ello exige, en primer lugar, 
+que  dominen la lengua hablada y escrita; es decir, 
+apren der a leer y a comprender información de 
+diversos  tipos, y a comunicarse con claridad en 
+forma escrita  y oral. Implica también, de manera 
+prioritaria, que  usen el lenguaje de las 
+matemáticas, sus conceptos,  sus procedimientos 
+y su razonamiento, como herra mientas para 
+entender el mundo y para actuar frente  a 
+problemas cotidianos. El logro de otros 
+aprendizajes,  relativos al mundo de lo natural, lo 
+social y lo tecnoló gico, dependen fuertemente de 
+las dos áreas anterio res.  
+4. La Educación Básica debe dar la oportunidad a 
+los  alumnos para que desarrollen las actitudes 
+y las vir  
+tudes necesarias para participar responsable y acti 
+vamente en una sociedad democrática y libre. En 
+sus  objetivos, las Bases Curriculares evidencian 
+oportuni dades para que los estudiantes adquieran 
+un sentido  de identidad y de pertenencia a la 
+sociedad chilena,  adquieran valores y normas de 
+convivencia pacífica,  reconozcan sus derechos y 
+los de los demás, adquie ran habilidades que 
+permiten conocer y comprender a  los otros, y 
+desarrollen la responsabilidad y la perseve rancia 
+en el trabajo.  
+5. Es igualmente relevante para un desarrollo 
+completo  
+que 
+los 
+estudiantes 
+adquieran 
+habilidades interperso nales, como las habilidades 
+de colaboración, comuni cación y trabajo con 
+otros para manejar y resolver con  
+flictos y para tomar decisiones sobre aspectos 
+diversos  de la vida diaria. También se espera que, 
+en esta etapa,  los alumnos comiencen a ejercitar 
+su iniciativa y su  capacidad de emprender 
+proyectos con creatividad,  esfuerzo y constancia.  
+6. Un papel fundamental de la Educación Básica es 
+lograr  que los estudiantes adquieran una disposición 
+posi tiva hacia el aprendizaje; esto implica desarrollar 
+la  curiosidad y el interés por observar y comprender 
+la  realidad natural y social que los rodea, aprender a 
+ha cerse preguntas, buscar información y utilizar la 
+propia  iniciativa para resolver los problemas. Los 
+Objetivos de  Aprendizaje de las Bases Curriculares 
+se han construi do considerando que los conceptos 
+aprendidos y los  temas tratados despierten interés y 
+sean significativos  para los niños y las niñas. De 
+esta manera aprenderán  a pensar por sí mismos, 
+obtendrán confianza respecto  de sus capacidades, 
+podrán ser más creativos al pensar  y al actuar, y 
+más autónomos frente al conocimiento.  
+7. El rápido ritmo de cambio en el conocimiento y el  
+aumento del acceso a la información requieren que  
+el currículum asigne importancia al desarrollo de  
+capacidades necesarias para que los jóvenes 
+puedan   
+22 Bases Curriculares Ú 1º a 6º Básico  
+desenvolverse en la sociedad del siglo XXI. El 
+presente  documento sienta las bases para que 
+los estudiantes  aprendan a buscar, seleccionar, 
+estructurar y evaluar  información, y comiencen a 
+aplicar un pensamiento  crítico y una actitud 
+evaluativa, reflexiva y analítica  frente a la 
+profusión de información.  
+8. Un desarrollo integral comprende también la 
+sensibi lidad artística y la apreciación de las artes 
+como modo  de expresión personal y como 
+reconocimiento de  nuestro patrimonio cultural. Es 
+igualmente relevante  que los niños aprendan a 
+cultivar actitudes y hábitos  de cuidado del cuerpo y 
+de actividad física condu centes a una vida sana, y 
+que adquieran las necesarias   
+Fuentes  
+El presente documento de Bases Curriculares se ha 
+cons truido considerando las siguientes fuentes:  
+1. Marco Curricular de 20094: Esta reciente 
+modificación  al marco curricular anteriormente 
+vigente5, representó  un avance en cuanto a la 
+articulación entre los diferen tes ciclos de la 
+enseñanza escolar y una actualización de  
+los contenidos. Gran parte de los contenidos 
+propuestos  en dicho ajuste, el enfoque de las 
+disciplinas y el esfuer zo por visibilizar las 
+habilidades propias de cada una de  ellas, 
+constituyeron un importante insumo para estas  
+Bases Curriculares.  
+2. Los documentos que presentan los fundamentos 
+para  este ajuste curricular, elaborados y 
+publicados por la  Unidad de Currículum y 
+Evaluación6.  
+3. Los estudios de implementación y cobertura 
+curricular  en la Educación Básica7 y los estudios 
+de evaluación de  aula8 realizados por el Ministerio 
+de Educación, y otros  estudios recientes sobre la 
+realidad de la Educación   
+Básica en Chile.  
+4. Los resultados de aprendizaje observados por medio 
+de las  evaluaciones nacionales del aprendizaje 
+(pruebas SIMCE) y  
+los Niveles de Logro 
+elaborados a partir de estas pruebas9.  
+habilidades funcionales para aprender, informarse 
+y  comunicarse por medio de las tecnologías 
+disponibles.  
+9. En relación con el aprendizaje, la premisa que 
+orienta  estas Bases es que el alumno necesita 
+elaborar una  representación personal del objeto de 
+aprendizaje.   
+Solo construyendo su propio significado, será 
+posible  que utilice con efectividad ese 
+conocimiento, tanto  para resolver problemas 
+como para atribuir significa do a nuevos 
+conceptos. El conocimiento se construye  de modo 
+gradual sobre la base de los conceptos  
+anteriores. Este carácter acumulativo del 
+aprendizaje  influye poderosamente en el 
+desarrollo de las habili dades del pensamiento. 
+5. Los Mapas de Progreso del Aprendizaje, 
+publicados  por el Ministerio de Educación entre 
+2008 y 2009.  Estos son instrumentos dependientes 
+del currículum  y diseñados con el fin de que los 
+docentes puedan  analizar y monitorear los 
+aprendizajes logrados por  sus estudiantes, usando 
+diversas evidencias10. Las  actuales Bases 
+mantuvieron en su mayor parte la  secuencia de 
+habilidades reflejada en estos mapas11.  
+6. Análisis de la experiencia internacional con 
+respecto  al currículum escolar estatal. Esta 
+revisión permitió  constatar que los países que 
+demuestran buenos des empeños en educación, 
+en general están transitando  hacia documentos 
+curriculares basados en aprendiza jes esenciales, 
+expresados como Objetivos de Apren dizaje, 
+también llamados “estándares de contenido”;  
+dichos documentos contienen una explicitación  
+clara de la secuencia de habilidades, en un 
+lenguaje  accesible para el lego. Especialmente se 
+revisó los  currículos de Argentina, Australia, 
+Canadá (British  Columbia, Ontario, Alberta), 
+Cuba, España, Estados  Unidos (Common State 
+Standards) y de algunos de sus  estados, como 
+Nueva York, California, Massachusetts y  Texas; 
+Finlandia, Inglaterra, México, Nueva Zelandia y  
+Singapur.  
+Educación Básica Bases Curriculares 23  
+7. Evaluaciones internacionales del aprendizaje 
+aplica das en Chile (TIMSS, PISA, PIRLS, ICCS) y 
+sus marcos  de evaluación. Esta revisión ha 
+permitido contar con  información comparada para 
+tomar decisiones acerca  de los temas a tratar en 
+cada curso, y de las secuen cias de contenidos y 
+habilidades; de esta manera se  ha podido equiparar 
+las exigencias de nuestro currí culum con los 
+requerimientos internacionales en las  distintas 
+áreas. Para algunas asignaturas también se  
+dispuso de benchmarks construidos por diversas 
+aso ciaciones académicas internacionales de 
+relevancia12.  
+8. Estas Bases se nutren, además, de diversas 
+demandas  al currículum, concordadas por 
+diversos actores y  organizaciones sociales. Se 
+han considerado espe cialmente las conclusiones 
+y recomendaciones que  surgieron del Informe de 
+la OCDE de 200413, de la  Comisión de Formación 
+Ciudadana de 200414 y de la  Mesa de Trabajo 
+sobre Formación Ciudadana con vocada por el 
+Ministerio de Educación en 201115.  Asimismo se 
+acogieron sugerencias provenientes del  
+Ministerio de Salud, Conace, Dibam y otras 
+organiza ciones.  
+9. Finalmente, estas Bases Curriculares se 
+analizaron  y perfeccionaron mediante un 
+proceso de Consulta  Pública16 que incluyó:  
+ú Encuesta en línea por medio de la página web del  
+MINEDUC (www.comunidadescolar.cl) durante  
+aproximadamente tres meses (del 15 de abril al 
+27  de junio de 2011), que fue contestada 
+íntegramente  por alrededor de 11.000 
+profesores17.  
+ú Paneles de expertos, convocados a reuniones en 
+las  dependencias del Ministerio de Educación y 
+orga nizados en grupos según asignatura. El 
+perfil de los  convocados fue variado e incluyó a 
+profesores de  Educación Básica, directivos y 
+docentes universi tarios de las respectivas 
+disciplinas y de formación  inicial de profesores. 
+Se realizaron trece reuniones  disciplinares con 
+un total de 91 especialistas.  
+ú Reuniones de trabajo con profesores de 
+escuelas  vulnerables y jefes de departamento 
+de escuelas  efectivas. Se realizaron 16 
+reuniones y asistieron 56  docentes.  
+ú Diálogos Participativos en regiones. Estos 
+consistie ron en jornadas en las que la Unidad de 
+Currículum y  Evaluación presentó la propuesta 
+de Bases Curricula res a profesores de distintas 
+localidades de la región  (alrededor de 200 
+asistentes por Diálogo Participati vo).  
+ú Paneles y reuniones de trabajo con instituciones  
+dedicadas a la educación o involucradas en el 
+Currí culum Nacional. Se realizaron 6 reuniones 
+con ex pertos, con un total de 57 participantes 
+de diversas  universidades, instituciones, ATES y 
+fundaciones.  
+ú Informes en extenso sobre las Bases 
+Curriculares, en viados voluntariamente o 
+solicitados por el Ministerio  de Educación a 
+expertos o instituciones destacadas,  con un total 
+de 24 informes.  
+ú Mesa de Trabajo de Formación Ciudadana, convo 
+cada por el Ministro de Educación y constituida 
+por  representantes de los partidos políticos. Esta 
+mesa  evaluó la propuesta de Formación 
+Ciudadana y realizó  observaciones que fueron 
+incorporadas al documen to final. 
+24 Bases Curriculares Ú 1º a 6º Básico  
+Conceptos y definiciones en  
+las Bases Curriculares 
+La Ley General de Educación establece que la 
+categoría  
+de prescripción curricular son los 
+Objetivos de Aprendi zaje (OA). Las Bases 
+Curriculares definen dos categorías  de Objetivos 
+de Aprendizaje que, en su conjunto, dan   
+cuenta de los conocimientos, las habilidades y las 
+actitu des que los alumnos deben aprender para 
+satisfacer los  objetivos generales para el nivel de 
+Educación Básica  indicados en la ley. Estos son 
+Objetivos de Aprendizaje  Transversales para todo el 
+ciclo y Objetivos de Aprendi zaje por curso y 
+asignatura.  
+Objetivos de Aprendizaje   
+Transversales (OAT) para el ciclo Son 
+aquellos que derivan de los Objetivos Generales de 
+la  ley y se refieren al desarrollo personal y a la 
+conducta mo ral y social de los estudiantes. Por ello, 
+tienen un carácter  más amplio y general; se 
+considera que atañen al nivel  completo de la 
+Educación Básica y que su logro depende  de la 
+totalidad de los elementos que conforman la expe 
+riencia escolar, tanto en el aula como fuera de ella, 
+sin que  estén asociados de manera específica a una 
+asignatura en  particular.  
+Objetivos de Aprendizaje (OA)  por 
+curso y asignatura  
+Son objetivos que definen los aprendizajes 
+terminales  esperables para una asignatura 
+determinada para cada  año escolar. Los Objetivos 
+de Aprendizaje se refieren  a habilidades, actitudes y 
+conocimientos que buscan  favorecer el desarrollo 
+integral de los estudiantes. Ellos  se ordenan en 
+torno a los objetivos generales que es tablece la Ley 
+General de Educación para el ámbito del  
+conocimiento y la cultura, pero también se enfocan al  
+logro de aquellos que se refieren al ámbito personal 
+y  social; de este modo, se busca contribuir a la 
+formación  integral del estudiante desde cada una de 
+las áreas de  aprendizaje involucradas. Los Objetivos 
+de Aprendizaje  relacionan en su formulación las 
+habilidades, los conoci mientos y las actitudes 
+plasmados y evidencian en forma  clara y precisa 
+cuál es el aprendizaje que el estudiante  debe lograr. 
+Se conforma así un currículum centrado   
+en el aprendizaje, que declara explícitamente cuál 
+es el  foco del quehacer educativo.  
+Las habilidades son capacidades para realizar tareas 
+y  para solucionar problemas con precisión y 
+adaptabilidad.  Una habilidad puede desarrollarse en 
+el ámbito intelec tual, psicomotriz, afectivo y/o social.   
+Los conocimientos corresponden a conceptos, 
+redes  de conceptos e información sobre hechos, 
+procesos,  procedimientos y operaciones. La 
+definición contem  
+pla el conocimiento como información (sobre 
+objetos,  eventos, fenómenos, símbolos) y como 
+comprensión; es  decir, la información integrada en 
+marcos explicativos  e interpretativos mayores, que 
+dan base para discerni miento y juicios.   
+Las actitudes son disposiciones aprendidas para res 
+ponder, de un modo favorable o no favorable, frente 
+a  objetos, ideas o personas; incluyen componentes 
+afecti vos, cognitivos y valorativos que inclinan a las 
+personas a  determinados tipos de acciones.  
+Los conocimientos, las habilidades y las actitudes 
+se  abordan en estas Bases Curriculares de forma 
+integrada.  A la vez, para cada asignatura se 
+destaca y secuencia de  manera explícita las 
+habilidades que le son propias, y las  actitudes y los 
+valores relacionados con aquellos Objeti vos de 
+Aprendizaje Transversales del ciclo que se prestan  
+especialmente para ser desarrollados en el contexto 
+de  esa asignatura.  
+Educación Básica Bases Curriculares 25  
+Bases Curriculares y otros   
+instrumentos del currículum 
+A partir de la puesta en vigencia de la Ley General 
+de  Educación (2009), el currículum nacional se 
+expresa por  medio de las Bases Curriculares y de 
+otros instrumen tos curriculares también 
+contemplados en esa ley, que  facilitan su 
+implementación. Estos instrumentos tienen  
+diversas funciones, todas orientadas a lograr los 
+aprendi zajes que se definen en las Bases.  
+Las Bases Curriculares indican cuáles son los 
+aprendi zajes comunes para todos los alumnos y las 
+alumnas del  país durante su trayectoria escolar. 
+Dichas Bases tienen  un carácter obligatorio para 
+todos los establecimientos y  son el referente 
+respecto del cual se construyen los pro gramas de 
+estudio del Ministerio de Educación, los pro gramas 
+de estudios elaborados por los establecimientos  que 
+opten por programas propios, los planes de estudio,  
+la prueba SIMCE y los estándares de aprendizaje. La 
+Ley  General de Educación señala que cada 
+establecimiento o  agrupación de ellos tendrá que 
+decidir si aplicará los pla nes y programas de estudio 
+que defina el Ministerio de  Educación o si elaborará 
+planes y programas de estudio  propios, en función 
+de los requerimientos específicos de  su comunidad 
+escolar y del cumplimiento de las Bases  
+Curriculares. Los establecimientos pueden elaborar 
+pro gramas de estudio propios y para todas o 
+algunas de las  asignaturas obligatorias.  
+Los Programas de Estudio entregan, al menos, una  
+organización temporal de los Objetivos de Aprendi 
+zaje para su logro en el año escolar. Constituyen 
+una  propuesta que organiza en el tiempo los 
+Objetivos de  Aprendizaje para facilitar al docente su 
+quehacer en el  aula. En ellos se define una 
+secuencia recomendada  de los objetivos, una 
+estimación aproximada del tiem po escolar 
+requerido, indicadores de logro sugeridos y  
+ejemplos de actividades de aprendizaje y de 
+evaluación.  Estos instrumentos tienen un carácter 
+flexible y general  para que puedan adaptarse a las 
+realidades de los esta blecimientos educacionales.  
+Los Planes de Estudio se refieren a la organización 
+del  tiempo escolar y establecen el tiempo mínimo 
+que se  estima necesario asignar a cada una de las 
+asignaturas,  para cumplir satisfactoriamente con los 
+Programas de  Estudio del Ministerio de Educación. 
+Es decir, los Planes  de Estudio propuestos por el 
+Ministerio de Educación  son válidos únicamente 
+para los establecimientos que  se rijan por los 
+programas del propio Ministerio. Para la  Educación 
+Básica, los Planes de Estudio del Ministerio  de 
+Educación se expresan en términos del mínimo de  
+horas pedagógicas anuales que se debe dedicar a 
+cada  asignatura, lo que permite a los 
+establecimientos sufi ciente flexibilidad para 
+organizar sus horarios de diversas  maneras, según 
+su realidad y su proyecto pedagógico.  
+26 Bases Curriculares Ú 1º a 6º Básico  
+Tiempo escolar y   
+asignaturas obligatorias 
+El proceso escolar tiene una duración de doce 
+años. Se  denomina niveles a los tramos de varios 
+años en que  la ley divide este proceso. De acuerdo 
+a la Ley General  de Educación, el nivel de 
+Educación Básica compren de los seis primeros 
+años de esta trayectoria escolar y  recibe a los 
+alumnos a partir de los seis años de edad.  Es 
+necesario aprobar la Educación Básica para 
+ingresar  a la Educación Media. Se denomina 
+cursos a los tramos  cronológicos de un año en que, 
+por razones técnicas y  administrativas, ha sido 
+dividido el proceso escolar. El  nivel de Educación 
+Básica considera las siguientes asig naturas 
+obligatorias para todos los establecimientos:  
+ú Lenguaje y Comunicación   
+ú Lengua Indígena18  
+ú Idioma Extranjero (obligatorio a partir de 5 
+básico)  ú Matemática   
+ú Ciencias Naturales  
+ú Historia, Geografía y Ciencias Sociales  
+ú Artes Visuales   
+ú Música   
+ú Educación Física y Salud  
+ú Tecnología  
+ú Orientación   
+ú Religión19  
+La organización en asignaturas se considera un 
+recurso  para favorecer la organización escolar, pero 
+no implica un  límite para integrar diversas áreas con 
+fines pedagógicos.  La integración interdisciplinaria 
+favorece la comprensión  profunda y la aplicación de 
+los conocimientos. Se define  asignatura20 como el 
+conjunto de saberes, experiencias y  habilidades 
+relacionados con una o varias disciplinas deter 
+minadas o con un aspecto del desarrollo del niño, 
+que han  sido agrupados y secuenciados en el 
+contexto del currícu lum escolar con el fin de 
+organizar y promover los apren dizajes 
+correspondientes. Para los seis años de Educación  
+Básica, se consideran nueve asignaturas 
+obligatorias para  todos los establecimientos. 
+Adicionalmente se contempla  la asignatura de 
+Lengua Indígena obligatoria para estable cimientos 
+con alta densidad de matrícula indígena.  
+Las asignaturas de Lenguaje y Comunicación y 
+Matemá tica se consideran prioritarias y tienen una 
+asignación  mínima semanal. Esto significa que 
+todos los estable cimientos deben asignar a 
+Lenguaje y Comunicación  al menos seis (6) horas 
+pedagógicas semanales desde  1° básico a 4° 
+básico y cinco (5) horas pedagógicas  semanales de 
+5° básico a 6° básico; a la asignatura de  
+Matemática deben destinar al menos 5 horas 
+pedagó gicas semanales desde 1° básico a 6° 
+básico. Los planes  de estudio de todos los 
+establecimientos y los del Mi nisterio de Educación 
+deben considerar esta asignación  mínima.  
+Los establecimientos que opten por programas 
+propios  deben diseñar también planes de estudio 
+que sean  adecuados a dichos programas, y que 
+incluyan todas las  asignaturas obligatorias y la 
+asignación mínima semanal  establecida para las 
+asignaturas de Lenguaje y Comuni cación y 
+Matemática.  
+El tiempo de libre disposición: la Ley General de Edu 
+cación dispone que todos los establecimientos deben  
+cumplir con los Objetivos de Aprendizaje 
+establecidos en  las Bases Curriculares y que 
+pueden construir programas  propios que cumplan 
+con esos objetivos. En orden a cau telar esta libertad 
+de los establecimientos, la ley estable ce que el 
+cumplimiento de las Bases Curriculares debe  dejar 
+un 30% del tiempo de la jornada escolar completa  
+(es decir, 11 pedagógicas) para que los 
+establecimientos  dispongan libremente de él, ya sea 
+para profundizar sobre  los objetivos de las Bases o 
+para complementarlos, según  sean sus necesidades 
+y su proyecto educativo. Si los es tablecimientos 
+deciden utilizar los programas de estudio  que 
+proporciona el Ministerio de Educación, igualmente  
+pueden contar con un 15% del tiempo de libre 
+disposi ción, que pueden destinar a los mismos 
+efectos.  
+La flexibilidad curricular, que permite a los estableci 
+mientos definir planes y programas de estudio 
+propios, se  expresa adicionalmente en las 
+siguientes posibilidades:  
+Educación Básica Bases Curriculares 27  
+a. Al momento de elaborar los planes y los programas de   
+estudio, los establecimientos pueden optar por des  
+componer las asignaturas en unidades de aprendizaje   
+menores (talleres y otras) que, en conjunto, aborden   
+la totalidad de los Objetivos de Aprendizaje de la   
+asignatura; también pueden integrar asignaturas en   
+actividades o en proyectos más amplios que aborden   
+los aprendizajes de más de una asignatura, o pueden   
+mantener la misma categorización de asignaturas   
+definidos en la base curricular.  
+b. El tiempo de libre disposición del establecimiento le   
+permite, entre otras opciones:  
+ú introducir en su plan de estudio asignaturas comple  
+mentarias a las establecidas en estas Bases  
+ú incorporar una asignatura o un tema de relevancia   
+regional o local  
+ú incorporar una asignatura o un tema de relevancia   
+para el proyecto educativo del establecimiento  
+ú ampliar el tiempo destinado a las asignaturas obliga  
+torias  
+ú dedicar el tiempo a desarrollar una asignatura o un   
+grupo de ellas en particular  
+ú destinar tiempo en el horario para desarrollar algunas   
+actividades relacionadas con los Objetivos de Apren  
+dizaje Transversales  
+ú destinar tiempo a actividades deportivas, artísticas o   
+a nivelación de alumnos 
+28 Bases Curriculares Ú 1º a 6º Básico  
+Objetivos de Aprendizaje  
+Transversales  
+Los Objetivos de Aprendizaje Transversales 
+establecen  metas de carácter comprensivo y 
+general para la educa ción escolar, referidas al 
+desarrollo personal, intelectual,  moral y social de 
+los estudiantes. Se trata de objetivos  cuyo logro 
+depende de la totalidad de elementos que  
+conforman la experiencia escolar. Esto significa que  
+deben ser promovidos a través del conjunto de las  
+actividades educativas durante el proceso de la 
+Educa ción General Básica, sin que estén asociados 
+de manera  exclusiva con una asignatura o con un 
+conjunto de ellas  en particular. Los Objetivos de 
+Aprendizaje Transversales  se logran mediante las 
+experiencias en las clases, en los  recreos y en las 
+fiestas escolares, entre otras instancias  de la vida 
+escolar. Deben ser promovidos en estos espa cios a 
+partir de los aprendizajes de las asignaturas, los  
+ritos y normas de la escuela, los símbolos, los 
+modales,  el ejemplo de los adultos y las dinámicas 
+de participa ción y convivencia, entre otros 
+aspectos.  
+Históricamente, los objetivos transversales que han  
+formado parte del currículum nacional han 
+respondido  a la necesidad de favorecer una 
+identidad formativa que  promueve valores e ideales 
+nacionalmente compartidos.  En el caso de las 
+actuales Bases Curriculares, la relevancia  de 
+promover estos valores e ideales se ve reforzada por 
+lo  establecido en la Ley General de Educación 
+(LGE). Esta ley  define un concepto de educación de 
+acuerdo al cual:  
+“La educación es el proceso de aprendizaje 
+permanente  que abarca las distintas etapas de la 
+vida de las perso nas y que tiene como finalidad 
+alcanzar su desarrollo  espiritual, ético, moral, 
+afectivo, intelectual, artístico y  físico, mediante la 
+transmisión y el cultivo de valores,  conocimientos y 
+destrezas. Se enmarca en el respeto y  valoración 
+de los derechos humanos y de las libertades  
+fundamentales, de la diversidad multicultural y de la   
+paz, y de nuestra identidad nacional, capacitando a 
+las  personas para conducir su vida en forma 
+plena, para  convivir y participar en forma 
+responsable, tolerante,  solidaria, democrática y 
+activa en la comunidad, y para  trabajar y contribuir 
+al desarrollo del país.21”  
+Adicionalmente, la relevancia de mantener unos 
+Objeti vos de Aprendizaje Transversales en las 
+Bases Curriculares  se sustenta en los objetivos 
+generales que establece la  LGE para la Educación 
+Básica y Media. Esta ley define  objetivos que, sin 
+necesidad de constituirse en una asig natura en sí 
+mismos, aluden tanto al desarrollo personal  y social 
+de los estudiantes como al desarrollo relacionado  
+con el ámbito del conocimiento y la cultura22.  
+En las Bases Curriculares se mantienen los 
+Objetivos  Transversales previamente existentes, 
+dado que son  consistentes con los propósitos que 
+establece la LGE y  han demostrado responder a un 
+alto grado de acuerdo.  Las modificaciones 
+realizadas sobre la base de dichos  objetivos son de 
+carácter puntual y están orientadas a: ú organizar 
+estos objetivos de acuerdo a categorías que   
+permitan agruparlos con mayor precisión y que, 
+a  la vez, posean mayor consistencia con los 
+ámbitos o  dimensiones señalados en la LGE 
+(artículo 19) ú simplificar la redacción  
+ú incluir de manera más directa o explícita algunos 
+pro pósitos establecidos por la LGE  
+ú considerar matices para la Educación Básica y 
+Media  que aseguren la pertinencia de estos 
+objetivos para la  edad de los estudiantes de 
+estos dos niveles  
+Dimensión   
+física  
+Integra el autocuidado y el cuidado mutuo, y la 
+valora ción y el respeto por el cuerpo, promoviendo 
+la actividad  
+Educación Básica 29 Objetivos de Aprendizaje Transversales 
+física y hábitos de vida saludable. Los Objetivos de 
+Apren dizaje en esta dimensión son:  
+1. favorecer el desarrollo físico personal y el autocui 
+dado, en el contexto de la valoración de la vida y 
+el  propio cuerpo, mediante hábitos de higiene, 
+preven ción de riesgos y hábitos de vida 
+saludable.  
+2. practicar actividad física adecuada a sus 
+intereses y  aptitudes.  
+Dimensión   
+afectiva  
+Apunta al crecimiento y el desarrollo personal de los  
+estudiantes a través de la conformación de una iden 
+tidad personal y del fortalecimiento de la autoestima 
+y  la autovalía, del desarrollo de la amistad y la 
+valoración  del rol de la familia y grupos de 
+pertenencia, y de la  reflexión sobre el sentido de 
+sus acciones y de su vida.  Los Objetivos de 
+Aprendizaje en esta dimensión son:  
+3. adquirir un sentido positivo ante la vida, una sana  
+autoestima y confianza en sí mismo, basada en 
+el  conocimiento personal, tanto de sus 
+potencialidades  como de sus limitaciones.  
+4. comprender y apreciar la importancia que tienen 
+las  dimensiones afectiva, espiritual, ética y social 
+para un  sano desarrollo sexual.  
+5. apreciar la importancia social, afectiva y espiritual 
+de  la familia para el desarrollo integral de cada 
+uno de  sus miembros y de toda la sociedad.  
+Dimensión   
+cognitiva  
+Los objetivos que forman parte de esta dimensión  
+orientan los procesos de conocimiento y 
+comprensión   
+de la realidad; favorecen el desarrollo de las 
+capacida des de análisis, investigación y 
+teorización, y desarrollan  la capacidad crítica y 
+propositiva frente a problemas y  situaciones nuevas 
+que se les plantean a los estudiantes.  Los Objetivos 
+de Aprendizaje en esta dimensión son:  
+6. identificar, procesar y sintetizar información de  
+diversas fuentes y organizar la información 
+relevante  acerca de un tópico o problema.  
+7. 
+organizar, 
+clasificar, 
+analizar, interpretar y 
+sintetizar la  información y establecer relaciones 
+entre las distintas  asignaturas del aprendizaje.  
+8. exponer ideas, opiniones, convicciones, 
+sentimientos  y experiencias de manera 
+coherente y fundamen tada, haciendo uso de 
+diversas y variadas formas de  expresión.  
+9. resolver problemas de manera reflexiva en el 
+ámbito  escolar, familiar y social, tanto utilizando 
+modelos y  rutinas como aplicando de manera 
+creativa concep tos y criterios.  
+10. diseñar, planificar y realizar proyectos.  
+Dimensión   
+socio-cultural  
+Los objetivos que se plantean en esta dimensión 
+sitúan  a la persona como un ciudadano en un 
+escenario de mocrático, comprometido con su 
+entorno y con sentido  de responsabilidad social. 
+Junto con esto, se promueve  la capacidad de 
+desarrollar estilos de convivencia social  basadas en 
+el respeto por el otro y en la resolución  pacífica de 
+conflictos, así como el conocimiento y la  valoración 
+de su entorno social, de los grupos en los que  se 
+desenvuelven y del medioambiente. Los Objetivos de  
+Aprendizaje en esta dimensión son:  
+30 Bases Curriculares Ú 1º a 6º Básico  
+11. valorar la vida en sociedad como una dimensión  
+esencial del crecimiento de la persona, y actuar 
+de  acuerdo con valores y normas de 
+convivencia cívica,  pacífica y democrática, 
+conociendo sus derechos y  responsabilidades, 
+y asumiendo compromisos consi go mismo y 
+con los otros.  
+12. valorar el compromiso en las relaciones entre 
+las  personas y al acordar contratos: en la 
+amistad, en el  amor, en el matrimonio, en el 
+trabajo y al empren der proyectos.  
+13. participar solidaria y responsablemente en las 
+activi dades y proyectos de la familia, del 
+establecimiento y  de la comunidad.  
+14. conocer y valorar la historia y sus actores, las 
+tra diciones, los símbolos, el patrimonio territorial 
+y  cultural de la nación, en el contexto de un 
+mundo  crecientemente globalizado e 
+interdependiente.  
+15. reconocer y respetar la igualdad de derechos 
+entre  hombres y mujeres y apreciar la 
+importancia de  desarrollar relaciones que 
+potencien su participación  equitativa en la vida 
+económica familiar, social y  cultural.  
+16. proteger el entorno natural y sus recursos 
+como  contexto de desarrollo humano.  
+Dimensión   
+moral  
+Esta dimensión promueve el desarrollo moral, de ma 
+nera que los estudiantes sean capaces de formular 
+un  juicio ético acerca de la realidad, situándose en 
+ella como  sujetos morales. Para estos efectos, 
+contempla el cono cimiento y la adhesión a los 
+derechos humanos como  criterios éticos 
+fundamentales que orientan la conducta  personal y 
+social. Los Objetivos de Aprendizaje en esta  
+dimensión son:  
+17. ejercer de modo responsable grados crecientes 
+de  libertad y autonomía personal, de acuerdo a 
+valores  como la justicia, la verdad, la solidaridad y 
+la honesti dad, el respeto, el bien común y la 
+generosidad.  
+18. conocer, respetar y defender la igualdad de 
+dere chos esenciales de todas las personas, 
+sin distin ción de sexo, edad, condición física, 
+etnia, religión   
+o situación económica, y actuar en concordancia  
+con el principio ético que reconoce que todos los  
+“seres humanos nacen libres e iguales en 
+dignidad  y derechos y, dotados de razón y 
+conciencia, deben  comportarse fraternalmente 
+los unos con los otros”  (Declaración Universal 
+de Derechos Humanos, Artí culo 1º).  
+19. valorar el carácter único de cada ser humano y, 
+por  lo tanto, la diversidad que se manifiesta 
+entre las  personas, y desarrollar la capacidad 
+de empatía con  los otros.  
+20. reconocer y respetar la diversidad cultural, 
+religiosa y  étnica y las ideas y creencias 
+distintas de las propias  en los espacios 
+escolares, familiares y comunitarios,  
+reconociendo el diálogo como fuente de 
+crecimien to, superación de diferencias y 
+acercamiento a la  verdad.  
+Dimensión   
+espiritual  
+Esta dimensión promueve la reflexión sobre la 
+existencia  humana, su sentido, finitud y 
+trascendencia, de manera  que los estudiantes 
+comiencen a buscar respuestas a las   
+grandes preguntas que acompañan al ser 
+humano. Los  Objetivos de Aprendizaje en esta 
+dimensión son:  
+21. reconocer la finitud humana.   
+22. reconocer y reflexionar sobre la dimensión 
+trascen dente y/o religiosa de la vida humana.  
+Proactividad   
+y trabajo  
+Los objetivos de esta dimensión aluden a las actitu 
+des hacia el trabajo que se espera que los 
+estudiantes  desarrollen, así como a las 
+disposiciones y formas de  involucrarse en las 
+actividades en las que participan.  Por medio de 
+ellos se favorece el reconocimiento y la  valoración 
+del trabajo, así como el de la persona que lo  
+realiza. Junto con esto, los objetivos de esta 
+dimensión  fomentan el interés y el compromiso con 
+el conoci miento, con el esfuerzo y la perseverancia, 
+así como la  capacidad de trabajar tanto de manera 
+individual como  
+Educación Básica 31 Objetivos de Aprendizaje Transversales 
+colaborativa, manifestando compromiso con la 
+calidad  de lo realizado y dando, a la vez, cabida al 
+ejercicio y  el desarrollo de su propia iniciativa y 
+originalidad. Los  Objetivos de Aprendizaje en esta 
+dimensión son:  
+23. demostrar interés por conocer la realidad y 
+utilizar el  conocimiento.  
+24. practicar la iniciativa personal, la creatividad y el 
+es píritu emprendedor en los ámbitos personal, 
+escolar  y comunitario.  
+25. trabajar en equipo de manera responsable, 
+constru yendo relaciones basadas en la confianza 
+mutua. 26. comprender y valorar la perseverancia, 
+el rigor y  el cumplimiento, por un lado, y la 
+flexibilidad, la  originalidad, la aceptación de 
+consejos y críticas y el  asumir riesgos, por el otro, 
+como aspectos funda mentales en el desarrollo y la 
+consumación exitosa  de tareas y trabajos.  
+27. reconocer la importancia del trabajo –manual e  
+intelectual– como forma de desarrollo personal,  
+familiar, social y de contribución al bien común,  
+valorando la dignidad esencial de todo trabajo y 
+el   
+valor eminente de la persona que lo realiza.  
+Tecnologías de información  y 
+comunicación (TIC)  
+El propósito general del trabajo educativo en esta di 
+mensión es proveer a todos los alumnos y las 
+alumnas de  las herramientas que les permitirán 
+manejar el “mundo  digital” y desarrollarse en él, 
+utilizando de manera com petente y responsable 
+estas tecnologías. Los Objetivos de  Aprendizaje en 
+esta dimensión son:  
+28. buscar, acceder y evaluar la calidad y la 
+pertinencia  de la información de diversas fuentes 
+virtuales. 29. utilizar TIC que resuelvan las 
+necesidades de infor mación, comunicación, 
+expresión y creación dentro  del entorno educativo 
+y social inmediato.  
+30. utilizar aplicaciones para presentar, representar, 
+ana lizar y modelar información y situaciones, 
+comunicar  ideas y argumentos, comprender y 
+resolver proble mas de manera eficiente y efectiva, 
+aprovechando  múltiples medios (texto, imagen, 
+audio y video).  
+31. participar en redes virtuales de comunicación y 
+en  redes ciudadanas de participación e 
+información, con  aportes creativos y pertinentes.  
+32. hacer un uso consciente y responsable de las 
+tecno logías de la información y la comunicación, 
+aplicando  criterios de autocuidado y cuidado de 
+los otros en la  comunicación virtual, y 
+respetando el derecho a la  privacidad y la 
+propiedad intelectual.  
+32  
+Referencias  
+1 Ministerio de Educación; Objetivos   
+Fundamentales y Contenidos Mínimos   
+Obligatorios de la Educación Básica y Media,
+Actualización 2009.  
+2 Véase Decreto con Fuerza de Ley N°2, de   
+2009, del Ministerio de Educación, que fija
+texto refundido, coordinado y sistematizado
+de la Ley N° 20.370 con las normas no dero
+gadas del DFL N°1, de 2005, del 
+Ministerio de  Educación, artículos 19 y 
+29.  
+3 Ley Nº 18.962, Orgánica Constitucional de 
+Enseñanza, 1990.  
+4 Ministerio de Educación, Objetivos 
+fundamen tales y contenidos mínimos 
+obligatorios de la   
+Educación Básica y Media, Actualización 2009.
+5 Decreto Supremo de Educación N°40, de 
+1996.   
+6 Ministerio de Educación, Unidad de Currí  
+culum y Evaluación, Fundamentos del Ajuste
+Curricular en el sector de Historia, Geografía   
+y Ciencias Sociales, junio 2009; Fundamentos   
+del Ajuste Curricular en el sector Lenguaje y   
+Comunicación, junio2009; Fundamentos del   
+Ajuste Curricular en el sector de Matemá  
+tica, marzo 2009; Fundamentos del Ajuste   
+Curricular en el sector de Ciencias Naturales,   
+marzo 2009; Fundamentos del Ajuste Curri  
+cular en el sector de Idioma Extranjero Inglés,   
+marzo 2009.  
+Bases Curriculares Ú 1º a 6º Básico 
+7 Ministerio de Educación, Estudio de imple 
+mentación curricular en el aula, Lenguaje 
+y  Comunicación, 1º ciclo básico (NB1 
+yNB2)  y Estudio de implementación 
+curricular en  el aula, Matemática, 1o ciclo 
+básico (NB1  yNB2), 2004. Disponibles en 
+www. curricu lumnacional.cl  
+8 Estudios de Cobertura Curricular en 4 niveles  
+de enseñanza básica (2o, 4o, 6o y 8o 
+básico)  y dos de enseñanza media (II y IV 
+medio), en  las áreas de Lenguaje, 
+Matemática, Ciencias,  Ciencias Sociales, 
+Inglés, 2001 a 2003. Dispo nibles en www. 
+curriculumnacional.cl  
+9 SIMCE, Niveles de Logro 4° Básico para lec 
+tura, (2008); Niveles de Logro 4° Básico 
+para  escritura, (2010) Niveles de Logro 4° 
+Básico  para Educación Matemática, 
+(2008).  
+10 Gysling, J.; Meckes, L. Estándares de 
+apren dizaje en Chile: mapas de progreso 
+y niveles  de logro SIMCE 2002 a 2010; 
+PREAL, Serie  Documentos N° 54, 2011.  
+11 Información sobre los Mapas de Progreso 
+del  
+Aprendizaje está disponible en: 
+www.curricu lumnacional.cl  
+12 American Association for the Advancement 
+of  Science, Project 2061, Benchmarks for 
+Scien ce Literacy, Oxford University Press, 
+1993. Dis ponible en castellano en 
+www.project2061. org/publications/bsl/; Council 
+of Europe,  Common European Framework for 
+Languages:   
+Educación Básica 33 Referencias 
+Learning, teaching, assessment. 
+Cambridge  University Press, 
+Cambridge, 2002; National  Council of 
+Teachers ofMathematics, Curri culum 
+and Evaluation Standards for School  
+Mathematics, Reston, Virginia, 1996.   
+13 OCDE (2004), Revisión de políticas 
+nacionales  de educación, Chile, OECD, 
+París y Ministerio  de Educación, Chile.   
+14 Gobierno de Chile, Informe Comisión 
+Forma ción Ciudadana, diciembre de 2004.   
+15 Unidad de Currículum y Evaluación: 
+Funda mentación Bases Curriculares 2011.  
+16 Unidad de Currículum y Evaluación: 
+Funda mentación Bases Curriculares 2011.   
+17 Unidad de Currículum y Evaluación: 
+Funda mentación Bases Curriculares 2011.  
+18 Es obligatorio impartir esta asignatura en 
+es tablecimientos con alto porcentaje de 
+alum nos con ascendencia indígena, de 
+acuerdo a  lo establecido en el Artículo 
+5° del Decreto   
+N°280 de 2009, del Ministerio de Educación.  
+19 El Decreto N°924, de 1983, del Ministerio 
+de  Educación, reglamenta las clases de 
+Religión  en establecimientos 
+educacionales.  
+20 Equivale a lo que en instrumentos 
+curriculares  anteriores se denomina 
+“sector”.  
+21 Ley General de Educación, art. 2.  
+22 Ley General de Educación, arts. 29 y 30.  
+Artes   
+Visuales 
+36 Bases Curriculares Ú 1º a 6º Básico Introducción 
+Las artes, que incluyen la literatura y la poesía, la 
+mú sica, la danza, el teatro, el cine y las artes 
+visuales, son  una forma poderosa y de carácter 
+único que posee el   
+ser humano para expresar sus ideas, pensamientos 
+y  emociones. El arte permite comunicar y 
+comprender lo  que el hombre piensa y siente sobre 
+sí mismo, mostran do los temas universales que a lo 
+largo de la historia han  ocupado su atención, y que 
+trascienden las diferencias  culturales y temporales. 
+En sus diversas formas, el arte  siempre ha estado 
+presente en el devenir de la huma nidad, como un 
+reflejo de su realidad, de sus creencias,  de su 
+imaginación y como un vehículo para su necesi dad 
+de creación y trascendencia. De este modo, el arte  
+nos proporciona numerosos testimonios y evidencias 
+de  la historia de la humanidad que pueden ser 
+reconoci dos y analizados y que reflejan tanto lo que 
+es propio y  único de un individuo, como lo que es 
+común a todas  las personas.   
+La educación artística, y específicamente la 
+educación  en las artes visuales, tiene un papel de 
+gran relevancia  en la etapa de la enseñanza 
+básica, pues se espera que  mediante ella los 
+alumnos se inicien en la comprensión   
+de este legado de la humanidad y que, al apreciarlo,  
+enriquezcan sus posibilidades de imaginar, 
+simbolizar y  crear. Para ampliar la comprensión de 
+la realidad huma na y enriquecer las facultades 
+imaginativas y simbólicas  de los niños y jóvenes, la 
+educación en artes visuales se  centra, por una 
+parte, en el conocimiento y la aprecia ción de 
+distintas manifestaciones artísticas, tanto del  
+pasado como del presente, y por otra, en el 
+desarrollo de  la capacidad creativa y expresiva de 
+los estudiantes por  medio del lenguaje visual. 
+Desarrollar las facultades de  expresión, creación y 
+apreciación les permitirá participar  como 
+espectadores activos en la generación y la valora 
+ción de la cultura.  
+Las artes visuales utilizan un lenguaje propio, 
+constitui do por diversos elementos y conceptos que 
+es necesario  comprender y aplicar tanto en la 
+expresión y la creación  visual como en la 
+apreciación y la respuesta a la obra  artística. La 
+educación en Artes Visuales pretende que los  
+alumnos comprendan y se apropien de este 
+lenguaje, que  les proporciona un medio de expresar 
+su interioridad y los  faculta para apreciar las 
+dimensiones estéticas de su entor no. En este 
+sentido, se entiende el arte como conocimien to, 
+porque amplía y desarrolla la mente del artista y del 
+ob servador. Tanto al observar como al crear una 
+obra de arte,  el joven amplía su comprensión de la 
+realidad y enriquece  sus facultades creativas, 
+imaginativas y simbólicas.   
+Los objetivos de la asignatura se orientan a que los  
+alumnos desarrollen la sensibilidad y las 
+capacidades de  reflexión y pensamiento crítico que 
+les permitirán obte ner el mayor provecho de la 
+experiencia artística, a que  aprendan a expresarse y 
+crear utilizando los elementos  del lenguaje de las 
+artes visuales y a que valoren las mani festaciones 
+artísticas de diversas épocas, reconociéndolas  
+como parte de su legado y de su identidad personal.  
+La asignatura de Artes Visuales es un espacio 
+especial mente favorable para establecer relaciones 
+con los otros  lenguajes y medios de expresión 
+artística (musical, cor poral, dramático y literario). 
+Para los niños de los prime ros niveles, la integración 
+de los métodos y las formas de  expresión artística 
+resulta un acto casi natural, que debe  aprovecharse 
+como fuente de motivación y creatividad.  Tanto para 
+la inspiración y la exploración de sus propias  ideas y 
+sentimientos como para el enriquecimiento del  
+manejo de procedimientos técnicos, la integración 
+entre  distintos lenguajes es una actividad 
+fundamental y cons tructiva para los estudiantes, que 
+potenciará sus creacio nes y les permitirá explorar 
+sus gustos y preferencias.  
+Artes Visuales 37 Introducción 
+Las Bases Curriculares de Artes Visuales se 
+sustentan en  las siguientes perspectivas:   
+Énfasis en el hacer y la creatividad Uno de los focos 
+primordiales de la asignatura es lograr  los 
+Objetivos de Aprendizaje principalmente por medio  
+del hacer. Favorecer una aproximación práctica, 
+basada  en “aprender haciendo” y la acumulación 
+de experien cias, permite potenciar la creatividad y 
+la generación de  ideas, y desarrollar una 
+sensibilidad visual que permita a  los alumnos 
+apreciar el arte y su entorno.   
+Ampliar el horizonte cultural de los es tudiantes (patrimonio artístico 
+local y nacional, latinoamericano y universal)  
+Los Objetivos de Aprendizaje buscan entregar a los  
+alumnos una variedad de referentes artísticos que  
+ampliarán su visión del mundo y su comprensión del 
+ser  humano y, a la vez, les darán la oportunidad de 
+valorar  el patrimonio artístico local, latinoamericano 
+y mun dial. Los Objetivos de Aprendizaje explicitan, 
+desde los  primeros niveles, una aproximación al arte 
+de diversas  épocas que permite ampliar los 
+referentes artísticos de  los estudiantes, reforzando y 
+diversificando tanto sus  creaciones como sus 
+análisis e interpretaciones. La asig natura de Artes 
+Visuales es una instancia única para que  los 
+estudiantes se aproximen a la diversidad del mundo  
+por medio de la observación, la descripción, la 
+compa ración y el análisis de obras de arte y objetos 
+de diseño  de distintos contextos y culturas, 
+oportunidad que debe  ser aprovechada al máximo 
+para su beneficio.   
+Importancia de la respuesta frente al arte Esta dimensión del 
+quehacer artístico tiene gran impor tancia y 
+constituye un eje de las Bases Curriculares. Los  
+alumnos responderán frente al arte manifestando 
+sus   
+emociones e ideas, pero también por medio de sus 
+propios  trabajos de arte. A medida que progresa el 
+aprendizaje, los  estudiantes serán capaces de 
+responder frente a lo que  observan y expresar su 
+interpretación personal de una obra  o un trabajo de 
+arte. La respuesta frente al arte se nutre del  contexto 
+de cada obra y, en los niveles finales de este ciclo,  
+puede complementarse mediante la investigación.  
+Diseño en la educación básica  
+Los 
+Objetivos 
+de 
+Aprendizaje 
+incorporan 
+tempranamente  
+el diseño como parte de los 
+conocimientos de las artes vi suales, ya que 
+diversifica 
+las 
+posibilidades 
+de 
+observación,  
+descripción, análisis y evaluación visual de los 
+alumnos   
+más allá de la obra de arte y les permite acercarse 
+al arte  desde algunos objetos que tienen presencia 
+cotidiana en  sus vidas. La artesanía, por ejemplo, 
+es una gran opor tunidad para que los estudiantes 
+se aproximen al diseño  y, a la vez, observen la 
+diversidad de aplicaciones en los  distintos contextos 
+geográficos y culturales del país.  
+Integración con otras áreas  
+La selección de contenidos para cada nivel de la edu 
+cación básica se nutre de los temas, puntos de vista,  
+contenidos y métodos abordados en otras 
+asignaturas.  Desde Historia, Geografía y Ciencias 
+Sociales se deriva la  observación del paisaje natural 
+y el trabajo con manifes taciones artísticas de 
+distintas culturas y tiempos, como  civilizaciones 
+precolombinas, la Antigüedad clásica, el  medioevo, 
+el Renacimiento y el siglo XX europeo y lati 
+noamericano, mientras que desde Ciencias 
+Naturales se  aprovecha la observación de la 
+naturaleza (paisaje, flora y  fauna). Asimismo, el 
+docente debe promover y favorecer  las 
+oportunidades de integración con Música, Tecnología  
+y Lenguaje y Comunicación, así como con otras asig 
+naturas, en tanto sean relevantes para el logro de los  
+Objetivos de Aprendizaje.  
+38 Bases Curriculares Ú 1º a 6º Básico  
+Uso de nuevas tecnologías  
+Las Bases Curriculares promueven que los 
+estudiantes  usen medios artísticos 
+contemporáneos como la foto grafía, el video y 
+otros medios digitales, para integrar los a los 
+medios de expresión que tradicionalmente se  
+utilizan en la asignatura. De esta manera se 
+potencian   
+la expresión, la creatividad y la motivación de los 
+alum nos, y se los familiariza con el lenguaje y el 
+quehacer del  arte contemporáneo. Las Tecnologías 
+de la Información  y la Comunicación (TIC) tienen un 
+rol central, dado que  pueden aportar al profesor y a 
+los alumnos en cuanto a  expresión, creatividad, 
+difusión, presentación y crítica. 
+Artes Visuales 39 Organización Curricular  
+Organización curricular 
+Artes Visuales  
+A / Ejes  
+La asignatura de Artes Visuales se estructura en torno a dos ejes, presentes en todos los niveles y que 
+reflejan las pers pectivas mencionadas. Estos ejes están constituidos por las habilidades fundamentales de 
+las Artes Visuales, enfocados  a promover el pensamiento creativo (Expresar y crear visualmente) y crítico 
+(Apreciar y responder frente al arte). El  trabajo con cada uno de ellos y su interrelación entregarán a los 
+alumnos una formación más amplia y completa en las  Artes Visuales.  
+Expresar y crear visualmente 
+Todos los niños tienen un potencial expresivo y 
+creativo.  La asignatura de Artes Visuales promueve 
+que los estu diantes descubran, desarrollen y 
+cultiven ese potencial,  para plasmarlo en un trabajo 
+de arte y así comunicarlo a  otros. En este proceso, 
+se espera que integren las emo ciones, la 
+imaginación, los recuerdos, las experiencias, el  
+conocimiento y las técnicas para que logren 
+transmitir  una parte de su propio ser.  
+En los primeros niveles, la exploración y la 
+experimenta ción libre darán la oportunidad para que 
+los estudiantes  se familiaricen de manera intuitiva 
+con los materiales, las  herramientas, las técnicas y 
+los formatos propios de las  artes visuales. En la 
+medida en que se experimente con  dichas 
+herramientas y procedimientos, los alumnos ha rán 
+suyo un repertorio cada vez más amplio de recursos  
+para expresarse y crear, y avanzarán hacia una 
+creación  más intencionada. Asimismo, a lo largo de 
+este proceso,  se espera que incorporen elementos y 
+conceptos del  lenguaje visual que enriquezcan sus 
+propias creaciones.  
+En Artes Visuales, la creación implica un dominio 
+de  herramientas, materiales y procedimientos y, a 
+la vez,  requiere de un propósito expresivo. Este eje 
+procura po tenciar la generación de ideas, la 
+expresión y la creación   
+personal en diálogo con el manejo de herramientas 
+y  procedimientos. Si bien se espera que todos los 
+alumnos  logren el dominio de las habilidades de 
+manejo de herra mientas y procedimientos para 
+ampliar las posibilidades  de expresión, se considera 
+que estas son un medio para  la expresión creativa 
+de sus ideas y de su interioridad.   
+Respecto del proceso creativo, se propone un 
+modelo  flexible, centrado en la generación de ideas 
+personales  y en la retroalimentación constante del 
+docente y de  todos los estudiantes a medida que se 
+desarrollan los  trabajos de arte. La creación es un 
+proceso complejo que  implica no solo generar ideas, 
+sino también planificar un  proceso y concretarlo en 
+un producto, trabajo de arte u  objeto de diseño. El 
+siguiente diagrama muestra el pro ceso creativo 
+completo. Sin embargo, es posible trabajar  las 
+etapas de forma independiente y en distinto orden.  
+40 Bases Curriculares Ú 1º a 6º Básico  
+Plantear un   
+desafío  
+Presentar 
+Compartir  
+Reflexionar 
+Evaluar  
+Revisar y  Pulir  
+Retroalimentación  
+y reflexión con sus 
+pares y el profesor 
+Presentar   
+una primera   
+propuesta  
+Imaginar  
+Generar ideas 
+Planificar  
+Focalizar  
+Explorar  
+Experimentar  
+Apreciar y responder frente al arte  
+En este eje, se espera que los alumnos desarrollen 
+las ca pacidades de descubrir y comunicar 
+sensaciones, emocio nes e ideas provocadas por la 
+percepción del entorno, las  obras de arte y los 
+objetos de diseño. En este proceso, se  deberá 
+incorporar gradualmente elementos del lenguaje   
+artístico visual, que servirán como criterios de 
+análisis  necesarios para responder frente a la 
+obra.   
+La habilidad de apreciación estética se relaciona 
+direc tamente con el proceso de creación propuesto 
+en el eje  anterior, pues ambos se enriquecen 
+mutuamente por  medio de la revisión, la evaluación 
+y la reformulación  de las propuestas creativas 
+personales. En la educación  básica, como un 
+primer paso fundamental en el logro de  la expresión 
+y la creación artísticas, se debe orientar la ca 
+pacidad de percepción innata de los estudiantes 
+hacia un  desarrollo de la sensibilidad estética 
+respecto del entorno   
+en general y de las obras de arte en particular, así 
+como  también aprovechar el juego y las 
+experiencias lúdicas  como formas de 
+experimentación y apreciación especial mente 
+enriquecedoras en este nivel.   
+En los primeros niveles de aprendizaje, la 
+apreciación  estética es espontánea y libre, 
+orientada principalmente  al disfrute del contacto 
+con la obra o el trabajo de arte.  A medida que 
+observen y perciban una amplia gama de  obras y 
+manejen elementos del lenguaje visual, se espera  
+que elaboren interpretaciones y respuestas más 
+funda mentadas que incluyan juicios críticos y 
+reflexiones en  torno a obras y a sus propias 
+creaciones.   
+Para lograr los propósitos descritos, los alumnos 
+debe rán conocer manifestaciones artísticas 
+adecuadas a la  edad, de variadas épocas, lugares 
+y culturas, y prácticas   
+Artes Visuales Organización Curricular 41  
+artísticas contemporáneas, aprovechando las 
+posibilida des que ofrecen hoy las tecnologías de la 
+información.  Del conocimiento de los grandes 
+movimientos, estilos y  artistas y la apreciación de 
+variadas obras, los estudiantes  podrán obtener 
+fuentes de inspiración para sus expre siones 
+artísticas y descubrir caminos divergentes para  
+abordar sus propios procesos creativos. Estos conoci 
+mientos permiten ampliar la selección y el 
+tratamiento  de los diversos temas, el uso de los 
+diferentes elementos  del lenguaje visual o la 
+elección de materiales de acuerdo  a sus propósitos.  
+B / Habilidades  
+En este eje tiene especial relevancia la apreciación 
+del pa trimonio cultural artístico-visual local. El arte 
+local, como  expresión de la identidad de una 
+comunidad, constitu ye una excelente oportunidad 
+para que los estudiantes  pongan en práctica sus 
+aprendizajes en contextos que les  sean familiares y 
+significativos. El conocimiento y el análisis  del arte 
+local contribuyen a valorarlo y a que los alumnos  
+desarrollen actitudes de respeto y cuidado por el 
+patrimo nio artístico de su localidad.  
+El logro de los objetivos de aprendizaje de Artes Visuales involucra el desarrollo de habilidades de la 
+asignatura. Los  ejes “Expresar y crear visualmente” y “Apreciar y responder frente al arte” son procesos 
+complejos y están constituidos  por múltiples habilidades, que se definen y detallan a continuación.   
+Expresión  
+Se relaciona con trasmitir a otros las ideas y 
+emociones  por medio de obras y trabajos de arte. 
+Un primer grupo  de estas habilidades se resume en 
+expresar la interiori dad, que implica trasmitir ideas y 
+emociones surgidas del  mundo interior de cada 
+estudiante. Expresar la interiori dad implica 
+reflexionar en silencio, desarrollar la capaci dad de 
+introspección, poner en evidencia la interioridad,  
+desarrollar la atención, la audición y visión interior, y  
+comunicar pensamientos, experiencias y emociones 
+de  forma verbal o no verbal. Un segundo grupo 
+consiste   
+Creación  
+Siguiendo el modelo de proceso creativo, se 
+espera que  los alumnos tengan amplias 
+oportunidades de desarro llar su creatividad 
+mediante la práctica y el dominio de  estas 
+habilidades. Las habilidades de creación incluyen  
+el imaginar, generar ideas, planificar, experimentar 
+y  producir para la elaboración de trabajos de arte 
+y obje  
+en expresar lo observado en una obra o en el 
+entorno,  donde el origen de las ideas y emociones 
+se relacionan  con la observación de obras de arte. 
+Implica desarrollar   
+la percepción, la observación atenta y detallada, 
+darle un  significado personal a los elementos 
+visuales, desarro llar la sensibilidad y la 
+comunicación verbal y no verbal.  Ambos grupos de 
+habilidades se desarrollan tanto en la  creación de 
+obras y trabajos de arte como en la aprecia ción de 
+estos.  
+tos de diseño, para posteriormente reflexionar y 
+evaluar  sus propias creaciones y las obras de arte. 
+La progresión  
+de las habilidades de creación 
+dependerá de la riqueza y   
+la diversidad de las experiencias y obras de arte 
+que los  estudiantes conozcan y analicen. 
+42 Bases Curriculares Ú 1º a 6º Básico  
+Manejo de materiales, herramientas   
+y procedimientos  
+Este conjunto de habilidades es central, dado que 
+tanto  la expresividad como la creatividad solo 
+pueden desa rrollarse si el estudiante es capaz de 
+plasmar sus ideas  y emociones en trabajos de arte 
+y diseño concretos y  concluidos. Para esto, es 
+fundamental que desarrollen  habilidades como usar, 
+aplicar, experimentar y combinar  herramientas y 
+procedimientos necesarios para la elabo  
+Análisis crítico  
+Este grupo de habilidades incluye los componentes  
+necesarios para la apreciación de obras y trabajos de 
+arte.  Combina habilidades relacionadas con la 
+percepción y el  procesamiento y análisis de lo 
+observado, para culminar  en la apreciación y la 
+emisión de juicios. Estas habilidades  pueden 
+separarse en tres etapas:  
+ú observar, describir y relacionar obras y trabajos de 
+arte,  organizando y sistematizando información 
+obtenida  mediante los sentidos y la aplicación del 
+lenguaje visual ú comparar, analizar e interpretar lo 
+observado en obras   
+Comunicación  
+Todas las disciplinas tienen formas particulares para 
+co municar sus propios saberes. Las habilidades 
+relaciona das con la comunicación son transversales 
+a la formación  escolar y están presentes en todas 
+las asignaturas de las  Bases Curriculares de la 
+educación básica. Así, la comu nicación tiene un 
+lugar privilegiado en Artes Visuales,  dado que el 
+quehacer artístico implica necesariamente   
+ración de trabajos de arte. El dominio de dichas 
+técnicas  amplía las posibilidades de expresión de 
+los estudiantes.  
+Ejercitar progresivamente la 
+destreza en la manipulación  de distintos materiales 
+y procesos técnicos proporciona   
+un amplio repertorio de recursos para expresarse 
+con  libertad de acuerdo a sus intereses, 
+motivaciones, nece sidades y posibilidades.   
+y trabajos de arte sobre la base de su experiencia 
+y  sus conocimientos previos tanto de los 
+materiales, los  procedimientos técnicos y el 
+lenguaje visual, como del  contexto de la obra  
+ú establecer juicios, explicar y apreciar, lo que incluye  
+expresar una opinión informada, junto con la 
+exterio rización de las sensaciones, sentimientos, 
+emociones e  ideas provocadas por obras y 
+trabajos de arte y objetos  de diseño  
+comunicar, exponer y presentar obras y trabajos de 
+arte,  tanto propias como de otros. Este grupo de 
+habilidades  se integra y se potencia con la 
+expresión, dado que a  mayor desarrollo de la 
+capacidad expresiva, mayor será  el incentivo de 
+comunicar tanto la interioridad como lo  observado 
+en obras y trabajos de arte.  
+Artes Visuales Organización Curricular 43 C / Actitudes  
+Las Bases Curriculares de Artes Visuales 
+promueven un  conjunto de actitudes para todo el 
+ciclo básico, que de rivan de los Objetivos de 
+Aprendizaje Transversales (OAT).  Dada su 
+relevancia en el aprendizaje, ellas se deben  
+desarrollar de manera integrada con los 
+conocimientos y  las habilidades de la asignatura.   
+Las actitudes aquí definidas son Objetivos de 
+Aprendi zaje que deben promoverse para la 
+formación integral  de los estudiantes en la 
+asignatura. Los establecimientos  pueden planificar, 
+organizar, desarrollar y complementar  las actitudes 
+propuestas según sean las necesidades de  su 
+propio proyecto y su realidad educativa.   
+Las actitudes a desarrollar en la asignatura de 
+Artes Vi suales son las siguientes:  
+a Disfrutar de múltiples expresiones artísticas. b 
+Demostrar disposición a expresar artísticamente 
+las  propias ideas y sentimientos.  
+c Valorar y cuidar el patrimonio artístico de su 
+comuni dad, región, país y de la humanidad.  
+d Demostrar disposición a desarrollar su 
+creatividad,  experimentando, imaginando y 
+pensando divergente mente.  
+e Demostrar disposición a trabajar en equipo, 
+colaborar  con otros y aceptar consejos y críticas.  
+f Respetar y valorar el trabajo riguroso y el esfuerzo 
+pro pio y de otros.  
+g Respetar el trabajo artístico de otros, valorando 
+la ori ginalidad. 
+44 
+Primero  
+Básico 
+Artes Visuales 47 1º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Expresar y crear trabajos de arte a partir de la 
+observación del: ú entorno natural: paisaje, animales y 
+plantas  
+ú entorno cultural: vida cotidiana y familiar  
+ú entorno artístico: obras de arte local, chileno, 
+latinoamericano y del resto del  mundo  
+2 Experimentar y aplicar elementos del lenguaje visual 
+en sus trabajos de arte: ú línea (gruesa, delgada, recta, 
+ondulada e irregular)  
+ú color (puro, mezclado, fríos y cálidos)  
+ú textura (visual y táctil)  
+3 Expresar emociones e ideas en sus trabajos de arte 
+a partir de la experimenta ción con:  
+ú materiales de modelado, de reciclaje, naturales, 
+papeles, cartones, pega mentos, lápices, pinturas, 
+textiles e imágenes digitales  
+ú herramientas para dibujar, pintar, cortar, modelar, unir 
+y tecnológicas (pincel,  tijera, esteca, computador, 
+entre otras)  
+ú procedimientos de dibujo, pintura, collage, escultura, 
+dibujo digital y otros  
+4 Observar y comunicar oralmente sus primeras 
+impresiones de lo que sienten y  piensan de obras de 
+arte por variados medios. (Observar anualmente al 
+menos  10 obras de arte local o chileno, 10 
+latinoamericanas y 10 de arte universal).  
+5 Explicar sus preferencias frente al trabajo de arte 
+personal y de sus pares, usan do elementos del 
+lenguaje visual.  
+Segund
+o 
+Básico 
+Artes Visuales 51 2º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Expresar y crear trabajos de arte a partir de la 
+observación del: ú entorno natural: figura humana y 
+paisajes chilenos  
+ú entorno cultural: personas y patrimonio cultural de 
+Chile  
+ú entorno artístico: obras de arte local, chileno, 
+latinoamericano y del resto del  mundo   
+2 Experimentar y aplicar elementos de lenguaje visual 
+(incluidos los del nivel  anterior) en sus trabajos de 
+arte:  
+ú línea (vertical, horizontal, diagonal, espiral y 
+quebrada)  
+ú color (primarios y secundarios)  
+ú formas (geométricas)  
+3 Expresar emociones e ideas en sus trabajos de arte, 
+a partir de la experimenta ción con:   
+ú materiales de modelado, de reciclaje, naturales, 
+papeles, cartones, pega mentos, lápices, pinturas, 
+textiles e imágenes digitales  
+ú herramientas para dibujar, pintar, cortar, modelar, unir 
+y tecnológicas (pincel,  tijera, mirete, computador, entre 
+otras)  
+ú procedimientos de dibujo, pintura, collage, escultura, 
+dibujo digital, entre  otros  
+4 Comunicar y explicar sus impresiones de lo que 
+sienten y piensan de obras de  arte por variados 
+medios. (Observar anualmente al menos 10 obras de 
+arte  local o chileno, 10 latinoamericanas y 10 de arte 
+universal).  
+5 Explicar sus preferencias frente al trabajo de arte 
+personal y de sus pares, usan do elementos del 
+lenguaje visual.  
+Tercero  
+Básico 
+Artes Visuales 55 3º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Crear trabajos de arte con un propósito expresivo 
+personal y basados en la  observación del:  
+ú entorno natural: animales, plantas y fenómenos 
+naturales  
+ú entorno cultural: creencias de distintas culturas (mitos, 
+seres imaginarios,  dioses, fiestas, tradiciones, otros)  
+ú entorno artístico: arte de la Antigüedad y movimientos 
+artísticos como fau vismo, expresionismo y art 
+nouveau  
+2 Aplicar elementos del lenguaje visual (incluidos los 
+de niveles anteriores) en sus  trabajos de arte, con 
+diversos propósitos expresivos y creativos: ú color (frío, 
+cálido y expresivo)  
+ú textura (en plano y volumen)  
+ú forma (real y recreada  
+3 Crear trabajos de arte a partir de experiencias, 
+intereses y temas del entorno  natural y artístico, 
+demostrando manejo de:  
+ú materiales de modelado, de reciclaje, naturales, 
+papeles, cartones, pega mentos, lápices, pinturas, 
+textiles e imágenes digitales  
+ú herramientas para dibujar, pintar, cortar, modelar, unir 
+y tecnológicas (pincel,  tijera, mirete, computador, 
+cámara fotográfica, entre otras)  
+ú procedimientos de dibujo, pintura, grabado, escultura, 
+técnicas mixtas, arte sanía, fotografía, entre otros  
+4 Describir sus observaciones de obras de arte y 
+objetos, usando elementos del  lenguaje visual y 
+expresando lo que sienten y piensan. (Observar 
+anualmente  al menos 15 obras de arte y artesanía 
+local y chilena, 15 latinoamericanas y 15  de arte 
+universal).  
+5 Describir fortalezas y aspectos a mejorar en el 
+trabajo de arte personal y de sus  pares, usando 
+criterios de uso de materiales, procedimientos técnicos 
+y propó sito expresivo.  
+Cuarto  
+Básico 
+Artes Visuales 59 4º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Crear trabajos de arte con un propósito expresivo 
+personal y basados en la  observación del:  
+ú entorno natural: naturaleza y paisaje americano  
+ú entorno cultural: América y sus tradiciones (cultura 
+precolombina, tradicio nes y artesanía americana)  
+ú entorno artístico: arte precolombino y de movimientos 
+artísticos como mu ralismo mexicano, naif y 
+surrealismo en Chile, Latinoamérica y en el resto del  
+mundo  
+2 Aplicar elementos del lenguaje visual (incluidos los 
+de niveles anteriores) en sus  trabajos de arte, con 
+diversos propósitos expresivos y creativos: ú líneas de 
+contorno  
+ú color (tono y matiz)  
+ú forma (figurativa y no figurativa)  
+3 Crear trabajos de arte a partir de experiencias, 
+intereses y temas del entorno  natural, cultural y 
+artístico, demostrando manejo de:  
+ú materiales de modelado, de reciclaje, naturales, 
+papeles, cartones, pega mentos, lápices, pinturas, 
+textiles e imágenes digitales  
+ú herramientas para dibujar, pintar, cortar, unir, modelar 
+y tecnológicas (pincel,  tijera, mirete, computador, 
+cámara fotográfica, entre otras)  
+ú procedimientos de dibujo, pintura, grabado, escultura, 
+técnicas mixtas, arte sanía, fotografía, entre otros  
+4 Describir sus observaciones de obras de arte y 
+objetos, usando elementos del  lenguaje visual y 
+expresando lo que sienten y piensan. (Observar 
+anualmente  al menos 15 obras de arte y artesanía 
+local y chilena, 15 de arte latinoamerica no y 15 de arte 
+universal).  
+5 Describir fortalezas y aspectos a mejorar en el 
+trabajo de arte personal y de  sus pares, aplicando 
+criterios de uso de materiales, procedimientos técnicos 
+y  propósito expresivo.  
+Quinto  
+Básico 
+Artes Visuales 63 5º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Crear trabajos de arte y diseños a partir de sus 
+propias ideas y de la observación  del:   
+ú entorno cultural: Chile, su paisaje y sus costumbres en 
+el pasado y en el pre sente   
+ú entorno artístico: impresionismo y postimpresionismo; 
+y diseño en Chile,  Latinoamérica y del resto del 
+mundo  
+2 Aplicar y combinar elementos del lenguaje visual 
+(incluidos los de niveles  anteriores) en trabajos de arte 
+y diseños con diferentes propósitos expresivos y  
+creativos:  
+ú color (complementario)  
+ú formas (abiertas y cerradas)  
+ú luz y sombra  
+3 Crear trabajos de arte y diseños a partir de diferentes 
+desafíos y temas del  entorno cultural y artístico, 
+demostrando dominio en el uso de: ú materiales de 
+modelado, de reciclaje, naturales, papeles, cartones, 
+pega mentos, lápices, pinturas, textiles e imágenes 
+digitales  
+ú herramientas para dibujar, pintar, cortar, unir, modelar 
+y tecnológicas (bro cha, sierra de calar, esteca, cámara 
+de video y proyector multimedia, entre  otros)  
+ú procedimientos de pintura, escultura, construcción, 
+fotografía, video, diseño  gráfico digital, entre otros  
+4 Analizar e interpretar obras de arte y diseño en 
+relación con la aplicación del  lenguaje visual, 
+contextos, materiales, estilos u otros. (Observar 
+anualmente al  menos 50 obras de arte y diseño 
+chileno, latinoamericano y universal).  
+5 Describir y comparar trabajos de arte y diseños 
+personales y de sus pares, con siderando:  
+ú fortalezas y aspectos a mejorar   
+ú uso de materiales y procedimientos  
+ú aplicación de elementos del lenguaje visual  
+ú propósitos expresivos   
+Sexto  
+Básico 
+Artes Visuales 67 6º básico 
+Objetivos de Aprendizaje Ejes  
+Los estudiantes serán capaces de:  
+Expresar   
+y crear   
+visualmente  
+Apreciar y  responder  frente al 
+arte  
+1 Crear trabajos de arte y diseños a partir de sus 
+propias ideas y de la observación  del:  
+ú entorno cultural: el hombre contemporáneo y la ciudad  
+ú entorno artístico: el arte contemporáneo y el arte en el 
+espacio público (mu rales y esculturas)  
+2 Aplicar y combinar elementos del lenguaje visual 
+(incluidos los de niveles  anteriores) en trabajos de arte 
+y diseños con diferentes propósitos expresivos y  
+creativos:  
+ú color (gamas y contrastes)  
+ú volumen (lleno y vacío)  
+3 Crear trabajos de arte y diseños a partir de diferentes 
+desafíos y temas del  entorno cultural y artístico, 
+demostrando dominio en el uso de: ú materiales de 
+modelado, de reciclaje, naturales, papeles, cartones, 
+pega mentos, lápices, pinturas e imágenes digitales  
+ú herramientas para dibujar, pintar, cortar, unir, modelar 
+y tecnológicas (rodi llos de grabado, sierra de calar, 
+mirete, cámara de video y proyector multi media, entre 
+otros)  
+ú procedimientos de pintura, grabado, escultura, 
+instalación, técnicas mixtas,  arte digital, fotografía, 
+video, murales, entre otros  
+4 Analizar e interpretar obras de arte y objetos en 
+relación con la aplicación del  lenguaje visual, 
+contextos, materiales, estilos u otros. (Observar 
+anualmente al  menos 50 obras de arte chileno, 
+latinoamericano y universal).  
+5 Evaluar críticamente trabajos de arte y diseños 
+personales y de sus pares, con siderando:  
+ú expresión de emociones y problemáticas sociales  
+ú uso de materiales y procedimientos   
+ú aplicación de elementos del lenguaje visual  
+ú propósitos expresivos   
+Ciencias  
+Naturale
+s 
+70 Bases Curriculares Ú 1º a 6º Básico Introducción 
+Las Ciencias Naturales agrupan aquellas disciplinas 
+que  tienen por objeto el estudio de la naturaleza, 
+como la  Biología, la Química, la Física, la Botánica, 
+la Geología  y la Astronomía. En su conjunto, estas 
+disciplinas abor dan una amplia variedad de 
+fenómenos naturales: los  seres vivos, sus 
+características y sus distintas formas de  interactuar 
+con el ambiente; la materia, la energía y sus  
+transformaciones; el sistema solar, sus componentes  
+y movimientos; y la Tierra y sus diversas dinámicas. 
+El  aprendizaje de estos fenómenos permite, por un 
+lado,  desarrollar una visión integral y holística de la 
+naturaleza,  y por otro, comprender los constantes 
+procesos de trans formación del medio natural.  
+Estas disciplinas se apoyan en la perspectiva 
+episte mológica distintiva del quehacer 
+científico. En esta,  se presupone que existen 
+fenómenos en el entorno   
+susceptibles de ser estudiados mediante diversas 
+meto dologías, que están consensuadas y que son 
+sometidas  a similares estándares en todo el 
+mundo. El estudio de  dichos fenómenos implica un 
+proceso de razonamiento   
+lógico, que incluye hipótesis, inferencias, 
+explicaciones y  conclusiones basadas en las 
+evidencias registradas. Estos  saberes se insertan 
+en el vasto cuerpo de conocimiento  que han 
+acumulado las Ciencias Naturales a lo largo de  su 
+historia y, a su vez, se construyen en un determinado  
+contexto cultural, social y político. En este sentido, el  
+conocimiento científico es, por definición, dinámico,  
+mutable y transitorio, pues siempre está la 
+posibilidad  de que, en el futuro, nuevas 
+explicaciones refuten a las  que hoy damos por 
+ciertas.  
+La asignatura de Ciencias Naturales permite 
+despertar  en el alumno el asombro por conocer el 
+mundo que lo  rodea, comprenderlo y utilizar 
+metodologías para estu diarlo. Asimismo, le otorga al 
+estudiante la posibilidad de   
+aplicar una mirada científica a su aproximación a la 
+natu raleza. En esta línea, la asignatura promueve 
+una actitud  de respeto hacia las pruebas o 
+evidencias, un contacto  reflexivo con el mundo 
+natural y una actitud flexible para  reconsiderar ideas 
+carentes de sustento empírico1.  
+Actualmente, existe consenso respecto de la 
+importancia  de iniciar en forma temprana la 
+educación científica en  el ciclo escolar, tanto por su 
+valor formativo como por  su capacidad para 
+potenciar la disposición de los niños a  hacerse 
+preguntas y buscar explicaciones sobre la natu 
+raleza y el entorno. En efecto, la ciencia es, 
+esencialmen te, una forma para descubrir y aprender 
+y una excelente  escuela para adquirir competencias 
+que preparen a los  niños para desenvolverse en la 
+sociedad actual2.  
+Para que este proceso sea exitoso, es fundamental 
+que  los estudiantes se aproximen a las grandes 
+ideas de la  ciencia, cuya comprensión les permita 
+dotar de sen tido a los fenómenos del mundo que los 
+rodea. Estas  ideas no se limitan a ofrecer 
+explicaciones casuísticas  sobre preguntas que 
+surgen en la vida cotidiana, sino  que identifican, de 
+forma abstracta, relaciones entre  fenómenos y 
+propiedades observadas3. La comprensión  de estas 
+ideas facilita la predicción de fenómenos, la  
+evaluación crítica de la evidencia científica y la toma  
+de conciencia de la estrecha relación entre ciencia y  
+sociedad. En este aspecto, es importante que, 
+paulati namente, los estudiantes puedan trabajar con 
+diversas  fuentes de información, de modo que 
+conozcan el  contenido de estas grandes ideas y sus 
+implicancias en  múltiples ámbitos de la naturaleza.  
+Asimismo, es imprescindible que los alumnos com 
+plementen la comprensión de las grandes ideas con 
+el  desarrollo de un modelo de habilidades de 
+investigación  científica, que los faculte para 
+emprender proyectos de   
+Ciencias Naturales Introducción 71  
+esta asignatura en el contexto escolar. En este 
+plano,  adquieren particular relevancia los 
+procedimientos in herentes a la actividad científica, 
+como el planteamiento  de problemas, la formulación 
+de hipótesis, la observación  sistemática, la 
+realización de experimentos, el registro y  el análisis 
+de información y la puesta en común de ideas  en 
+forma colectiva4.  
+Los Objetivos de Aprendizaje de Ciencias Naturales  
+promueven la comprensión de las grandes ideas de 
+la  ciencia y la adquisición progresiva de habilidades 
+de  pensamiento científico y métodos propios del 
+quehacer  de estas disciplinas. Ambos elementos 
+contribuyen a  desarrollar el pensamiento crítico, la 
+capacidad reflexiva  y la valoración del error como 
+fuente de conocimiento.  Asimismo, buscan fomentar 
+actitudes científicas como el  rigor, la perseverancia, 
+la honestidad, la búsqueda de la  objetividad, la 
+responsabilidad, la amplitud de mente, el  trabajo en 
+equipo, el respeto y, en definitiva, el perma nente 
+interés por los hechos del entorno natural.  
+En la educación básica, estas grandes ideas y 
+habilidades  están enfocadas a la alfabetización 
+científica de todos los  alumnos. Esto corresponde a 
+la capacidad de los estu diantes para aplicar en su 
+vida ordinaria los conocimien tos y las habilidades 
+aprendidas, hacerse preguntas sobre  distintos 
+fenómenos y obtener conclusiones basadas  en la 
+evidencia. Lo anterior les permitirá comprender  el 
+mundo natural, tomar decisiones informadas dentro  
+de él y llevar dichas decisiones a diversas 
+actividades  humanas que afecten a su familia y 
+comunidad5. De  este modo, los Objetivos de 
+Aprendizaje no pretenden  que los alumnos cuenten 
+con todas las destrezas de un  científico, sino que 
+aprovechen las oportunidades que les  provee el 
+ámbito escolar para desarrollar una determina da 
+manera de pensar, actuar e interpretar el entorno. La   
+alfabetización científica, entonces, es un objetivo de 
+la  ciencia escolar, entendida esta como los 
+conocimientos  científicos construidos y elaborados 
+en la escuela. Este  proceso se conduce 
+principalmente desde el docente,  pues él tiene la 
+facultad para transformar el saber cientí fico en uno 
+posible de ser enseñado en el aula.  
+La alfabetización científica cobra especial sentido 
+frente  a la tecnología y su relación con la ciencia en 
+la sociedad  actual. Los objetivos de aprendizaje 
+promueven que los  estudiantes analicen y apliquen 
+conceptos científicos en   
+sus experiencias cotidianas, en las cuales están 
+presentes  las actuales tecnologías. Esto les 
+permitirá, por una parte,  tomar conciencia del 
+estrecho vínculo entre ciencia,  sociedad y 
+tecnología y, por otra, explicar las bases sobre  las 
+que asientan los adelantos tecnológicos que usamos  
+día a día.  
+En este plano, también son relevantes las destrezas 
+espe cíficas en el uso de las TIC, pues contribuyen 
+al desarrollo  de diversas habilidades propias de la 
+asignatura. Por  ejemplo, en una primera instancia, 
+se promueve el uso  de las TIC como un medio para 
+registrar información y  transmitir ideas y evidencias 
+científicas. Una vez que los  estudiantes se 
+interioricen de dicha función, se espera  que integren 
+profusamente las TIC en el desarrollo de  diversos 
+proyectos y actividades en todas las etapas del  
+aprendizaje científico. De este modo, tendrán la posi 
+bilidad de internalizar las formas de aprender y 
+pensar  asociadas a estas herramientas. 
+72 Bases Curriculares Ú 1º a 6º Básico  
+Organización curricular 
+Ciencias Naturales  
+A / Habilidades y etapas de la investigación científica  
+Las Bases Curriculares de Ciencias Naturales 
+proveen las  oportunidades para que los 
+estudiantes desarrollen de  forma integrada los 
+conocimientos, las habilidades y el  proceso de 
+investigación científica.  
+Las habilidades científicas son comunes a todas las 
+dis ciplinas que conforman las Ciencias Naturales y 
+deberán  desarrollarse en forma transversal a los 
+Objetivos de  Aprendizaje de los ejes temáticos. 
+Cabe destacar que el   
+Analizar  
+Estudiar los objetos, informaciones o procesos y 
+sus  patrones a través de la interpretación de 
+gráficos, para  reconocerlos y explicarlos, con el 
+uso apropiado de las  TIC.  
+Clasificar  
+Agrupar objetos o eventos con características 
+comunes  según un criterio determinado.  
+Comparar  
+Examinar dos o más objetos, conceptos o procesos 
+para  identificar similitudes y diferencias entre ellos.  
+Comunicar  
+Transmitir una información en forma verbal o 
+escrita,  mediante diversas herramientas como 
+dibujos, ilustra ciones científicas, tablas, gráficos, 
+TIC, entre otras.  
+trabajo con estas habilidades no implica una 
+secuencia  o prioridad definida. En este sentido, se 
+sugiere que  sean trabajadas por el docente de 
+forma independiente  y flexible en el primer ciclo, 
+desarrollando actividades  específicas para cada 
+una de ellas.  
+A continuación se describen las habilidades 
+científicas en  orden alfabético: 
+Evaluar  
+Analizar información, procesos o ideas para 
+determinar  su precisión, calidad y confiabilidad.  
+Experimentar  
+Probar y examinar de manera práctica un objeto 
+o un  fenómeno.  
+Explorar  
+Descubrir y conocer el medio a través de los 
+sentidos y  del contacto directo, tanto en la sala de 
+clases como en  terreno.  
+Formular preguntas  
+Clarificar hechos y su significado por medio de la 
+inda gación. Las buenas preguntas centran la 
+atención en la  información importante y se diseñan 
+para generar nueva  información.  
+Ciencias Naturales 73 Organización curricular 
+Investigar  
+Conjunto de actividades por medio de las cuales los  
+alumnos estudian el mundo natural y físico que los  
+rodea. Incluye indagar, averiguar, buscar nuevos 
+conoci mientos y, de esta forma, solucionar 
+problemas o interro gantes de carácter científico.   
+Medir  
+Obtener información precisa con instrumentos 
+pertinen tes (regla, termómetro, etc.).  
+Observar  
+Obtener información de un objeto o evento a 
+través de  los sentidos.  
+Planificar  
+Elaborar planes o proyectos para la realización 
+de una  actividad experimental.  
+Predecir  
+Plantear una respuesta sobre cómo las cosas 
+resultarán,  sobre la base de un conocimiento 
+previo.  
+Registrar  
+Anotar y reproducir la información obtenida de 
+obser 
+vaciones 
+y 
+mediciones 
+de 
+manera 
+ordenada y clara en  
+dibujos, ilustraciones 
+científicas, tablas, entre otros.  
+Usar instrumentos  
+Manipular apropiadamente diversos instrumentos, 
+cono ciendo sus funciones, limitaciones y peligros, 
+así como las  medidas de seguridad necesarias para 
+operar con ellos.  
+Usar modelos  
+Representar seres vivos, objetos o fenómenos 
+para  explicarlos o describirlos; estos pueden ser 
+diagramas,  dibujos, maquetas. Requiere del 
+conocimiento, de la  imaginación y la creatividad.  
+Etapas de la investigación científica  
+Por su parte, el proceso de investigación científica 
+incluye  tres etapas ajustadas al ciclo. Dichas etapas 
+constituyen  operaciones complejas que requieren el 
+uso de varias  de las habilidades recién descritas. 
+Constituyen valiosas  herramientas cognitivas, que 
+permitirán a los estudiantes  desarrollar un 
+pensamiento lógico y crítico que podrá usar  en 
+todos los ámbitos de la vida.  
+Cabe señalar que no es necesario seguir un orden 
+lineal  al enseñar el proceso de investigación. El 
+docente podrá  determinar, autónomamente, el orden 
+más adecuado para   
+practicar alguna de las diversas habilidades que se 
+utilizan  en cada una de sus etapas.  
+Las tres etapas de la investigación científica en su 
+versión  adecuada al ciclo de enseñanza básica 
+son las siguientes:  
+1. Observar y preguntar:  
+los estudiantes deberán involucrarse de forma 
+directa  con el mundo que los rodea, desarrollando 
+habilidades  como la observación, la formulación de 
+preguntas, la  manipulación, la inferencia y la 
+predicción. En esta línea,   
+74 Bases Curriculares Ú 1º a 6º Básico  
+se pretende que sean capaces de conocer, 
+descubrir y  razonar acerca de su entorno. En los 
+primeros años, se  enfatiza la habilidad de la 
+observación, la que se de sarrolla de forma guiada. 
+Luego se progresa hacia las  predicciones y las 
+inferencias y a la facultad de seleccio nar 
+preguntas de investigación, aspectos que deberán  
+desarrollarse de forma más autónoma.  
+2. Experimentar (1º y 2º básico) / Planificar y conducir una investigación (3º a 
+6º básico):  la exploración y la experimentación en el 
+entorno cer cano y la manipulación de sus elementos 
+es un aspecto  fundamental a fomentar en los dos 
+primeros años del  ciclo básico. Para que desarrollen 
+esta habilidad, es ne cesario que el profesor guie e 
+impulse a los estudiantes a  indagar, descubrir, 
+probar experiencias y, así, dar res puesta a sus 
+preguntas. A partir de 3° básico, el énfasis se  
+traslada hacia las habilidades de planificación y 
+conduc ción de investigaciones experimentales y no 
+experimen tales. En estas, los estudiantes, guiados 
+por el docente,  serán estimulados a desarrollar un 
+plan de trabajo, a  establecer compromisos y a 
+recurrir a diversas fuentes de  información. Esto 
+último les da la posibilidad de obtener  información 
+relevante, de organizar y comunicar dicha  
+información y de ampliar su conocimiento sobre el 
+tema  estudiado.  
+La conducción, en tanto, se refiere a la proactividad 
+ne cesaria de los estudiantes para llevar a cabo una 
+investi gación. Esto corresponde a la capacidad de 
+desarrollar la  totalidad de las actividades 
+involucradas, como seguir las  instrucciones de la 
+investigación, buscar la información  relevante, 
+experimentar y obtener las conclusiones que  den 
+respuestas a las preguntas. Al final del ciclo, se espe 
+ra que desarrollen este proceso con importantes 
+niveles  de autonomía.  
+3. Analizar las evidencias y comunicar: desde los cursos 
+iniciales, se espera que los alumnos  puedan 
+comunicar y compartir sus hallazgos en una   
+variedad de formatos. Posteriormente inician el 
+trabajo  con evidencias y, ya en este nivel, deberán 
+ser capaces de  recurrir a ellas para respaldar sus 
+ideas, obtener resulta dos, otorgar explicaciones 
+plausibles y extraer conclu siones. De este modo, al 
+terminar el ciclo, se espera que  el alumno tenga la 
+habilidad para comunicar sus eviden cias, 
+conclusiones y reflexiones sobre sus investigaciones. 
+Ciencias Naturales 75 Organización curricular 
+En la siguiente figura se observa el modo en que el proceso de investigación científica se desarrolla de 
+forma conjunta  con los Objetivos de Aprendizaje. Las actividades, en tanto, reflejan y llevan a la práctica 
+este trabajo conjunto.  
+Integración de las habilidades  
+Proceso de  
+investigación científica  
+Explorar, observar y 
+formular  inferencias y 
+predicciones, en  forma 
+guiada, sobre objetos y  
+eventos del entorno. 
+ 
+ 
+Objetivo de aprendizaje  
+2º básico Actividades  
+Guiados por el docente, los 
+estu diantes formulan 
+inferencias sobre  el número 
+de crustáceos en su  
+localidad. 
+ 
+Explorar y experimentar, en  
+forma guiada, con 
+elementos del  entorno:   
+ú a partir de preguntas dadas  
+ú en forma individual y 
+colectiva ú utilizando la 
+observación, la  
+manipulación y la 
+clasificación de  materiales 
+simples 
+ 
+ 
+Observar, medir y registrar 
+los  datos cuidadosamente 
+con uni dades no 
+estandarizadas. 
+ 
+ 
+Seguir las instrucciones 
+para  utilizar los 
+materiales e instru 
+mentos en forma segura. 
+ 
+ 
+Comunicar y comparar con 
+otros  sus ideas, 
+observaciones, medi ciones 
+y experiencias de forma  
+oral y escrita, y por medio 
+de  presentaciones, TIC y 
+dibujos,  entre otros.  
+Observar, describir y   
+clasificar, por medio   
+de la exploración, las   
+características de los   
+animales sin columna   
+vertebral, como insectos,  
+arácnidos, crustáceos, entre  
+otros, y compararlos con los  
+vertebrados. 
+Guiados por el docente, 
+desa rrollan una 
+investigación experi mental 
+para observar el efecto de  
+la luz y la humedad en 
+algunos  crustáceos 
+(chanchitos de tierra). 
+Los estudiantes observan el   
+número de patas y miden el 
+largo  y el ancho de algunos 
+insectos  recolectados en su 
+localidad, de  manera 
+segura, registrando los  
+datos obtenidos y 
+comparándolos  con 
+vertebrados. 
+El docente guía una lluvia de 
+ideas  respecto de las 
+similitudes y dife rencias de 
+insectos y vertebrados.  Cada 
+estudiante menciona una  
+diferencia o una similitud y 
+luego  la representa en su 
+cuaderno  mediante un 
+dibujo. 
+76 Bases Curriculares Ú 1º a 6º Básico  
+B / Ejes  
+Los Objetivos de Aprendizaje muestran desempeños medibles y observables de los estudiantes en relación 
+con las  habilidades científicas y con los contenidos. De acuerdo a estos contenidos, los objetivos se 
+organizan en torno a tres  ejes temáticos vinculados con las disciplinas que integran las Ciencias Naturales:  
+Ciencias de la vida  
+El eje incorpora tres temas principales. El primero co 
+rresponde al estudio de los seres vivos, en que se 
+espera  que los estudiantes se aproximen de forma 
+paulatina a  los conceptos básicos del estudio de la 
+vida y sus inte racciones. En este sentido, tomando 
+en cuenta la curio sidad natural de los niños, se 
+busca que -por medio de la  observación directa- 
+conozcan a los seres vivos, descri ban sus 
+características, reconozcan sus ciclos de vida y  
+describan el modo en que obtienen alimento y 
+energía.  Esto les permitirá tomar conciencia de la 
+noción de eco sistema y de las consecuencias de 
+sus propias acciones  en el equilibrio de este.  
+El segundo tema es el estudio del cuerpo humano, 
+en  que adquieren especial importancia los distintos 
+sis temas corporales, la forma en que se 
+desarrollan y las  dinámicas en que se producen 
+algunas enfermedades.  Sobre la base de este 
+aprendizaje, se incentivará que los   
+estudiantes asuman la responsabilidad por la salud 
+y el  cuidado de su cuerpo. Específicamente, los 
+Objetivos  de Aprendizaje promueven el desarrollo 
+de actitudes y  hábitos de vida saludable, 
+prevención y autocuidado,  con el propósito de que 
+asuman comportamientos que  conduzcan a una 
+buena salud.  
+El tercer tópico presente en el eje es el cuidado del  
+medioambiente. En este punto, se promueve que los  
+estudiantes desarrollen una adecuada vinculación 
+con la  naturaleza. En particular, que exploren e 
+investiguen el  entorno natural con una actitud de 
+respeto y responsa bilidad por el medioambiente, 
+que reconozcan los efec tos de la actividad humana 
+sobre este, que aprendan las  distintas posibilidades 
+que ofrece el desarrollo produc tivo sustentable y 
+que construyan una visión reflexiva y  crítica frente a 
+las medidas de protección existentes en  la 
+actualidad.  
+Ciencias Físicas y Químicas  
+En este eje, se espera que los estudiantes se aproxi 
+men a los conceptos de energía y materia, con 
+especial  énfasis en sus múltiples efectos y 
+transformaciones. Esto  incluye las diversas 
+manifestaciones de la energía, el  sonido, la energía 
+eléctrica y las formas de interacción  de la materia, 
+aspecto asociado al concepto de fuerza.  El 
+aprendizaje de estos tópicos permitirá que los estu  
+diantes desarrollen una adecuada comprensión de 
+los  diversos eventos naturales que experimenten en 
+su vida  cotidiana. Por eso, en los primeros años de 
+escolaridad,  el énfasis está en el reconocimiento, la 
+exploración y la  experimentación con materiales del 
+entorno, conside rando sus propiedades, 
+aplicaciones y usos.  
+Ciencias de la Tierra y el Universo 
+Este eje trata sobre los fenómenos de la Tierra y el 
+modo  en que esta se relaciona con el Universo. En 
+este marco,  se espera que los alumnos conozcan el 
+tiempo atmos férico, las capas de la Tierra y sus 
+movimientos, y que  sean capaces de relacionarlos 
+con los sismos, volcanes y   
+tsunamis. Se considera esencial la formación de 
+hábitos  de prevención ante eventos sísmicos, 
+debido a las carac terísticas de nuestro país.  
+También se busca que los estudiantes aprendan 
+sobre la  formación y las características del suelo, 
+su importancia   
+Ciencias Naturales 77 Organización curricular  
+para el sustento de la vida sobre la Tierra y las 
+variables  asociadas a la erosión. Asimismo, se 
+estudian los com ponentes del Sistema Solar, los 
+movimientos de la Tierra  y su impacto en los ciclos 
+de la vida. Estas materias se   
+C / Actitudes  
+Las Bases Curriculares de Ciencias Naturales 
+promue ven un conjunto de actitudes para todo el 
+ciclo básico,  que derivan de los Objetivos de 
+Aprendizaje Transver sales (OAT). Dada su 
+relevancia para el aprendizaje en el  contexto de 
+cada disciplina, estas se deben desarrollar de  
+manera integrada con los conocimientos y las 
+habilida des de la asignatura.  
+Las actitudes aquí definidas son Objetivos de 
+Aprendiza je, que deben ser promovidos para la 
+formación integral  de los estudiantes en la 
+asignatura. Los establecimientos  pueden planificar, 
+organizar, desarrollar y complementar  las actitudes 
+propuestas, según sean las necesidades de  su 
+propio proyecto y su realidad educativa. Las 
+actitudes   
+a desarrollar en la asignatura de Ciencias 
+Naturales son  las siguientes:  
+demostrar curiosidad e interés por cono cer seres vivos, objetos y/o eventos que 
+conforman el entorno natural.  
+La asignatura de Ciencias Naturales desarrolla la 
+curiosi dad por conocer la naturaleza y el interés por 
+ahondar en  el conocimiento de los seres vivos, la 
+materia, la Tierra y  el Universo. Se promueve que 
+los estudiantes observen,  exploren y se formulen 
+preguntas acerca del entorno na tural, y que se vean 
+enfrentados a temas que los desafíen  
+intelectualmente.  
+manifestar un estilo de trabajo riguroso,  honesto y perseverante para lograr lo 
+s  aprendizajes de la asignatura.  
+La asignatura favorece el trabajo ordenado, 
+metódico  y eficiente, de manera que el alumno 
+cumpla con sus  responsabilidades.   
+Asimismo, se espera que reconozca el error y lo 
+consi dere como parte del proceso de aprendizaje 
+y de gene ración del conocimiento. Estas actitudes 
+se desarrollan   
+tratan con una perspectiva científica, que involucra  
+exploración, uso de modelos y experimentación, 
+procu rando que los alumnos perciban la 
+interrelación entre los  fenómenos estudiados. 
+en investigaciones, indagaciones y 
+experimentaciones,  entre otros.  
+reconocer la importancia del entorno natu ral y sus recursos, desarrollando 
+conductas  de cuidado y protección del ambiente. Se espera que los 
+estudiantes, en la medida que van  comprendiendo 
+la importancia de los diversos elemen tos (seres 
+vivos, objetos y/o eventos) que conforman  el 
+entorno natural, desarrollen la conciencia de cuidar,  
+preservar y conservar nuestro patrimonio natural.  
+asumir responsabilidades e interactuar en forma colaborativa y flexible en los 
+tra bajos en equipo, aportando y enriquecien do el trabajo común.  
+La asignatura fomenta el trabajo grupal, 
+especialmente me diante de investigaciones, 
+indagaciones y experimentacio nes científicas, en las 
+cuales los estudiantes deben aprender  a trabajar de 
+manera responsable y colaborativa.  
+manifestar compromiso con un estilo de vida saludable por medio del 
+desarrollo físico y el autocuidado.  
+Se espera que los estudiantes conozcan medios 
+para cuidar  su cuerpo y formas de protección ante 
+conductas de ries go, y que desarrollen hábitos de 
+vida sana. Esta actitud es  favorecida por el contacto 
+habitual con el entorno natural.  
+reconocer la importancia de seguir normas y procedimientos que resguarden y 
+promuevan la seguridad personal y colectiva. La asignatura busca 
+que el estudiante asuma un compro miso con la 
+seguridad personal y colectiva. Se espera que  siga 
+las normas y los procedimientos de seguridad en el  
+manejo de los instrumentos.  
+78 Bases Curriculares Ú 1º a 6º Básico Referencias  
+1 Harlen, W. (2010). Principios y grandes ideas de la   
+educación en Ciencias. Association for Scien  
+ce Education.  
+2 Devés, R. y Reyes, P. (2007). Principios y estrate  
+gias del programa de educación en ciencias   
+basada en la indagación (ECBI). Pensamiento   
+Educativo, Vol. 41, Nº 2,115-13. Encontra  
+do en: http://pensamientoeducativo.uc.cl/  
+index.php/pel/article/view/419  
+3 Harlen, W. (2010). Principios y grandes ideas de la   
+educación en Ciencias. Association for Scien  
+ce Education.  
+4 Harlen, W. (2010). Principios y grandes ideas de la   
+educación en Ciencias. Association for Scien  
+ce Education.  
+5 Programme for International Student As  
+sessment & OECD (2003). The PISA 2003   
+assessment framework: Mathematics, reading,   
+science, and problem solving knowledge and   
+skills. Paris: OECD.  
+>>>>>>> a39ab736936a9ccd970b444c197cef0b2e6a3d50

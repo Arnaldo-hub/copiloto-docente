@@ -1,0 +1,49 @@
+{
+  "1° Básico": {
+
+    "Unidad 1: Números y Operaciones": {
+
+      "OA 1": {
+
+        "descripcion": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10.",
+
+        "habilidades": [
+          "Contar",
+          "Representar",
+          "Reconocer secuencias"
+        ],
+
+        "actitudes": [
+          "Perseverancia",
+          "Participación activa"
+        ]
+
+      },
+
+      "OA 2": {
+
+        "descripcion": "Identificar el orden de los elementos utilizando números ordinales.",
+
+        "habilidades": [
+          "Ordenar",
+          "Comparar"
+        ],
+
+        "actitudes": [
+          "Trabajo colaborativo",
+          "Respeto"
+        ]
+
+      }
+
+    },
+
+    "Unidad 2: Patrones y Álgebra": {},
+
+    "Unidad 3: Geometría": {},
+
+    "Unidad 4: Medición y Datos": {}
+
+  }
+
+}

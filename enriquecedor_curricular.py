@@ -114,4 +114,8 @@ with open(
 
 print(
     "✅ Matemática 1° Básico enriquecido"
+<<<<<<< HEAD
 )
+=======
+)
+>>>>>>> a39ab736936a9ccd970b444c197cef0b2e6a3d50
