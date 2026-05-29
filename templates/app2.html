@@ -418,6 +418,26 @@ Educación Física
 <select id="unidad"></select>
 
 <select id="oa"></select>
+	
+<select id="tipoPlanificacion">
+
+    <option value="clase">
+        Clase a Clase
+    </option>
+
+    <option value="semanal">
+        Planificación Semanal
+    </option>
+
+    <option value="mensual">
+        Planificación Mensual
+    </option>
+
+    <option value="anual">
+        Planificación Anual
+    </option>
+
+</select>
 
 </div>
 
@@ -696,6 +716,11 @@ unidadSelect.value,
 oa:
 oaSelect.value,
 
+tipoPlanificacion:
+document.getElementById(
+    "tipoPlanificacion"
+).value,
+		
 objetivos:
 document.getElementById("objetivos").checked,
 

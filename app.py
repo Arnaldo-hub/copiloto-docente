@@ -493,6 +493,11 @@ def api_pedagogia():
             ""
         )
 		
+		tipo_planificacion = data.get(
+            "tipoPlanificacion",
+            "clase"
+        )
+		
 		oa_codigo = oa.split(
             " - "
         )[0]
@@ -613,6 +618,11 @@ def api_pedagogia():
 	
 	
         resultado = f"""
+		
+## TIPO DE PLANIFICACIÓN
+
+{tipo_planificacion.upper()}
+
 
 # PLANIFICACIÓN DOCENTE IA
 
