@@ -619,12 +619,12 @@ def api_pedagogia():
 	
         resultado = f"""
 		
-## TIPO DE PLANIFICACIÓN
+## TIPO DE PLANIFICACION
 
 {tipo_planificacion.upper()}
 
 
-# PLANIFICACIÓN DOCENTE IA
+# PLANIFICACION DOCENTE IA
 
 ---
 
@@ -657,7 +657,7 @@ def api_pedagogia():
 
 ---
 
-## EVALUACIÓN
+## EVALUACION
 
 {evaluacion}
 
@@ -817,14 +817,14 @@ def api_pedagogia():
             )
 
         # =====================================
-        # EVALUACIÓN
+        # EVALUACION
         # =====================================
 
         if data.get("evaluacion"):
 
             resultado += """
 
-#  Evaluación
+#  Evaluacion
 
 """
 
@@ -853,9 +853,9 @@ def api_pedagogia():
 
 #  Error
 
-No fue posible generar la planificación.
+No fue posible generar la planificacion.
 
-## Detalle técnico
+## Detalle tecnico
 
 {str(e)}
 
