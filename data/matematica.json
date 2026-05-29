@@ -1,390 +1,612 @@
 {
   "1° Básico": {
     "nombre_asignatura": "Matemática",
-
     "unidades": [
-
       {
         "nombre": "Unidad 1: Números y Operaciones",
         "semestre": "1",
-
         "proposito": "Desarrollar la comprensión de números hasta el 20, promoviendo habilidades de conteo, representación y resolución de problemas.",
-
         "oa": [
-
           {
             "codigo": "OA 1",
             "descripcion": "Contar números del 0 al 20 de 1 en 1, de 2 en 2 y hacia atrás.",
-
             "indicadores": [
               "Cuenta números del 0 al 20.",
               "Cuenta hacia atrás desde 20.",
               "Reconoce secuencias numéricas.",
               "Cuenta de 2 en 2."
             ],
-
             "habilidades": [
               "Contar",
               "Representar",
               "Resolver problemas"
             ],
-
             "actitudes": [
               "Participa activamente.",
               "Persevera frente a desafíos."
             ],
-
             "evaluacion": [
               "Conteo oral",
               "Secuencias numéricas",
               "Resolución guiada"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 2",
             "descripcion": "Leer y representar números hasta el 20 en forma concreta, pictórica y simbólica.",
-
             "indicadores": [
               "Lee números hasta el 20.",
               "Representa números.",
               "Relaciona número y cantidad."
             ],
-
             "habilidades": [
               "Representar",
               "Leer números",
               "Comunicar"
             ],
-
             "actitudes": [
               "Trabaja ordenadamente.",
               "Comparte estrategias."
             ],
-
             "evaluacion": [
               "Lectura numérica",
               "Representación concreta",
               "Escritura de números"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 3",
             "descripcion": "Comparar y ordenar números del 0 al 20.",
-
             "indicadores": [
               "Compara números.",
               "Ordena secuencias.",
               "Identifica mayor y menor."
             ],
-
             "habilidades": [
               "Comparar",
               "Ordenar",
               "Resolver problemas"
             ],
-
             "actitudes": [
               "Respeta turnos.",
               "Participa activamente."
             ],
-
             "evaluacion": [
               "Comparación numérica",
               "Ordenamiento",
               "Trabajo concreto"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           }
-
         ]
       },
-
       {
         "nombre": "Unidad 2: Adición y Sustracción",
         "semestre": "1",
-
         "proposito": "Desarrollar estrategias de adición y sustracción en el ámbito del 20.",
-
         "oa": [
-
           {
             "codigo": "OA 4",
             "descripcion": "Demostrar que comprenden la adición en el ámbito del 20.",
-
             "indicadores": [
               "Representa adiciones.",
               "Resuelve sumas simples.",
               "Relaciona adición y cantidad."
             ],
-
             "habilidades": [
               "Sumar",
               "Representar",
               "Resolver problemas"
             ],
-
             "actitudes": [
               "Persevera.",
               "Participa activamente."
             ],
-
             "evaluacion": [
               "Resolución de sumas",
               "Trabajo concreto",
               "Ejercicios guiados"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 5",
             "descripcion": "Demostrar que comprenden la sustracción en el ámbito del 20.",
-
             "indicadores": [
               "Representa sustracciones.",
               "Resuelve restas simples.",
               "Relaciona sustracción y cantidad."
             ],
-
             "habilidades": [
               "Restar",
               "Representar",
               "Resolver problemas"
             ],
-
             "actitudes": [
               "Trabaja ordenadamente.",
               "Participa."
             ],
-
             "evaluacion": [
               "Resolución de restas",
               "Trabajo concreto",
               "Ejercicios"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 6",
             "descripcion": "Resolver problemas rutinarios de adición y sustracción.",
-
             "indicadores": [
               "Resuelve problemas simples.",
               "Aplica estrategias.",
               "Explica procedimientos."
             ],
-
             "habilidades": [
               "Resolver problemas",
               "Comunicar",
               "Aplicar estrategias"
             ],
-
             "actitudes": [
               "Persevera.",
               "Participa."
             ],
-
             "evaluacion": [
               "Problemas matemáticos",
               "Explicación oral",
               "Trabajo individual"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           }
-
         ]
       },
-
       {
         "nombre": "Unidad 3: Geometría y Medición",
         "semestre": "2",
-
         "proposito": "Desarrollar habilidades de reconocimiento espacial y medición.",
-
         "oa": [
-
           {
             "codigo": "OA 7",
             "descripcion": "Identificar y describir figuras 2D y 3D.",
-
             "indicadores": [
               "Reconoce figuras.",
               "Describe cuerpos geométricos.",
               "Relaciona figuras con objetos."
             ],
-
             "habilidades": [
               "Identificar",
               "Describir",
               "Comparar"
             ],
-
             "actitudes": [
               "Observa atentamente.",
               "Participa."
             ],
-
             "evaluacion": [
               "Reconocimiento geométrico",
               "Clasificación",
               "Trabajo práctico"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 8",
             "descripcion": "Describir la posición de objetos y personas usando lenguaje espacial.",
-
             "indicadores": [
               "Usa lenguaje espacial.",
               "Ubica objetos.",
               "Describe posiciones."
             ],
-
             "habilidades": [
               "Ubicar",
               "Describir",
               "Comunicar"
             ],
-
             "actitudes": [
               "Trabaja colaborativamente.",
               "Participa."
             ],
-
             "evaluacion": [
               "Ubicación espacial",
               "Descripción oral",
               "Actividades guiadas"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 9",
             "descripcion": "Comparar longitudes, capacidades y masas usando unidades no estandarizadas.",
-
             "indicadores": [
               "Compara medidas.",
               "Usa unidades simples.",
               "Ordena objetos."
             ],
-
             "habilidades": [
               "Comparar",
               "Medir",
               "Resolver problemas"
             ],
-
             "actitudes": [
               "Trabaja ordenadamente.",
               "Participa."
             ],
-
             "evaluacion": [
               "Comparación de objetos",
               "Mediciones simples",
               "Trabajo práctico"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           }
-
         ]
       },
-
       {
         "nombre": "Unidad 4: Datos y Probabilidades Iniciales",
         "semestre": "2",
-
         "proposito": "Introducir la organización de datos y probabilidades simples.",
-
         "oa": [
-
           {
             "codigo": "OA 10",
             "descripcion": "Recolectar y registrar datos simples.",
-
             "indicadores": [
               "Recolecta información.",
               "Registra datos.",
               "Organiza información."
             ],
-
             "habilidades": [
               "Registrar",
               "Organizar",
               "Comunicar"
             ],
-
             "actitudes": [
               "Participa activamente.",
               "Trabaja ordenadamente."
             ],
-
             "evaluacion": [
               "Registro de datos",
               "Trabajo grupal",
               "Organización de información"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 11",
             "descripcion": "Representar datos en gráficos concretos y pictóricos.",
-
             "indicadores": [
               "Construye gráficos.",
               "Interpreta información.",
               "Representa datos."
             ],
-
             "habilidades": [
               "Representar",
               "Interpretar",
               "Comunicar"
             ],
-
             "actitudes": [
               "Participa.",
               "Comparte ideas."
             ],
-
             "evaluacion": [
               "Construcción de gráficos",
               "Interpretación",
               "Trabajo práctico"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           },
-
           {
             "codigo": "OA 12",
             "descripcion": "Describir eventos usando lenguaje relacionado con probabilidad inicial.",
-
             "indicadores": [
               "Describe eventos simples.",
               "Reconoce posibilidades.",
               "Usa vocabulario probabilístico."
             ],
-
             "habilidades": [
               "Describir",
               "Comparar",
               "Comunicar"
             ],
-
             "actitudes": [
               "Participa.",
               "Respeta opiniones."
             ],
-
             "evaluacion": [
               "Descripción oral",
               "Clasificación de eventos",
               "Actividades grupales"
+            ],
+            "actividades": {
+              "inicio": [
+                "Activación de conocimientos previos.",
+                "Presentación del objetivo."
+              ],
+              "desarrollo": [
+                "Trabajo guiado.",
+                "Ejercicios prácticos.",
+                "Uso de material concreto."
+              ],
+              "cierre": [
+                "Síntesis de lo aprendido.",
+                "Ticket de salida."
+              ]
+            },
+            "adaptaciones_nee": [
+              "Apoyo visual.",
+              "Material concreto.",
+              "Instrucciones segmentadas."
+            ],
+            "recursos": [
+              "Pizarra",
+              "Guía de trabajo",
+              "Material concreto"
             ]
           }
-
         ]
       }
-
     ]
   }
 }
