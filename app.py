@@ -550,7 +550,68 @@ def api_pedagogia():
 
         ])		
 		
-       
+    
+        actividades = oa_data.get(
+            "actividades",
+            {}
+        )
+
+        inicio = "\n".join([
+
+            f"- {x}"
+
+            for x in actividades.get(
+                "inicio",
+                []
+            )
+
+        ])
+
+        desarrollo = "\n".join([
+
+            f"- {x}"
+
+            for x in actividades.get(
+                "desarrollo",
+                []
+            )
+
+        ])
+
+        cierre = "\n".join([
+
+            f"- {x}"
+
+            for x in actividades.get(
+                "cierre",
+                []
+            )
+
+        ])
+
+        nee = "\n".join([
+
+            f"- {x}"
+
+            for x in oa_data.get(
+                "adaptaciones_nee",
+                []
+            )
+
+        ])
+
+        recursos = "\n".join([
+
+            f"- {x}"
+
+            for x in oa_data.get(
+                "recursos",
+                []
+            )
+
+        ])
+	
+	
         resultado = f"""
 
 # PLANIFICACIÓN DOCENTE IA
@@ -602,57 +663,42 @@ def api_pedagogia():
 
 ## INICIO
 
-- Activación de conocimientos previos.
-- Presentación del objetivo de la clase.
-- Motivación inicial.
-- Uso de material concreto.
+{inicio}
 
 ---
 
 ## DESARROLLO
 
-- Desarrollo guiado de actividades.
-- Resolución de ejercicios.
-- Trabajo colaborativo.
-- Retroalimentación constante.
-- Aplicación práctica del OA.
+{desarrollo}
 
 ---
 
 ## CIERRE
 
-- Síntesis de lo aprendido.
-- Preguntas de metacognición.
-- Ticket de salida.
-- Retroalimentación grupal.
+{cierre}
 
 ---
 
 # ADECUACIONES NEE
 
-- Apoyo visual.
-- Uso de material concreto.
-- Instrucciones segmentadas.
-- Mediación docente.
+{nee}
 
 ---
 
 # RECURSOS
 
-- Pizarra
-- Guía de trabajo
-- Material concreto
-- Tarjetas educativas
+{recursos}
 
 ---
 
 # TICKET DE SALIDA
 
 - ¿Qué aprendiste hoy?
-- Explica una actividad realizada.
+- Explica una estrategia utilizada.
 - Representa un ejemplo relacionado con el OA.
 
 """
+
 		
         # =====================================
         # OBJETIVOS
