@@ -550,92 +550,110 @@ def api_pedagogia():
 
         ])		
 		
+       
         resultado = f"""
 
-#  Planificación Generada
+# PLANIFICACIÓN DOCENTE IA
 
 ---
 
-##  Contexto Pedagógico
-
-###  Asignatura
+## ASIGNATURA
 {asignatura}
 
-###  Curso
+## CURSO
 {curso}
 
-###  Unidad
+## UNIDAD
 {unidad}
 
-###  OA
+---
+
+## OBJETIVO DE APRENDIZAJE
+
 {oa_data.get("descripcion", "")}
 
 ---
 
-## Indicadores
+## INDICADORES
 
 {indicadores}
 
 ---
 
-##  Habilidades
+## HABILIDADES
 
 {habilidades}
 
 ---
 
-##  Evaluación
+## EVALUACIÓN
 
 {evaluacion}
 
 ---
 
-##  Actitudes
+## ACTITUDES
 
 {actitudes}
 
 ---
 
-##  Habilidades
+# EXPERIENCIA DE APRENDIZAJE
 
-{chr(10).join([
-f"- {h}"
-for h in oa_data.get(
-    "habilidades",
-    []
-)
-])}
+## INICIO
 
----
-
-## ? Evaluación
-
-{chr(10).join([
-f"- {e}"
-for e in oa_data.get(
-    "evaluacion",
-    []
-)
-])}
+- Activación de conocimientos previos.
+- Presentación del objetivo de la clase.
+- Motivación inicial.
+- Uso de material concreto.
 
 ---
 
-##  Actitudes
+## DESARROLLO
 
-{chr(10).join([
-f"- {a}"
-for a in oa_data.get(
-    "actitudes",
-    []
-)
-])}
-```
-
+- Desarrollo guiado de actividades.
+- Resolución de ejercicios.
+- Trabajo colaborativo.
+- Retroalimentación constante.
+- Aplicación práctica del OA.
 
 ---
+
+## CIERRE
+
+- Síntesis de lo aprendido.
+- Preguntas de metacognición.
+- Ticket de salida.
+- Retroalimentación grupal.
+
+---
+
+# ADECUACIONES NEE
+
+- Apoyo visual.
+- Uso de material concreto.
+- Instrucciones segmentadas.
+- Mediación docente.
+
+---
+
+# RECURSOS
+
+- Pizarra
+- Guía de trabajo
+- Material concreto
+- Tarjetas educativas
+
+---
+
+# TICKET DE SALIDA
+
+- ¿Qué aprendiste hoy?
+- Explica una actividad realizada.
+- Representa un ejemplo relacionado con el OA.
 
 """
-
+		
         # =====================================
         # OBJETIVOS
         # =====================================
@@ -846,48 +864,4 @@ def api_imagen():
 
         })
 
-# =========================================
-# OBTENER OA COMPLETO
-# =========================================
-
-def obtener_oa_completo(
-
-    asignatura,
-    curso,
-    unidad_nombre,
-    oa_codigo
-
-):
-
-    data = leer_asignatura(asignatura)
-
-    if curso not in data:
-
-        return None
-
-    unidades = data[curso].get(
-        "unidades",
-        []
-    )
-
-    for unidad in unidades:
-
-        if unidad.get(
-            "nombre"
-        ) == unidad_nombre:
-
-            oa_lista = unidad.get(
-                "oa",
-                []
-            )
-
-            for oa in oa_lista:
-
-                if oa.get(
-                    "codigo"
-                ) == oa_codigo:
-
-                    return oa
-
-    return None
 
